@@ -1,0 +1,1281 @@
+<?xml version="1.0"?>
+<demos>
+  <demoitem>
+    <source>DepthAndSegmentationVisualizationUsingUE4SimulationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex01806508</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>simulink</product>
+    <product>vision</product>
+    <product>sl3d</product>
+    <file component="uav" timestamp="1654185069">sim3dColormap.m</file>
+    <file component="uav" timestamp="1702408638">uav_ue_depth_imaging.slx</file>
+  </demoitem>
+  <demoitem>
+    <source>UAVPackageDeliveryExample</source>
+    <project cmSystem="" component="uav" type="main">uavPackageDelivery</project>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex08418207</metadata>
+    <thumbnail>html/UAVPackageDeliveryExample_10.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>aeroblks</product>
+    <product>aero</product>
+    <product>control</product>
+    <product>nav</product>
+    <product>stateflow</product>
+    <product>simulink</product>
+    <product>sl3d</product>
+  </demoitem>
+  <demoitem>
+    <source>AvoidMovingObstaclesBasedOnRadarDetectionsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex09143060</metadata>
+    <thumbnail>html/AvoidMovingObstaclesBasedOnRadarDetectionsExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>radar</product>
+    <file component="uav" timestamp="1685904469">ExampleHelperUAVRadar.m</file>
+    <file component="uav" timestamp="1624646837">exampleHelperCVHeuristic2D.m</file>
+    <file component="uav" timestamp="1622832707">exampleHelperDetectImminentCollision.m</file>
+    <file component="uav" timestamp="1622832707">exampleHelperCircle.m</file>
+    <file component="uav" timestamp="1622832707">exampleHelperIsBetweenAngles.m</file>
+  </demoitem>
+  <demoitem>
+    <source>CreateAndQueryUAVFlightTrajectoriesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex10036524</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>WindInUAVScenarioExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex10666006</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>SimpleFlightAndSensorInUE4Example</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex12075938</metadata>
+    <thumbnail>html/SimpleFlightAndSensorInUE4Example_04.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>simulink</product>
+    <product>vision</product>
+    <product>sl3d</product>
+    <file component="uav" timestamp="1655106172">uav_simple_flight_model.slx</file>
+    <file component="uav" timestamp="1655106172">USCityBlock.jpg</file>
+  </demoitem>
+  <demoitem>
+    <source>GenerateControlCommandsForOrbitFollowingExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex12106619</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>AnalyzeFlightLogFromULOGFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex13042039</metadata>
+    <thumbnail>html/AnalyzeFlightLogFromULOGFileExample_02.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1689846288">flight.ulg</file>
+  </demoitem>
+  <demoitem>
+    <source>ConnectPosesOfAllValidUAVDubinsPathsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex13549557</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>ReadMessagesFromArduPilotLogFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex14118320</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>CheckMappedSignalsUsingFlightLogDataExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex14686837</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>ModelAlternativeVTOLUAVConfigurationExample</source>
+    <project cmSystem="" component="uav" type="main">VTOLApp</project>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex15315971</metadata>
+    <thumbnail>html/ModelAlternativeVTOLUAVConfigurationExample_02.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>simulinktest</product>
+    <product>aeroblks</product>
+    <product>aero</product>
+    <product>control</product>
+    <product>stateflow</product>
+    <product>simulink</product>
+  </demoitem>
+  <demoitem>
+    <source>ReadMessagesFromULOGFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex16393978</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1689846288">flight.ulg</file>
+  </demoitem>
+  <demoitem>
+    <source>SubscribeToMAVLinkTopicExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex18164938</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>SimulateASimpleUAVScenarioExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex18842445</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>SimulateUAVMissionInUrbanEnvironmentExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex20192436</metadata>
+    <thumbnail>html/SimulateUAVMissionInUrbanEnvironmentExample_02.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1735830655">mSimulateMultirotorMission.slx</file>
+    <file component="uav" timestamp="1735830655">orbitexample.plan</file>
+  </demoitem>
+  <demoitem>
+    <source>DesignUAVScenarioExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex20532562</metadata>
+    <thumbnail>html/DesignUAVScenarioExample_13.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>aeroblks</product>
+    <product>stateflow</product>
+    <product>simulink</product>
+    <file component="uav" timestamp="1644833955">BasicScenario.mat</file>
+    <file component="uav" timestamp="1768217050">PhysicsModel.slx</file>
+    <file component="uav" timestamp="1644833955">buildingTemplates.mat</file>
+    <file component="uav" timestamp="1644833955">customPackageDelivery.sldd</file>
+    <file component="uav" timestamp="1644833955">customizedScenario.mat</file>
+    <file component="uav" timestamp="1644833955">customScenarioPipeline.slx</file>
+    <file component="uav" timestamp="1644833955">initializeScenarioParams.m</file>
+  </demoitem>
+  <demoitem>
+    <source>GenerateGustWindInUAVScenarioExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex21198872</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateRadarDetectionsInUAVScenarioExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex22770593</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>radar</product>
+  </demoitem>
+  <demoitem>
+    <source>ParseAndUseMAVLinkDialectExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex25340047</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>SemanticSegmentationOfOrthophotosExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex25679566</metadata>
+    <thumbnail>html/SemanticSegmentationOfOrthophotosExample_04.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>vision</product>
+    <product>nnet</product>
+    <product>images</product>
+    <file component="uav" timestamp="1689693846">exampleHelperPixelLabelColorbar.m</file>
+    <file component="uav" timestamp="1689693846">exampleHelperSortFilepathsByIndex.m</file>
+    <file component="uav" timestamp="1689693846">exampleHelperCategoricalToClassIndex.m</file>
+    <file component="uav" timestamp="1688572493">exampleHelperMakeFolder.m</file>
+    <file component="uav" timestamp="1689693846">exampleHelperDownloadData.m</file>
+  </demoitem>
+  <demoitem>
+    <source>CreateUAVMissionManuallyExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex25776639</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateRandom3DOccupancyMapForUAVMotionPlanningExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex27342544</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>nav</product>
+  </demoitem>
+  <demoitem>
+    <source>VisualizeUAVTrajectoryWithCesiumExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex29428828</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1714057460">ScenarioTrajectoryinCesium.slx</file>
+  </demoitem>
+  <demoitem>
+    <source>AeroEstimationUsingFlightLogDataExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex30985288</metadata>
+    <thumbnail>html/AeroEstimationUsingFlightLogDataExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>sldo</product>
+    <file component="uav" timestamp="1654091053">License.txt</file>
+    <file component="uav" timestamp="1654082675">quadrotor_model.ulg</file>
+    <file component="uav" timestamp="1655477064">RotorDragMoment.slx</file>
+    <file component="uav" timestamp="1655477064">ThrustForceModel.slx</file>
+    <file component="uav" timestamp="1655312574">aeroParameters.sldd</file>
+    <file component="uav" timestamp="1655312574">flightdata_spesession.mat</file>
+    <file component="uav" timestamp="1655477064">normalizeActuators.m</file>
+    <file component="uav" timestamp="1655477064">parameterEstimationQuadrotorDynamics.m</file>
+    <file component="uav" timestamp="1655312574">parameterEstimation_QuadrotorDynamics_Data.mat</file>
+    <file component="uav" timestamp="1715768194">UAVQuadDynamics.slx</file>
+    <file component="uav" timestamp="1655477064">exampleHelperFetchData.m</file>
+    <file component="uav" timestamp="1655477064">exampleHelperFetchSignalDataULog.m</file>
+    <file component="uav" timestamp="1655477064">exampleHelperRawData.m</file>
+    <file component="uav" timestamp="1685557791">exampleHelperSlerpData.m</file>
+    <file component="uav" timestamp="1657029956">tunedParams.mat</file>
+    <file component="uav" timestamp="1684857807">exportedSignals.mat</file>
+  </demoitem>
+  <demoitem>
+    <source>IntroductionToKalmanFilterForUAVLocalizationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex31687339</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>TuningWaypointFollowerForFixedWingUAVExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex32362248</metadata>
+    <thumbnail>html/TuningWaypointFollowerForFixedWingUAVExample_03.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>simulink</product>
+    <file component="uav" timestamp="1735830852">fixedWingPathFollowing.slx</file>
+    <file component="uav" timestamp="1735830852">fixedWingPathFollowingData.sldd</file>
+    <file component="uav" timestamp="1735830852">uavStepResponse.slx</file>
+    <file component="uav" timestamp="1735830852">uavStepResponseData.sldd</file>
+  </demoitem>
+  <demoitem>
+    <source>IdentifyBarometerNoiseParametersFromFlightLogDataExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex32784540</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>ident</product>
+    <file component="uav" timestamp="1732624501">sampleLogBarometerExample.ulg</file>
+  </demoitem>
+  <demoitem>
+    <source>SimulateIMUSensorMountedOnUAVExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex33957520</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>nav</product>
+    <file component="uav" timestamp="1603738273">uavIMU.m</file>
+  </demoitem>
+  <demoitem>
+    <source>AnimateMultipleUAVUsingDynamicMeshExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex34695656</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1713342592">multipleUAVAnimationModel.slx</file>
+  </demoitem>
+  <demoitem>
+    <source>VTOLUAVBatterySizingForMissionOverAnUrbanEnvironmentExample</source>
+    <project cmSystem="" component="uav" type="main">VTOLApp</project>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex34893200</metadata>
+    <thumbnail>html/VTOLUAVBatterySizingForMissionOverAnUrbanEnvironmentExample_12.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>simulink</product>
+    <product>aeroblks</product>
+    <product>aero</product>
+    <product>control</product>
+    <product>stateflow</product>
+    <product>simscapebattery</product>
+    <product>sdl</product>
+    <product>simscapeelectrical</product>
+  </demoitem>
+  <demoitem>
+    <source>AnalyzeUAVFlightLogDataUsingFlightLogAnalyzerAppExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex35969360</metadata>
+    <thumbnail>html/AnalyzeUAVFlightLogDataUsingFlightLogAnalyzerAppExample_04.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1610356643">getTable.m</file>
+    <file component="uav" timestamp="1610356643">getTime.m</file>
+    <file component="uav" timestamp="1610356643">getModeValue.m</file>
+    <file component="uav" timestamp="1624358460">flight.ulg</file>
+  </demoitem>
+  <demoitem>
+    <source>AnnotateFlightLogSignalsWithCustomFunctionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex36392324</metadata>
+    <thumbnail>html/AnnotateFlightLogSignalsWithCustomFunctionExample_07.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1655446485">ThresholdSignalValue.m</file>
+    <file component="uav" timestamp="1624358460">flight.ulg</file>
+  </demoitem>
+  <demoitem>
+    <source>TuneControlDesignForUAVInTransitionExample</source>
+    <project cmSystem="" component="uav" type="main">VTOLApp</project>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex38880491</metadata>
+    <thumbnail>html/TuneControlDesignForUAVInTransitionExample_08.png</thumbnail>
+    <sandboxPublished/>
+    <product>uav</product>
+    <product>simulink</product>
+    <product>aeroblks</product>
+    <product>aero</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePointCloudsFromMeshExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex41905698</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>SimulatingMultipleUAVsInSimulinkUsingSystemObjectBlocksExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex44097567</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1728631481">formationFlightSimulation.slx</file>
+    <file component="uav" timestamp="1731929109">formationFlightSimulationData.sldd</file>
+    <file component="uav" timestamp="1721128371">multiFixedwingDerivative.m</file>
+    <file component="uav" timestamp="1721128371">multiWaypointFollower.m</file>
+    <file component="uav" timestamp="1721128371">exampleHelperMultiUAVSetupScript.m</file>
+  </demoitem>
+  <demoitem>
+    <source>GenerateHeadingAndYawCommandsForOrbitFollowingInSimulinkExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex46562204</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1617307044">uav_orbit_follower_ex1.slx</file>
+  </demoitem>
+  <demoitem>
+    <source>SimulateUAVsUsingMultiInstanceGuidanceModelExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex46601764</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1737964591">reducedOrderMultiUAVModel.slx</file>
+  </demoitem>
+  <demoitem>
+    <source>AddAndRemoveMAVLinkSigningChannelsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex47187212</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1670617222">keys.env</file>
+  </demoitem>
+  <demoitem>
+    <source>TuneControllerVFH3DAlgorithmExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex47601066</metadata>
+    <thumbnail>html/TuneControllerVFH3DAlgorithmExample_03.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1658149594">exampleHelperAccControl.m</file>
+    <file component="uav" timestamp="1658149594">exampleHelperDerivative.m</file>
+  </demoitem>
+  <demoitem>
+    <source>SimulateUAVScenarioUsingScenarioBlocksExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex48094308</metadata>
+    <thumbnail>html/SimulateUAVScenarioUsingScenarioBlocksExample_11.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>simulink</product>
+    <file component="uav" timestamp="1625792187">UAVScenarioModel.slx</file>
+  </demoitem>
+  <demoitem>
+    <source>PX4HITLSimulationWithVTOLTiltRotorSimulinkExample</source>
+    <project cmSystem="" component="uav" type="main">VTOLApp</project>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex48243755</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>aeroblks</product>
+    <product>ecoder</product>
+    <product>nav</product>
+    <product>simulinkcoder</product>
+    <product>stateflow</product>
+    <product>simulink</product>
+    <product>px4</product>
+  </demoitem>
+  <demoitem>
+    <source>ModifyConnectionTypesForUAVDubinsConnectionPathExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex48954035</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>AddStaticMeshFromSTLFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex49765062</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePressureFromAltitudeSLExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex50188475</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>aeroblks</product>
+    <file component="uav" timestamp="1731055153">barometerSimulation.slx</file>
+  </demoitem>
+  <demoitem>
+    <source>GenerateTurbulenceWindInUAVScenarioExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex50221425</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>SimulateTiltRotorUAVExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex50593793</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>sl3d</product>
+    <file component="uav" timestamp="1735207052">tiltRotorUAVModel.slx</file>
+  </demoitem>
+  <demoitem>
+    <source>VisualizeAUAVScenarioIn2DExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex50626034</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>SimulateUAVScenarioTrajectoryInUnrealEngineEnvironmentExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex51542167</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1713362766">ScenarioTrajectoryinUE.slx</file>
+  </demoitem>
+  <demoitem>
+    <source>VisualizeAndCalculateUAVDistancesInFormationFlightExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex51620901</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>FlightInstrumentGaugeVisualizationForADroneExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex51755380</metadata>
+    <thumbnail>html/FlightInstrumentGaugeVisualizationForADroneExample_03.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>aero</product>
+    <product>aeroblks</product>
+    <file component="uav" timestamp="1735830988">dronegauges.slx</file>
+    <file component="uav" timestamp="1735830988">helperInstrumentVisualization.m</file>
+    <file component="uav" timestamp="1735830988">helperDroneInstruments.m</file>
+    <file component="uav" timestamp="1735830988">pa24-250_orange.ac</file>
+    <file component="uav" timestamp="1735830988">astFlightInstrumentPanel.png</file>
+    <file component="uav" timestamp="1735830988">staticCameraPosition.m</file>
+    <file component="uav" timestamp="1735830988">helperExtractUnmappedData.m</file>
+  </demoitem>
+  <demoitem>
+    <source>ExecuteCoveragePlanUsingUAVMissionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex52383265</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1674505713">exampleHelperSimulateUAVMission.m</file>
+  </demoitem>
+  <demoitem>
+    <source>UAVInflightFailureRecoveryExample</source>
+    <project cmSystem="" component="uav" type="main">scdUAVInflightFailureRecovery</project>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex53542643</metadata>
+    <thumbnail>html/UAVInflightFailureRecoveryExample_11.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>aeroblks</product>
+    <product>aero</product>
+    <product>nav</product>
+    <product>stateflow</product>
+    <product>simulink</product>
+    <product>control</product>
+  </demoitem>
+  <demoitem>
+    <source>SimulateTurbulenceEffectOnQuadrotorUsingCETIExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex54076861</metadata>
+    <thumbnail>html/SimulateTurbulenceEffectOnQuadrotorUsingCETIExample_04.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>simulink</product>
+    <product>ident</product>
+    <file component="uav" timestamp="1736515231">ExampleQuadrotorCETI.slx</file>
+  </demoitem>
+  <demoitem>
+    <source>ConnectPosesUsingUAVDubinsConnectionPathExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex54422585</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>SimulateFlightPlanInRealWorldUsingCesiumExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex55802125</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1713793961">Survey_FlightPlan.plan</file>
+    <file component="uav" timestamp="1734610365">FlightPlaninCesium.slx</file>
+  </demoitem>
+  <demoitem>
+    <source>VisualizeCoordinateFramesInUAVScenarioExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex57058776</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>CustomSignalMappingInFlightLogAnalyzerAppExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex58837994</metadata>
+    <thumbnail>html/CustomSignalMappingInFlightLogAnalyzerAppExample_03.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1624358460">flight.ulg</file>
+  </demoitem>
+  <demoitem>
+    <source>MissionAndParameterProtocolInSimulinkExample</source>
+    <type>model</type>
+    <extension>m</extension>
+    <file>html/MissionAndParameterProtocolInSimulinkExample.html</file>
+    <metadata>ex58888910</metadata>
+    <thumbnail>html/MissionAndParameterProtocolInSimulinkExample_01.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>simulink</product>
+    <product>stateflow</product>
+    <product>instrument</product>
+    <file component="uav" open="open" timestamp="1603351392">MissionAndParameterProtocolUsingMAVLink.slx</file>
+    <file component="uav" timestamp="1594819701">exampleHelperMAVLinkParamProtocol.m</file>
+    <file component="uav" timestamp="1594819701">exampleHelperMAVLinkMissionAndParamProtocol.m</file>
+    <file component="uav" timestamp="1594820458">MissionProtocol.plan</file>
+    <file component="uav" timestamp="1594833271">uav_mavlink_receiveudp.png</file>
+    <file component="uav" timestamp="1594833271">uav_mavlink_stateflow1.png</file>
+    <file component="uav" timestamp="1594833271">uav_mavlink_uploadmission.png</file>
+    <file component="uav" timestamp="1594833271">uav_mavlink_parameterread.png</file>
+    <file component="uav" timestamp="1594920207">uav_mavlink_parameterwrite.png</file>
+    <file component="uav" timestamp="1594833271">uav_mavlink_viewreceivedparam.png</file>
+    <file component="uav" timestamp="1603351392">uav_mavlink_qgc1.png</file>
+    <file component="uav" timestamp="1603351392">uav_mavlink_qgc2.png</file>
+    <file component="uav" timestamp="1603351392">uav_mavlink_qgc3.png</file>
+    <file component="uav" timestamp="1595002091">uav_mavlink_qgc4.png</file>
+    <file component="uav" timestamp="1594833271">uav_mavlink_latitude_longitude.png</file>
+    <file component="uav" timestamp="1595002091">uav_mavlink_upload_required.png</file>
+    <file component="uav" timestamp="1594986099">uav_mavlink_latitude_longitude_changed.png</file>
+    <file component="uav" timestamp="1594986099">uav_mavlink_qgc_parameters_other.png</file>
+    <file component="uav" timestamp="1594833271">uav_mavlink_qgc_parameters_modifytwo.png</file>
+    <file component="uav" timestamp="1594833271">uav_mavlink_readmodified_parameters.png</file>
+  </demoitem>
+  <demoitem>
+    <source>SimulateFlightScenarioUsingSuburbanSceneInUnrealEngineExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex59349382</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1660906529">uavSuburbanScene.slx</file>
+  </demoitem>
+  <demoitem>
+    <source>MotionPlanningWithRRTForAFixedWingUAVExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex59732171</metadata>
+    <thumbnail>html/MotionPlanningWithRRTForAFixedWingUAVExample_03.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>nav</product>
+    <file component="uav" timestamp="1591702175">ExampleHelperUAVStateSpace.m</file>
+    <file component="uav" timestamp="1591702175">exampleHelperHeadingControl.m</file>
+    <file component="uav" timestamp="1594368521">exampleHelperSimulateUAV.m</file>
+    <file component="uav" timestamp="1591702175">exampleHelperUAVDerivatives.m</file>
+    <file component="uav" timestamp="1591702175">uavMapCityBlock.mat</file>
+  </demoitem>
+  <demoitem>
+    <source>InterpolatePosesForUAVDubinsPathExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex60659058</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>FindThePosesOfTargetUAVAndMeshInAUAVScenarioExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex64073155</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>TuneUAVParametersUsingMAVLinkParameterProtocolExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex64766354</metadata>
+    <thumbnail>html/TuneUAVParametersUsingMAVLinkParameterProtocolExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1701967576">exampleHelperMAVParamProtocol.m</file>
+    <file component="uav" timestamp="1588109334">exampleHelperMAVParamTable.m</file>
+  </demoitem>
+  <demoitem>
+    <source>SimulateAFixedWingControlCommandExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex65089265</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>WorkWithMAVLinkConnectionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex68219593</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>AddMeshesToUAVScenarioExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex68397297</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>OrthomosaicCreationByImageStitchingExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex70045726</metadata>
+    <thumbnail>html/OrthomosaicCreationByImageStitchingExample_18.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>images</product>
+    <product>vision</product>
+    <product>nnet</product>
+    <file component="uav" timestamp="1689693993">exampleHelperCategoricalToClassIndex.m</file>
+    <file component="uav" timestamp="1689693993">exampleHelperMakeFolder.m</file>
+    <file component="uav" timestamp="1689693993">exampleHelperPixelLabelColorbar.m</file>
+    <file component="uav" timestamp="1689693993">exampleHelperSortFilepathsByIndex.m</file>
+    <file component="uav" timestamp="1689693993">exampleHelperDownloadData.m</file>
+    <file component="uav" timestamp="1689693993">exampleHelperComputeImageCornerPoints.m</file>
+    <file component="uav" timestamp="1689693993">exampleHelperComputeImagePadding.m</file>
+    <file component="uav" timestamp="1689693993">exampleHelperSyncImagePadding.m</file>
+  </demoitem>
+  <demoitem>
+    <source>AddAndRemoveWindModelObjectsFromUAVPlatformExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex70442830</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>SimulateAMultirotorControlCommandExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex70922959</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>CreateSessionAndAddToScenarioExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex71223103</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>VisualizeAndPlaybackMAVLinkFlightLogExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex72628129</metadata>
+    <thumbnail>html/VisualizeAndPlaybackMAVLinkFlightLogExample_01.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1588106565">mavlink_flightlog.tlog</file>
+  </demoitem>
+  <demoitem>
+    <source>SimulateUAVWaypointFollowingWithDifferentWindConditionsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex72757391</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>aeroblks</product>
+    <product>aero</product>
+    <file component="uav" timestamp="1701790885">simulateUAVWaypointFollowingWithWind.slx</file>
+    <file component="uav" timestamp="1701790885">simulateUAVWaypointFollowingWithWind.sldd</file>
+  </demoitem>
+  <demoitem>
+    <source>StoreMAVLinkClientInformationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex73673923</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>SpecifyMotionTypeForUAVDubinsPathExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex76195918</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>PlanCoveragePathUsingGeodeticCoordinatesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex76967315</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>OrthophotoComputationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex77357109</metadata>
+    <thumbnail>html/OrthophotoComputationExample_02.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <file component="uav" timestamp="1689693447">exampleHelperGetOrthoFromPers.m</file>
+    <file component="uav" timestamp="1689693447">exampleHelperGetOrthoPos.m</file>
+    <file component="uav" timestamp="1689693059">exampleHelperMakeFolder.m</file>
+    <file component="uav" timestamp="1689693447">exampleHelperDownloadData.m</file>
+  </demoitem>
+  <demoitem>
+    <source>Create3DVectorFieldHistogramObjectAndVisualizeDataExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex77994777</metadata>
+    <thumbnail>html/Create3DVectorFieldHistogramObjectAndVisualizeDataExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>ApproximateHighFidelityUAVModelWithUAVGuidanceModelBlockExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex78582327</metadata>
+    <thumbnail>html/ApproximateHighFidelityUAVModelWithUAVGuidanceModelBlockExample_06.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>aeroblks</product>
+    <product>aero</product>
+    <product>control</product>
+    <product>simulink</product>
+    <file component="uav" timestamp="1768219187">FixedWingModel.slx</file>
+    <file component="uav" timestamp="1591664347">mbdriLib.slx</file>
+    <file component="uav" timestamp="1591707406">pathFollowing.slx</file>
+    <file component="uav" timestamp="1591664372">pathFollowingData.sldd</file>
+    <file component="uav" timestamp="1591664383">PlantModel.slx</file>
+    <file component="uav" timestamp="1591664400">stepResponse.slx</file>
+    <file component="uav" timestamp="1591664409">stepResponseData.sldd</file>
+    <file component="uav" timestamp="1591664417">visualizeSimStates.m</file>
+    <file component="uav" timestamp="1716547989">approx_thumbnail.png</file>
+  </demoitem>
+  <demoitem>
+    <source>SurveyUsingCoveragePlannerExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex79629458</metadata>
+    <thumbnail>html/SurveyUsingCoveragePlannerExample_05.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1674829340">helperLandSelectionFcn.m</file>
+    <file component="uav" timestamp="1674829340">helperPolygonSelectionFcn.m</file>
+    <file component="uav" timestamp="1674829340">helperTakeoffSelectionFcn.m</file>
+    <file component="uav" timestamp="1674829340">predefinedROI.mat</file>
+    <file component="uav" timestamp="1674829340">helperPlotTakeoffROILanding.m</file>
+  </demoitem>
+  <demoitem>
+    <source>VisualizeVTOLHITLFlightMissionOverUrbanEnvironmentExample</source>
+    <project cmSystem="" component="uav" type="main">VTOLApp</project>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex79677014</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>simulink</product>
+    <product>aeroblks</product>
+    <product>ecoder</product>
+    <product>nav</product>
+    <product>sl3d</product>
+    <product>simulinkcoder</product>
+    <product>px4</product>
+    <product>stateflow</product>
+    <product>instrument</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateFlightTrajectoryForUAVMissionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex80149101</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>ReadMessagesFromMAVLinkTLOGFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex80183429</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1588106565">mavlink_flightlog.tlog</file>
+  </demoitem>
+  <demoitem>
+    <source>CreateAndSimulationUAVScenarioExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex80626513</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>CreateSignedMessagesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex80845348</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1672926078">keys.env</file>
+  </demoitem>
+  <demoitem>
+    <source>ImportUAVScenarioWithPolynomialTrajectoryExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex83454111</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>SurveyUrbanEnvironmentUsingUAVExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex83783957</metadata>
+    <thumbnail>html/SurveyUrbanEnvironmentUsingUAVExample_06.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1693905816">mSurveyUrbanEnvironment.slx</file>
+    <file component="uav" timestamp="1657122480">exampleHelperComputeAndShowUAVTrajectory.m</file>
+    <file component="uav" timestamp="1655106172">USCityBlock.jpg</file>
+    <file component="uav" timestamp="1693905816">USCityBlockSpatialReference.mat</file>
+  </demoitem>
+  <demoitem>
+    <source>CustomizeVTOLConfigurationForYourApplicationExample</source>
+    <project cmSystem="" component="uav" type="main">VTOLApp</project>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex84519249</metadata>
+    <thumbnail>html/CustomizeVTOLConfigurationForYourApplicationExample_01.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>simulinktest</product>
+    <product>aeroblks</product>
+    <product>aero</product>
+    <product>control</product>
+    <product>stateflow</product>
+    <product>simulink</product>
+  </demoitem>
+  <demoitem>
+    <source>TuneControlDesignForUAVInFixedWingFlightExample</source>
+    <project cmSystem="" component="uav" type="main">VTOLApp</project>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex84751165</metadata>
+    <thumbnail>html/TuneControlDesignForUAVInFixedWingFlightExample_04.png</thumbnail>
+    <sandboxPublished/>
+    <product>uav</product>
+    <product>control</product>
+    <product>aeroblks</product>
+    <product>aero</product>
+    <product>simulink</product>
+    <product>slcontrol</product>
+  </demoitem>
+  <demoitem>
+    <source>PIDAutotuningMultirotorExample</source>
+    <project cmSystem="" component="uav" type="main">scdUAVPIDAutotuning</project>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex85460161</metadata>
+    <thumbnail>html/PIDAutotuningMultirotorExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>control</product>
+    <product>aeroblks</product>
+    <product>aero</product>
+    <product>nav</product>
+    <product>stateflow</product>
+    <product>simulink</product>
+  </demoitem>
+  <demoitem>
+    <source>CreateTrajectoryAndSimulateScenarioExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex86050597</metadata>
+    <thumbnail>html/CreateTrajectoryAndSimulateScenarioExample_09.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>AddTerrainAndBuildingsToUAVScenarioExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex86356439</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>AddCustomFunctionsInFlightLogAnalyzerAppForAnalysisExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex86742271</metadata>
+    <thumbnail>html/AddCustomFunctionsInFlightLogAnalyzerAppForAnalysisExample_06.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1658197060">ComputeTrackingError.m</file>
+    <file component="uav" timestamp="1624358460">flight.ulg</file>
+  </demoitem>
+  <demoitem>
+    <source>SimulateRadarSensorMountedOnUAVExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex87116185</metadata>
+    <thumbnail>html/SimulateRadarSensorMountedOnUAVExample_02.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>radar</product>
+    <file component="uav" timestamp="1685630995">ExampleHelperUAVRadar.m</file>
+  </demoitem>
+  <demoitem>
+    <source>AddAndRemoveMAVLinkKeysExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex87870871</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1672926078">keys.env</file>
+  </demoitem>
+  <demoitem>
+    <source>DesignAndTuneControllerForVTOLUAVExample</source>
+    <project cmSystem="" component="uav" type="main">VTOLApp</project>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex89168008</metadata>
+    <thumbnail>html/DesignAndTuneControllerForVTOLUAVExample_01.png</thumbnail>
+    <product>uav</product>
+    <product>aeroblks</product>
+    <product>aero</product>
+    <product>simulink</product>
+  </demoitem>
+  <demoitem>
+    <source>VisualizeVTOLFlightMissionOverUrbanEnvironmentExample</source>
+    <project cmSystem="" component="uav" type="main">VTOLApp</project>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex89889968</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>stateflow</product>
+    <product>aeroblks</product>
+    <product>control</product>
+    <product>sl3d</product>
+  </demoitem>
+  <demoitem>
+    <source>ValidateMultirotorUAVModelByPlayingBackFlightLogExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex89917558</metadata>
+    <thumbnail>html/ValidateMultirotorUAVModelByPlayingBackFlightLogExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>simulink</product>
+    <product>aeroblks</product>
+    <product>aero</product>
+    <product>px4</product>
+    <file component="uav" timestamp="1687188958">exampleHelperSlerpData.m</file>
+    <file component="uav" timestamp="1687188958">mMultirotorPlantDataDictionary.sldd</file>
+    <file component="uav" timestamp="1729854517">mMultirotorPlantModel.slx</file>
+    <file component="uav" timestamp="1729854517">mPlaybackFlightLogToSimulatedUAV.slx</file>
+    <file component="uav" timestamp="1729854517">mQuadcopterAttitudeController.slx</file>
+    <file component="uav" timestamp="1729854517">mStablizedModeController.slx</file>
+    <file component="uav" timestamp="1687188958">pitchTracking.ulg</file>
+    <file component="uav" timestamp="1687188958">rollTracking.ulg</file>
+    <file component="uav" timestamp="1687188958">rollTrackingDeployed.ulg</file>
+    <file component="uav" timestamp="1687188958">FFTGyro450ProCarbonDataSheetLicense.txt</file>
+    <file component="uav" timestamp="1687188958">UVifyIFO-SSpecDataSetLicense.txt</file>
+  </demoitem>
+  <demoitem>
+    <source>AutomateTestingForUAVPackageDeliveryExample</source>
+    <project cmSystem="" component="uav" type="main" reference="uavPackageDelivery">verifications</project>
+    <project cmSystem="" component="uav" type="reference">uavPackageDelivery</project>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex91135820</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>slrequirements</product>
+    <product>simulinktest</product>
+    <product>simulink</product>
+    <product>aeroblks</product>
+    <product>aero</product>
+    <product>control</product>
+    <product>nav</product>
+    <product>stateflow</product>
+  </demoitem>
+  <demoitem>
+    <source>UAVObstacleAvoidanceInSimulinkExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex91594183</metadata>
+    <thumbnail>html/UAVObstacleAvoidanceInSimulinkExample_10.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1628489262">ObstacleAvoidanceDemo.slx</file>
+  </demoitem>
+  <demoitem>
+    <source>PlanMinimumSnapTrajectoryForQuadrotorExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex92007491</metadata>
+    <thumbnail>html/PlanMinimumSnapTrajectoryForQuadrotorExample_04.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>nav</product>
+    <file component="uav" timestamp="1623756123">uavMapCityBlock.mat</file>
+    <file component="uav" timestamp="1628511729">exampleHelperMapStatesToPathSegments.m</file>
+  </demoitem>
+  <demoitem>
+    <source>TuneControlDesignForUAVInHoverExample</source>
+    <project cmSystem="" component="uav" type="main">VTOLApp</project>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex94351902</metadata>
+    <thumbnail>html/TuneControlDesignForUAVInHoverExample_07.png</thumbnail>
+    <product>uav</product>
+    <product>control</product>
+    <product>aeroblks</product>
+    <product>aero</product>
+    <product>simulink</product>
+    <product>slcontrol</product>
+  </demoitem>
+  <demoitem>
+    <source>SimulateHeadwindGustOnFixedWingUAVExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex95066985</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>VisualizeVTOLUAVTakeoffAndTransitionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex95338379</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>sl3d</product>
+    <file component="uav" timestamp="1734693042">VTOLUAVTakeoffModel.slx</file>
+  </demoitem>
+  <demoitem>
+    <source>GenerateAirPressureReadingFromAltitudeExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex95453764</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>aero</product>
+  </demoitem>
+  <demoitem>
+    <source>PlanCoveragePathForDefinedRegionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex96205295</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1666891726">exampleHelperPlotTakeoffLandingLegend.m</file>
+  </demoitem>
+  <demoitem>
+    <source>UAVScenarioTutorialExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex96217917</metadata>
+    <thumbnail>html/UAVScenarioTutorialExample_02.png</thumbnail>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1680084659">buildingData.mat</file>
+    <file component="uav" timestamp="1680084659">flightData.mat</file>
+  </demoitem>
+  <demoitem>
+    <source>ImportOSMBuildingMeshesOrTerrainIntoUAVScenarioExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex96615184</metadata>
+    <thumbnail>html/ImportOSMBuildingMeshesOrTerrainIntoUAVScenarioExample_02.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>TuneHoverControlDesignForVTOLUAVInSteadyWindConditionExample</source>
+    <project cmSystem="" component="uav" type="main">VTOLApp</project>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex97372828</metadata>
+    <product>uav</product>
+    <product>control</product>
+    <product>aeroblks</product>
+    <product>aero</product>
+    <product>simulink</product>
+    <product>slcontrol</product>
+  </demoitem>
+  <demoitem>
+    <source>AddAnIntertialFrameToUAVScenarioExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex97984164</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+  </demoitem>
+  <demoitem>
+    <source>VisualizeCustomFlightLogExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex98167492</metadata>
+    <thumbnail>html/VisualizeCustomFlightLogExample_01.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>uav</product>
+    <file component="uav" timestamp="1588099519">customFlightData.mat</file>
+  </demoitem>
+  <demoitem>
+    <source>MapEnvironmentForMotionPlanningUsingUAVLidarExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex99181635</metadata>
+    <product>matlab</product>
+    <product>uav</product>
+    <product>nav</product>
+  </demoitem>
+</demos>
