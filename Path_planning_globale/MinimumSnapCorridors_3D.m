@@ -1,5 +1,5 @@
 function MinimumSnapCorridors_3D()
-    clear, clc, close all;
+    clc, close all;
 
     disp('Caricamento dati (Mappa e Waypoints)...');
     % 1. CARICAMENTO DATI
