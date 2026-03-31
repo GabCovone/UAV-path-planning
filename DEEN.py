@@ -5,10 +5,12 @@ import h5py
 from torch.utils.data import Dataset, DataLoader
 import os # Importato per gestire il salvataggio dei file
 
+#stato = voxel: 1000, velocità lineare: 3, velocità angolare: 3, orientamento: 4 utilizzo dei quaternioni per efficienza
+input_dim = 2024 #(1010 stato attuale + 4 motori + 1010 stato successivo)
+
 # 1. DEEN
 class DEEN_Network(nn.Module):
-    # input_dim = 2009 (1003 stato attuale + 3 azione + 1003 stato successivo)
-    def __init__(self, input_dim=2009, dropout_rate=0.2):
+    def __init__(self, input_dim, dropout_rate=0.2):
         super().__init__()
         
         self.net = nn.Sequential(
@@ -59,8 +61,7 @@ def deen_loss_function(ebm_model, x_clean, sigma=0.1):
 
 # 3. SETUP DI ADDESTRAMENTO
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-# Assicuriamoci che l'input_dim sia 2009 qui!
-model = DEEN_Network(input_dim=2009, dropout_rate=0.2).to(device)
+model = DEEN_Network(input_dim, dropout_rate=0.2).to(device)
 
 optimizer = optim.AdamW(model.parameters(), lr=1e-3, weight_decay=1e-4)
 
@@ -118,7 +119,7 @@ class DroneVoxelDataset(Dataset):
     def __init__(self, h5_filepath):
         print(f"Caricamento dataset da {h5_filepath}...")
         with h5py.File(h5_filepath, 'r') as f:
-            # Ricorda di controllare che la matrice MATLAB sia effettivamente di dimensione (N, 2009)
+            # Ricorda di controllare che la matrice MATLAB sia effettivamente di dimensione (N, input_dim)
             dati_numpy = f['transitions'][:]
             
         self.data = torch.tensor(dati_numpy, dtype=torch.float32)
@@ -139,8 +140,7 @@ class DroneVoxelDataset(Dataset):
 def esporta_in_onnx(model, nome_file="deen_addestrato.onnx"):
     model.eval() 
     
-    # Input_dim aggiornato a 2009
-    dummy_input = torch.randn(1, 2009, requires_grad=True).to(device)
+    dummy_input = torch.randn(1, input_dim, requires_grad=True).to(device)
     
     print(f"Esportazione del modello in {nome_file}...")
     
