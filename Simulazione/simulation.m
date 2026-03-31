@@ -18,8 +18,14 @@ end
 sim_pos_des = timeseries(ground_truth_trajectory, t_sim);
 sim_vel_des = timeseries(ground_truth_velocities, t_sim);
 
-% Imbardata fissa a 0 (Il drone non ruota su se stesso)
-sim_yaw_des = timeseries(zeros(length(t_sim), 1), t_sim); 
+% 1. Calcoliamo l'angolo di imbardata (Yaw) in radianti usando le velocità X e Y
+yaw_dinamico = atan2(ground_truth_velocities(:, 2), ground_truth_velocities(:, 1));
+
+% 2. Usiamo "unwrap" per evitare che il drone faccia giri strani su se stesso quando passa da 180° a -180°
+yaw_dinamico = unwrap(yaw_dinamico);
+
+% 3. Creiamo la nuova timeseries per Simulink
+sim_yaw_des = timeseries(yaw_dinamico, t_sim); 
 
 disp('Dati formattati per Simulink! Le variabili sim_pos_des, sim_vel_des e sim_yaw_des sono nel Workspace.');
 disp(['-> TEMPO DA INSERIRE IN SIMULINK (In alto al posto di 10.0): ', num2str(t_sim(end))]);
