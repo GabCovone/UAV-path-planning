@@ -40,9 +40,9 @@ vel = max(min(interp1(t_pos, vel_raw, t_query) / MAX_VEL, 1), -1);
 omg_raw = [simout.attitude.rollspeed_p.Data(idx_att), simout.attitude.pitchspeed_q.Data(idx_att), simout.attitude.yawspeed_r.Data(idx_att)];
 omg = max(min(interp1(t_att, omg_raw, t_query) / MAX_OMEGA, 1), -1);
 
-% Motori [-1, 1]
+% Motori [-1, 1] (Correzione scala -500/+500)
 mot_raw = motori(idx_mot, :);
-mot = (interp1(t_mot, mot_raw, t_query) / MAX_RPM) * 2 - 1;
+mot = max(min(interp1(t_mot, mot_raw, t_query) / 500.0, 1), -1);
 
 % Quaternioni Diretti (Interpolati e Rinormalizzati)
 quat_raw = quat_sim.Data(idx_quat, :);
