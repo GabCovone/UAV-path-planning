@@ -1,22 +1,22 @@
-clearvars
-close all
-
-disp('Inizializzazione simulatore urbano (8000x8000x8000)...');
+disp('Inizializzazione simulatore urbano (8000x8000x1000)...');
 tic
 
 % =========================================================================
 % 1. PARAMETRI DI BASE E PREALLOCAZIONE
 % =========================================================================
-x_max = 8000; y_max = 8000; z_max = 8000;
-frame_range = [x_max, y_max, z_max];
-numNodes = 30000; % Elevato numero di nodi per mappare la città gigante
+disp('Caricamento della città e dei punti strategici generati...');
+load('mappa_urbana.mat'); % Carica v, n_collision, q_start (1x3) e q_goal (1x3)
 
-% Partenza e Arrivo a 1 metro da terra
-q_start.coord = [0 0 1]; 
+start_vec = q_start; 
+goal_vec = q_goal;
+
+clear q_start q_goal
+
+q_start.coord = start_vec; 
 q_start.cost = 0;
 q_start.parent = 0;
 
-q_goal.coord = [6900 7360 1]; 
+q_goal.coord = goal_vec; 
 q_goal.cost = 0;
 
 % Preallocazione della memoria (evita il collasso della RAM)
@@ -24,26 +24,36 @@ nodes = repmat(q_start, 1, numNodes + 500);
 nodes(1) = q_start;
 node_count = 1;
 
-% =========================================================================
-% 2. GENERAZIONE PROCEDURALE DELLA CITTÀ
-% =========================================================================
-n_collision = 500;
-rng(42); % Fissa il seme per avere la stessa città ad ogni avvio (Dataset coerente)
-
-% Genera la città (vettorizzata e istantanea)
-[v, creat_center, lengthxyz] = generateCity(n_collision, x_max);
-
-% Calcolo dei centri esatti e dei raggi d'ingombro per la Repulsione Fisica (APF)
 exp_center.coord = [0 0 0];
 v_center = repmat(exp_center, 1, n_collision);
 v_r = zeros(1, n_collision);
-
 for num = 1:n_collision
     v_center(num).coord = [mean([min(v(:,1,num)), max(v(:,1,num))]), ...
                            mean([min(v(:,2,num)), max(v(:,2,num))]), ...
                            mean([min(v(:,3,num)), max(v(:,3,num))])];
     v_r(num) = dist_3d(v(1,:,num), v_center(num).coord);
 end
+
+% =========================================================================
+% 2. GENERAZIONE PROCEDURALE DELLA CITTÀ
+% =========================================================================
+%n_collision = 500;
+%rng(42); % Fissa il seme per avere la stessa città ad ogni avvio (Dataset coerente)
+
+% Genera la città (vettorizzata e istantanea)
+%[v, creat_center, lengthxyz] = generateCity(n_collision, x_max);
+
+% Calcolo dei centri esatti e dei raggi d'ingombro per la Repulsione Fisica (APF)
+%exp_center.coord = [0 0 0];
+%v_center = repmat(exp_center, 1, n_collision);
+%v_r = zeros(1, n_collision);
+
+%for num = 1:n_collision
+ %   v_center(num).coord = [mean([min(v(:,1,num)), max(v(:,1,num))]), ...
+  %                         mean([min(v(:,2,num)), max(v(:,2,num))]), ...
+   %                        mean([min(v(:,3,num)), max(v(:,3,num))])];
+    %v_r(num) = dist_3d(v(1,:,num), v_center(num).coord);
+%end
 
 % =========================================================================
 % 3. CICLO PRINCIPALE: APF-RRT* OTTIMIZZATO
@@ -203,7 +213,7 @@ view(30,30); axis equal; grid on; hold off;
 save('waypoints_estratti.mat', 'waypoints_pruned');
 disp('Waypoints salvati con successo in "waypoints_estratti.mat".');
 
-save('mappa_urbana.mat', 'v', 'n_collision', 'x_max', 'y_max', 'z_max');
+%save('mappa_urbana.mat', 'v', 'n_collision', 'x_max', 'y_max', 'z_max');
 disp('Mappa 3D salvata con successo in "mappa_urbana.mat".');
 
 % =========================================================================
