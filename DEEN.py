@@ -34,7 +34,7 @@ class DEEN_Network(nn.Module):
             nn.SiLU(),
             nn.Dropout(dropout_rate),
 
-            nn.Linear(512, 1)            # Output: Singolo scalare (Energia)
+            nn.Linear(128, 1)            # Output: Singolo scalare (Energia)
         )
 
     def forward(self, x):
