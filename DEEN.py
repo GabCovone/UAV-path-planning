@@ -29,6 +29,11 @@ class DEEN_Network(nn.Module):
             nn.SiLU(),
             nn.Dropout(dropout_rate),
             
+            nn.Linear(512, 128),
+            nn.LayerNorm(128),
+            nn.SiLU(),
+            nn.Dropout(dropout_rate),
+
             nn.Linear(512, 1)            # Output: Singolo scalare (Energia)
         )
 
@@ -121,6 +126,9 @@ class DroneVoxelDataset(Dataset):
         with h5py.File(h5_filepath, 'r') as f:
             # Ricorda di controllare che la matrice MATLAB sia effettivamente di dimensione (N, input_dim)
             dati_numpy = f['transitions'][:]
+
+            if dati_numpy.shape[0] == 2024:
+                dati_numpy = dati_numpy.T
             
         self.data = torch.tensor(dati_numpy, dtype=torch.float32)
         print(f"Dataset caricato! Totale campioni: {len(self.data)}")
@@ -131,10 +139,10 @@ class DroneVoxelDataset(Dataset):
     def __getitem__(self, idx):
         return self.data[idx]
 
-# --- ESECUZIONE (DA SCOMMENTARE QUANDO HAI I DATI) ---
-# dataset = DroneVoxelDataset('dataset_traiettorie_voxel.h5')
-# dataloader = DataLoader(dataset, batch_size=256, shuffle=True)
-# model = train_deen(model, dataloader, num_epochs=100, sigma=0.1, save_path="best_deen_weights.pth")
+# ESECUZIONE
+dataset = DroneVoxelDataset('dataset_traiettorie_voxel.h5')
+dataloader = DataLoader(dataset, batch_size=256, shuffle=True)
+model = train_deen(model, dataloader, num_epochs=100, sigma=0.1, save_path="best_deen_weights.pth")
 
 # 6. ESPORTAZIONE
 def esporta_in_onnx(model, nome_file="deen_addestrato.onnx"):
