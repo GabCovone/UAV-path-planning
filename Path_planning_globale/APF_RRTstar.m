@@ -7,6 +7,9 @@ tic
 disp('Caricamento della città e dei punti strategici generati...');
 load('mappa_urbana.mat'); % Carica v, n_collision, q_start (1x3) e q_goal (1x3)
 
+numNodes = 30000;
+frame_range = [x_max, y_max, z_max];
+
 start_vec = q_start; 
 goal_vec = q_goal;
 
