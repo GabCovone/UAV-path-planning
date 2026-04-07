@@ -1,7 +1,7 @@
 import h5py
 import numpy as np
 
-file_path = './../dataset_singola_citta.h5'
+file_path = './../dataset_singola_citta8.h5'
 
 print(f"🔍 Apertura del file: {file_path}...")
 
