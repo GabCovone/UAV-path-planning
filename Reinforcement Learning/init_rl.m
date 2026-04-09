@@ -1,4 +1,3 @@
-
 % È necessario che:
 % - Sia stata creata una traiettoria con il path planning
 % - Sia stato eseguito init_simulation.m per configurare Simulink
@@ -19,7 +18,7 @@ bounds.z_min = squeeze(min(v(:,3,:))); bounds.z_max = squeeze(max(v(:,3,:)));
 mdl = 'SAC_RL_env';
 agentBlk = [mdl, '/Inner Loop and Plant Model/High-FidelityModel/RL Agent']; % Assicurati che il nome del blocco coincida
 
-% Definisci le costanti del problema
+% Definizione costanti del problema
 numVoxels = 1000;
 numState = 10; % 3 vel + 3 omega + 4 quat
 numNominal = 7; % 3 pos + 3 vel + 1 yaw
@@ -30,13 +29,11 @@ Ts = 0.1; % Tempo di campionamento (10 Hz)
 % Spazio delle Osservazioni (Observation Space)
 obsInfo = rlNumericSpec([numObs 1]);
 obsInfo.Name = 'UAV_Observations';
-% Se vuoi, puoi definire i limiti inferiori e superiori delle osservazioni qui,
-% ma per i voxel (0 e 1) e gli stati normalizzati, i limiti infiniti vanno bene di default.
 
 % Spazio delle Azioni (Action Space) :
 % Deviazioni (Delta pos, Delta vel, Delta yaw)
 
-% Definiamo i limiti massimi delle deviazioni che l'agente può applicare
+% Limiti massimi sulle deviazioni
 max_delta_pos = 2.0;  % +/- 2 metri
 max_delta_vel = 1.0;  % +/- 1 m/s
 max_delta_yaw = 0.5;  % +/- 0.5 rad
@@ -51,30 +48,28 @@ actInfo.Name = 'Residual_Actions';
 env = rlSimulinkEnv(mdl, agentBlk, obsInfo, actInfo);
 
 function in = localResetFcn(in)
-    % Dichiara variabili che sopravvivono ai reset
+    % Dichiarazione variabili persistenti
     persistent DB_scenari scenario_corrente tentativi_attuali max_tentativi
     
-    % Inizializzazione al primissimo step (quando premi Train)
+    % Inizializzazione ad inizio training
     if isempty(DB_scenari)
         % Carica il file .mat pre-calcolato una volta sola
         data = load('training_scenarios.mat'); 
         DB_scenari = data.scenari; 
         
-        scenario_corrente = randi(length(DB_scenari)); % Scegli il primo a caso
+        scenario_corrente = randi(length(DB_scenari)); % Primo scenario casuale
         tentativi_attuali = 0;
-        max_tentativi = 10; % Quante volte può riprovare la stessa mappa
+        max_tentativi = 10; % Quante volte si può riprovare la stessa mappa
     end
     
-    % Controlla se dobbiamo cambiare mappa
-    % (In uno scenario reale, controlleresti anche se l'episodio precedente 
-    % è stato un successo, ma per ora basiamoci sui tentativi)
+    % Si valuta se cambiare scenario
     if tentativi_attuali >= max_tentativi
-        % Cambia città! Scegli un nuovo scenario casuale
+        % Si sceglie un nuovo scenario casuale
         scenario_corrente = randi(length(DB_scenari));
         tentativi_attuali = 0; % Resetta il contatore
     end
     
-    % Estrai i dati dello scenario da usare in questo episodio
+    % Si estraggono i dati dello scenario da usare in questo episodio
     scenario = DB_scenari(scenario_corrente);
     
     % Domain randomization, in forma di rumore sulla partenza
@@ -85,7 +80,7 @@ function in = localResetFcn(in)
     init_vel = [(rand()-0.5)*1.0; (rand()-0.5)*1.0; 0]; % +/- 0.5 m/s
     init_euler = [(rand()-0.5)*0.2; (rand()-0.5)*0.2; 0]; % Roll e Pitch non nulli
     
-    % Aggiorna il contatore dei tentativi
+    % Aggiornamento contatore dei tentativi
     tentativi_attuali = tentativi_attuali + 1;
     
     % Assegnazione variabili nel workspace
@@ -96,7 +91,7 @@ function in = localResetFcn(in)
     assignin('base', 'mappa_voxel_globale', scenario.mappa_voxel);
 end
 
-% Assegna all'ambiente la funzione di reset
+% Assegnazione all'ambiente della funzione di reset
 env.ResetFcn = @(in) localResetFcn(in);
 
 disp('✅ Ambiente Simulink creato con successo');
@@ -106,7 +101,6 @@ disp('✅ Ambiente Simulink creato con successo');
 hiddenLayerSize = 256; 
 
 % --- CRITIC NETWORKS (Q-Values: [Obs, Act] -> Q) ---
-% Creiamo una funzione per generare i Critic in modo pulito
 criticNetwork = [
     featureInputLayer(numObs, 'Normalization', 'none', 'Name', 'observation')
     fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticStateFC1')
@@ -133,7 +127,7 @@ criticNetwork = addLayers(criticNetwork, criticCommonPath);
 criticNetwork = connectLayers(criticNetwork, 'CriticStateFC2', 'add/in1');
 criticNetwork = connectLayers(criticNetwork, 'CriticActionFC1', 'add/in2');
 
-% Inizializza i due Critic identici
+% Inizializza due Critic identici
 criticOptions = rlOptimizerOptions('LearnRate', 1e-3, 'GradientThreshold', 1);
 critic1 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
     'ObservationInputNames', 'observation', 'ActionInputNames', 'action');
@@ -141,7 +135,7 @@ critic2 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
     'ObservationInputNames', 'observation', 'ActionInputNames', 'action');
 
 % --- ACTOR NETWORK (Policy: Obs -> Action Mean & Std) ---
-% SAC utilizza una policy gaussiana, quindi l'attore deve fornire media e deviazione standard.
+% SAC utilizza una policy gaussiana, quindi l'attore deve fornire media e deviazione standard
 actorNetwork = [
     featureInputLayer(numObs, 'Normalization', 'none', 'Name', 'observation')
     fullyConnectedLayer(hiddenLayerSize, 'Name', 'ActorFC1')
