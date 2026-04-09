@@ -2,8 +2,10 @@
 clear; clc;
 
 % Impostazioni
-num_scenari = 5; %50; % Numero di città/traiettorie da pre-calcolare
+num_scenari = 10; %50; % Numero di città/traiettorie da pre-calcolare
 scenari = struct(); % Si inizializza la struttura dati vuota
+
+num_dyn_obs = 4; % Numero di ostacoli dinamici
 
 disp(['Avvio generazione di ', num2str(num_scenari), ' scenari...']);
 
@@ -26,12 +28,16 @@ for i = 1:num_scenari
             
             % 4. Estrazione timeseries
             [sim_pos_des, sim_vel_des, sim_yaw_des] = estrai_timeseries(ground_truth_trajectory);
+
+            % 5. Creazione ostacoli dinamici
+            dynamic_obstacles = genera_ostacoli_dinamici(sim_pos_des, num_dyn_obs);
             
-            % 5. Salvataggio dei dati nella struttura
+            % 6. Salvataggio dei dati nella struttura
             scenari(i).map = map;
             scenari(i).sim_pos_des = sim_pos_des;
             scenari(i).sim_vel_des = sim_vel_des;
             scenari(i).sim_yaw_des = sim_yaw_des;
+            scenari(i).dynamic_obstacles = dynamic_obstacles;
         
         disp('✅ Scenario creato con successo.');
         else
