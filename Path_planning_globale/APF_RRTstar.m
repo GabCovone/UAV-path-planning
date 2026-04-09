@@ -38,28 +38,7 @@ for num = 1:n_collision
 end
 
 % =========================================================================
-% 2. GENERAZIONE PROCEDURALE DELLA CITTÀ
-% =========================================================================
-%n_collision = 500;
-%rng(42); % Fissa il seme per avere la stessa città ad ogni avvio (Dataset coerente)
-
-% Genera la città (vettorizzata e istantanea)
-%[v, creat_center, lengthxyz] = generateCity(n_collision, x_max);
-
-% Calcolo dei centri esatti e dei raggi d'ingombro per la Repulsione Fisica (APF)
-%exp_center.coord = [0 0 0];
-%v_center = repmat(exp_center, 1, n_collision);
-%v_r = zeros(1, n_collision);
-
-%for num = 1:n_collision
- %   v_center(num).coord = [mean([min(v(:,1,num)), max(v(:,1,num))]), ...
-  %                         mean([min(v(:,2,num)), max(v(:,2,num))]), ...
-   %                        mean([min(v(:,3,num)), max(v(:,3,num))])];
-    %v_r(num) = dist_3d(v(1,:,num), v_center(num).coord);
-%end
-
-% =========================================================================
-% 3. CICLO PRINCIPALE: APF-RRT* OTTIMIZZATO
+% 2. CICLO PRINCIPALE: APF-RRT* OTTIMIZZATO
 % =========================================================================
 disp('Ricerca del percorso ottimale (RRT*) in corso...');
 for i = 1:numNodes
@@ -116,7 +95,7 @@ disp(['Nodi generati: ', num2str(node_count)]);
 disp(['Costo percorso grezzo: ', num2str(nodes(node_count).cost)]);
 
 % =========================================================================
-% 4. ESTRAZIONE, PRUNING E GRAFICA
+% 3. ESTRAZIONE, PRUNING E GRAFICA
 % =========================================================================
 % 4.1 Trova il nodo più vicino al traguardo e collega la meta
 D = zeros(1, node_count);
@@ -216,70 +195,9 @@ view(30,30); axis equal; grid on; hold off;
 save('waypoints_estratti.mat', 'waypoints_pruned');
 disp('Waypoints salvati con successo in "waypoints_estratti.mat".');
 
-%save('mappa_urbana.mat', 'v', 'n_collision', 'x_max', 'y_max', 'z_max');
-disp('Mappa 3D salvata con successo in "mappa_urbana.mat".');
-
 % =========================================================================
 % FUNZIONI LOCALI (MOTORE MATEMATICO, FISICO E URBANO) - SUPER OTTIMIZZATO
 % =========================================================================
-
-function [v, creat_center, lengthxyz] = generateCity(n_collision, max_xy)
-    creat_center = zeros(n_collision, 3);
-    lengthxyz = zeros(n_collision, 3);
-    v = zeros(8, 3, n_collision);
-    
-    min_pos = 100; max_pos = max_xy - 400; 
-    min_len = 100; max_len = 300; 
-    margine = 30; % Distanza minima tra gli edifici
-    
-    i = 1;
-    while i <= n_collision
-        cand_center = [min_pos + (max_pos - min_pos) * rand(1, 2), 0]; 
-        cand_len = [min_len + (max_len - min_len) * rand(1, 2), 0];
-        
-        prob = rand();
-        if prob < 0.60
-            cand_len(3) = 50 + 100 * rand();       % 60% Palazzi Bassi (50-150m)
-        elseif prob < 0.90
-            cand_len(3) = 150 + 250 * rand();      % 30% Palazzi Medi (150-400m)
-        else
-            cand_len(3) = 400 + 400 * rand();      % 10% Grattacieli (400-800m)
-        end
-        
-        cand_min = cand_center(1:2);
-        cand_max = cand_center(1:2) + cand_len(1:2);
-        
-        if i > 1
-            esist_min = creat_center(1:i-1, 1:2);
-            esist_max = creat_center(1:i-1, 1:2) + lengthxyz(1:i-1, 1:2);
-            
-            overlap_x = (cand_min(1) < esist_max(:,1) + margine) & (cand_max(1) + margine > esist_min(:,1));
-            overlap_y = (cand_min(2) < esist_max(:,2) + margine) & (cand_max(2) + margine > esist_min(:,2));
-            sovrapposto = any(overlap_x & overlap_y);
-        else
-            sovrapposto = false;
-        end
-        
-        if ~sovrapposto
-            creat_center(i, :) = cand_center;
-            lengthxyz(i, :) = cand_len;
-            i = i + 1;
-        end
-    end
-    
-    for k = 1:n_collision
-        point1 = [creat_center(k,1)+lengthxyz(k,1), creat_center(k,2)+lengthxyz(k,2), lengthxyz(k,3)];
-        point2 = [creat_center(k,1),                creat_center(k,2)+lengthxyz(k,2), lengthxyz(k,3)];
-        point3 = [creat_center(k,1),                creat_center(k,2),                lengthxyz(k,3)];
-        point4 = [creat_center(k,1)+lengthxyz(k,1), creat_center(k,2),                lengthxyz(k,3)];
-        point5 = [creat_center(k,1)+lengthxyz(k,1), creat_center(k,2)+lengthxyz(k,2), 0];
-        point6 = [creat_center(k,1),                creat_center(k,2)+lengthxyz(k,2), 0];
-        point7 = [creat_center(k,1),                creat_center(k,2),                0];
-        point8 = [creat_center(k,1)+lengthxyz(k,1), creat_center(k,2),                0];
-        
-        v(:,:,k) = [point1; point2; point3; point4; point5; point6; point7; point8];
-    end
-end
 
 function qnewx = Repulsion(qnew, k_rep, v_center, v_r, n_collision)
     centers_mat = reshape([v_center(1:n_collision).coord], 3, n_collision)';
