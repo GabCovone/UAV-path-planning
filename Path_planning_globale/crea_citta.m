@@ -1,105 +1,94 @@
-disp('Inizializzazione Generatore Urbano Randomico (8000x8000x1000)...');
-tic
+function [v, q_start, q_goal] = crea_citta(enable_save, enable_plot, n_collision, x_max, y_max, z_max)
+    % GENERATE_URBAN_SCENARIO Genera una mappa 3D e trova start/goal sicuri.
+    %
+    % Parametri di ingresso (Opzionali):
+    %   enable_save - Booleano (true/false). Se true, salva i dati in 'mappa_urbana.mat' (Default: true)
+    %   enable_plot - Booleano (true/false). Se true, renderizza la mappa 3D (Default: true)
+    %
+    % Output:
+    %   v, n_collision - Matrice dei vertici della città e numero di ostacoli
+    %   q_start, q_goal - Coordinate dei punti generati
 
-% =========================================================================
-% 1. PARAMETRI DI BASE E RANDOMIZZAZIONE
-% =========================================================================
-x_max = 8000; y_max = 8000; z_max = 1000;
+    % Impostazione dei default se i parametri non vengono passati
+    if nargin < 1, enable_save = true; end
+    if nargin < 2, enable_plot = true; end
+    if nargin < 3, n_collision = 500; end
+    if nargin < 4, x_max = 8000; end
+    if nargin < 5, y_max = 8000; end
+    if nargin < 6, z_max = 1000; end
 
-% Ogni esecuzione creerà una città e dei punti completamente nuovi
-rng('shuffle'); 
+    disp('Inizializzazione Generatore Urbano Randomico...');
+    tic
 
-% =========================================================================
-% 2. GENERAZIONE PROCEDURALE DELLA CITTÀ
-% =========================================================================
-disp('Costruzione dei grattacieli in corso...');
-n_collision = 500;
+    rng('shuffle'); 
 
-% Genera la matrice dei vertici della città
-[v, creat_center, lengthxyz] = generateCity(n_collision, x_max);
+    % 1. Parametri della mappa e della città
+    map_params.x_max = x_max; 
+    map_params.y_max = y_max; 
+    map_params.z_max = z_max;
+    map_params.n_collision = n_collision;
 
-% =========================================================================
-% 3. ESTRAZIONE DI START E GOAL CON MARGINE DI SICUREZZA
-% =========================================================================
-disp('Ricerca di Start e Goal sicuri (Spazio di manovra > 15m)...');
+    city_params.min_pos = 100;
+    city_params.edge_offset = 400;   
+    city_params.min_len = 100;
+    city_params.max_len = 300;
+    city_params.overlap_margin = 30; 
 
-% --- Trova uno START sicuro ---
-valido_start = false;
-while ~valido_start
-    cand_x = 200 + rand() * (x_max - 400);
-    cand_y = 200 + rand() * (y_max - 400);
-    %cand_z = 20 + rand() * 130; % Quota tra 20m e 150m
-    cand_z = 1.0;
-    cand_start = [cand_x, cand_y, cand_z];
-    
-    % Se NON è dentro l'ostacolo (margine 15m incluso), lo accettiamo
-    if ~in_obstacle(cand_start, v)
-        q_start = cand_start;
-        valido_start = true;
+    % 2. Generazione procedurale della città
+    disp('Costruzione dei grattacieli in corso...');
+    [v, ~, ~] = generate_urban_map(map_params, city_params);
+
+    % 3. Parametri per Start e Goal
+    sg_params.margin = 15.0;      
+    sg_params.min_dist = 4000;    
+    sg_params.z_start = 1.0;      
+    sg_params.z_goal = 1.0;       
+
+    % 4. Ricerca di Start e Goal sicuri
+    disp('Ricerca di Start e Goal sicuri...');
+    [q_start, q_goal] = find_start_goal(v, map_params, sg_params);
+
+    disp(['🟢 Start valido a: [', num2str(q_start, '%.1f '), ']']);
+    disp(['🟣 Goal valido a : [', num2str(q_goal, '%.1f '), ']']);
+    disp(['📏 Distanza retta : ', num2str(dist_3d(q_start, q_goal), '%.1f'), ' metri']);
+    disp(['Tempo totale di generazione: ', num2str(toc), ' secondi']);
+
+    % 5. Grafica (Condizionale)
+    if enable_plot
+        plot_generated_city(v, map_params.n_collision, q_start, q_goal);
+    else
+        disp('Grafica disabilitata tramite parametro.');
+    end
+
+    % 6. Salvataggio (Condizionale)
+    if enable_save
+        x_max = map_params.x_max; 
+        y_max = map_params.y_max; 
+        z_max = map_params.z_max;
+        n_collision = map_params.n_collision;
+        
+        save('mappa_urbana.mat', 'v', 'n_collision', 'x_max', 'y_max', 'z_max', 'q_start', 'q_goal');
+        disp('💾 Mappa e punti strategici salvati in "mappa_urbana.mat".');
+    else
+        disp('Salvataggio dati disabilitato tramite parametro.');
     end
 end
 
-% --- Trova un GOAL sicuro (e lontano) ---
-valido_goal = false;
-while ~valido_goal
-    cand_x = 200 + rand() * (x_max - 400);
-    cand_y = 200 + rand() * (y_max - 400);
-    %cand_z = 20 + rand() * 130; 
-    cand_z = 1.0;
-    cand_goal = [cand_x, cand_y, cand_z];
+% Funzioni secondarie
+
+function [v, creat_center, lengthxyz] = generate_urban_map(map_params, city_params)
+    n_collision = map_params.n_collision;
+    max_xy = map_params.x_max; % Assumiamo mappa quadrata per semplicità
     
-    dist_sg = dist_3d(q_start, cand_goal);
-    
-    % Deve essere libero da ostacoli (margine 15m) E distante almeno 4000m
-    if ~in_obstacle(cand_goal, v) && dist_sg > 4000
-        q_goal = cand_goal;
-        valido_goal = true;
-    end
-end
-
-disp(['🟢 Start valido a: [', num2str(q_start, '%.1f '), ']']);
-disp(['🟣 Goal valido a : [', num2str(q_goal, '%.1f '), ']']);
-disp(['📏 Distanza retta : ', num2str(dist_3d(q_start, q_goal), '%.1f'), ' metri']);
-
-% =========================================================================
-% 4. GRAFICA DELLA CITTÀ
-% =========================================================================
-figure(1); hold on;
-title('Mappa Urbana 3D Randomica con Start/Goal Sicuri');
-xlabel('X (m)'); ylabel('Y (m)'); zlabel('Z (m)');
-
-disp('Rendering 3D in corso...');
-for k = 1:n_collision
-    V_b = v(:,:,k); 
-    f = [1 2 3 4; 2 6 7 3; 4 3 7 8; 1 5 8 4; 1 2 6 5; 5 6 7 8];
-    patch('Faces', f, 'Vertices', V_b, 'FaceColor', [0.2 0.5 0.8], 'FaceAlpha', 0.6, 'EdgeColor', 'none');
-end
-
-% Disegna i marker di Start (Verde) e Goal (Magenta)
-plot3(q_start(1), q_start(2), q_start(3), 'go', 'MarkerSize', 12, 'MarkerFaceColor', 'g');
-plot3(q_goal(1), q_goal(2), q_goal(3), 'mo', 'MarkerSize', 12, 'MarkerFaceColor', 'm');
-
-view(30,30); axis equal; grid on; hold off;
-disp(['Tempo totale di generazione: ', num2str(toc), ' secondi']);
-
-% =========================================================================
-% 5. SALVATAGGIO DEI DATI
-% =========================================================================
-save('mappa_urbana.mat', 'v', 'n_collision', 'x_max', 'y_max', 'z_max', 'q_start', 'q_goal');
-disp('💾 Mappa e punti strategici salvati in "mappa_urbana.mat".');
-
-
-% =========================================================================
-% FUNZIONI LOCALI
-% =========================================================================
-function [v, creat_center, lengthxyz] = generateCity(n_collision, max_xy)
     creat_center = zeros(n_collision, 3);
     lengthxyz = zeros(n_collision, 3);
     v = zeros(8, 3, n_collision);
     
-    min_pos = 100; max_pos = max_xy - 400; 
-    min_len = 100; max_len = 300; 
-    margine = 30; 
+    min_pos = city_params.min_pos; 
+    max_pos = max_xy - city_params.edge_offset; 
+    min_len = city_params.min_len; 
+    max_len = city_params.max_len; 
+    margine = city_params.overlap_margin; 
     
     i = 1;
     while i <= n_collision
@@ -136,6 +125,7 @@ function [v, creat_center, lengthxyz] = generateCity(n_collision, max_xy)
         end
     end
     
+    % Generazione Vertici
     for k = 1:n_collision
         point1 = [creat_center(k,1)+lengthxyz(k,1), creat_center(k,2)+lengthxyz(k,2), lengthxyz(k,3)];
         point2 = [creat_center(k,1),                creat_center(k,2)+lengthxyz(k,2), lengthxyz(k,3)];
@@ -149,22 +139,51 @@ function [v, creat_center, lengthxyz] = generateCity(n_collision, max_xy)
     end
 end
 
-function d = dist_3d(q1, q2)
-    d = norm(q1 - q2); 
+% necessita di dist_3d e is_colliding nel path
+function [q_start, q_goal] = find_start_goal(v, map_params, sg_params)
+    % --- Trova uno START sicuro ---
+    valido_start = false;
+    while ~valido_start
+        cand_x = 200 + rand() * (map_params.x_max - 400);
+        cand_y = 200 + rand() * (map_params.y_max - 400);
+        cand_start = [cand_x, cand_y, sg_params.z_start];
+        
+        if ~is_colliding(cand_start, v, sg_params.margin)
+            q_start = cand_start;
+            valido_start = true;
+        end
+    end
+    
+    % --- Trova un GOAL sicuro e lontano ---
+    valido_goal = false;
+    while ~valido_goal
+        cand_x = 200 + rand() * (map_params.x_max - 400);
+        cand_y = 200 + rand() * (map_params.y_max - 400);
+        cand_goal = [cand_x, cand_y, sg_params.z_goal];
+        
+        dist_sg = dist_3d(q_start, cand_goal);
+        
+        if ~is_colliding(cand_goal, v, sg_params.margin) && dist_sg > sg_params.min_dist
+            q_goal = cand_goal;
+            valido_goal = true;
+        end
+    end
 end
 
-function collision = in_obstacle(q, v)
-    % MARGINE DI SICUREZZA: 15 metri (per garantire manovre ampie a RRT e Min-Snap)
-    margin = 15.0; 
+function plot_generated_city(v, n_collision, q_start, q_goal)
+    figure(1); hold on;
+    title('Mappa Urbana 3D Randomica con Start/Goal Sicuri');
+    xlabel('X (m)'); ylabel('Y (m)'); zlabel('Z (m)');
+    disp('Rendering 3D in corso...');
     
-    x_min = squeeze(min(v(:,1,:))) - margin; x_max = squeeze(max(v(:,1,:))) + margin;
-    y_min = squeeze(min(v(:,2,:))) - margin; y_max = squeeze(max(v(:,2,:))) + margin;
-    z_min = squeeze(min(v(:,3,:))) - margin; z_max = squeeze(max(v(:,3,:))) + margin;
+    for k = 1:n_collision
+        V_b = v(:,:,k); 
+        f = [1 2 3 4; 2 6 7 3; 4 3 7 8; 1 5 8 4; 1 2 6 5; 5 6 7 8];
+        patch('Faces', f, 'Vertices', V_b, 'FaceColor', [0.2 0.5 0.8], 'FaceAlpha', 0.6, 'EdgeColor', 'none');
+    end
     
-    in_x = (q(1) >= x_min) & (q(1) <= x_max);
-    in_y = (q(2) >= y_min) & (q(2) <= y_max);
-    in_z = (q(3) >= z_min) & (q(3) <= z_max);
-    
-    % Restituisce TRUE se il punto si scontra con l'ostacolo o col suo margine
-    collision = any(in_x & in_y & in_z); 
+    % Disegna i marker di Start (Verde) e Goal (Magenta)
+    plot3(q_start(1), q_start(2), q_start(3), 'go', 'MarkerSize', 12, 'MarkerFaceColor', 'g');
+    plot3(q_goal(1), q_goal(2), q_goal(3), 'mo', 'MarkerSize', 12, 'MarkerFaceColor', 'm');
+    view(30,30); axis equal; grid on; hold off;
 end
