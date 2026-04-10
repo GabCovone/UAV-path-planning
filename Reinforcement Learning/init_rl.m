@@ -7,16 +7,43 @@
 % disp('Modello DEEN caricato con successo.');
 
 % temp, le mappe andranno prese dagli scenari ad ogni reset
-load('mappa_urbana.mat', 'v', 'n_collision'); 
-
-disp('🏢 Pre-calcolo dell''ingombro della città...');
-bounds.x_min = squeeze(min(v(:,1,:))); bounds.x_max = squeeze(max(v(:,1,:)));
-bounds.y_min = squeeze(min(v(:,2,:))); bounds.y_max = squeeze(max(v(:,2,:)));
-bounds.z_min = squeeze(min(v(:,3,:))); bounds.z_max = squeeze(max(v(:,3,:)));
+% load('mappa_urbana.mat', 'v', 'n_collision'); 
+% 
+% disp('🏢 Pre-calcolo dell''ingombro della città...');
+% bounds.x_min = squeeze(min(v(:,1,:))); bounds.x_max = squeeze(max(v(:,1,:)));
+% bounds.y_min = squeeze(min(v(:,2,:))); bounds.y_max = squeeze(max(v(:,2,:)));
+% bounds.z_min = squeeze(min(v(:,3,:))); bounds.z_max = squeeze(max(v(:,3,:)));
 
 plantModelFi = 1;            
 useHeading = 1;              
-initialGainsMultiplier = 15;  
+initialGainsMultiplier = 15; 
+
+% Importazione del modello ONNX convertendolo in un oggetto dlnetwork di MATLAB
+deen_net_uninit = importNetworkFromONNX('deen_standalone.onnx');
+
+% - 2024 sono le feature (stato, velocità, voxel, ecc.)
+% - 1 è la dimensione del batch (Simulink processa 1 step alla volta)
+% - 'BC' sta per C = Channel (Features), B = Batch
+dummy_input = dlarray(zeros(2024, 1, 'single'), 'CB');
+
+% 3. Inizializza la rete
+deen_net = initialize(deen_net_uninit, dummy_input);
+
+% 4. Salva la rete pronta all'uso!
+save('deen_network.mat', 'deen_net');
+
+disp('✅ Rete DEEN inizializzata e salvata con successo!');
+
+% Check rete DEEN
+
+% Creiamo uno stato puramente casuale (rumore)
+stato_casuale = rand(1, 2024, 'single');
+input_formattato = dlarray(stato_casuale, 'BC');
+
+% Facciamo una predizione
+energia_test = predict(deen_net, input_formattato);
+disp('Output della rete DEEN:');
+disp(extractdata(energia_test));
 
 
 %% 1. DEFINIZIONE DELL'AMBIENTE SIMULINK
@@ -32,7 +59,7 @@ numAct = 7; % 3 per posizione, 3 per velocità, 1 per lo yaw
 Ts = 0.1; % Tempo di campionamento (10 Hz)
 
 % Spazio delle Osservazioni (Observation Space)
-obsInfo = rlNumericSpec([numObs 1]);
+obsInfo = rlNumericSpec([1 numObs]);
 obsInfo.Name = 'UAV_Observations';
 
 % Spazio delle Azioni (Action Space) :
@@ -44,9 +71,9 @@ max_delta_vel = 1.0;  % +/- 1 m/s
 max_delta_yaw = 0.5;  % +/- 0.5 rad
 
 actLimit = [max_delta_pos*ones(3,1); max_delta_vel*ones(3,1); max_delta_yaw];
-actInfo = rlNumericSpec([numAct 1], ...
-    'LowerLimit', -actLimit, ...
-    'UpperLimit', actLimit);
+actInfo = rlNumericSpec([1 numAct], ...
+    'LowerLimit', -actLimit', ...
+    'UpperLimit', actLimit');
 actInfo.Name = 'Residual_Actions';
 
 % Creazione dell'ambiente Simulink
@@ -70,9 +97,13 @@ function in = localResetFcn(in)
     % Si valuta se cambiare scenario
     if tentativi_attuali >= max_tentativi
         % Si sceglie un nuovo scenario casuale
+        disp("Superato il max numero di tentativi per lo scenario corrente. Cambio di scenario.")
         scenario_corrente = randi(length(DB_scenari));
         tentativi_attuali = 0; % Resetta il contatore
     end
+
+    % Aggiornamento contatore dei tentativi
+    tentativi_attuali = tentativi_attuali + 1;
     
     % Si estraggono i dati dello scenario da usare in questo episodio
     scenario = DB_scenari(scenario_corrente);
@@ -84,20 +115,21 @@ function in = localResetFcn(in)
     initial_pos = [x0; y0; z0];
     init_vel = [(rand()-0.5)*1.0; (rand()-0.5)*1.0; 0]; % +/- 0.5 m/s
     init_euler = [(rand()-0.5)*0.2; (rand()-0.5)*0.2; 0]; % Roll e Pitch non nulli
-    
-    % Aggiornamento contatore dei tentativi
-    tentativi_attuali = tentativi_attuali + 1;
 
     % Set punto di spawn del drone
-
     dict = Simulink.data.dictionary.open('uavPackageDeliveryDataDict.sldd');
     sect = getSection(dict, 'Design Data');
     entry = getEntry(sect, 'initialConditions');
     initStruct = getValue(entry);
-    initStruct.posNED = cast([initial_pos(1), initial_pos(2), -initial_pos(3)], class(initStruct.posNED));
+    initStruct.posNED = cast([initial_pos(1), initial_pos(2), initial_pos(3)], class(initStruct.posNED));
     setValue(entry, initStruct);
     saveChanges(dict);
     disp(['✅ Condizioni iniziali aggiornate nel file SLDD! Il drone spawnerà a (NED): [', num2str(initStruct.posNED), ']']);
+
+    % Calcolo ingombro della città
+    bounds.x_min = squeeze(min(scenario.map.v(:,1,:))); bounds.x_max = squeeze(max(scenario.map.v(:,1,:)));
+    bounds.y_min = squeeze(min(scenario.map.v(:,2,:))); bounds.y_max = squeeze(max(scenario.map.v(:,2,:)));
+    bounds.z_min = squeeze(min(scenario.map.v(:,3,:))); bounds.z_max = squeeze(max(scenario.map.v(:,3,:)));
     
     % Assegnazione variabili nel workspace
     assignin('base', 'init_pos', initial_pos);
@@ -106,7 +138,9 @@ function in = localResetFcn(in)
     assignin('base', 'sim_pos_des', scenario.sim_pos_des);
     assignin('base', 'sim_vel_des', scenario.sim_vel_des);
     assignin('base', 'sim_yaw_des', scenario.sim_yaw_des);
-    assignin('base', 'v', scenario.map.v);
+    assignin('base', 'pos_goal', scenario.map.q_goal);
+    %assignin('base', 'v', scenario.map.v);
+    assignin('base', 'bounds', bounds);
     assignin('base', 'dyn_obs', scenario.dynamic_obstacles);
 end
 
@@ -214,3 +248,80 @@ disp('✅ Ambiente e Agente SAC inizializzati con successo!');
 disp('🔍 Validazione dell''ambiente in corso...');
 validateEnvironment(env);
 disp('✅ Ambiente validato con successo!');
+
+disp('🔍 Test della Reset Function in corso...');
+for i = 1:5
+    fprintf('Reset episodio %d...\n', i);
+    
+    % Questo è il comando ufficiale per resettare l'ambiente RL.
+    % Eseguirà internamente la tua ResetFcn.
+    InitialObservation = reset(env); 
+    
+    disp('Reset completato con successo per questo episodio!');
+end
+disp('✅ Test reset function superato!');
+
+
+disp('🔍 Test Fast Restart: Caricamento Scenario 1...');
+
+% Si effettua un reset per caricare il primo scenario in memoria
+reset(env); 
+
+% 2. Si attiva il Fast Restart sul modello
+set_param('SAC_RL_env', 'FastRestart', 'on');
+
+try
+    % 3. Si esegue il primo episodio (Questo "congelerà" la memoria)
+    disp('Compilazione e avvio Episodio 1...');
+    sim('SAC_RL_env', 'StopTime', '0.1'); 
+    disp('✅ Episodio 1 completato. Memoria di Fast Restart bloccata.');
+    
+    % 4. Si effettua un secondo reset (Caricando un nuovo scenario casuale o il successivo)
+    disp('Test Fast Restart: Caricamento Scenario 2...');
+    reset(env);
+    
+    % 5. Si esegue il secondo episodio
+    disp('Avvio Episodio 2...');
+    sim('SAC_RL_env', 'StopTime', '0.1');
+    disp('✅ Episodio 2 completato! Il Fast Restart FUNZIONA.');
+    
+catch ME
+    disp('❌ CRASH DEL FAST RESTART ALL''EPISODIO 2!');
+    disp('--------------------------------------------------');
+    disp('MESSAGGIO DI ERRORE PRINCIPALE:');
+    disp(ME.message);
+    disp('--------------------------------------------------');
+    
+    % Si estraggono i dettagli del crash se ci sono
+    if ~isempty(ME.cause)
+        disp('CAUSE EFFETTIVE:');
+        for k=1:length(ME.cause)
+            disp(ME.cause{k}.message);
+        end
+    end
+end
+
+% A prescindere dal risultato, si spegne il Fast Restart per pulizia
+set_param('SAC_RL_env', 'FastRestart', 'off');
+
+
+% % Debug isDone:
+% 
+% % 1. Reset dell'ambiente (chiama la tua ResetFcn)
+% stato_iniziale = reset(env);
+% 
+% % 2. Ispeziona lo stato iniziale
+% disp('Posizione iniziale drone:');
+% disp(stato_iniziale); % Controlla se i valori sono sensati
+% 
+% % 3. Esegui UN SOLO passo di simulazione manualmente
+% [prossimo_stato, reward, isDone, info] = step(env, zeros(size(actInfo))); 
+% 
+% % 4. Analisi del risultato
+% fprintf('Reward al passo 0: %f\n', reward);
+% fprintf('L''episodio è terminato subito (isDone)? %d\n', isDone);
+% 
+% if isDone
+%     disp('ATTENZIONE: L''ambiente termina istantaneamente!');
+%     disp('Controlla la logica di collisione o i limiti del campo nel Plant.');
+% end
