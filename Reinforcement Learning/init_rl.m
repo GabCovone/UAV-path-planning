@@ -91,7 +91,7 @@ function in = localResetFcn(in)
         
         scenario_corrente = randi(length(DB_scenari)); % Primo scenario casuale
         tentativi_attuali = 0;
-        max_tentativi = 10; % Quante volte si può riprovare la stessa mappa
+        max_tentativi = 1; % Quante volte si può riprovare la stessa mappa
     end
     
     % Si valuta se cambiare scenario
@@ -116,15 +116,14 @@ function in = localResetFcn(in)
     init_vel = [(rand()-0.5)*1.0; (rand()-0.5)*1.0; 0]; % +/- 0.5 m/s
     init_euler = [(rand()-0.5)*0.2; (rand()-0.5)*0.2; 0]; % Roll e Pitch non nulli
 
-    % Set punto di spawn del drone
-    dict = Simulink.data.dictionary.open('uavPackageDeliveryDataDict.sldd');
-    sect = getSection(dict, 'Design Data');
-    entry = getEntry(sect, 'initialConditions');
-    initStruct = getValue(entry);
-    initStruct.posNED = cast([initial_pos(1), initial_pos(2), initial_pos(3)], class(initStruct.posNED));
-    setValue(entry, initStruct);
-    saveChanges(dict);
-    disp(['✅ Condizioni iniziali aggiornate nel file SLDD! Il drone spawnerà a (NED): [', num2str(initStruct.posNED), ']']);
+    % % Set punto di spawn del drone
+    % dict = Simulink.data.dictionary.open('uavPackageDeliveryDataDict.sldd');
+    % sect = getSection(dict, 'Design Data');
+    % entry = getEntry(sect, 'initialConditions');
+    % initStruct = getValue(entry);
+    % initStruct.posNED = cast([initial_pos(1), initial_pos(2), initial_pos(3)], class(initStruct.posNED));
+    % setValue(entry, initStruct);
+    % saveChanges(dict);
 
     % Calcolo ingombro della città
     bounds.x_min = squeeze(min(scenario.map.v(:,1,:))); bounds.x_max = squeeze(max(scenario.map.v(:,1,:)));
@@ -132,7 +131,7 @@ function in = localResetFcn(in)
     bounds.z_min = squeeze(min(scenario.map.v(:,3,:))); bounds.z_max = squeeze(max(scenario.map.v(:,3,:)));
     
     % Assegnazione variabili nel workspace
-    assignin('base', 'init_pos', initial_pos);
+    assignin('base', 'init_pos', initial_pos');
     assignin('base', 'init_vel', init_vel);
     assignin('base', 'init_euler', init_euler);
     assignin('base', 'sim_pos_des', scenario.sim_pos_des);
@@ -142,6 +141,9 @@ function in = localResetFcn(in)
     %assignin('base', 'v', scenario.map.v);
     assignin('base', 'bounds', bounds);
     assignin('base', 'dyn_obs', scenario.dynamic_obstacles);
+
+    disp(['✅ Condizioni iniziali aggiornate! Il drone spawnerà a : [', num2str(initial_pos'), ']']);
+
 end
 
 % Assegnazione all'ambiente della funzione di reset
@@ -157,19 +159,23 @@ hiddenLayerSize = 256;
 criticNetwork = [
     featureInputLayer(numObs, 'Normalization', 'none', 'Name', 'observation')
     fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticStateFC1')
+    layerNormalizationLayer('Name', 'CriticStateLN1')
     reluLayer('Name', 'CriticRelu1')
     fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticStateFC2')
+    layerNormalizationLayer('Name', 'CriticStateLN2')
     ];
 
 actionPath = [
     featureInputLayer(numAct, 'Normalization', 'none', 'Name', 'action')
     fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticActionFC1')
+    layerNormalizationLayer('Name', 'CriticActionLN1')
     ];
 
 criticCommonPath = [
     additionLayer(2, 'Name', 'add')
     reluLayer('Name', 'CriticCommonRelu')
     fullyConnectedLayer(hiddenLayerSize/2, 'Name', 'CriticCommonFC1')
+    layerNormalizationLayer('Name', 'CriticCommonLN1')
     reluLayer('Name', 'CriticCommonRelu2')
     fullyConnectedLayer(1, 'Name', 'QValue')
     ];
@@ -177,11 +183,12 @@ criticCommonPath = [
 criticNetwork = layerGraph(criticNetwork);
 criticNetwork = addLayers(criticNetwork, actionPath);
 criticNetwork = addLayers(criticNetwork, criticCommonPath);
-criticNetwork = connectLayers(criticNetwork, 'CriticStateFC2', 'add/in1');
-criticNetwork = connectLayers(criticNetwork, 'CriticActionFC1', 'add/in2');
+
+criticNetwork = connectLayers(criticNetwork, 'CriticStateLN2', 'add/in1'); % <-- Modificato collegamento
+criticNetwork = connectLayers(criticNetwork, 'CriticActionLN1', 'add/in2'); % <-- Modificato collegamento
 
 % Inizializza due Critic identici
-criticOptions = rlOptimizerOptions('LearnRate', 1e-3, 'GradientThreshold', 1);
+criticOptions = rlOptimizerOptions('LearnRate', 1e-4, 'GradientThreshold', 1);
 critic1 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
     'ObservationInputNames', 'observation', 'ActionInputNames', 'action');
 critic2 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
@@ -192,8 +199,10 @@ critic2 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
 actorNetwork = [
     featureInputLayer(numObs, 'Normalization', 'none', 'Name', 'observation')
     fullyConnectedLayer(hiddenLayerSize, 'Name', 'ActorFC1')
+    layerNormalizationLayer('Name', 'ActorLN1')
     reluLayer('Name', 'ActorRelu1')
     fullyConnectedLayer(hiddenLayerSize, 'Name', 'ActorFC2')
+    layerNormalizationLayer('Name', 'ActorLN2')
     reluLayer('Name', 'ActorRelu2')
     ];
 
@@ -213,6 +222,7 @@ stdPath = [
 actorGraph = layerGraph(actorNetwork);
 actorGraph = addLayers(actorGraph, meanPath);
 actorGraph = addLayers(actorGraph, stdPath);
+
 actorGraph = connectLayers(actorGraph, 'ActorRelu2', 'MeanFC');
 actorGraph = connectLayers(actorGraph, 'ActorRelu2', 'StdFC');
 
@@ -303,25 +313,3 @@ end
 
 % A prescindere dal risultato, si spegne il Fast Restart per pulizia
 set_param('SAC_RL_env', 'FastRestart', 'off');
-
-
-% % Debug isDone:
-% 
-% % 1. Reset dell'ambiente (chiama la tua ResetFcn)
-% stato_iniziale = reset(env);
-% 
-% % 2. Ispeziona lo stato iniziale
-% disp('Posizione iniziale drone:');
-% disp(stato_iniziale); % Controlla se i valori sono sensati
-% 
-% % 3. Esegui UN SOLO passo di simulazione manualmente
-% [prossimo_stato, reward, isDone, info] = step(env, zeros(size(actInfo))); 
-% 
-% % 4. Analisi del risultato
-% fprintf('Reward al passo 0: %f\n', reward);
-% fprintf('L''episodio è terminato subito (isDone)? %d\n', isDone);
-% 
-% if isDone
-%     disp('ATTENZIONE: L''ambiente termina istantaneamente!');
-%     disp('Controlla la logica di collisione o i limiti del campo nel Plant.');
-% end
