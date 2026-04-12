@@ -1,0 +1,33 @@
+========================================================
+INIZIO NUOVO ADDESTRAMENTO: 12-Apr-2026 23:44:18
+========================================================
+Ep (Worker) | Step | Reward Totale | Motivo Terminazione
+--------------------------------------------------------
+Ep (Worker): 1 | Step: 214 | Rwd: 0.31 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 3411 | Rwd: 2618.18 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 3339 | Rwd: 2386.33 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 4048 | Rwd: 2890.08 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 4876 | Rwd: 3147.10 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 3779 | Rwd: 3118.72 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 4035 | Rwd: 3213.69 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 4046 | Rwd: 2782.60 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 315 | Rwd: 46.92 | Motivo: Collisione ostacolo
+Ep (Worker): 1 | Step: 4041 | Rwd: 3676.33 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 3855 | Rwd: 3487.43 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 211 | Rwd: -21.30 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 4046 | Rwd: 3042.01 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 4867 | Rwd: 4821.64 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 3861 | Rwd: 3481.28 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 3857 | Rwd: 3182.97 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 4050 | Rwd: 2646.92 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 10 | Rwd: 1.21 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 4045 | Rwd: 2846.09 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 3406 | Rwd: 2352.12 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 3406 | Rwd: 2294.68 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 4870 | Rwd: 2358.86 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 401 | Rwd: 71.07 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 4049 | Rwd: 1614.40 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 4878 | Rwd: 3971.46 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 4035 | Rwd: 2336.24 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 4034 | Rwd: 2311.11 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 205 | Rwd: -17.99 | Motivo: Deviazione eccessiva (>10m)
