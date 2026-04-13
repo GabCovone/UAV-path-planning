@@ -3,11 +3,11 @@
 env = get_RL_env(obsInfo, actInfo);
 
 % 2. Carica l'agente salvato
-load('agente_v3_non_funzionante.mat', 'agent');
+load('agente_v4.mat', 'agent');
 
 % 3. Definisci le opzioni di simulazione
 % Vogliamo fargli fare 1 solo episodio, con un massimo di 500 step (es. 50 secondi a 10Hz)
-simOpts = rlSimulationOptions('MaxSteps', 500, 'NumSimulations', 1);
+simOpts = rlSimulationOptions('MaxSteps', 5000, 'NumSimulations', 1);
 
 % 4. Avvia il test!
 disp('Avvio simulazione di test...');

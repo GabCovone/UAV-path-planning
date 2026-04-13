@@ -3,3 +3,4 @@ Simulazione/uav/PIDAutotuningMultirotorExample/scdUAVPIDAutotuning/data/uavPacka
 SAC_RL_env.slxc
 temp_parametri_drone.mat
 *.asv
+Reinforcement Learning/SAC_RL_env.slx.bak

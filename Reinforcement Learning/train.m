@@ -1,3 +1,13 @@
+plantModelFi = 1;            
+useHeading = 1;              
+initialGainsMultiplier = 15; 
+
+[obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
+
+env = get_RL_env(obsInfo, actInfo, true, fullfile(pwd, 'registro_morti.txt'));
+
+agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit);
+
 %% Training
 trainOpts = rlTrainingOptions(...
     'MaxEpisodes', 5000, ...
