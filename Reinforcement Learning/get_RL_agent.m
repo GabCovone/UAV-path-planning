@@ -6,9 +6,9 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit)
     % --- CRITIC NETWORKS (Q-Values: [Obs, Act] -> Q) ---
     criticNetwork = [
         featureInputLayer(numObs, 'Normalization', 'none', 'Name', 'observation')
-        fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticStateFC1')
+        fullyConnectedLayer(hiddenLayerSize * 2, 'Name', 'CriticStateFC1')
         layerNormalizationLayer('Name', 'CriticStateLN1')
-        reluLayer('Name', 'CriticRelu1')
+        swishLayer('Name', 'CriticSwish1')
         fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticStateFC2')
         layerNormalizationLayer('Name', 'CriticStateLN2')
         ];
@@ -21,10 +21,10 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit)
     
     criticCommonPath = [
         additionLayer(2, 'Name', 'add')
-        reluLayer('Name', 'CriticCommonRelu')
+        swishLayer('Name', 'CriticCommonSwish1')
         fullyConnectedLayer(hiddenLayerSize/2, 'Name', 'CriticCommonFC1')
         layerNormalizationLayer('Name', 'CriticCommonLN1')
-        reluLayer('Name', 'CriticCommonRelu2')
+        swishLayer('Name', 'CriticCommonSwish2')
         fullyConnectedLayer(1, 'Name', 'QValue')
         ];
     
@@ -36,7 +36,7 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit)
     criticNetwork = connectLayers(criticNetwork, 'CriticActionLN1', 'add/in2'); % <-- Modificato collegamento
     
     % Inizializza due Critic identici
-    criticOptions = rlOptimizerOptions('LearnRate', 1e-4, 'GradientThreshold', 1);
+    criticOptions = rlOptimizerOptions('LearnRate', 3e-4, 'GradientThreshold', 10, 'L2RegularizationFactor', 1e-4);
     critic1 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
         'ObservationInputNames', 'observation', 'ActionInputNames', 'action');
     critic2 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
@@ -46,12 +46,12 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit)
     % SAC utilizza una policy gaussiana, quindi l'attore deve fornire media e deviazione standard
     actorNetwork = [
         featureInputLayer(numObs, 'Normalization', 'none', 'Name', 'observation')
-        fullyConnectedLayer(hiddenLayerSize, 'Name', 'ActorFC1')
+        fullyConnectedLayer(hiddenLayerSize * 2, 'Name', 'ActorFC1')
         layerNormalizationLayer('Name', 'ActorLN1')
-        reluLayer('Name', 'ActorRelu1')
+        swishLayer('Name', 'ActorSwish1')
         fullyConnectedLayer(hiddenLayerSize, 'Name', 'ActorFC2')
         layerNormalizationLayer('Name', 'ActorLN2')
-        reluLayer('Name', 'ActorRelu2')
+        swishLayer('Name', 'ActorSwish2')
         ];
     
     % Ramo della Media (Mean) - Satura ai limiti definiti in actInfo
@@ -71,10 +71,10 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit)
     actorGraph = addLayers(actorGraph, meanPath);
     actorGraph = addLayers(actorGraph, stdPath);
     
-    actorGraph = connectLayers(actorGraph, 'ActorRelu2', 'MeanFC');
-    actorGraph = connectLayers(actorGraph, 'ActorRelu2', 'StdFC');
+    actorGraph = connectLayers(actorGraph, 'ActorSwish2', 'MeanFC');
+    actorGraph = connectLayers(actorGraph, 'ActorSwish2', 'StdFC');
     
-    actorOptions = rlOptimizerOptions('LearnRate', 1e-4, 'GradientThreshold', 1);
+    actorOptions = rlOptimizerOptions('LearnRate', 1e-4, 'GradientThreshold', 5, 'L2RegularizationFactor', 1e-4);
     actor = rlContinuousGaussianActor(dlnetwork(actorGraph), obsInfo, actInfo, ...
         'ObservationInputNames', 'observation', ...
         'ActionMeanOutputNames', 'MeanScale', ...
