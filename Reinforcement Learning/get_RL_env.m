@@ -54,15 +54,6 @@ function in = localResetFcn(in)
     init_vel = [(rand()-0.5)*1.0; (rand()-0.5)*1.0; 0]; % +/- 0.5 m/s
     init_euler = [(rand()-0.5)*0.2; (rand()-0.5)*0.2; 0]; % Roll e Pitch non nulli
 
-    % % Set punto di spawn del drone
-    % dict = Simulink.data.dictionary.open('uavPackageDeliveryDataDict.sldd');
-    % sect = getSection(dict, 'Design Data');
-    % entry = getEntry(sect, 'initialConditions');
-    % initStruct = getValue(entry);
-    % initStruct.posNED = cast([initial_pos(1), initial_pos(2), initial_pos(3)], class(initStruct.posNED));
-    % setValue(entry, initStruct);
-    % saveChanges(dict);
-
     % Calcolo ingombro della città
     bounds.x_min = squeeze(min(scenario.map.v(:,1,:))); bounds.x_max = squeeze(max(scenario.map.v(:,1,:)));
     bounds.y_min = squeeze(min(scenario.map.v(:,2,:))); bounds.y_max = squeeze(max(scenario.map.v(:,2,:)));
@@ -79,6 +70,8 @@ function in = localResetFcn(in)
     assignin('base', 'bounds', bounds);
     assignin('base', 'dyn_obs', scenario.dynamic_obstacles);
 
-    disp(['✅ Condizioni iniziali aggiornate! Il drone spawnerà a : [', num2str(initial_pos'), ']']);
+    assignin('base', 'scenario_corrente', scenario_corrente');
+
+    disp(['✅ Punto spawn drone: [', num2str(initial_pos'), '], Goal a [', num2str(scenario.map.q_goal),']']);
 
 end

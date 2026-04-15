@@ -1,3 +1,5 @@
+rng(2);
+
 % È necessario che:
 % - Sia stata creata una traiettoria con il path planning
 % - Sia stato eseguito init_simulation.m per configurare Simulink
