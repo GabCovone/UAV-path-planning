@@ -1,4 +1,4 @@
-function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit)
+function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts)
     %% 1. DEFINIZIONE DELLE RETI NEURALI
     % Dimensioni dei layer nascosti
     hiddenLayerSize = 256; 
@@ -36,7 +36,7 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit)
     criticNetwork = connectLayers(criticNetwork, 'CriticActionLN1', 'add/in2'); % <-- Modificato collegamento
     
     % Inizializza due Critic identici
-    criticOptions = rlOptimizerOptions('LearnRate', 3e-4, 'GradientThreshold', 10, 'L2RegularizationFactor', 1e-4);
+    criticOptions = rlOptimizerOptions('LearnRate', 1e-4, 'GradientThreshold', 10, 'L2RegularizationFactor', 1e-4);
     critic1 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
         'ObservationInputNames', 'observation', 'ActionInputNames', 'action');
     critic2 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
@@ -84,10 +84,6 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit)
     
     %% 2. CREAZIONE DELL'AGENTE SAC
     % Opzioni specifiche dell'agente
-    
-     Ts = 0.1; % Tempo di campionamento (10 Hz)
-
-     assignin('base', 'Ts', Ts);
     
     agentOpts = rlSACAgentOptions(...
         'SampleTime', Ts, ...
