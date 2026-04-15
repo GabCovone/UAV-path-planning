@@ -39,11 +39,14 @@ disp(extractdata(energia_test));
 
 %% Creazione ambiente e agente
 
+ Ts = 0.1; % Tempo di campionamento (10 Hz)
+ assignin('base', 'Ts', Ts);
+
 [obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
 
-env = get_RL_env(obsInfo, actInfo, true, fullfile(pwd, 'registro_morti.txt'));
+env = get_RL_env(obsInfo, actInfo, 'training_scenarios.mat', true, fullfile(pwd, 'registro_morti.txt'));
 
-agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit);
+agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
 
 %% Check ambiente e agente
 

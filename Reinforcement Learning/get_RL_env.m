@@ -1,6 +1,7 @@
-function env = get_RL_env(obsInfo, actInfo, logging, logPath)
-
-    if nargin < 3, logging = false; logPath = fullfile(pwd, 'registro_morti.txt'); end
+function env = get_RL_env(obsInfo, actInfo, path_DB_scenari, logging, logPath)
+    
+    if nargin < 3, path_DB_scenari = 'training_scenarios.mat'; end
+    if nargin < 4, logging = false; logPath = fullfile(pwd, 'registro_morti.txt'); end
     assignin('base', 'logging', logging);
     logPath_padded = sprintf('%-250s', logPath);
     assignin('base', 'logPath_num', int8(logPath_padded));
@@ -12,19 +13,22 @@ function env = get_RL_env(obsInfo, actInfo, logging, logPath)
     env = rlSimulinkEnv(mdl, agentBlk, obsInfo, actInfo);
     
     % Assegnazione all'ambiente della funzione di reset
-    env.ResetFcn = @(in) localResetFcn(in);
+    env.ResetFcn = @(in) localResetFcn(in, path_DB_scenari);
 
     disp('✅ Ambiente RL Simulink creato con successo');
 end
 
-function in = localResetFcn(in)
+function in = localResetFcn(in, path_DB_scenari)
     % Dichiarazione variabili persistenti
     persistent DB_scenari scenario_corrente tentativi_attuali max_tentativi
+    persistent path_DB_scenari_persistent
     
     % Inizializzazione ad inizio training
-    if isempty(DB_scenari)
+    if isempty(DB_scenari) || ~strcmp(path_DB_scenari, path_DB_scenari_persistent)
+        disp("Inizializzazione DB scenari...")
         % Carica il file .mat pre-calcolato una volta sola
-        data = load('training_scenarios.mat'); 
+        path_DB_scenari_persistent = path_DB_scenari;
+        data = load(path_DB_scenari_persistent); 
         DB_scenari = data.scenari; 
         
         scenario_corrente = randi(length(DB_scenari)); % Primo scenario casuale
@@ -34,6 +38,7 @@ function in = localResetFcn(in)
     
     % Si valuta se cambiare scenario
     if tentativi_attuali >= max_tentativi
+        
         % Si sceglie un nuovo scenario casuale
         disp("Superato il max numero di tentativi per lo scenario corrente. Cambio di scenario.")
         scenario_corrente = randi(length(DB_scenari));
@@ -71,7 +76,9 @@ function in = localResetFcn(in)
     assignin('base', 'dyn_obs', scenario.dynamic_obstacles);
 
     assignin('base', 'scenario_corrente', scenario_corrente');
-
+    
+    disp(scenario_corrente)
+    disp(path_DB_scenari_persistent)
     disp(['✅ Punto spawn drone: [', num2str(initial_pos'), '], Goal a [', num2str(scenario.map.q_goal),']']);
 
 end

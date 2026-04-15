@@ -1,4 +1,4 @@
-function graphic_func(log_posizione, idx_scenario)
+function graphic_func(log_posizione, idx_scenario, path_DB_scenari)
     disp('Estrazione dati di volo dalla telemetria...');
     
     % log_posizione sarà una matrice. Se il volo dura 500 step, 
@@ -15,11 +15,11 @@ function graphic_func(log_posizione, idx_scenario)
     
     % Setup della Figura
     figure('Name', 'Replay Volo SAC', 'Color', 'w', 'Position', [100, 100, 800, 600]);
-    hold on; grid on; view(30, 30); axis equal
+    hold on; grid on; view(30, 30);
     xlabel('X [m]'); ylabel('Y [m]'); zlabel('Z [m]');
     title('Traiettoria 3D del Drone');
 
-    data = load('training_scenarios.mat'); 
+    data = load(path_DB_scenari); 
     scenario = data.scenari(idx_scenario);
     
     v = scenario.map.v;
@@ -83,9 +83,12 @@ function graphic_func(log_posizione, idx_scenario)
     for i = 1:step_salto:length(X)
         addpoints(curve, X(i), Y(i), Z(i));
         drawnow; 
-        pause(0.01); 
+        pause(0.001); 
     end
     addpoints(curve, X(end), Y(end), Z(end));
     drawnow;
     disp('Replay concluso!');
+    pause(2);
+    axis equal;
+    drawnow;
 end
