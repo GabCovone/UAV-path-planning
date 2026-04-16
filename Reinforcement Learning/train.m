@@ -2,6 +2,14 @@ plantModelFi = 1;
 useHeading = 1;              
 initialGainsMultiplier = 15;
 
+path = "SAC_RL_env/Inner Loop and Plant Model/High-FidelityModel/";
+
+if get_param(strcat(path, "Bus Selector pos_agente"), 'Commented') == "off"
+    set_param(strcat(path, "Bus Selector pos_agente"), 'Commented', 'on');
+    set_param(strcat(path, "Vector Concatenate pos_agente"), 'Commented', 'on');
+    set_param(strcat(path, "pos_agente To File"), 'Commented', 'on');
+end
+
  Ts = 0.1; % Tempo di campionamento (10 Hz)
  assignin('base', 'Ts', Ts);
 
@@ -11,6 +19,10 @@ env = get_RL_env(obsInfo, actInfo, 'training_scenarios.mat', true, fullfile(pwd,
 
 agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
 
+delete(gcp('nocreate'))
+pool = parpool(6);
+
+
 %% Training
 trainOpts = rlTrainingOptions(...
     'MaxEpisodes', 5500, ...
@@ -18,14 +30,14 @@ trainOpts = rlTrainingOptions(...
     'ScoreAveragingWindowLength', 50, ...
     'StopTrainingCriteria', 'AverageReward', ...
     'StopTrainingValue', 1000, ... % Determine this based on your reward scaling
-    'SaveAgentCriteria', 'EpisodeCount', ...
+    'SaveAgentCriteria', 'EpisodeFrequency', ...
     'SaveAgentValue', 300, ...
     'SaveAgentDirectory', fullfile(pwd, 'agenti_salvati') ...
 );
 trainOpts.UseParallel = true;
 trainOpts.ParallelizationOptions.Mode = "async";
 
-logging = true;
+logging = true; 
 logPath = fullfile(pwd, 'registro_morti.txt');
 assignin('base', 'logging', logging);
 logPath_padded = sprintf('%-250s', logPath);

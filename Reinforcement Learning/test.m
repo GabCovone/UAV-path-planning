@@ -1,8 +1,10 @@
+path = "SAC_RL_env/Inner Loop and Plant Model/High-FidelityModel/";
 
-% ! ------------------ !
-% Prima di effettuare test, decommentare blocchi Bus Selector, Vector Concatenate e
-% To File nel modello simulink per salvare la posizione del drone
-% ! ------------------ !
+if get_param(strcat(path, "Bus Selector pos_agente"), 'Commented') == "on"
+    set_param(strcat(path, "Bus Selector pos_agente"), 'Commented', 'off');
+    set_param(strcat(path, "Vector Concatenate pos_agente"), 'Commented', 'off');
+    set_param(strcat(path, "pos_agente To File"), 'Commented', 'off');
+end
 
 rng(2);
 
@@ -15,12 +17,14 @@ assignin('base', 'Ts', Ts);
 
 path_DB_scenari = 'testing_scenarios.mat';
 
-% 1. Carica l'ambiente
+%%
+
+% 1. Carica l'ambienteon
 [obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
 env = get_RL_env(obsInfo, actInfo, path_DB_scenari);
 
 % 2. Carica l'agente salvato
-load('agente_v6.mat', 'agent');
+load('agente_v9_norandstart.mat', 'agent');
 
 % 3. Definisci le opzioni di simulazione
 % Vogliamo fargli fare 1 solo episodio, con un massimo di 5500 step (es. 50 secondi a 10Hz)
