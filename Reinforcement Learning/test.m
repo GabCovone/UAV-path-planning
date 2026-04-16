@@ -25,8 +25,10 @@ disp('Avvio simulazione di test...');
 experience = sim(env, agent, simOpts);
 
 % 5. Estrai e stampa i risultati
-reward_totale = sum(experience.Reward);
-step_totali = experience.Reward.TimeInfo.Length;
+%reward_totale = sum(experience.Reward);
+%step_totali = experience.Reward.TimeInfo.Length;
+reward_totale = sum(experience.Reward.Data);
+step_totali = length(experience.Reward.Data); % Più sicuro di navigare in TimeInfo
 
 disp('Test completato.');
 disp(['Step sopravvissuti: ', num2str(step_totali)]);
