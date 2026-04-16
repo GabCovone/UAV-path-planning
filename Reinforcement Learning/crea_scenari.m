@@ -6,11 +6,11 @@ clear; clc;
 num_scenari = 50; % Numero di città/traiettorie da pre-calcolare
 scenari = struct(); % Si inizializza la struttura dati vuota
 
-n_collision = 32; % Numero edifici, di base 500
+n_collision = 40; % Numero edifici, di base 500
 x_max = 2000;
 y_max = 2000;
 z_max = 1000;
-num_dyn_obs = 4; % Numero di ostacoli dinamici
+num_dyn_obs = 10; % Numero di ostacoli dinamici
 
 % Parametro per il filtro delle traiettorie banali
 z_threshold = 1.5; % Quota minima che il drone deve superare per non essere considerato "banale"

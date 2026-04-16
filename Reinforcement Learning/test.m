@@ -1,3 +1,9 @@
+
+% ! ------------------ !
+% Prima di effettuare test, decommentare blocchi Bus Selector, Vector Concatenate e
+% To File nel modello simulink per salvare la posizione del drone
+% ! ------------------ !
+
 rng(2);
 
 plantModelFi = 1;            
@@ -7,7 +13,7 @@ initialGainsMultiplier = 15;
 Ts = 0.1; % Tempo di campionamento (10 Hz)
 assignin('base', 'Ts', Ts);
 
-path_DB_scenari = 'training_scenarios.mat';
+path_DB_scenari = 'testing_scenarios.mat';
 
 % 1. Carica l'ambiente
 [obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
@@ -35,7 +41,7 @@ disp(['Step sopravvissuti: ', num2str(step_totali)]);
 disp(['Reward totale ottenuto: ', num2str(reward_totale)]);
 
 %% --- 6. Recupero Telemetria Diretto (Ricerca Globale) ---
-% dà errore
+
 load('sim_pos_agente_1.mat');
     
 if ~isempty(sim_pos_agente)

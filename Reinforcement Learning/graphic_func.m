@@ -23,6 +23,8 @@ function graphic_func(log_posizione, idx_scenario, path_DB_scenari)
     % Caricamento dati dello scenario
     data = load(path_DB_scenari); 
     scenario = data.scenari(idx_scenario);
+
+    disp(path_DB_scenari)
     
     v = scenario.map.v;
     pos_des = scenario.sim_pos_des.Data;
