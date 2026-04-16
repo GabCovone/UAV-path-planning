@@ -9,6 +9,8 @@ plantModelFi = 1;
 useHeading = 1;              
 initialGainsMultiplier = 15; 
 
+%% rete DEEN
+
 % Importazione del modello ONNX convertendolo in un oggetto dlnetwork di MATLAB
 deen_net_uninit = importNetworkFromONNX('deen_standalone.onnx');
 
@@ -42,11 +44,13 @@ disp(extractdata(energia_test));
  Ts = 0.1; % Tempo di campionamento (10 Hz)
  assignin('base', 'Ts', Ts);
 
-[obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
+[obsInfo, actInfo, numObs, numAct, actLimit, StructNumObs] = get_obsInfo_actInfo();
+
+agent = get_RL_agent(obsInfo, actInfo, numAct, actLimit, Ts, StructNumObs);
+
+%%
 
 env = get_RL_env(obsInfo, actInfo, 'training_scenarios.mat', true, fullfile(pwd, 'registro_morti.txt'));
-
-agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
 
 %% Check ambiente e agente
 
