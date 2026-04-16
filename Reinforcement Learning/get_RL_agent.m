@@ -36,7 +36,7 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts)
     criticNetwork = connectLayers(criticNetwork, 'CriticActionLN1', 'add/in2'); % <-- Modificato collegamento
     
     % Inizializza due Critic identici
-    criticOptions = rlOptimizerOptions('LearnRate', 1e-4, 'GradientThreshold', 10, 'L2RegularizationFactor', 1e-4);
+    criticOptions = rlOptimizerOptions('LearnRate', 5e-4, 'GradientThreshold', 10, 'L2RegularizationFactor', 1e-4);
     critic1 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
         'ObservationInputNames', 'observation', 'ActionInputNames', 'action');
     critic2 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
