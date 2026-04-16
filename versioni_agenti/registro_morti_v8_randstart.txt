@@ -1,0 +1,420 @@
+========================================================
+INIZIO NUOVO ADDESTRAMENTO: 16-Apr-2026 16:21:49
+========================================================
+Ep (Worker) | Step | Reward Totale | Motivo Terminazione
+--------------------------------------------------------
+Ep (Worker): 1 | Step: 885 | Rwd: -746.14 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 864 | Rwd: -646.47 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 911 | Rwd: -736.04 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1078 | Rwd: -296.90 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1323 | Rwd: -175.82 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1333 | Rwd: 38.00 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 252 | Rwd: -709.11 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 916 | Rwd: -409.17 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1012 | Rwd: -302.76 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1069 | Rwd: -269.11 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1042 | Rwd: -274.72 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1524 | Rwd: -456.14 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1067 | Rwd: -226.81 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 745 | Rwd: -501.73 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 844 | Rwd: -517.18 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1138 | Rwd: 20.70 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1048 | Rwd: 910.02 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 960 | Rwd: 28.04 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1246 | Rwd: -282.71 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1071 | Rwd: -587.20 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1163 | Rwd: 112.70 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 732 | Rwd: -458.85 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 850 | Rwd: -133.08 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1147 | Rwd: -656.10 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 923 | Rwd: -105.12 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 898 | Rwd: 918.49 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 861 | Rwd: 762.32 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1063 | Rwd: -1179.53 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1110 | Rwd: 468.57 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1102 | Rwd: -134.78 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1083 | Rwd: -69.10 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 716 | Rwd: -673.67 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 864 | Rwd: -608.02 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1068 | Rwd: -307.99 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1005 | Rwd: 870.74 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1529 | Rwd: -237.56 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 705 | Rwd: -589.50 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 877 | Rwd: 500.13 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 990 | Rwd: -362.02 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 962 | Rwd: 67.26 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1045 | Rwd: -312.96 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1063 | Rwd: -448.49 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1060 | Rwd: -366.01 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 891 | Rwd: -316.34 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 878 | Rwd: 952.10 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 985 | Rwd: -57.03 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 961 | Rwd: -510.23 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1305 | Rwd: -592.80 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 784 | Rwd: -735.16 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 974 | Rwd: -51.44 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 965 | Rwd: -22.85 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1013 | Rwd: -76.96 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1235 | Rwd: 936.17 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1325 | Rwd: -59.56 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 938 | Rwd: -119.89 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 752 | Rwd: -412.29 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 848 | Rwd: -887.79 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1108 | Rwd: -503.66 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1123 | Rwd: -408.53 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1518 | Rwd: -272.95 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 833 | Rwd: 462.37 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 876 | Rwd: -358.35 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 947 | Rwd: -100.30 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 889 | Rwd: -459.67 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1011 | Rwd: -301.10 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1064 | Rwd: -680.25 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1073 | Rwd: -931.56 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 775 | Rwd: 490.45 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 956 | Rwd: 16.15 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 848 | Rwd: -94.53 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 946 | Rwd: -143.07 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 917 | Rwd: -1131.54 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 738 | Rwd: -287.08 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 884 | Rwd: 495.60 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 878 | Rwd: -533.96 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 833 | Rwd: -285.88 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 865 | Rwd: -604.58 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 895 | Rwd: -404.38 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 960 | Rwd: -139.54 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 829 | Rwd: 421.76 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 941 | Rwd: -404.93 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 973 | Rwd: -152.15 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1064 | Rwd: -485.24 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1278 | Rwd: -26.05 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 725 | Rwd: -457.44 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 945 | Rwd: -673.56 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1094 | Rwd: -569.96 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1065 | Rwd: -54.67 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1260 | Rwd: -177.90 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1512 | Rwd: -206.47 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 855 | Rwd: -282.46 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 871 | Rwd: -225.76 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 942 | Rwd: -268.86 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1116 | Rwd: 1122.24 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1214 | Rwd: -184.17 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1248 | Rwd: -654.24 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 841 | Rwd: -135.48 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 794 | Rwd: -571.54 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 959 | Rwd: -429.48 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1120 | Rwd: 81.81 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1015 | Rwd: 847.55 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1114 | Rwd: -192.28 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 838 | Rwd: -454.71 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 854 | Rwd: -160.39 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 986 | Rwd: -636.41 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1117 | Rwd: 1056.62 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1039 | Rwd: -707.56 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1266 | Rwd: -227.28 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 850 | Rwd: -255.74 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 880 | Rwd: 931.03 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 977 | Rwd: -156.21 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1010 | Rwd: -346.23 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1130 | Rwd: -426.81 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1307 | Rwd: 982.75 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 473 | Rwd: -712.05 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 911 | Rwd: -534.50 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1017 | Rwd: -50.75 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1020 | Rwd: 57.65 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 997 | Rwd: -236.28 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1288 | Rwd: -140.50 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 16 | Rwd: -492.61 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1070 | Rwd: -582.14 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 912 | Rwd: -303.78 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1097 | Rwd: -57.35 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1090 | Rwd: -116.60 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1356 | Rwd: -183.67 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1517 | Rwd: -279.10 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 747 | Rwd: -565.75 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 983 | Rwd: -486.46 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 954 | Rwd: -968.98 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1074 | Rwd: -38.54 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1262 | Rwd: -77.65 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 851 | Rwd: -141.15 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 865 | Rwd: -630.99 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 916 | Rwd: -179.60 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1015 | Rwd: 880.47 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 996 | Rwd: -206.77 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1067 | Rwd: -735.00 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 905 | Rwd: 780.66 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 749 | Rwd: -375.85 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 719 | Rwd: -428.51 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 874 | Rwd: -154.66 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 978 | Rwd: -20.27 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 958 | Rwd: -229.37 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 807 | Rwd: -113.04 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 877 | Rwd: -265.73 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 821 | Rwd: -162.77 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 980 | Rwd: -32.56 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1012 | Rwd: -653.88 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1240 | Rwd: 75.38 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 237 | Rwd: -485.69 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 998 | Rwd: 906.07 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1043 | Rwd: 989.19 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1335 | Rwd: -49.87 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1341 | Rwd: 51.97 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1341 | Rwd: 156.90 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 862 | Rwd: -252.78 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 843 | Rwd: -674.51 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1043 | Rwd: -466.60 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1107 | Rwd: -354.74 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1235 | Rwd: -85.09 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1342 | Rwd: -8.43 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1001 | Rwd: 737.06 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 878 | Rwd: -281.92 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 951 | Rwd: -138.40 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1018 | Rwd: -219.02 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1054 | Rwd: -254.10 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1039 | Rwd: -59.55 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 744 | Rwd: -266.37 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 857 | Rwd: -290.66 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1054 | Rwd: -270.78 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1070 | Rwd: 397.42 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1108 | Rwd: -29.67 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1069 | Rwd: -367.79 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1066 | Rwd: 794.49 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 810 | Rwd: -424.82 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 933 | Rwd: -133.64 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 885 | Rwd: 235.94 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 963 | Rwd: -144.39 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1142 | Rwd: 125.26 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 686 | Rwd: -326.14 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 926 | Rwd: -184.50 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 936 | Rwd: -257.52 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1043 | Rwd: -219.60 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1102 | Rwd: -81.84 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1224 | Rwd: -553.63 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 950 | Rwd: -160.31 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 862 | Rwd: -576.27 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 860 | Rwd: -176.86 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 903 | Rwd: -759.58 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1052 | Rwd: -260.60 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1273 | Rwd: 61.25 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 787 | Rwd: -493.74 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 847 | Rwd: -191.94 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 757 | Rwd: -514.22 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 840 | Rwd: -279.51 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 904 | Rwd: -563.79 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 996 | Rwd: -183.69 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1036 | Rwd: -187.37 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 834 | Rwd: -131.53 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 952 | Rwd: -587.07 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1021 | Rwd: -95.42 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1072 | Rwd: -235.84 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1232 | Rwd: -142.62 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 701 | Rwd: -554.41 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 864 | Rwd: -88.05 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 994 | Rwd: -145.13 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1040 | Rwd: -361.95 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1134 | Rwd: -549.54 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1338 | Rwd: 157.26 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 838 | Rwd: -808.98 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 713 | Rwd: -359.51 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 905 | Rwd: 910.37 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 864 | Rwd: -149.65 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1005 | Rwd: -68.06 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1338 | Rwd: 73.92 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 693 | Rwd: -625.19 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 841 | Rwd: -130.32 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 862 | Rwd: -201.32 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 851 | Rwd: -420.15 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1099 | Rwd: -112.19 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1013 | Rwd: -183.23 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1025 | Rwd: -185.91 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 795 | Rwd: -518.24 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 947 | Rwd: 707.35 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1042 | Rwd: 642.67 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1100 | Rwd: 653.04 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1163 | Rwd: 98.00 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 813 | Rwd: -793.91 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 844 | Rwd: 809.22 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 794 | Rwd: -519.06 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1084 | Rwd: -191.71 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1135 | Rwd: 71.22 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1271 | Rwd: -174.55 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 903 | Rwd: -916.46 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 825 | Rwd: -591.68 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 883 | Rwd: 552.75 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 914 | Rwd: -206.44 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1007 | Rwd: -193.11 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1015 | Rwd: -329.62 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 17 | Rwd: -492.88 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 832 | Rwd: 512.92 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 983 | Rwd: -131.95 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1005 | Rwd: -66.37 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1063 | Rwd: -322.65 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 837 | Rwd: -167.09 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1008 | Rwd: -380.40 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 925 | Rwd: -594.70 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1054 | Rwd: -286.24 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1074 | Rwd: -271.88 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1091 | Rwd: -276.64 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1060 | Rwd: -206.93 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 838 | Rwd: -520.57 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 966 | Rwd: -226.59 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 997 | Rwd: 878.09 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 926 | Rwd: -293.68 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 987 | Rwd: -747.47 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1071 | Rwd: 897.58 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 770 | Rwd: -375.82 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 731 | Rwd: -497.57 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 766 | Rwd: -630.84 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 864 | Rwd: -770.97 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 862 | Rwd: -195.38 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 907 | Rwd: -772.13 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 883 | Rwd: -552.59 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 854 | Rwd: -213.12 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1044 | Rwd: 1077.53 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1008 | Rwd: -51.17 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1029 | Rwd: -118.35 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1283 | Rwd: 112.89 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1155 | Rwd: -561.34 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 12 | Rwd: -492.49 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 692 | Rwd: -629.20 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 860 | Rwd: -430.78 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 873 | Rwd: -387.39 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1045 | Rwd: 119.87 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 700 | Rwd: -577.90 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 776 | Rwd: -761.36 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 897 | Rwd: -326.04 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 901 | Rwd: -220.99 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 854 | Rwd: -528.32 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1226 | Rwd: -61.95 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 834 | Rwd: -245.69 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 880 | Rwd: -523.51 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 868 | Rwd: -176.08 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 936 | Rwd: -27.66 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1086 | Rwd: -41.66 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1244 | Rwd: -389.72 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 828 | Rwd: -98.18 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 836 | Rwd: -199.45 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 957 | Rwd: -119.75 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1051 | Rwd: -415.47 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1078 | Rwd: 675.44 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1126 | Rwd: 557.50 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1104 | Rwd: -509.19 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 838 | Rwd: -194.57 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 755 | Rwd: -363.35 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1015 | Rwd: -115.68 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1078 | Rwd: -133.69 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1108 | Rwd: 112.70 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 759 | Rwd: -470.00 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 868 | Rwd: -173.94 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 998 | Rwd: 815.46 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1060 | Rwd: -272.15 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1280 | Rwd: -219.05 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1271 | Rwd: -140.25 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 782 | Rwd: -780.55 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 757 | Rwd: -516.38 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 760 | Rwd: -439.98 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 857 | Rwd: -573.47 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 975 | Rwd: -114.77 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1061 | Rwd: 985.95 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 940 | Rwd: -1.31 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 894 | Rwd: -187.85 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 924 | Rwd: 916.63 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 812 | Rwd: -92.89 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1233 | Rwd: -116.34 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1292 | Rwd: -315.64 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 890 | Rwd: 226.45 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 313 | Rwd: -442.19 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 707 | Rwd: -598.82 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1019 | Rwd: -204.37 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1247 | Rwd: -71.71 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1320 | Rwd: -155.66 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 17 | Rwd: -493.48 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 850 | Rwd: -500.10 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 887 | Rwd: -725.19 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1118 | Rwd: -530.01 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1078 | Rwd: 22.65 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1107 | Rwd: 718.11 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1341 | Rwd: 129.11 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 46 | Rwd: -509.90 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 865 | Rwd: -129.72 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 949 | Rwd: -170.18 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 849 | Rwd: -171.22 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1149 | Rwd: -54.54 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1100 | Rwd: -136.90 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 722 | Rwd: -673.74 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 839 | Rwd: -237.28 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 957 | Rwd: -79.21 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1007 | Rwd: -367.48 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1038 | Rwd: -286.25 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1336 | Rwd: -89.03 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 739 | Rwd: -528.20 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 769 | Rwd: -369.36 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 708 | Rwd: -570.72 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 765 | Rwd: 426.92 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1102 | Rwd: -54.48 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1346 | Rwd: 71.36 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 754 | Rwd: -259.00 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 951 | Rwd: -141.53 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1075 | Rwd: -269.87 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1193 | Rwd: -759.91 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1233 | Rwd: 783.11 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1258 | Rwd: -126.05 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 817 | Rwd: -572.35 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 793 | Rwd: 606.44 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 834 | Rwd: 485.64 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 881 | Rwd: 901.79 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1042 | Rwd: -267.70 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1319 | Rwd: -241.44 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 165 | Rwd: -552.32 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 762 | Rwd: -380.28 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 831 | Rwd: -818.72 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 905 | Rwd: -205.93 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 895 | Rwd: -252.10 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1013 | Rwd: -167.34 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 870 | Rwd: -162.17 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1005 | Rwd: -90.56 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1058 | Rwd: 719.49 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1120 | Rwd: -365.21 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1104 | Rwd: -434.49 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1058 | Rwd: -145.72 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 743 | Rwd: -476.49 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 804 | Rwd: -909.14 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 969 | Rwd: -161.86 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1134 | Rwd: 46.37 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1109 | Rwd: -80.39 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1339 | Rwd: -94.32 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 701 | Rwd: -420.70 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 852 | Rwd: -161.48 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 865 | Rwd: -367.16 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 896 | Rwd: 848.34 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1058 | Rwd: -275.01 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 997 | Rwd: -107.57 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 837 | Rwd: 382.14 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 926 | Rwd: -76.13 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 924 | Rwd: -230.26 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1048 | Rwd: 1.44 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1050 | Rwd: -239.67 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1157 | Rwd: -79.35 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 731 | Rwd: -363.15 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 874 | Rwd: -639.69 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 884 | Rwd: -420.79 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 838 | Rwd: -813.19 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1040 | Rwd: -486.46 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1101 | Rwd: 803.95 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 9 | Rwd: -492.51 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 746 | Rwd: -345.09 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 956 | Rwd: -1109.89 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 1043 | Rwd: 945.63 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1061 | Rwd: -901.35 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1080 | Rwd: -229.84 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 532 | Rwd: -772.63 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 904 | Rwd: -160.97 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 867 | Rwd: 859.76 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1104 | Rwd: -99.49 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1066 | Rwd: -704.87 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 1257 | Rwd: -242.77 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 938 | Rwd: -202.01 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 701 | Rwd: -356.07 | Motivo: Deviazione eccessiva (>10m)
+Ep (Worker): 1 | Step: 849 | Rwd: -530.30 | Motivo: Schianto a terra
+Ep (Worker): 1 | Step: 888 | Rwd: 828.75 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1044 | Rwd: 748.72 | Motivo: TRAGUARDO RAGGIUNTO!
+Ep (Worker): 1 | Step: 1098 | Rwd: -408.29 | Motivo: Schianto a terra

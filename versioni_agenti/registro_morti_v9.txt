@@ -1,0 +1,1164 @@
+========================================================
+INIZIO NUOVO ADDESTRAMENTO: 16-Apr-2026 17:05:21
+========================================================
+Ep (Worker) | Step | Reward Totale | Motivo Terminazione
+--------------------------------------------------------
+Step: 91 | Rwd: -537.12 | Motivo: Collisione ostacolo
+Step: 13 | Rwd: -491.05 | Motivo: Schianto a terra
+Step: 899 | Rwd: -708.15 | Motivo: Schianto a terra
+Step: 1002 | Rwd: -535.88 | Motivo: Schianto a terra
+Step: 768 | Rwd: -756.05 | Motivo: Deviazione eccessiva
+Step: 857 | Rwd: -625.62 | Motivo: Schianto a terra
+Step: 1030 | Rwd: -320.20 | Motivo: Schianto a terra
+Step: 16 | Rwd: -491.26 | Motivo: Schianto a terra
+Step: 1074 | Rwd: -438.66 | Motivo: Schianto a terra
+Step: 783 | Rwd: -707.01 | Motivo: Deviazione eccessiva
+Step: 904 | Rwd: -326.36 | Motivo: Schianto a terra
+Step: 879 | Rwd: -528.97 | Motivo: Schianto a terra
+Step: 1079 | Rwd: -342.26 | Motivo: Schianto a terra
+Step: 17 | Rwd: -492.75 | Motivo: Schianto a terra
+Step: 343 | Rwd: -409.50 | Motivo: Schianto a terra
+Step: 993 | Rwd: -78.33 | Motivo: Schianto a terra
+Step: 902 | Rwd: -127.61 | Motivo: Schianto a terra
+Step: 738 | Rwd: -479.88 | Motivo: Schianto a terra
+Step: 863 | Rwd: -162.29 | Motivo: Schianto a terra
+Step: 877 | Rwd: -315.66 | Motivo: Schianto a terra
+Step: 857 | Rwd: -165.29 | Motivo: Schianto a terra
+Step: 1099 | Rwd: -251.02 | Motivo: Schianto a terra
+Step: 1020 | Rwd: -143.76 | Motivo: Schianto a terra
+Step: 832 | Rwd: -182.96 | Motivo: Schianto a terra
+Step: 943 | Rwd: -249.81 | Motivo: Schianto a terra
+Step: 689 | Rwd: -534.53 | Motivo: Schianto a terra
+Step: 801 | Rwd: -489.77 | Motivo: Schianto a terra
+Step: 1229 | Rwd: 32.69 | Motivo: Schianto a terra
+Step: 1503 | Rwd: 20.20 | Motivo: Schianto a terra
+Step: 784 | Rwd: -363.63 | Motivo: Schianto a terra
+Step: 915 | Rwd: -59.92 | Motivo: Schianto a terra
+Step: 686 | Rwd: -342.10 | Motivo: Deviazione eccessiva
+Step: 901 | Rwd: 603.98 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 896 | Rwd: -291.77 | Motivo: Schianto a terra
+Step: 1042 | Rwd: 1053.89 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 825 | Rwd: 517.26 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 956 | Rwd: -650.83 | Motivo: Schianto a terra
+Step: 1006 | Rwd: 778.77 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1096 | Rwd: -77.51 | Motivo: Deviazione eccessiva
+Step: 1317 | Rwd: -198.26 | Motivo: Schianto a terra
+Step: 740 | Rwd: -448.56 | Motivo: Schianto a terra
+Step: 914 | Rwd: -605.23 | Motivo: Schianto a terra
+Step: 868 | Rwd: -274.63 | Motivo: Deviazione eccessiva
+Step: 927 | Rwd: -187.50 | Motivo: Schianto a terra
+Step: 1139 | Rwd: -210.60 | Motivo: Schianto a terra
+Step: 1052 | Rwd: 767.44 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 901 | Rwd: -309.87 | Motivo: Deviazione eccessiva
+Step: 873 | Rwd: -121.00 | Motivo: Schianto a terra
+Step: 812 | Rwd: 565.54 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 867 | Rwd: -125.82 | Motivo: Schianto a terra
+Step: 910 | Rwd: 899.73 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1057 | Rwd: -172.03 | Motivo: Schianto a terra
+Step: 869 | Rwd: -257.65 | Motivo: Schianto a terra
+Step: 985 | Rwd: -121.17 | Motivo: Deviazione eccessiva
+Step: 989 | Rwd: 650.82 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1137 | Rwd: -401.65 | Motivo: Deviazione eccessiva
+Step: 1348 | Rwd: -149.16 | Motivo: Schianto a terra
+Step: 1243 | Rwd: -113.61 | Motivo: Schianto a terra
+Step: 1073 | Rwd: -290.65 | Motivo: Schianto a terra
+Step: 847 | Rwd: -120.38 | Motivo: Schianto a terra
+Step: 820 | Rwd: -511.15 | Motivo: Schianto a terra
+Step: 907 | Rwd: 664.28 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 983 | Rwd: -47.53 | Motivo: Schianto a terra
+Step: 1084 | Rwd: -242.14 | Motivo: Schianto a terra
+Step: 779 | Rwd: -583.64 | Motivo: Schianto a terra
+Step: 795 | Rwd: 441.77 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 913 | Rwd: -730.42 | Motivo: Schianto a terra
+Step: 989 | Rwd: -123.47 | Motivo: Schianto a terra
+Step: 911 | Rwd: -841.24 | Motivo: Schianto a terra
+Step: 1341 | Rwd: 59.84 | Motivo: Deviazione eccessiva
+Step: 1285 | Rwd: -133.27 | Motivo: Schianto a terra
+Step: 738 | Rwd: -404.74 | Motivo: Schianto a terra
+Step: 838 | Rwd: 555.00 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1047 | Rwd: -196.57 | Motivo: Schianto a terra
+Step: 1044 | Rwd: 702.25 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1313 | Rwd: 40.15 | Motivo: Deviazione eccessiva
+Step: 848 | Rwd: 487.96 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 920 | Rwd: -448.43 | Motivo: Schianto a terra
+Step: 839 | Rwd: -246.87 | Motivo: Deviazione eccessiva
+Step: 830 | Rwd: -680.06 | Motivo: Schianto a terra
+Step: 1007 | Rwd: -99.48 | Motivo: Schianto a terra
+Step: 1093 | Rwd: -381.84 | Motivo: Schianto a terra
+Step: 1027 | Rwd: 873.44 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 856 | Rwd: -120.64 | Motivo: Schianto a terra
+Step: 800 | Rwd: -749.78 | Motivo: Deviazione eccessiva
+Step: 1009 | Rwd: -629.21 | Motivo: Schianto a terra
+Step: 1046 | Rwd: -265.28 | Motivo: Schianto a terra
+Step: 1145 | Rwd: 16.06 | Motivo: Schianto a terra
+Step: 861 | Rwd: -179.36 | Motivo: Schianto a terra
+Step: 921 | Rwd: -91.09 | Motivo: Schianto a terra
+Step: 1098 | Rwd: 868.43 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1049 | Rwd: 767.93 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1104 | Rwd: -389.55 | Motivo: Schianto a terra
+Step: 1065 | Rwd: 725.18 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1082 | Rwd: 694.71 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 856 | Rwd: -346.00 | Motivo: Schianto a terra
+Step: 906 | Rwd: -440.98 | Motivo: Schianto a terra
+Step: 896 | Rwd: -258.01 | Motivo: Schianto a terra
+Step: 1147 | Rwd: -38.29 | Motivo: Schianto a terra
+Step: 1098 | Rwd: 70.36 | Motivo: Schianto a terra
+Step: 255 | Rwd: -695.47 | Motivo: Deviazione eccessiva
+Step: 763 | Rwd: -705.19 | Motivo: Deviazione eccessiva
+Step: 865 | Rwd: -149.53 | Motivo: Schianto a terra
+Step: 840 | Rwd: -183.27 | Motivo: Schianto a terra
+Step: 1067 | Rwd: -323.11 | Motivo: Schianto a terra
+Step: 1124 | Rwd: 12.07 | Motivo: Schianto a terra
+Step: 1007 | Rwd: 152.11 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 824 | Rwd: -609.52 | Motivo: Schianto a terra
+Step: 892 | Rwd: -250.62 | Motivo: Deviazione eccessiva
+Step: 899 | Rwd: -49.81 | Motivo: Schianto a terra
+Step: 996 | Rwd: 683.80 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1349 | Rwd: 108.28 | Motivo: Deviazione eccessiva
+Step: 9 | Rwd: -492.16 | Motivo: Schianto a terra
+Step: 925 | Rwd: 873.61 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 883 | Rwd: -126.77 | Motivo: Schianto a terra
+Step: 840 | Rwd: -83.82 | Motivo: Schianto a terra
+Step: 850 | Rwd: -161.46 | Motivo: Schianto a terra
+Step: 982 | Rwd: 946.02 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 989 | Rwd: 898.32 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 864 | Rwd: -461.28 | Motivo: Schianto a terra
+Step: 873 | Rwd: -148.98 | Motivo: Schianto a terra
+Step: 1004 | Rwd: -193.63 | Motivo: Schianto a terra
+Step: 1000 | Rwd: -312.59 | Motivo: Schianto a terra
+Step: 1099 | Rwd: -51.02 | Motivo: Schianto a terra
+Step: 1331 | Rwd: 187.36 | Motivo: Deviazione eccessiva
+Step: 876 | Rwd: -943.87 | Motivo: Schianto a terra
+Step: 818 | Rwd: -111.80 | Motivo: Schianto a terra
+Step: 860 | Rwd: 883.96 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1003 | Rwd: 865.09 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1036 | Rwd: -43.82 | Motivo: Schianto a terra
+Step: 950 | Rwd: -202.66 | Motivo: Schianto a terra
+Step: 749 | Rwd: -343.32 | Motivo: Schianto a terra
+Step: 867 | Rwd: -236.55 | Motivo: Deviazione eccessiva
+Step: 848 | Rwd: -201.91 | Motivo: Schianto a terra
+Step: 957 | Rwd: -35.82 | Motivo: Schianto a terra
+Step: 916 | Rwd: -177.55 | Motivo: Schianto a terra
+Step: 1043 | Rwd: -172.75 | Motivo: Schianto a terra
+Step: 21 | Rwd: -494.38 | Motivo: Schianto a terra
+Step: 834 | Rwd: -161.14 | Motivo: Schianto a terra
+Step: 989 | Rwd: 433.50 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1149 | Rwd: -1215.04 | Motivo: Schianto a terra
+Step: 1103 | Rwd: -121.72 | Motivo: Schianto a terra
+Step: 1242 | Rwd: -485.29 | Motivo: Schianto a terra
+Step: 708 | Rwd: -562.11 | Motivo: Schianto a terra
+Step: 853 | Rwd: -464.92 | Motivo: Schianto a terra
+Step: 822 | Rwd: -986.53 | Motivo: Deviazione eccessiva
+Step: 794 | Rwd: 394.48 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1047 | Rwd: 531.63 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1018 | Rwd: -524.78 | Motivo: Schianto a terra
+Step: 855 | Rwd: -279.80 | Motivo: Schianto a terra
+Step: 844 | Rwd: -86.46 | Motivo: Schianto a terra
+Step: 816 | Rwd: -89.32 | Motivo: Schianto a terra
+Step: 847 | Rwd: -413.99 | Motivo: Schianto a terra
+Step: 968 | Rwd: -151.53 | Motivo: Schianto a terra
+Step: 1069 | Rwd: 78.18 | Motivo: Schianto a terra
+Step: 788 | Rwd: -841.55 | Motivo: Deviazione eccessiva
+Step: 908 | Rwd: -482.10 | Motivo: Schianto a terra
+Step: 1010 | Rwd: 817.68 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1051 | Rwd: -376.71 | Motivo: Schianto a terra
+Step: 1154 | Rwd: 131.43 | Motivo: Schianto a terra
+Step: 1134 | Rwd: -166.45 | Motivo: Deviazione eccessiva
+Step: 946 | Rwd: -527.05 | Motivo: Schianto a terra
+Step: 980 | Rwd: 593.47 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 904 | Rwd: -209.71 | Motivo: Schianto a terra
+Step: 1077 | Rwd: 1.19 | Motivo: Schianto a terra
+Step: 1079 | Rwd: -247.34 | Motivo: Schianto a terra
+Step: 1236 | Rwd: -105.14 | Motivo: Schianto a terra
+Step: 869 | Rwd: -177.82 | Motivo: Schianto a terra
+Step: 1085 | Rwd: -22.12 | Motivo: Schianto a terra
+Step: 1099 | Rwd: -186.94 | Motivo: Schianto a terra
+Step: 1105 | Rwd: -209.11 | Motivo: Deviazione eccessiva
+Step: 1146 | Rwd: 158.49 | Motivo: Schianto a terra
+Step: 1233 | Rwd: -936.41 | Motivo: Schianto a terra
+Step: 14 | Rwd: -492.65 | Motivo: Schianto a terra
+Step: 820 | Rwd: -778.39 | Motivo: Schianto a terra
+Step: 905 | Rwd: 858.67 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1020 | Rwd: 991.19 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1038 | Rwd: 794.56 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1104 | Rwd: 801.20 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 847 | Rwd: -122.29 | Motivo: Schianto a terra
+Step: 781 | Rwd: -823.78 | Motivo: Deviazione eccessiva
+Step: 910 | Rwd: -580.98 | Motivo: Schianto a terra
+Step: 962 | Rwd: 925.33 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1144 | Rwd: 1035.89 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1114 | Rwd: 239.33 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 682 | Rwd: -514.16 | Motivo: Deviazione eccessiva
+Step: 821 | Rwd: 509.25 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 682 | Rwd: -103.86 | Motivo: Schianto a terra
+Step: 1104 | Rwd: 798.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1063 | Rwd: 1057.42 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1159 | Rwd: -855.34 | Motivo: Schianto a terra
+Step: 844 | Rwd: -54.71 | Motivo: Schianto a terra
+Step: 886 | Rwd: -462.47 | Motivo: Schianto a terra
+Step: 1015 | Rwd: 866.10 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 989 | Rwd: -624.32 | Motivo: Schianto a terra
+Step: 1147 | Rwd: 60.28 | Motivo: Schianto a terra
+Step: 1296 | Rwd: -174.30 | Motivo: Schianto a terra
+Step: 804 | Rwd: -917.90 | Motivo: Deviazione eccessiva
+Step: 857 | Rwd: -940.01 | Motivo: Deviazione eccessiva
+Step: 1030 | Rwd: -114.83 | Motivo: Schianto a terra
+Step: 1061 | Rwd: -286.63 | Motivo: Schianto a terra
+Step: 1102 | Rwd: -44.16 | Motivo: Schianto a terra
+Step: 1225 | Rwd: -80.06 | Motivo: Schianto a terra
+Step: 752 | Rwd: -497.24 | Motivo: Schianto a terra
+Step: 680 | Rwd: -625.51 | Motivo: Deviazione eccessiva
+Step: 932 | Rwd: -463.52 | Motivo: Schianto a terra
+Step: 1084 | Rwd: -284.33 | Motivo: Schianto a terra
+Step: 1138 | Rwd: 1078.88 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1137 | Rwd: -152.83 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 735 | Rwd: -217.61 | Motivo: Schianto a terra
+Step: 882 | Rwd: -321.97 | Motivo: Schianto a terra
+Step: 923 | Rwd: 872.13 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 986 | Rwd: -128.34 | Motivo: Schianto a terra
+Step: 1044 | Rwd: -204.60 | Motivo: Schianto a terra
+Step: 1339 | Rwd: 164.94 | Motivo: Deviazione eccessiva
+Step: 844 | Rwd: -211.99 | Motivo: Schianto a terra
+Step: 908 | Rwd: -287.19 | Motivo: Schianto a terra
+Step: 984 | Rwd: -559.46 | Motivo: Schianto a terra
+Step: 1130 | Rwd: 166.64 | Motivo: Schianto a terra
+Step: 1066 | Rwd: -397.61 | Motivo: Schianto a terra
+Step: 1285 | Rwd: -138.95 | Motivo: Schianto a terra
+Step: 821 | Rwd: -686.97 | Motivo: Schianto a terra
+Step: 883 | Rwd: -175.04 | Motivo: Schianto a terra
+Step: 847 | Rwd: 755.92 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1048 | Rwd: -226.12 | Motivo: Schianto a terra
+Step: 1074 | Rwd: -407.29 | Motivo: Schianto a terra
+Step: 1338 | Rwd: -91.28 | Motivo: Deviazione eccessiva
+Step: 710 | Rwd: 470.72 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 910 | Rwd: -359.58 | Motivo: Schianto a terra
+Step: 785 | Rwd: 591.28 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 955 | Rwd: -1128.78 | Motivo: Schianto a terra
+Step: 938 | Rwd: -100.11 | Motivo: Schianto a terra
+Step: 1345 | Rwd: 77.93 | Motivo: Deviazione eccessiva
+Step: 845 | Rwd: 729.36 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 891 | Rwd: -849.49 | Motivo: Schianto a terra
+Step: 991 | Rwd: 482.89 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1060 | Rwd: -266.25 | Motivo: Schianto a terra
+Step: 1061 | Rwd: -325.14 | Motivo: Schianto a terra
+Step: 1131 | Rwd: 61.15 | Motivo: Schianto a terra
+Step: 757 | Rwd: 482.74 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 844 | Rwd: 539.13 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 877 | Rwd: -132.13 | Motivo: Schianto a terra
+Step: 1093 | Rwd: -82.65 | Motivo: Deviazione eccessiva
+Step: 1025 | Rwd: -283.49 | Motivo: Schianto a terra
+Step: 1316 | Rwd: 53.02 | Motivo: Deviazione eccessiva
+Step: 910 | Rwd: -297.69 | Motivo: Schianto a terra
+Step: 875 | Rwd: -120.22 | Motivo: Schianto a terra
+Step: 1065 | Rwd: -138.34 | Motivo: Schianto a terra
+Step: 1027 | Rwd: -68.22 | Motivo: Schianto a terra
+Step: 1113 | Rwd: -28.62 | Motivo: Schianto a terra
+Step: 1180 | Rwd: 33.85 | Motivo: Schianto a terra
+Step: 126 | Rwd: -542.04 | Motivo: Schianto a terra
+Step: 801 | Rwd: -657.72 | Motivo: Schianto a terra
+Step: 900 | Rwd: -550.32 | Motivo: Schianto a terra
+Step: 853 | Rwd: -125.11 | Motivo: Schianto a terra
+Step: 882 | Rwd: -699.61 | Motivo: Schianto a terra
+Step: 917 | Rwd: -421.34 | Motivo: Schianto a terra
+Step: 10 | Rwd: -491.99 | Motivo: Schianto a terra
+Step: 898 | Rwd: -443.26 | Motivo: Schianto a terra
+Step: 1005 | Rwd: 811.70 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1047 | Rwd: 992.58 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1103 | Rwd: -276.26 | Motivo: Schianto a terra
+Step: 1190 | Rwd: -767.77 | Motivo: Schianto a terra
+Step: 14 | Rwd: -492.19 | Motivo: Schianto a terra
+Step: 706 | Rwd: -374.81 | Motivo: Deviazione eccessiva
+Step: 867 | Rwd: -588.30 | Motivo: Schianto a terra
+Step: 935 | Rwd: -14.40 | Motivo: Schianto a terra
+Step: 1135 | Rwd: 63.92 | Motivo: Schianto a terra
+Step: 1045 | Rwd: 60.46 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 767 | Rwd: -631.91 | Motivo: Schianto a terra
+Step: 830 | Rwd: -607.69 | Motivo: Schianto a terra
+Step: 775 | Rwd: -801.96 | Motivo: Deviazione eccessiva
+Step: 869 | Rwd: -309.52 | Motivo: Deviazione eccessiva
+Step: 1079 | Rwd: -160.24 | Motivo: Schianto a terra
+Step: 1314 | Rwd: -36.00 | Motivo: Schianto a terra
+Step: 758 | Rwd: -575.73 | Motivo: Schianto a terra
+Step: 1017 | Rwd: 859.04 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1009 | Rwd: 900.55 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1066 | Rwd: -342.99 | Motivo: Schianto a terra
+Step: 1091 | Rwd: -11.71 | Motivo: Deviazione eccessiva
+Step: 1339 | Rwd: 214.95 | Motivo: Deviazione eccessiva
+Step: 845 | Rwd: -159.77 | Motivo: Schianto a terra
+Step: 841 | Rwd: -116.53 | Motivo: Schianto a terra
+Step: 924 | Rwd: -480.96 | Motivo: Schianto a terra
+Step: 946 | Rwd: -341.13 | Motivo: Schianto a terra
+Step: 1130 | Rwd: -15.42 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1068 | Rwd: -344.30 | Motivo: Schianto a terra
+Step: 13 | Rwd: -492.45 | Motivo: Schianto a terra
+Step: 21 | Rwd: -494.10 | Motivo: Schianto a terra
+Step: 734 | Rwd: -756.96 | Motivo: Deviazione eccessiva
+Step: 964 | Rwd: -168.22 | Motivo: Deviazione eccessiva
+Step: 934 | Rwd: -383.58 | Motivo: Schianto a terra
+Step: 958 | Rwd: -45.21 | Motivo: Schianto a terra
+Step: 704 | Rwd: -669.08 | Motivo: Schianto a terra
+Step: 836 | Rwd: -160.91 | Motivo: Schianto a terra
+Step: 1059 | Rwd: -315.61 | Motivo: Schianto a terra
+Step: 1103 | Rwd: -50.32 | Motivo: Schianto a terra
+Step: 1123 | Rwd: -386.60 | Motivo: Schianto a terra
+Step: 1307 | Rwd: -78.75 | Motivo: Schianto a terra
+Step: 707 | Rwd: 588.80 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 872 | Rwd: -657.11 | Motivo: Schianto a terra
+Step: 890 | Rwd: 888.22 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 961 | Rwd: -202.53 | Motivo: Deviazione eccessiva
+Step: 963 | Rwd: -185.14 | Motivo: Deviazione eccessiva
+Step: 1496 | Rwd: -183.33 | Motivo: Schianto a terra
+Step: 738 | Rwd: 552.65 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 838 | Rwd: -304.87 | Motivo: Schianto a terra
+Step: 984 | Rwd: 931.30 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1016 | Rwd: 832.82 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1118 | Rwd: -76.10 | Motivo: Deviazione eccessiva
+Step: 1312 | Rwd: -70.90 | Motivo: Deviazione eccessiva
+Step: 779 | Rwd: -510.65 | Motivo: Schianto a terra
+Step: 883 | Rwd: -549.06 | Motivo: Schianto a terra
+Step: 851 | Rwd: -536.68 | Motivo: Schianto a terra
+Step: 921 | Rwd: -104.12 | Motivo: Schianto a terra
+Step: 1021 | Rwd: -1299.00 | Motivo: Schianto a terra
+Step: 1252 | Rwd: -239.48 | Motivo: Schianto a terra
+Step: 842 | Rwd: -674.01 | Motivo: Schianto a terra
+Step: 895 | Rwd: 739.42 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1056 | Rwd: -195.03 | Motivo: Schianto a terra
+Step: 873 | Rwd: -432.34 | Motivo: Schianto a terra
+Step: 902 | Rwd: -764.68 | Motivo: Schianto a terra
+Step: 992 | Rwd: -110.77 | Motivo: Schianto a terra
+Step: 684 | Rwd: -556.80 | Motivo: Schianto a terra
+Step: 701 | Rwd: -388.45 | Motivo: Deviazione eccessiva
+Step: 868 | Rwd: -144.06 | Motivo: Schianto a terra
+Step: 778 | Rwd: -586.86 | Motivo: Schianto a terra
+Step: 867 | Rwd: -179.67 | Motivo: Schianto a terra
+Step: 942 | Rwd: -101.72 | Motivo: Deviazione eccessiva
+Step: 935 | Rwd: -233.47 | Motivo: Deviazione eccessiva
+Step: 958 | Rwd: -241.14 | Motivo: Deviazione eccessiva
+Step: 865 | Rwd: -289.87 | Motivo: Deviazione eccessiva
+Step: 1012 | Rwd: -185.44 | Motivo: Schianto a terra
+Step: 1060 | Rwd: -321.09 | Motivo: Schianto a terra
+Step: 1089 | Rwd: -80.33 | Motivo: Deviazione eccessiva
+Step: 18 | Rwd: -493.02 | Motivo: Schianto a terra
+Step: 21 | Rwd: -492.55 | Motivo: Schianto a terra
+Step: 815 | Rwd: -623.71 | Motivo: Schianto a terra
+Step: 945 | Rwd: -363.65 | Motivo: Schianto a terra
+Step: 990 | Rwd: -298.79 | Motivo: Schianto a terra
+Step: 1056 | Rwd: -290.18 | Motivo: Schianto a terra
+Step: 790 | Rwd: -511.58 | Motivo: Schianto a terra
+Step: 755 | Rwd: -730.73 | Motivo: Deviazione eccessiva
+Step: 926 | Rwd: -332.31 | Motivo: Schianto a terra
+Step: 1019 | Rwd: 804.04 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1121 | Rwd: -432.07 | Motivo: Schianto a terra
+Step: 1085 | Rwd: -280.83 | Motivo: Schianto a terra
+Step: 762 | Rwd: 798.53 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 816 | Rwd: -473.81 | Motivo: Schianto a terra
+Step: 900 | Rwd: -315.89 | Motivo: Schianto a terra
+Step: 909 | Rwd: -635.16 | Motivo: Schianto a terra
+Step: 1083 | Rwd: -920.26 | Motivo: Schianto a terra
+Step: 1232 | Rwd: 930.33 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 718 | Rwd: -380.54 | Motivo: Deviazione eccessiva
+Step: 1008 | Rwd: -108.05 | Motivo: Schianto a terra
+Step: 987 | Rwd: -1148.85 | Motivo: Schianto a terra
+Step: 1022 | Rwd: -69.54 | Motivo: Schianto a terra
+Step: 1126 | Rwd: -717.25 | Motivo: Schianto a terra
+Step: 1119 | Rwd: -343.53 | Motivo: Schianto a terra
+Step: 901 | Rwd: -315.73 | Motivo: Schianto a terra
+Step: 831 | Rwd: 398.16 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 923 | Rwd: -553.06 | Motivo: Schianto a terra
+Step: 946 | Rwd: -69.68 | Motivo: Schianto a terra
+Step: 962 | Rwd: -255.53 | Motivo: Schianto a terra
+Step: 989 | Rwd: -466.10 | Motivo: Schianto a terra
+Step: 956 | Rwd: -117.13 | Motivo: Schianto a terra
+Step: 854 | Rwd: -222.64 | Motivo: Schianto a terra
+Step: 851 | Rwd: -117.73 | Motivo: Schianto a terra
+Step: 988 | Rwd: -73.73 | Motivo: Schianto a terra
+Step: 1058 | Rwd: 281.68 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1263 | Rwd: 907.31 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 771 | Rwd: -539.47 | Motivo: Schianto a terra
+Step: 949 | Rwd: -164.84 | Motivo: Deviazione eccessiva
+Step: 945 | Rwd: -313.82 | Motivo: Schianto a terra
+Step: 976 | Rwd: -196.56 | Motivo: Deviazione eccessiva
+Step: 1059 | Rwd: -561.67 | Motivo: Deviazione eccessiva
+Step: 1228 | Rwd: -569.18 | Motivo: Schianto a terra
+Step: 764 | Rwd: -793.82 | Motivo: Deviazione eccessiva
+Step: 861 | Rwd: -689.93 | Motivo: Schianto a terra
+Step: 1054 | Rwd: 713.53 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1061 | Rwd: -252.18 | Motivo: Schianto a terra
+Step: 1172 | Rwd: -874.52 | Motivo: Schianto a terra
+Step: 1346 | Rwd: -61.33 | Motivo: Deviazione eccessiva
+Step: 757 | Rwd: -379.51 | Motivo: Schianto a terra
+Step: 882 | Rwd: -484.48 | Motivo: Schianto a terra
+Step: 839 | Rwd: -507.12 | Motivo: Schianto a terra
+Step: 1025 | Rwd: -185.55 | Motivo: Schianto a terra
+Step: 1293 | Rwd: -85.38 | Motivo: Schianto a terra
+Step: 1257 | Rwd: -456.95 | Motivo: Schianto a terra
+Step: 20 | Rwd: -492.51 | Motivo: Schianto a terra
+Step: 730 | Rwd: -467.16 | Motivo: Schianto a terra
+Step: 877 | Rwd: -306.66 | Motivo: Schianto a terra
+Step: 950 | Rwd: -192.74 | Motivo: Deviazione eccessiva
+Step: 1061 | Rwd: -277.71 | Motivo: Schianto a terra
+Step: 1084 | Rwd: -713.54 | Motivo: Schianto a terra
+Step: 609 | Rwd: -831.78 | Motivo: Deviazione eccessiva
+Step: 854 | Rwd: -146.63 | Motivo: Schianto a terra
+Step: 834 | Rwd: 658.42 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 853 | Rwd: -268.97 | Motivo: Schianto a terra
+Step: 984 | Rwd: 702.25 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1145 | Rwd: -27.37 | Motivo: Schianto a terra
+Step: 882 | Rwd: -290.05 | Motivo: Schianto a terra
+Step: 830 | Rwd: -188.57 | Motivo: Schianto a terra
+Step: 1056 | Rwd: -493.58 | Motivo: Schianto a terra
+Step: 829 | Rwd: -819.48 | Motivo: Schianto a terra
+Step: 1023 | Rwd: -645.29 | Motivo: Schianto a terra
+Step: 1069 | Rwd: -247.32 | Motivo: Schianto a terra
+Step: 689 | Rwd: -415.81 | Motivo: Deviazione eccessiva
+Step: 840 | Rwd: -442.94 | Motivo: Schianto a terra
+Step: 852 | Rwd: -172.82 | Motivo: Schianto a terra
+Step: 993 | Rwd: -1117.10 | Motivo: Schianto a terra
+Step: 1188 | Rwd: 1024.93 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1294 | Rwd: -439.30 | Motivo: Schianto a terra
+Step: 749 | Rwd: -443.24 | Motivo: Schianto a terra
+Step: 841 | Rwd: -208.15 | Motivo: Schianto a terra
+Step: 925 | Rwd: -44.34 | Motivo: Schianto a terra
+Step: 1053 | Rwd: -416.70 | Motivo: Schianto a terra
+Step: 993 | Rwd: -121.86 | Motivo: Schianto a terra
+Step: 1121 | Rwd: 1028.12 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 837 | Rwd: -548.70 | Motivo: Schianto a terra
+Step: 917 | Rwd: -234.13 | Motivo: Schianto a terra
+Step: 844 | Rwd: -159.40 | Motivo: Schianto a terra
+Step: 1005 | Rwd: 731.49 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1047 | Rwd: 51.41 | Motivo: Schianto a terra
+Step: 1104 | Rwd: -235.69 | Motivo: Schianto a terra
+Step: 775 | Rwd: -448.93 | Motivo: Schianto a terra
+Step: 872 | Rwd: -300.44 | Motivo: Deviazione eccessiva
+Step: 770 | Rwd: -436.19 | Motivo: Schianto a terra
+Step: 859 | Rwd: -181.22 | Motivo: Schianto a terra
+Step: 892 | Rwd: -331.18 | Motivo: Schianto a terra
+Step: 1279 | Rwd: 36.64 | Motivo: Deviazione eccessiva
+Step: 848 | Rwd: -193.89 | Motivo: Schianto a terra
+Step: 959 | Rwd: -120.50 | Motivo: Schianto a terra
+Step: 949 | Rwd: -236.63 | Motivo: Schianto a terra
+Step: 951 | Rwd: -155.55 | Motivo: Deviazione eccessiva
+Step: 1519 | Rwd: -126.99 | Motivo: Schianto a terra
+Step: 1495 | Rwd: -66.82 | Motivo: Schianto a terra
+Step: 1041 | Rwd: 862.48 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 896 | Rwd: -233.03 | Motivo: Schianto a terra
+Step: 1011 | Rwd: -183.26 | Motivo: Schianto a terra
+Step: 1016 | Rwd: -514.68 | Motivo: Schianto a terra
+Step: 1073 | Rwd: -574.82 | Motivo: Schianto a terra
+Step: 1109 | Rwd: 26.26 | Motivo: Schianto a terra
+Step: 729 | Rwd: -628.09 | Motivo: Deviazione eccessiva
+Step: 891 | Rwd: 902.45 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 807 | Rwd: -473.85 | Motivo: Schianto a terra
+Step: 983 | Rwd: -142.18 | Motivo: Schianto a terra
+Step: 973 | Rwd: 784.75 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1068 | Rwd: -286.34 | Motivo: Deviazione eccessiva
+Step: 413 | Rwd: -360.29 | Motivo: Schianto a terra
+Step: 839 | Rwd: -243.06 | Motivo: Schianto a terra
+Step: 834 | Rwd: -406.05 | Motivo: Schianto a terra
+Step: 985 | Rwd: -136.73 | Motivo: Schianto a terra
+Step: 1043 | Rwd: -249.17 | Motivo: Schianto a terra
+Step: 1126 | Rwd: -32.08 | Motivo: Schianto a terra
+Step: 702 | Rwd: -638.60 | Motivo: Deviazione eccessiva
+Step: 769 | Rwd: -418.31 | Motivo: Schianto a terra
+Step: 863 | Rwd: -237.44 | Motivo: Schianto a terra
+Step: 879 | Rwd: 517.15 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1009 | Rwd: -1134.53 | Motivo: Schianto a terra
+Step: 1160 | Rwd: -367.37 | Motivo: Schianto a terra
+Step: 941 | Rwd: -142.91 | Motivo: Schianto a terra
+Step: 864 | Rwd: -179.05 | Motivo: Schianto a terra
+Step: 859 | Rwd: 463.96 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1008 | Rwd: 735.24 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 947 | Rwd: -682.03 | Motivo: Schianto a terra
+Step: 1082 | Rwd: -643.84 | Motivo: Schianto a terra
+Step: 838 | Rwd: -774.99 | Motivo: Schianto a terra
+Step: 1009 | Rwd: -175.14 | Motivo: Schianto a terra
+Step: 890 | Rwd: -563.90 | Motivo: Schianto a terra
+Step: 1041 | Rwd: -315.18 | Motivo: Schianto a terra
+Step: 945 | Rwd: 642.61 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1073 | Rwd: 658.96 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 707 | Rwd: -670.82 | Motivo: Deviazione eccessiva
+Step: 856 | Rwd: -211.40 | Motivo: Schianto a terra
+Step: 1001 | Rwd: 476.97 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1022 | Rwd: 944.81 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1042 | Rwd: -431.80 | Motivo: Schianto a terra
+Step: 1075 | Rwd: -265.71 | Motivo: Schianto a terra
+Step: 714 | Rwd: -576.32 | Motivo: Schianto a terra
+Step: 825 | Rwd: -613.74 | Motivo: Schianto a terra
+Step: 866 | Rwd: -143.38 | Motivo: Schianto a terra
+Step: 1066 | Rwd: 1013.29 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1102 | Rwd: -370.86 | Motivo: Schianto a terra
+Step: 1072 | Rwd: -358.81 | Motivo: Schianto a terra
+Step: 952 | Rwd: -160.52 | Motivo: Deviazione eccessiva
+Step: 969 | Rwd: -155.22 | Motivo: Schianto a terra
+Step: 1143 | Rwd: 1029.42 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1034 | Rwd: -288.22 | Motivo: Schianto a terra
+Step: 1149 | Rwd: 21.93 | Motivo: Schianto a terra
+Step: 1140 | Rwd: -39.07 | Motivo: Schianto a terra
+Step: 836 | Rwd: -493.47 | Motivo: Schianto a terra
+Step: 944 | Rwd: -222.81 | Motivo: Schianto a terra
+Step: 1003 | Rwd: -761.18 | Motivo: Schianto a terra
+Step: 1141 | Rwd: 852.15 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1125 | Rwd: 952.79 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1245 | Rwd: -282.74 | Motivo: Schianto a terra
+Step: 885 | Rwd: -619.56 | Motivo: Schianto a terra
+Step: 779 | Rwd: -267.75 | Motivo: Schianto a terra
+Step: 1080 | Rwd: -327.12 | Motivo: Schianto a terra
+Step: 891 | Rwd: -322.92 | Motivo: Schianto a terra
+Step: 1041 | Rwd: -288.19 | Motivo: Schianto a terra
+Step: 1084 | Rwd: -123.55 | Motivo: Deviazione eccessiva
+Step: 714 | Rwd: -518.09 | Motivo: Schianto a terra
+Step: 936 | Rwd: -420.30 | Motivo: Schianto a terra
+Step: 942 | Rwd: -443.70 | Motivo: Schianto a terra
+Step: 1121 | Rwd: -229.24 | Motivo: Schianto a terra
+Step: 1126 | Rwd: -493.43 | Motivo: Schianto a terra
+Step: 1128 | Rwd: -272.02 | Motivo: Deviazione eccessiva
+Step: 13 | Rwd: -490.93 | Motivo: Schianto a terra
+Step: 974 | Rwd: 814.21 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1009 | Rwd: -445.89 | Motivo: Schianto a terra
+Step: 1078 | Rwd: -285.47 | Motivo: Schianto a terra
+Step: 1201 | Rwd: -77.71 | Motivo: Schianto a terra
+Step: 1324 | Rwd: -349.14 | Motivo: Schianto a terra
+Step: 835 | Rwd: -537.66 | Motivo: Schianto a terra
+Step: 1079 | Rwd: -417.03 | Motivo: Schianto a terra
+Step: 1167 | Rwd: -426.11 | Motivo: Schianto a terra
+Step: 1158 | Rwd: -423.36 | Motivo: Schianto a terra
+Step: 1119 | Rwd: -136.07 | Motivo: Deviazione eccessiva
+Step: 1314 | Rwd: -290.22 | Motivo: Schianto a terra
+Step: 881 | Rwd: -552.61 | Motivo: Schianto a terra
+Step: 872 | Rwd: -680.74 | Motivo: Schianto a terra
+Step: 966 | Rwd: -414.22 | Motivo: Schianto a terra
+Step: 1082 | Rwd: -352.36 | Motivo: Schianto a terra
+Step: 1093 | Rwd: -510.46 | Motivo: Schianto a terra
+Step: 1084 | Rwd: -572.74 | Motivo: Schianto a terra
+Step: 685 | Rwd: -381.54 | Motivo: Deviazione eccessiva
+Step: 945 | Rwd: -133.07 | Motivo: Deviazione eccessiva
+Step: 860 | Rwd: -229.85 | Motivo: Schianto a terra
+Step: 882 | Rwd: -303.16 | Motivo: Schianto a terra
+Step: 1012 | Rwd: -97.40 | Motivo: Schianto a terra
+Step: 957 | Rwd: -48.43 | Motivo: Schianto a terra
+Step: 1308 | Rwd: -214.60 | Motivo: Schianto a terra
+Step: 12 | Rwd: -492.14 | Motivo: Schianto a terra
+Step: 843 | Rwd: 798.29 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 952 | Rwd: -134.45 | Motivo: Deviazione eccessiva
+Step: 1077 | Rwd: -338.46 | Motivo: Deviazione eccessiva
+Step: 1181 | Rwd: -828.75 | Motivo: Schianto a terra
+Step: 842 | Rwd: -129.87 | Motivo: Schianto a terra
+Step: 971 | Rwd: -736.46 | Motivo: Schianto a terra
+Step: 869 | Rwd: -624.13 | Motivo: Schianto a terra
+Step: 1064 | Rwd: -85.58 | Motivo: Schianto a terra
+Step: 1507 | Rwd: -499.29 | Motivo: Schianto a terra
+Step: 1545 | Rwd: 632.50 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1164 | Rwd: 49.30 | Motivo: Schianto a terra
+Step: 683 | Rwd: -371.16 | Motivo: Deviazione eccessiva
+Step: 901 | Rwd: -588.39 | Motivo: Schianto a terra
+Step: 853 | Rwd: -915.64 | Motivo: Deviazione eccessiva
+Step: 909 | Rwd: -555.58 | Motivo: Schianto a terra
+Step: 963 | Rwd: -82.28 | Motivo: Schianto a terra
+Step: 778 | Rwd: -516.97 | Motivo: Schianto a terra
+Step: 1049 | Rwd: -320.20 | Motivo: Schianto a terra
+Step: 1062 | Rwd: -246.09 | Motivo: Schianto a terra
+Step: 1091 | Rwd: -63.46 | Motivo: Deviazione eccessiva
+Step: 1239 | Rwd: -54.83 | Motivo: Schianto a terra
+Step: 1336 | Rwd: 170.06 | Motivo: Deviazione eccessiva
+Step: 1337 | Rwd: 42.86 | Motivo: Deviazione eccessiva
+Step: 705 | Rwd: -495.20 | Motivo: Schianto a terra
+Step: 880 | Rwd: -612.02 | Motivo: Schianto a terra
+Step: 1065 | Rwd: -202.43 | Motivo: Schianto a terra
+Step: 1068 | Rwd: -134.86 | Motivo: Schianto a terra
+Step: 1339 | Rwd: -76.86 | Motivo: Deviazione eccessiva
+Step: 753 | Rwd: -587.69 | Motivo: Deviazione eccessiva
+Step: 851 | Rwd: -422.07 | Motivo: Schianto a terra
+Step: 841 | Rwd: -225.07 | Motivo: Schianto a terra
+Step: 1101 | Rwd: 611.56 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1278 | Rwd: -184.64 | Motivo: Schianto a terra
+Step: 1312 | Rwd: -325.70 | Motivo: Schianto a terra
+Step: 1123 | Rwd: -262.52 | Motivo: Schianto a terra
+Step: 848 | Rwd: -272.53 | Motivo: Schianto a terra
+Step: 886 | Rwd: -765.80 | Motivo: Schianto a terra
+Step: 901 | Rwd: -262.23 | Motivo: Schianto a terra
+Step: 1133 | Rwd: 42.98 | Motivo: Schianto a terra
+Step: 1134 | Rwd: 117.99 | Motivo: Schianto a terra
+Step: 575 | Rwd: -363.87 | Motivo: Schianto a terra
+Step: 795 | Rwd: -614.55 | Motivo: Schianto a terra
+Step: 927 | Rwd: -471.48 | Motivo: Schianto a terra
+Step: 836 | Rwd: -508.98 | Motivo: Schianto a terra
+Step: 835 | Rwd: -136.09 | Motivo: Schianto a terra
+Step: 984 | Rwd: -103.13 | Motivo: Schianto a terra
+Step: 914 | Rwd: 916.36 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 687 | Rwd: -538.10 | Motivo: Deviazione eccessiva
+Step: 796 | Rwd: -522.21 | Motivo: Schianto a terra
+Step: 905 | Rwd: -594.13 | Motivo: Schianto a terra
+Step: 920 | Rwd: -139.17 | Motivo: Schianto a terra
+Step: 1105 | Rwd: -166.47 | Motivo: Schianto a terra
+Step: 677 | Rwd: -387.48 | Motivo: Deviazione eccessiva
+Step: 934 | Rwd: -135.99 | Motivo: Deviazione eccessiva
+Step: 835 | Rwd: -820.83 | Motivo: Schianto a terra
+Step: 1126 | Rwd: -1178.03 | Motivo: Schianto a terra
+Step: 1115 | Rwd: -874.13 | Motivo: Schianto a terra
+Step: 1308 | Rwd: -206.45 | Motivo: Schianto a terra
+Step: 821 | Rwd: -459.23 | Motivo: Schianto a terra
+Step: 976 | Rwd: -234.50 | Motivo: Schianto a terra
+Step: 930 | Rwd: -320.17 | Motivo: Schianto a terra
+Step: 913 | Rwd: -473.27 | Motivo: Schianto a terra
+Step: 1300 | Rwd: -241.59 | Motivo: Schianto a terra
+Step: 1550 | Rwd: 422.78 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 789 | Rwd: -591.05 | Motivo: Schianto a terra
+Step: 854 | Rwd: -198.77 | Motivo: Schianto a terra
+Step: 1009 | Rwd: -136.00 | Motivo: Schianto a terra
+Step: 1068 | Rwd: -745.33 | Motivo: Schianto a terra
+Step: 1060 | Rwd: -393.97 | Motivo: Schianto a terra
+Step: 1147 | Rwd: 17.82 | Motivo: Schianto a terra
+Step: 1142 | Rwd: -87.85 | Motivo: Schianto a terra
+Step: 711 | Rwd: 571.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 784 | Rwd: -685.77 | Motivo: Deviazione eccessiva
+Step: 887 | Rwd: -165.00 | Motivo: Schianto a terra
+Step: 1279 | Rwd: -3.00 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1232 | Rwd: -503.82 | Motivo: Schianto a terra
+Step: 19 | Rwd: -493.71 | Motivo: Schianto a terra
+Step: 687 | Rwd: -681.91 | Motivo: Schianto a terra
+Step: 901 | Rwd: -267.31 | Motivo: Schianto a terra
+Step: 947 | Rwd: 825.88 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1092 | Rwd: -277.37 | Motivo: Deviazione eccessiva
+Step: 1339 | Rwd: 219.52 | Motivo: Deviazione eccessiva
+Step: 1311 | Rwd: -91.26 | Motivo: Schianto a terra
+Step: 16 | Rwd: -491.75 | Motivo: Schianto a terra
+Step: 767 | Rwd: -411.77 | Motivo: Schianto a terra
+Step: 1061 | Rwd: -179.75 | Motivo: Schianto a terra
+Step: 1031 | Rwd: -136.13 | Motivo: Schianto a terra
+Step: 1212 | Rwd: -574.64 | Motivo: Schianto a terra
+Step: 809 | Rwd: -585.73 | Motivo: Schianto a terra
+Step: 926 | Rwd: -246.72 | Motivo: Schianto a terra
+Step: 959 | Rwd: -253.16 | Motivo: Deviazione eccessiva
+Step: 1043 | Rwd: 962.20 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 988 | Rwd: -748.77 | Motivo: Schianto a terra
+Step: 1170 | Rwd: -76.03 | Motivo: Schianto a terra
+Step: 730 | Rwd: -434.52 | Motivo: Schianto a terra
+Step: 12 | Rwd: -492.31 | Motivo: Schianto a terra
+Step: 805 | Rwd: 400.51 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 857 | Rwd: 110.00 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 990 | Rwd: -291.28 | Motivo: Deviazione eccessiva
+Step: 1173 | Rwd: 64.09 | Motivo: Schianto a terra
+Step: 870 | Rwd: -612.53 | Motivo: Schianto a terra
+Step: 775 | Rwd: -568.04 | Motivo: Schianto a terra
+Step: 937 | Rwd: 897.16 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1055 | Rwd: 690.44 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1105 | Rwd: -392.13 | Motivo: Schianto a terra
+Step: 1272 | Rwd: -147.37 | Motivo: Schianto a terra
+Step: 953 | Rwd: -172.95 | Motivo: Deviazione eccessiva
+Step: 835 | Rwd: -485.03 | Motivo: Schianto a terra
+Step: 830 | Rwd: -225.04 | Motivo: Schianto a terra
+Step: 932 | Rwd: -201.38 | Motivo: Schianto a terra
+Step: 1313 | Rwd: -353.34 | Motivo: Schianto a terra
+Step: 1558 | Rwd: -400.85 | Motivo: Schianto a terra
+Step: 821 | Rwd: -781.88 | Motivo: Schianto a terra
+Step: 846 | Rwd: -650.67 | Motivo: Schianto a terra
+Step: 1003 | Rwd: -195.10 | Motivo: Schianto a terra
+Step: 1159 | Rwd: -750.63 | Motivo: Schianto a terra
+Step: 1141 | Rwd: 62.62 | Motivo: Schianto a terra
+Step: 1313 | Rwd: -280.83 | Motivo: Schianto a terra
+Step: 758 | Rwd: -407.05 | Motivo: Schianto a terra
+Step: 784 | Rwd: -383.71 | Motivo: Schianto a terra
+Step: 884 | Rwd: -262.76 | Motivo: Schianto a terra
+Step: 1017 | Rwd: -138.36 | Motivo: Schianto a terra
+Step: 1076 | Rwd: -334.84 | Motivo: Schianto a terra
+Step: 1331 | Rwd: 152.90 | Motivo: Deviazione eccessiva
+Step: 867 | Rwd: -140.02 | Motivo: Schianto a terra
+Step: 986 | Rwd: 505.61 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1072 | Rwd: 11.81 | Motivo: Schianto a terra
+Step: 921 | Rwd: -702.01 | Motivo: Schianto a terra
+Step: 1153 | Rwd: -72.51 | Motivo: Schianto a terra
+Step: 1261 | Rwd: -137.57 | Motivo: Schianto a terra
+Step: 1002 | Rwd: -381.28 | Motivo: Schianto a terra
+Step: 809 | Rwd: -841.13 | Motivo: Deviazione eccessiva
+Step: 896 | Rwd: -288.29 | Motivo: Deviazione eccessiva
+Step: 1255 | Rwd: -104.57 | Motivo: Schianto a terra
+Step: 1511 | Rwd: -123.95 | Motivo: Schianto a terra
+Step: 1504 | Rwd: -185.48 | Motivo: Schianto a terra
+Step: 771 | Rwd: -320.71 | Motivo: Schianto a terra
+Step: 976 | Rwd: 742.04 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1082 | Rwd: -197.87 | Motivo: Schianto a terra
+Step: 1157 | Rwd: 10.67 | Motivo: Schianto a terra
+Step: 1081 | Rwd: 439.62 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1314 | Rwd: -359.50 | Motivo: Schianto a terra
+Step: 878 | Rwd: 693.35 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 964 | Rwd: 705.27 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 974 | Rwd: -193.46 | Motivo: Schianto a terra
+Step: 1069 | Rwd: -405.63 | Motivo: Schianto a terra
+Step: 1085 | Rwd: -87.29 | Motivo: Deviazione eccessiva
+Step: 1300 | Rwd: 787.48 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 672 | Rwd: -543.05 | Motivo: Deviazione eccessiva
+Step: 868 | Rwd: 516.90 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1084 | Rwd: -229.29 | Motivo: Schianto a terra
+Step: 1326 | Rwd: -101.74 | Motivo: Deviazione eccessiva
+Step: 1270 | Rwd: -319.56 | Motivo: Schianto a terra
+Step: 1379 | Rwd: -247.71 | Motivo: Schianto a terra
+Step: 1327 | Rwd: -311.43 | Motivo: Schianto a terra
+Step: 688 | Rwd: -413.24 | Motivo: Deviazione eccessiva
+Step: 811 | Rwd: -439.26 | Motivo: Schianto a terra
+Step: 921 | Rwd: -354.49 | Motivo: Schianto a terra
+Step: 867 | Rwd: -291.38 | Motivo: Schianto a terra
+Step: 946 | Rwd: -314.62 | Motivo: Schianto a terra
+Step: 892 | Rwd: -620.79 | Motivo: Schianto a terra
+Step: 846 | Rwd: -435.94 | Motivo: Schianto a terra
+Step: 859 | Rwd: -244.48 | Motivo: Schianto a terra
+Step: 1113 | Rwd: -70.93 | Motivo: Schianto a terra
+Step: 989 | Rwd: 493.87 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1140 | Rwd: 701.94 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 873 | Rwd: -322.02 | Motivo: Deviazione eccessiva
+Step: 909 | Rwd: -384.23 | Motivo: Schianto a terra
+Step: 964 | Rwd: -239.69 | Motivo: Schianto a terra
+Step: 1064 | Rwd: -126.84 | Motivo: Deviazione eccessiva
+Step: 1109 | Rwd: -42.23 | Motivo: Schianto a terra
+Step: 1153 | Rwd: 8.04 | Motivo: Schianto a terra
+Step: 890 | Rwd: 869.92 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 765 | Rwd: -450.56 | Motivo: Schianto a terra
+Step: 781 | Rwd: -429.47 | Motivo: Schianto a terra
+Step: 923 | Rwd: 810.41 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 941 | Rwd: -359.55 | Motivo: Schianto a terra
+Step: 971 | Rwd: -579.01 | Motivo: Schianto a terra
+Step: 1349 | Rwd: -47.11 | Motivo: Deviazione eccessiva
+Step: 782 | Rwd: -472.07 | Motivo: Schianto a terra
+Step: 734 | Rwd: -719.22 | Motivo: Deviazione eccessiva
+Step: 866 | Rwd: 799.50 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1070 | Rwd: -68.18 | Motivo: Schianto a terra
+Step: 1355 | Rwd: -488.75 | Motivo: Schianto a terra
+Step: 736 | Rwd: -329.19 | Motivo: Schianto a terra
+Step: 741 | Rwd: -456.73 | Motivo: Schianto a terra
+Step: 963 | Rwd: -688.76 | Motivo: Schianto a terra
+Step: 1006 | Rwd: -846.72 | Motivo: Schianto a terra
+Step: 1141 | Rwd: -38.87 | Motivo: Schianto a terra
+Step: 1131 | Rwd: -65.84 | Motivo: Schianto a terra
+Step: 890 | Rwd: 764.93 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 921 | Rwd: -635.59 | Motivo: Schianto a terra
+Step: 1073 | Rwd: -441.88 | Motivo: Schianto a terra
+Step: 1104 | Rwd: -127.05 | Motivo: Schianto a terra
+Step: 1157 | Rwd: 2.16 | Motivo: Schianto a terra
+Step: 1327 | Rwd: -148.57 | Motivo: Schianto a terra
+Step: 850 | Rwd: -297.89 | Motivo: Schianto a terra
+Step: 875 | Rwd: -884.55 | Motivo: Schianto a terra
+Step: 1047 | Rwd: -446.84 | Motivo: Schianto a terra
+Step: 963 | Rwd: -175.91 | Motivo: Deviazione eccessiva
+Step: 1135 | Rwd: -80.46 | Motivo: Schianto a terra
+Step: 1362 | Rwd: -157.43 | Motivo: Schianto a terra
+Step: 1531 | Rwd: -386.27 | Motivo: Schianto a terra
+Step: 16 | Rwd: -492.26 | Motivo: Schianto a terra
+Step: 26 | Rwd: -495.63 | Motivo: Schianto a terra
+Step: 311 | Rwd: -781.24 | Motivo: Deviazione eccessiva
+Step: 828 | Rwd: -441.57 | Motivo: Schianto a terra
+Step: 963 | Rwd: -260.08 | Motivo: Deviazione eccessiva
+Step: 951 | Rwd: -305.01 | Motivo: Deviazione eccessiva
+Step: 848 | Rwd: 776.02 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 897 | Rwd: -344.29 | Motivo: Schianto a terra
+Step: 878 | Rwd: -515.43 | Motivo: Schianto a terra
+Step: 19 | Rwd: -493.41 | Motivo: Schianto a terra
+Step: 1053 | Rwd: -392.75 | Motivo: Schianto a terra
+Step: 1303 | Rwd: 740.60 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 770 | Rwd: -476.34 | Motivo: Schianto a terra
+Step: 1106 | Rwd: -441.57 | Motivo: Schianto a terra
+Step: 1045 | Rwd: -406.89 | Motivo: Schianto a terra
+Step: 1057 | Rwd: -318.42 | Motivo: Schianto a terra
+Step: 1131 | Rwd: -664.35 | Motivo: Schianto a terra
+Step: 734 | Rwd: -536.39 | Motivo: Schianto a terra
+Step: 960 | Rwd: -585.00 | Motivo: Schianto a terra
+Step: 885 | Rwd: -733.00 | Motivo: Schianto a terra
+Step: 1119 | Rwd: -934.73 | Motivo: Schianto a terra
+Step: 1124 | Rwd: -548.04 | Motivo: Schianto a terra
+Step: 1139 | Rwd: -170.40 | Motivo: Schianto a terra
+Step: 986 | Rwd: -459.04 | Motivo: Schianto a terra
+Step: 863 | Rwd: -513.68 | Motivo: Schianto a terra
+Step: 799 | Rwd: -385.62 | Motivo: Schianto a terra
+Step: 987 | Rwd: 825.49 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1083 | Rwd: -433.96 | Motivo: Schianto a terra
+Step: 1262 | Rwd: -181.21 | Motivo: Schianto a terra
+Step: 841 | Rwd: -141.25 | Motivo: Schianto a terra
+Step: 959 | Rwd: -173.44 | Motivo: Deviazione eccessiva
+Step: 868 | Rwd: -504.44 | Motivo: Schianto a terra
+Step: 888 | Rwd: -236.61 | Motivo: Schianto a terra
+Step: 1070 | Rwd: -433.59 | Motivo: Schianto a terra
+Step: 1079 | Rwd: -727.66 | Motivo: Schianto a terra
+Step: 1030 | Rwd: -549.36 | Motivo: Schianto a terra
+Step: 738 | Rwd: -365.80 | Motivo: Schianto a terra
+Step: 951 | Rwd: -397.82 | Motivo: Deviazione eccessiva
+Step: 1000 | Rwd: -176.25 | Motivo: Schianto a terra
+Step: 1073 | Rwd: -129.06 | Motivo: Schianto a terra
+Step: 1311 | Rwd: -273.37 | Motivo: Schianto a terra
+Step: 896 | Rwd: -949.33 | Motivo: Schianto a terra
+Step: 850 | Rwd: -426.03 | Motivo: Schianto a terra
+Step: 936 | Rwd: -163.19 | Motivo: Schianto a terra
+Step: 1047 | Rwd: -111.94 | Motivo: Schianto a terra
+Step: 1164 | Rwd: -1209.33 | Motivo: Schianto a terra
+Step: 1349 | Rwd: -76.15 | Motivo: Deviazione eccessiva
+Step: 1321 | Rwd: -166.63 | Motivo: Schianto a terra
+Step: 14 | Rwd: -493.27 | Motivo: Schianto a terra
+Step: 13 | Rwd: -491.90 | Motivo: Schianto a terra
+Step: 981 | Rwd: -643.17 | Motivo: Schianto a terra
+Step: 1078 | Rwd: -257.09 | Motivo: Deviazione eccessiva
+Step: 1207 | Rwd: -932.10 | Motivo: Schianto a terra
+Step: 15 | Rwd: -492.09 | Motivo: Schianto a terra
+Step: 12 | Rwd: -492.52 | Motivo: Schianto a terra
+Step: 43 | Rwd: -504.19 | Motivo: Schianto a terra
+Step: 63 | Rwd: -521.18 | Motivo: Schianto a terra
+Step: 750 | Rwd: -583.43 | Motivo: Schianto a terra
+Step: 775 | Rwd: -551.57 | Motivo: Schianto a terra
+Step: 978 | Rwd: -399.50 | Motivo: Schianto a terra
+Step: 13 | Rwd: -491.81 | Motivo: Schianto a terra
+Step: 738 | Rwd: -371.32 | Motivo: Schianto a terra
+Step: 960 | Rwd: 248.64 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 951 | Rwd: -281.53 | Motivo: Deviazione eccessiva
+Step: 1038 | Rwd: -270.77 | Motivo: Schianto a terra
+Step: 995 | Rwd: 778.78 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1306 | Rwd: -258.26 | Motivo: Schianto a terra
+Step: 15 | Rwd: -492.57 | Motivo: Schianto a terra
+Step: 986 | Rwd: -502.36 | Motivo: Schianto a terra
+Step: 1153 | Rwd: -27.59 | Motivo: Schianto a terra
+Step: 1116 | Rwd: -236.48 | Motivo: Deviazione eccessiva
+Step: 1310 | Rwd: -118.15 | Motivo: Schianto a terra
+Step: 20 | Rwd: -491.93 | Motivo: Schianto a terra
+Step: 22 | Rwd: -492.57 | Motivo: Schianto a terra
+Step: 910 | Rwd: -170.31 | Motivo: Schianto a terra
+Step: 1056 | Rwd: -744.00 | Motivo: Schianto a terra
+Step: 1102 | Rwd: -520.42 | Motivo: Schianto a terra
+Step: 1312 | Rwd: -219.82 | Motivo: Schianto a terra
+Step: 1346 | Rwd: -194.79 | Motivo: Deviazione eccessiva
+Step: 815 | Rwd: -147.17 | Motivo: Schianto a terra
+Step: 1062 | Rwd: 703.82 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1066 | Rwd: -170.99 | Motivo: Schianto a terra
+Step: 976 | Rwd: -763.19 | Motivo: Schianto a terra
+Step: 1135 | Rwd: -62.76 | Motivo: Schianto a terra
+Step: 1331 | Rwd: 1.60 | Motivo: Deviazione eccessiva
+Step: 869 | Rwd: -354.79 | Motivo: Deviazione eccessiva
+Step: 954 | Rwd: -133.97 | Motivo: Schianto a terra
+Step: 919 | Rwd: -178.85 | Motivo: Schianto a terra
+Step: 1069 | Rwd: -215.68 | Motivo: Schianto a terra
+Step: 1090 | Rwd: -248.44 | Motivo: Deviazione eccessiva
+Step: 1300 | Rwd: -304.02 | Motivo: Schianto a terra
+Step: 843 | Rwd: -214.19 | Motivo: Schianto a terra
+Step: 840 | Rwd: -289.57 | Motivo: Schianto a terra
+Step: 1077 | Rwd: -373.39 | Motivo: Schianto a terra
+Step: 1086 | Rwd: -269.11 | Motivo: Deviazione eccessiva
+Step: 1053 | Rwd: -392.39 | Motivo: Schianto a terra
+Step: 1079 | Rwd: -411.88 | Motivo: Schianto a terra
+Step: 362 | Rwd: -407.97 | Motivo: Schianto a terra
+Step: 808 | Rwd: -624.19 | Motivo: Schianto a terra
+Step: 860 | Rwd: -226.87 | Motivo: Schianto a terra
+Step: 999 | Rwd: -500.17 | Motivo: Schianto a terra
+Step: 1030 | Rwd: 17.07 | Motivo: Schianto a terra
+Step: 1114 | Rwd: -31.22 | Motivo: Schianto a terra
+Step: 16 | Rwd: -491.32 | Motivo: Schianto a terra
+Step: 965 | Rwd: -345.14 | Motivo: Deviazione eccessiva
+Step: 1099 | Rwd: -217.37 | Motivo: Schianto a terra
+Step: 1116 | Rwd: -462.61 | Motivo: Schianto a terra
+Step: 1262 | Rwd: -152.86 | Motivo: Schianto a terra
+Step: 1222 | Rwd: -611.30 | Motivo: Schianto a terra
+Step: 28 | Rwd: -497.62 | Motivo: Schianto a terra
+Step: 22 | Rwd: -493.67 | Motivo: Schianto a terra
+Step: 765 | Rwd: -524.34 | Motivo: Schianto a terra
+Step: 961 | Rwd: -287.81 | Motivo: Deviazione eccessiva
+Step: 980 | Rwd: -625.86 | Motivo: Schianto a terra
+Step: 1335 | Rwd: 71.09 | Motivo: Deviazione eccessiva
+Step: 22 | Rwd: -492.87 | Motivo: Schianto a terra
+Step: 800 | Rwd: -441.83 | Motivo: Schianto a terra
+Step: 760 | Rwd: -552.31 | Motivo: Schianto a terra
+Step: 1050 | Rwd: -367.49 | Motivo: Schianto a terra
+Step: 1237 | Rwd: -81.61 | Motivo: Schianto a terra
+Step: 1531 | Rwd: -492.33 | Motivo: Schianto a terra
+Step: 13 | Rwd: -492.61 | Motivo: Schianto a terra
+Step: 736 | Rwd: -470.91 | Motivo: Schianto a terra
+Step: 766 | Rwd: -408.49 | Motivo: Schianto a terra
+Step: 740 | Rwd: -539.50 | Motivo: Schianto a terra
+Step: 1078 | Rwd: -326.51 | Motivo: Deviazione eccessiva
+Step: 1101 | Rwd: -513.08 | Motivo: Schianto a terra
+Step: 197 | Rwd: -512.25 | Motivo: Schianto a terra
+Step: 782 | Rwd: -449.13 | Motivo: Schianto a terra
+Step: 1067 | Rwd: -115.87 | Motivo: Schianto a terra
+Step: 1103 | Rwd: 942.00 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1065 | Rwd: -430.77 | Motivo: Schianto a terra
+Step: 1227 | Rwd: -49.87 | Motivo: Schianto a terra
+Step: 16 | Rwd: -490.86 | Motivo: Schianto a terra
+Step: 30 | Rwd: -496.97 | Motivo: Schianto a terra
+Step: 861 | Rwd: -141.65 | Motivo: Schianto a terra
+Step: 921 | Rwd: -210.13 | Motivo: Deviazione eccessiva
+Step: 920 | Rwd: -598.44 | Motivo: Schianto a terra
+Step: 1126 | Rwd: -295.87 | Motivo: Deviazione eccessiva
+Step: 706 | Rwd: -557.04 | Motivo: Schianto a terra
+Step: 780 | Rwd: 607.60 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 906 | Rwd: 91.74 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 925 | Rwd: -352.63 | Motivo: Schianto a terra
+Step: 1137 | Rwd: -424.64 | Motivo: Schianto a terra
+Step: 1237 | Rwd: -205.80 | Motivo: Schianto a terra
+Step: 842 | Rwd: -508.50 | Motivo: Schianto a terra
+Step: 712 | Rwd: -653.68 | Motivo: Deviazione eccessiva
+Step: 952 | Rwd: -316.66 | Motivo: Deviazione eccessiva
+Step: 945 | Rwd: -302.33 | Motivo: Schianto a terra
+Step: 1099 | Rwd: -507.38 | Motivo: Schianto a terra
+Step: 1076 | Rwd: -91.32 | Motivo: Deviazione eccessiva
+Step: 35 | Rwd: -502.42 | Motivo: Schianto a terra
+Step: 956 | Rwd: -731.23 | Motivo: Schianto a terra
+Step: 881 | Rwd: -208.62 | Motivo: Schianto a terra
+Step: 945 | Rwd: -481.53 | Motivo: Schianto a terra
+Step: 1508 | Rwd: -387.41 | Motivo: Schianto a terra
+Step: 1700 | Rwd: 279.14 | Motivo: Schianto a terra
+Step: 18 | Rwd: -491.42 | Motivo: Schianto a terra
+Step: 658 | Rwd: -628.57 | Motivo: Deviazione eccessiva
+Step: 860 | Rwd: -615.91 | Motivo: Schianto a terra
+Step: 876 | Rwd: -610.13 | Motivo: Schianto a terra
+Step: 884 | Rwd: -869.75 | Motivo: Schianto a terra
+Step: 1032 | Rwd: -245.93 | Motivo: Schianto a terra
+Step: 972 | Rwd: -137.14 | Motivo: Schianto a terra
+Step: 999 | Rwd: -204.64 | Motivo: Schianto a terra
+Step: 1085 | Rwd: -445.77 | Motivo: Schianto a terra
+Step: 1234 | Rwd: 607.23 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1325 | Rwd: -328.68 | Motivo: Schianto a terra
+Step: 1473 | Rwd: -147.14 | Motivo: Schianto a terra
+Step: 873 | Rwd: 629.69 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 853 | Rwd: -268.45 | Motivo: Schianto a terra
+Step: 876 | Rwd: -244.70 | Motivo: Schianto a terra
+Step: 1138 | Rwd: -770.12 | Motivo: Schianto a terra
+Step: 1471 | Rwd: 80.66 | Motivo: Schianto a terra
+Step: 1519 | Rwd: -203.13 | Motivo: Schianto a terra
+Step: 812 | Rwd: -1001.74 | Motivo: Deviazione eccessiva
+Step: 788 | Rwd: -654.80 | Motivo: Schianto a terra
+Step: 954 | Rwd: -257.85 | Motivo: Schianto a terra
+Step: 1009 | Rwd: -539.81 | Motivo: Schianto a terra
+Step: 986 | Rwd: -314.62 | Motivo: Schianto a terra
+Step: 1523 | Rwd: -477.46 | Motivo: Schianto a terra
+Step: 798 | Rwd: -904.85 | Motivo: Deviazione eccessiva
+Step: 892 | Rwd: -470.53 | Motivo: Schianto a terra
+Step: 984 | Rwd: -286.97 | Motivo: Schianto a terra
+Step: 1077 | Rwd: -628.40 | Motivo: Schianto a terra
+Step: 1295 | Rwd: -117.98 | Motivo: Deviazione eccessiva
+Step: 1310 | Rwd: -238.91 | Motivo: Schianto a terra
+Step: 836 | Rwd: -298.58 | Motivo: Schianto a terra
+Step: 860 | Rwd: -251.66 | Motivo: Schianto a terra
+Step: 990 | Rwd: -178.64 | Motivo: Schianto a terra
+Step: 1072 | Rwd: 670.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1222 | Rwd: -35.28 | Motivo: Schianto a terra
+Step: 1571 | Rwd: 59.92 | Motivo: Schianto a terra
+Step: 778 | Rwd: -461.75 | Motivo: Schianto a terra
+Step: 996 | Rwd: -295.63 | Motivo: Schianto a terra
+Step: 1098 | Rwd: -254.88 | Motivo: Deviazione eccessiva
+Step: 1072 | Rwd: -407.24 | Motivo: Schianto a terra
+Step: 1144 | Rwd: -132.48 | Motivo: Schianto a terra
+Step: 1316 | Rwd: -268.92 | Motivo: Schianto a terra
+Step: 469 | Rwd: -711.53 | Motivo: Deviazione eccessiva
+Step: 736 | Rwd: -641.52 | Motivo: Schianto a terra
+Step: 988 | Rwd: -575.29 | Motivo: Schianto a terra
+Step: 1099 | Rwd: -519.78 | Motivo: Schianto a terra
+Step: 1046 | Rwd: -325.63 | Motivo: Schianto a terra
+Step: 1514 | Rwd: -339.00 | Motivo: Schianto a terra
+Step: 819 | Rwd: -239.36 | Motivo: Schianto a terra
+Step: 943 | Rwd: -330.05 | Motivo: Deviazione eccessiva
+Step: 870 | Rwd: -391.48 | Motivo: Deviazione eccessiva
+Step: 1070 | Rwd: -681.41 | Motivo: Schianto a terra
+Step: 1074 | Rwd: -401.95 | Motivo: Schianto a terra
+Step: 1330 | Rwd: -213.90 | Motivo: Deviazione eccessiva
+Step: 365 | Rwd: -415.10 | Motivo: Schianto a terra
+Step: 743 | Rwd: -512.89 | Motivo: Schianto a terra
+Step: 938 | Rwd: -166.46 | Motivo: Schianto a terra
+Step: 1077 | Rwd: -439.63 | Motivo: Schianto a terra
+Step: 1070 | Rwd: 560.16 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1515 | Rwd: -350.53 | Motivo: Schianto a terra
+Step: 856 | Rwd: -304.78 | Motivo: Schianto a terra
+Step: 896 | Rwd: -462.71 | Motivo: Deviazione eccessiva
+Step: 949 | Rwd: -244.44 | Motivo: Deviazione eccessiva
+Step: 1161 | Rwd: -532.34 | Motivo: Schianto a terra
+Step: 1078 | Rwd: -481.15 | Motivo: Schianto a terra
+Step: 1316 | Rwd: -255.88 | Motivo: Schianto a terra
+Step: 721 | Rwd: -565.31 | Motivo: Schianto a terra
+Step: 883 | Rwd: -582.54 | Motivo: Schianto a terra
+Step: 1118 | Rwd: -744.29 | Motivo: Schianto a terra
+Step: 1123 | Rwd: -231.67 | Motivo: Schianto a terra
+Step: 1358 | Rwd: -57.99 | Motivo: Schianto a terra
+Step: 1990 | Rwd: -3.87 | Motivo: Schianto a terra
+Step: 608 | Rwd: -530.20 | Motivo: Deviazione eccessiva
+Step: 704 | Rwd: 362.51 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 953 | Rwd: -327.97 | Motivo: Schianto a terra
+Step: 873 | Rwd: -395.38 | Motivo: Schianto a terra
+Step: 1066 | Rwd: -431.64 | Motivo: Schianto a terra
+Step: 1270 | Rwd: -89.19 | Motivo: Schianto a terra
+Step: 802 | Rwd: -695.93 | Motivo: Schianto a terra
+Step: 859 | Rwd: -457.28 | Motivo: Schianto a terra
+Step: 1028 | Rwd: -1200.86 | Motivo: Schianto a terra
+Step: 951 | Rwd: -428.20 | Motivo: Schianto a terra
+Step: 1072 | Rwd: -205.08 | Motivo: Deviazione eccessiva
+Step: 3449 | Rwd: 1031.43 | Motivo: Schianto a terra
+Step: 846 | Rwd: -560.26 | Motivo: Schianto a terra
+Step: 866 | Rwd: -229.72 | Motivo: Schianto a terra
+Step: 1090 | Rwd: -634.88 | Motivo: Schianto a terra
+Step: 949 | Rwd: -1380.68 | Motivo: Deviazione eccessiva
+Step: 998 | Rwd: -486.19 | Motivo: Schianto a terra
+Step: 955 | Rwd: 809.13 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 857 | Rwd: -664.47 | Motivo: Schianto a terra
+Step: 876 | Rwd: -441.54 | Motivo: Schianto a terra
+Step: 991 | Rwd: 319.36 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1107 | Rwd: -144.52 | Motivo: Schianto a terra
+Step: 1510 | Rwd: -319.95 | Motivo: Schianto a terra
+Step: 2959 | Rwd: 956.40 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 831 | Rwd: -270.03 | Motivo: Schianto a terra
+Step: 846 | Rwd: -352.71 | Motivo: Schianto a terra
+Step: 1018 | Rwd: -223.89 | Motivo: Schianto a terra
+Step: 927 | Rwd: 784.54 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1018 | Rwd: -316.68 | Motivo: Schianto a terra
+Step: 1074 | Rwd: -410.32 | Motivo: Schianto a terra
+Step: 788 | Rwd: -653.94 | Motivo: Schianto a terra
+Step: 1005 | Rwd: -262.00 | Motivo: Schianto a terra
+Step: 1065 | Rwd: -218.10 | Motivo: Schianto a terra
+Step: 1148 | Rwd: -126.82 | Motivo: Schianto a terra
+Step: 1474 | Rwd: -85.02 | Motivo: Schianto a terra
+Step: 1252 | Rwd: 46.60 | Motivo: Schianto a terra
+Step: 907 | Rwd: -264.14 | Motivo: Deviazione eccessiva
+Step: 1049 | Rwd: -463.71 | Motivo: Schianto a terra
+Step: 1124 | Rwd: -349.91 | Motivo: Deviazione eccessiva
+Step: 1302 | Rwd: 553.47 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1539 | Rwd: -71.15 | Motivo: Schianto a terra
+Step: 1399 | Rwd: 1012.04 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 737 | Rwd: -506.05 | Motivo: Schianto a terra
+Step: 781 | Rwd: -717.44 | Motivo: Schianto a terra
+Step: 750 | Rwd: -512.70 | Motivo: Schianto a terra
+Step: 1075 | Rwd: -477.44 | Motivo: Schianto a terra
+Step: 1108 | Rwd: -286.92 | Motivo: Deviazione eccessiva
+Step: 1306 | Rwd: -219.81 | Motivo: Schianto a terra
+Step: 789 | Rwd: -514.74 | Motivo: Schianto a terra
+Step: 851 | Rwd: -402.66 | Motivo: Schianto a terra
+Step: 852 | Rwd: -343.43 | Motivo: Schianto a terra
+Step: 936 | Rwd: -270.31 | Motivo: Schianto a terra
+Step: 1001 | Rwd: -472.09 | Motivo: Schianto a terra
+Step: 1527 | Rwd: -413.15 | Motivo: Schianto a terra
+Step: 995 | Rwd: -436.93 | Motivo: Schianto a terra
+Step: 864 | Rwd: -319.26 | Motivo: Schianto a terra
+Step: 1089 | Rwd: 401.75 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1076 | Rwd: -214.00 | Motivo: Schianto a terra
+Step: 1843 | Rwd: 197.97 | Motivo: Schianto a terra
+Step: 3640 | Rwd: 935.94 | Motivo: Schianto a terra
+Step: 861 | Rwd: -565.98 | Motivo: Schianto a terra
+Step: 1026 | Rwd: 645.27 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1044 | Rwd: -421.45 | Motivo: Schianto a terra
+Step: 1274 | Rwd: -554.14 | Motivo: Schianto a terra
+Step: 1265 | Rwd: -94.15 | Motivo: Deviazione eccessiva
+Step: 1808 | Rwd: 153.40 | Motivo: Schianto a terra
+Step: 737 | Rwd: -629.17 | Motivo: Schianto a terra
+Step: 865 | Rwd: -312.53 | Motivo: Schianto a terra
+Step: 940 | Rwd: -278.61 | Motivo: Schianto a terra
+Step: 824 | Rwd: 786.73 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1082 | Rwd: -444.69 | Motivo: Schianto a terra
+Step: 1534 | Rwd: -534.27 | Motivo: Schianto a terra
+Step: 788 | Rwd: -555.89 | Motivo: Schianto a terra
+Step: 712 | Rwd: -688.43 | Motivo: Deviazione eccessiva
+Step: 947 | Rwd: -234.43 | Motivo: Deviazione eccessiva
+Step: 1064 | Rwd: -457.82 | Motivo: Schianto a terra
+Step: 1106 | Rwd: -244.23 | Motivo: Schianto a terra
+Step: 1165 | Rwd: -174.05 | Motivo: Schianto a terra
+Step: 650 | Rwd: -573.90 | Motivo: Deviazione eccessiva
+Step: 816 | Rwd: -296.45 | Motivo: Schianto a terra
+Step: 883 | Rwd: -638.02 | Motivo: Schianto a terra
+Step: 1016 | Rwd: 615.38 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1114 | Rwd: -583.57 | Motivo: Schianto a terra
+Step: 1537 | Rwd: -174.21 | Motivo: Schianto a terra
+Step: 884 | Rwd: -329.62 | Motivo: Schianto a terra
+Step: 849 | Rwd: -605.42 | Motivo: Schianto a terra
+Step: 893 | Rwd: -414.81 | Motivo: Schianto a terra
+Step: 1043 | Rwd: -413.51 | Motivo: Schianto a terra
+Step: 1094 | Rwd: -312.21 | Motivo: Deviazione eccessiva
+Step: 1293 | Rwd: -414.73 | Motivo: Schianto a terra
+Step: 821 | Rwd: -277.59 | Motivo: Schianto a terra
+Step: 988 | Rwd: -239.40 | Motivo: Schianto a terra
+Step: 1069 | Rwd: -225.57 | Motivo: Schianto a terra
+Step: 1114 | Rwd: -286.56 | Motivo: Schianto a terra
+Step: 1123 | Rwd: -418.03 | Motivo: Schianto a terra
+Step: 1136 | Rwd: -392.49 | Motivo: Deviazione eccessiva
+Step: 1110 | Rwd: -151.62 | Motivo: Schianto a terra
+Step: 1088 | Rwd: -500.25 | Motivo: Schianto a terra
+Step: 1072 | Rwd: -253.27 | Motivo: Deviazione eccessiva
+Step: 1118 | Rwd: -166.30 | Motivo: Schianto a terra
+Step: 1311 | Rwd: -187.93 | Motivo: Schianto a terra
+Step: 1339 | Rwd: -130.91 | Motivo: Deviazione eccessiva
+Step: 714 | Rwd: -662.95 | Motivo: Deviazione eccessiva
+Step: 892 | Rwd: -354.85 | Motivo: Schianto a terra
+Step: 945 | Rwd: -247.36 | Motivo: Schianto a terra
+Step: 1124 | Rwd: -614.14 | Motivo: Schianto a terra
+Step: 1538 | Rwd: -410.23 | Motivo: Schianto a terra
+Step: 2043 | Rwd: 227.73 | Motivo: Schianto a terra
+Step: 1054 | Rwd: -420.16 | Motivo: Schianto a terra
+Step: 926 | Rwd: 718.92 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 980 | Rwd: -265.09 | Motivo: Schianto a terra
+Step: 1086 | Rwd: -208.83 | Motivo: Schianto a terra
+Step: 1114 | Rwd: -138.19 | Motivo: Schianto a terra
+Step: 1073 | Rwd: -213.57 | Motivo: Schianto a terra
+Step: 887 | Rwd: -726.57 | Motivo: Schianto a terra
+Step: 874 | Rwd: -368.04 | Motivo: Schianto a terra
+Step: 1131 | Rwd: -489.44 | Motivo: Schianto a terra
+Step: 1114 | Rwd: -203.32 | Motivo: Schianto a terra
+Step: 1083 | Rwd: -449.23 | Motivo: Schianto a terra
+Step: 1315 | Rwd: -263.75 | Motivo: Schianto a terra
+Step: 712 | Rwd: -602.98 | Motivo: Deviazione eccessiva
+Step: 878 | Rwd: -276.55 | Motivo: Schianto a terra
+Step: 922 | Rwd: -308.47 | Motivo: Deviazione eccessiva
+Step: 969 | Rwd: 762.21 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1292 | Rwd: 869.02 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1204 | Rwd: -155.32 | Motivo: Schianto a terra
+Step: 778 | Rwd: -776.22 | Motivo: Deviazione eccessiva
+Step: 904 | Rwd: -566.54 | Motivo: Schianto a terra
+Step: 992 | Rwd: -238.33 | Motivo: Schianto a terra
+Step: 1019 | Rwd: -333.87 | Motivo: Schianto a terra
+Step: 1001 | Rwd: -469.10 | Motivo: Schianto a terra
+Step: 1108 | Rwd: -1217.68 | Motivo: Schianto a terra
+Step: 833 | Rwd: -557.06 | Motivo: Schianto a terra
+Step: 967 | Rwd: -317.39 | Motivo: Deviazione eccessiva
+Step: 940 | Rwd: -294.19 | Motivo: Deviazione eccessiva
+Step: 943 | Rwd: -259.07 | Motivo: Schianto a terra
+Step: 1068 | Rwd: 662.43 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1230 | Rwd: -230.37 | Motivo: Schianto a terra
+Step: 20 | Rwd: -494.59 | Motivo: Schianto a terra
+Step: 870 | Rwd: -585.99 | Motivo: Schianto a terra
+Step: 861 | Rwd: -507.65 | Motivo: Schianto a terra
+Step: 1050 | Rwd: -473.56 | Motivo: Schianto a terra
+Step: 1126 | Rwd: -615.39 | Motivo: Schianto a terra
+Step: 1373 | Rwd: -274.96 | Motivo: Schianto a terra
+Step: 17 | Rwd: -492.98 | Motivo: Schianto a terra
+Step: 27 | Rwd: -497.99 | Motivo: Schianto a terra
+Step: 970 | Rwd: -275.05 | Motivo: Schianto a terra
+Step: 1009 | Rwd: -409.79 | Motivo: Schianto a terra
+Step: 937 | Rwd: -376.68 | Motivo: Schianto a terra
+Step: 1025 | Rwd: -364.76 | Motivo: Schianto a terra
+Step: 15 | Rwd: -492.81 | Motivo: Schianto a terra
+Step: 12 | Rwd: -492.50 | Motivo: Schianto a terra
+Step: 17 | Rwd: -494.38 | Motivo: Schianto a terra
+Step: 914 | Rwd: -960.86 | Motivo: Schianto a terra
+Step: 984 | Rwd: -626.21 | Motivo: Schianto a terra
+Step: 1141 | Rwd: -143.56 | Motivo: Schianto a terra
+Step: 1096 | Rwd: -233.05 | Motivo: Schianto a terra
+Step: 798 | Rwd: -722.81 | Motivo: Schianto a terra
+Step: 854 | Rwd: -467.46 | Motivo: Deviazione eccessiva
+Step: 952 | Rwd: -345.30 | Motivo: Deviazione eccessiva
+Step: 860 | Rwd: -845.58 | Motivo: Deviazione eccessiva
+Step: 1070 | Rwd: -621.09 | Motivo: Schianto a terra
+Step: 1038 | Rwd: -183.41 | Motivo: Schianto a terra
+Step: 1093 | Rwd: -340.62 | Motivo: Deviazione eccessiva
+Step: 956 | Rwd: -1113.36 | Motivo: Schianto a terra
+Step: 976 | Rwd: -300.24 | Motivo: Schianto a terra
+Step: 1001 | Rwd: -495.32 | Motivo: Schianto a terra
+Step: 1004 | Rwd: -445.71 | Motivo: Schianto a terra
+Step: 1313 | Rwd: -297.96 | Motivo: Deviazione eccessiva
+Step: 772 | Rwd: -515.40 | Motivo: Schianto a terra
+Step: 1068 | Rwd: -656.45 | Motivo: Schianto a terra
+Step: 1047 | Rwd: 794.83 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1055 | Rwd: -395.00 | Motivo: Schianto a terra
+Step: 1098 | Rwd: -985.96 | Motivo: Schianto a terra
+Step: 1078 | Rwd: -360.88 | Motivo: Schianto a terra
+Step: 1384 | Rwd: -145.56 | Motivo: Schianto a terra
+Step: 12 | Rwd: -493.15 | Motivo: Schianto a terra
+Step: 821 | Rwd: -923.56 | Motivo: Deviazione eccessiva
+Step: 965 | Rwd: -334.26 | Motivo: Deviazione eccessiva
+Step: 1061 | Rwd: -244.40 | Motivo: Schianto a terra
+Step: 1058 | Rwd: -203.86 | Motivo: Schianto a terra
+Step: 1087 | Rwd: -547.30 | Motivo: Schianto a terra
+Step: 1075 | Rwd: -267.20 | Motivo: Deviazione eccessiva
+Step: 1090 | Rwd: -268.55 | Motivo: Deviazione eccessiva
+Step: 1108 | Rwd: -200.00 | Motivo: Schianto a terra
+Step: 1099 | Rwd: -852.79 | Motivo: Schianto a terra
+Step: 1027 | Rwd: -289.40 | Motivo: Schianto a terra
+Step: 1046 | Rwd: -355.18 | Motivo: Schianto a terra
+Step: 866 | Rwd: -370.36 | Motivo: Deviazione eccessiva
+Step: 1049 | Rwd: -428.80 | Motivo: Schianto a terra
+Step: 1180 | Rwd: 885.24 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1258 | Rwd: -641.05 | Motivo: Schianto a terra
