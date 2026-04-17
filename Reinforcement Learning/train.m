@@ -4,20 +4,18 @@ initialGainsMultiplier = 15;
 
 path = "SAC_RL_env/Inner Loop and Plant Model/High-FidelityModel/";
 
-if get_param(strcat(path, "Bus Selector pos_agente"), 'Commented') == "off"
-    set_param(strcat(path, "Bus Selector pos_agente"), 'Commented', 'on');
-    set_param(strcat(path, "Vector Concatenate pos_agente"), 'Commented', 'on');
+if get_param(strcat(path, "pos_agente To File"), 'Commented') == "off"
     set_param(strcat(path, "pos_agente To File"), 'Commented', 'on');
 end
 
- Ts = 0.1; % Tempo di campionamento (10 Hz)
- assignin('base', 'Ts', Ts);
+Ts = 0.1; % Tempo di campionamento (10 Hz)
+assignin('base', 'Ts', Ts);
 
-[obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
+[obsInfo, actInfo, numObs, numAct, actLimit, StructNumObs] = get_obsInfo_actInfo();
+
+agent = get_RL_agent(obsInfo, actInfo, numAct, actLimit, Ts, StructNumObs);
 
 env = get_RL_env(obsInfo, actInfo, 'training_scenarios.mat', true, fullfile(pwd, 'registro_morti.txt'));
-
-agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
 
 delete(gcp('nocreate'))
 pool = parpool(6);
@@ -30,6 +28,8 @@ trainOpts = rlTrainingOptions(...
     'ScoreAveragingWindowLength', 50, ...
     'StopTrainingCriteria', 'AverageReward', ...
     'StopTrainingValue', 1000, ... % Determine this based on your reward scaling
+    'SimulationStorageType', "none", ...
+    'SaveFileVersion', "-v7.3", ...
     'SaveAgentCriteria', 'EpisodeFrequency', ...
     'SaveAgentValue', 300, ...
     'SaveAgentDirectory', fullfile(pwd, 'agenti_salvati') ...

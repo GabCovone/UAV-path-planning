@@ -1,16 +1,16 @@
 path = "SAC_RL_env/Inner Loop and Plant Model/High-FidelityModel/";
 
-if get_param(strcat(path, "Bus Selector pos_agente"), 'Commented') == "on"
-    set_param(strcat(path, "Bus Selector pos_agente"), 'Commented', 'off');
-    set_param(strcat(path, "Vector Concatenate pos_agente"), 'Commented', 'off');
-    set_param(strcat(path, "pos_agente To File"), 'Commented', 'off');
-end
-
-rng(2);
+load_system("SAC_RL_env");
 
 plantModelFi = 1;            
 useHeading = 1;              
 initialGainsMultiplier = 15;
+
+if get_param(strcat(path, "pos_agente To File"), 'Commented') == "on"
+    set_param(strcat(path, "pos_agente To File"), 'Commented', 'off');
+end
+
+rng(3);
 
 Ts = 0.1; % Tempo di campionamento (10 Hz)
 assignin('base', 'Ts', Ts);
@@ -19,12 +19,12 @@ path_DB_scenari = 'testing_scenarios.mat';
 
 %%
 
-% 1. Carica l'ambienteon
-[obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
-env = get_RL_env(obsInfo, actInfo, path_DB_scenari);
+% 1. Carica l'ambiente
+[obsInfo, actInfo, numObs, numAct, actLimit, StructNumObs] = get_obsInfo_actInfo();
+env = get_RL_env(obsInfo, actInfo, path_DB_scenari, true, fullfile(pwd, 'registro_morti.txt'));
 
 % 2. Carica l'agente salvato
-load('agente_v9_norandstart.mat', 'agent');
+load('versioni_agenti/agente_v10_cnn_300.mat', 'saved_agent');
 
 % 3. Definisci le opzioni di simulazione
 % Vogliamo fargli fare 1 solo episodio, con un massimo di 5500 step (es. 50 secondi a 10Hz)
@@ -32,7 +32,7 @@ simOpts = rlSimulationOptions('MaxSteps', 5500, 'NumSimulations', 1);
 
 % 4. Avvia il test!
 disp('Avvio simulazione di test...');
-experience = sim(env, agent, simOpts);
+experience = sim(env, saved_agent, simOpts);
 
 % 5. Estrai e stampa i risultati
 %reward_totale = sum(experience.Reward);
