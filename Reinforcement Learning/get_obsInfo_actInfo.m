@@ -18,7 +18,7 @@ function [obsInfo, actInfo, numObs, numAct, actLimit, StructNumObs] = get_obsInf
     % 2. Definisci l'elemento del Bus per lo Stato
     stateElem = Simulink.BusElement;
     stateElem.Name = 'State_Observations'; % DEVE corrispondere al nome del layer di input
-    stateElem.Dimensions = [1 numState+numErrors];
+    stateElem.Dimensions = [numState+numErrors, 1];
     stateElem.DataType = 'double';
     
     % 3. Crea l'oggetto Bus

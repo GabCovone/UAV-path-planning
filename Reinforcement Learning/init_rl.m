@@ -9,34 +9,34 @@ plantModelFi = 1;
 useHeading = 1;              
 initialGainsMultiplier = 15; 
 
-%% rete DEEN
+%% rete DEEN (per ora non utilizzata)
 
-% Importazione del modello ONNX convertendolo in un oggetto dlnetwork di MATLAB
-deen_net_uninit = importNetworkFromONNX('deen_standalone.onnx');
-
-% - 2024 sono le feature (stato, velocità, voxel, ecc.)
-% - 1 è la dimensione del batch (Simulink processa 1 step alla volta)
-% - 'BC' sta per C = Channel (Features), B = Batch
-dummy_input = dlarray(zeros(2024, 1, 'single'), 'CB');
-
-% 3. Inizializza la rete
-deen_net = initialize(deen_net_uninit, dummy_input);
-
-% 4. Salva la rete pronta all'uso!
-save('deen_network.mat', 'deen_net');
-
-disp('✅ Rete DEEN inizializzata e salvata con successo!');
-
-% Check rete DEEN
-
-% Creiamo uno stato puramente casuale (rumore)
-stato_casuale = rand(1, 2024, 'single');
-input_formattato = dlarray(stato_casuale, 'BC');
-
-% Facciamo una predizione
-energia_test = predict(deen_net, input_formattato);
-disp('Output della rete DEEN:');
-disp(extractdata(energia_test));
+% % Importazione del modello ONNX convertendolo in un oggetto dlnetwork di MATLAB
+% deen_net_uninit = importNetworkFromONNX('deen_standalone.onnx');
+% 
+% % - 2024 sono le feature (stato, velocità, voxel, ecc.)
+% % - 1 è la dimensione del batch (Simulink processa 1 step alla volta)
+% % - 'BC' sta per C = Channel (Features), B = Batch
+% dummy_input = dlarray(zeros(2024, 1, 'single'), 'CB');
+% 
+% % 3. Inizializza la rete
+% deen_net = initialize(deen_net_uninit, dummy_input);
+% 
+% % 4. Salva la rete pronta all'uso!
+% save('deen_network.mat', 'deen_net');
+% 
+% disp('✅ Rete DEEN inizializzata e salvata con successo!');
+% 
+% % Check rete DEEN
+% 
+% % Creiamo uno stato puramente casuale (rumore)
+% stato_casuale = rand(1, 2024, 'single');
+% input_formattato = dlarray(stato_casuale, 'BC');
+% 
+% % Facciamo una predizione
+% energia_test = predict(deen_net, input_formattato);
+% disp('Output della rete DEEN:');
+% disp(extractdata(energia_test));
 
 
 %% Creazione ambiente e agente

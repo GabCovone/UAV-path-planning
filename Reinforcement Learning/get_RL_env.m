@@ -69,7 +69,7 @@ function in = localResetFcn(in, path_DB_scenari)
     bounds.z_min = squeeze(min(scenario.map.v(:,3,:))); bounds.z_max = squeeze(max(scenario.map.v(:,3,:)));
     
     % Assegnazione variabili nel workspace
-    assignin('base', 'init_pos', initial_pos);%rimosso ' vicino initial_pos
+    assignin('base', 'init_pos', initial_pos);
     assignin('base', 'init_vel', init_vel);
     assignin('base', 'init_euler', init_euler);
     assignin('base', 'sim_pos_des', scenario.sim_pos_des);
@@ -81,9 +81,6 @@ function in = localResetFcn(in, path_DB_scenari)
 
     assignin('base', 'scenario_corrente', scenario_corrente);
     
-    disp(scenario_corrente)
-    disp(path_DB_scenari_persistent)
-    %disp(['✅ Punto spawn drone: [', num2str(initial_pos'), '], Goal a [', num2str(scenario.map.q_goal),']']);
     disp(['✅ Punto spawn drone: [', num2str(initial_pos(:)'), '], Goal a [', num2str(scenario.map.q_goal(:)'),']']);
 
 end
