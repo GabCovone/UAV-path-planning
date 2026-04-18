@@ -2,10 +2,10 @@ function [obsInfo, actInfo, numObs, numAct, actLimit, StructNumObs] = get_obsInf
     % Definizione costanti del problema
     numVoxels = 1000;
     numState = 10; % 3 vel + 3 omega + 4 quat
-    numErrors = 7; % 3 pos + 3 vel + 1 yaw
+    numErrors = 6; % 3 pos + 3 vel || + 1 yaw
     numObs = numState + numErrors + numVoxels; % 10 stato + 7 errori + 1000 voxels = 1017
     StructNumObs = pack_struct(numState, numErrors, numVoxels); % 10 stato, 1000 voxels, 7 errori, tot 1017
-    numAct = 7; % 3 per posizione, 3 per velocità, 1 per lo yaw
+    numAct = 6; % 3 per posizione, 3 per velocità ||, 1 per lo yaw
     
     % Spazio delle Osservazioni (Observation Space)
 
@@ -37,9 +37,9 @@ function [obsInfo, actInfo, numObs, numAct, actLimit, StructNumObs] = get_obsInf
     % Limiti massimi sulle deviazioni
     max_delta_pos = 2.0;  % +/- 2 metri
     max_delta_vel = 1.0;  % +/- 1 m/s
-    max_delta_yaw = 0.5;  % +/- 0.5 rad
+    %max_delta_yaw = 0.5;  % +/- 0.5 rad
     
-    actLimit = [max_delta_pos*ones(3,1); max_delta_vel*ones(3,1); max_delta_yaw];
+    actLimit = [max_delta_pos*ones(3,1); max_delta_vel*ones(3,1)];%; max_delta_yaw];
     actInfo = rlNumericSpec([1 numAct], ...
         'LowerLimit', -actLimit', ...
         'UpperLimit', actLimit');
