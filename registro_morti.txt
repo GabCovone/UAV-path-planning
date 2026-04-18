@@ -1,7 +1,0 @@
-Step: 1047 | Rwd: -36090.53 | Distanza goal: 2.21 | Motivo: Schianto a terra
-Step: 1047 | Rwd: -36090.53 | Distanza goal: 2.21 | Motivo: Schianto a terra
-Step: 1047 | Rwd: -36090.53 | Distanza goal: 2.21 | Motivo: Schianto a terra
-Step: 1047 | Rwd: -36090.53 | Distanza goal: 2.21 | Motivo: Schianto a terra
-Step: 5373 | Rwd: -46289.90 | Distanza goal: 0.96 | Motivo: TRAGUARDO RAGGIUNTO!
-Step: 5373 | Rwd: -46289.90 | Distanza goal: 0.96 | Motivo: TRAGUARDO RAGGIUNTO!
-Step: 3379 | Rwd: -48185.06 | Distanza goal: 15.87 | Motivo: Schianto a terra
