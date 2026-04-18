@@ -1,0 +1,63 @@
+%% Script: ispettore_voxel.m
+disp('Avvio ispettore Voxel in finestra indipendente...');
+
+disp('Scansione di tutto il volo alla ricerca di ostacoli...');
+
+% Estraiamo tutti i dati del sensore
+data_voxels = experience.Observation.Voxels_Observations.Data;
+
+% Sommiamo i valori per ogni step per vedere quanti voxel erano a 1
+if ndims(data_voxels) == 4
+    % Caso [10 x 10 x 10 x N]
+    somma_voxel_per_step = squeeze(sum(data_voxels, [1 2 3]));
+elseif ndims(data_voxels) == 3
+    % Caso [1000 x 1 x N] o [10 x 100 x N]
+    somma_voxel_per_step = squeeze(sum(sum(data_voxels, 1), 2));
+else
+    somma_voxel_per_step = sum(data_voxels, 1)';
+end
+
+% Troviamo in quali step il sensore ha percepito qualcosa
+step_con_ostacoli = find(somma_voxel_per_step > 0);
+
+if isempty(step_con_ostacoli)
+    disp('❌ ALLARME: Il sensore è rimasto a ZERO per tutto il volo!');
+else
+    disp('✅ Il sensore FUNZIONA! Ha visto ostacoli nei seguenti step:');
+    disp(['Primo avvistamento allo step: ', num2str(step_con_ostacoli(1))]);
+    disp(['Ultimo avvistamento allo step: ', num2str(step_con_ostacoli(end))]);
+    disp(['Voxel massimi visti in un singolo step: ', num2str(max(somma_voxel_per_step))]);
+end
+
+
+try
+    % 1. Scegli quale momento del volo vuoi guardare
+    % (In questo caso l'ultimo step prima della fine)
+    %step_da_analizzare = length(experience.Reward.Data); 
+    
+    step_da_analizzare = 480
+
+    % 2. Estrai la posizione del drone a quello step
+    pos_corrente = dati_pos(step_da_analizzare, :);
+    
+    % 3. Estrazione intelligente dei Voxel
+    data_voxels = experience.Observation.Voxels_Observations.Data;
+    
+    if ndims(data_voxels) == 4
+        % Se Simulink lo ha salvato come 4D [10 x 10 x 10 x N]
+        voxel_corrente = data_voxels(:, :, :, step_da_analizzare);
+    elseif ndims(data_voxels) == 3
+        % Se Simulink lo ha salvato come [1000 x 1 x N] o [10 x 100 x N]
+        voxel_corrente = data_voxels(:, :, step_da_analizzare);
+    else
+        % Fallback generico
+        voxel_corrente = data_voxels(:, step_da_analizzare);
+    end
+    
+    % 4. Apri la finestra indipendente
+    visualizza_voxel(voxel_corrente, pos_corrente, 5.0, 5);
+    
+catch ME
+    disp('❌ Errore durante l''estrazione dei dati:');
+    disp(ME.message);
+end
