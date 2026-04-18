@@ -22,8 +22,9 @@ agent = get_RL_agent(obsInfo, actInfo, numAct, actLimit, Ts, StructNumObs);
 env = get_RL_env(obsInfo, actInfo, 'training_scenarios.mat', true, fullfile(pwd, 'registro_morti.txt'));
 
 delete(gcp('nocreate'))
-pool = parpool(6);
-
+cluster = parcluster('local');
+cluster.NumWorkers = 8;
+pool = parpool(cluster, 8);  
 
 %% Training
 trainOpts = rlTrainingOptions(...
