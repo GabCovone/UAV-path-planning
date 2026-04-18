@@ -1,0 +1,1611 @@
+========================================================
+INIZIO NUOVO ADDESTRAMENTO: 18-Apr-2026 11:00:53
+========================================================
+Ep (Worker) | Step | Reward Totale | Motivo Terminazione
+--------------------------------------------------------
+Step: 13 | Rwd: -1152.18 | Distanza goal: 1070.73 | Motivo: Schianto a terra
+Step: 869 | Rwd: -12473.36 | Distanza goal: 5.15 | Motivo: Schianto a terra
+Step: 885 | Rwd: -5849.25 | Distanza goal: 0.88 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 998 | Rwd: -13034.09 | Distanza goal: 14.55 | Motivo: Schianto a terra
+Step: 1009 | Rwd: -12343.23 | Distanza goal: 2.25 | Motivo: Schianto a terra
+Step: 1341 | Rwd: -16531.86 | Distanza goal: 236.69 | Motivo: Deviazione eccessiva
+Step: 1135 | Rwd: -12282.91 | Distanza goal: 13.80 | Motivo: Schianto a terra
+Step: 17 | Rwd: -1294.77 | Distanza goal: 1189.96 | Motivo: Schianto a terra
+Step: 669 | Rwd: -14238.31 | Distanza goal: 156.86 | Motivo: Deviazione eccessiva
+Step: 958 | Rwd: -14334.01 | Distanza goal: 216.39 | Motivo: Deviazione eccessiva
+Step: 944 | Rwd: -17884.59 | Distanza goal: 2.50 | Motivo: Schianto a terra
+Step: 943 | Rwd: -19398.86 | Distanza goal: 2.53 | Motivo: Schianto a terra
+Step: 1315 | Rwd: -16909.85 | Distanza goal: 9.42 | Motivo: Schianto a terra
+Step: 855 | Rwd: -11875.18 | Distanza goal: 9.79 | Motivo: Schianto a terra
+Step: 838 | Rwd: -20193.03 | Distanza goal: 11.02 | Motivo: Schianto a terra
+Step: 953 | Rwd: -12533.07 | Distanza goal: 22.00 | Motivo: Schianto a terra
+Step: 1084 | Rwd: -13483.78 | Distanza goal: 3.28 | Motivo: Schianto a terra
+Step: 1170 | Rwd: -6598.63 | Distanza goal: 0.57 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1270 | Rwd: -6874.98 | Distanza goal: 0.89 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1527 | Rwd: -20964.71 | Distanza goal: 5.35 | Motivo: Schianto a terra
+Step: 880 | Rwd: -11788.21 | Distanza goal: 10.87 | Motivo: Schianto a terra
+Step: 952 | Rwd: -12492.95 | Distanza goal: 224.86 | Motivo: Deviazione eccessiva
+Step: 828 | Rwd: -20514.29 | Distanza goal: 2.09 | Motivo: Schianto a terra
+Step: 1042 | Rwd: -17855.94 | Distanza goal: 7.48 | Motivo: Schianto a terra
+Step: 1068 | Rwd: -16579.34 | Distanza goal: 2.65 | Motivo: Schianto a terra
+Step: 1114 | Rwd: -3018.33 | Distanza goal: 0.86 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 801 | Rwd: -19473.17 | Distanza goal: 2.55 | Motivo: Schianto a terra
+Step: 852 | Rwd: -10657.38 | Distanza goal: 11.01 | Motivo: Schianto a terra
+Step: 10 | Rwd: -1085.75 | Distanza goal: 1160.81 | Motivo: Schianto a terra
+Step: 841 | Rwd: -9561.18 | Distanza goal: 7.17 | Motivo: Schianto a terra
+Step: 950 | Rwd: -12375.90 | Distanza goal: 227.82 | Motivo: Deviazione eccessiva
+Step: 860 | Rwd: -9977.99 | Distanza goal: 3.34 | Motivo: Schianto a terra
+Step: 1102 | Rwd: -14989.05 | Distanza goal: 272.21 | Motivo: Deviazione eccessiva
+Step: 1230 | Rwd: -12703.53 | Distanza goal: 2.26 | Motivo: Schianto a terra
+Step: 909 | Rwd: -12402.00 | Distanza goal: 129.62 | Motivo: Deviazione eccessiva
+Step: 933 | Rwd: -9913.00 | Distanza goal: 7.14 | Motivo: Schianto a terra
+Step: 984 | Rwd: -10324.72 | Distanza goal: 13.79 | Motivo: Schianto a terra
+Step: 951 | Rwd: -17582.89 | Distanza goal: 10.19 | Motivo: Schianto a terra
+Step: 1059 | Rwd: -20383.95 | Distanza goal: 2.78 | Motivo: Schianto a terra
+Step: 1117 | Rwd: 199.57 | Distanza goal: 0.90 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 930 | Rwd: -10048.68 | Distanza goal: 4.44 | Motivo: Schianto a terra
+Step: 904 | Rwd: -10025.57 | Distanza goal: 2.36 | Motivo: Schianto a terra
+Step: 1041 | Rwd: -5611.24 | Distanza goal: 0.91 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1139 | Rwd: -18253.96 | Distanza goal: 5.18 | Motivo: Schianto a terra
+Step: 1243 | Rwd: -11683.11 | Distanza goal: 8.61 | Motivo: Schianto a terra
+Step: 1339 | Rwd: -17319.40 | Distanza goal: 238.90 | Motivo: Deviazione eccessiva
+Step: 14 | Rwd: -1172.85 | Distanza goal: 1501.87 | Motivo: Schianto a terra
+Step: 860 | Rwd: -13484.14 | Distanza goal: 5.17 | Motivo: Schianto a terra
+Step: 1038 | Rwd: -10672.12 | Distanza goal: 1.57 | Motivo: Schianto a terra
+Step: 1050 | Rwd: -13602.95 | Distanza goal: 5.27 | Motivo: Schianto a terra
+Step: 1038 | Rwd: -16601.66 | Distanza goal: 9.61 | Motivo: Schianto a terra
+Step: 1164 | Rwd: -22551.03 | Distanza goal: 3.95 | Motivo: Schianto a terra
+Step: 849 | Rwd: -11890.96 | Distanza goal: 4.81 | Motivo: Schianto a terra
+Step: 825 | Rwd: -14341.94 | Distanza goal: 3.35 | Motivo: Schianto a terra
+Step: 910 | Rwd: -13187.98 | Distanza goal: 1.75 | Motivo: Schianto a terra
+Step: 929 | Rwd: -12390.38 | Distanza goal: 7.19 | Motivo: Schianto a terra
+Step: 989 | Rwd: -12886.62 | Distanza goal: 2.15 | Motivo: Schianto a terra
+Step: 1150 | Rwd: -19272.05 | Distanza goal: 16.07 | Motivo: Schianto a terra
+Step: 752 | Rwd: -416.11 | Distanza goal: 0.90 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 849 | Rwd: -11904.48 | Distanza goal: 15.07 | Motivo: Schianto a terra
+Step: 860 | Rwd: -10445.84 | Distanza goal: 2.60 | Motivo: Schianto a terra
+Step: 872 | Rwd: -10604.30 | Distanza goal: 2.07 | Motivo: Schianto a terra
+Step: 875 | Rwd: 2064.60 | Distanza goal: 0.98 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 891 | Rwd: -26680.38 | Distanza goal: 2.69 | Motivo: Schianto a terra
+Step: 321 | Rwd: -5638.20 | Distanza goal: 935.68 | Motivo: Schianto a terra
+Step: 833 | Rwd: -14350.44 | Distanza goal: 4.82 | Motivo: Schianto a terra
+Step: 765 | Rwd: -4204.22 | Distanza goal: 0.49 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 963 | Rwd: 1222.05 | Distanza goal: 0.97 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1048 | Rwd: -211.30 | Distanza goal: 0.57 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1142 | Rwd: -10377.60 | Distanza goal: 9.42 | Motivo: Schianto a terra
+Step: 984 | Rwd: -13867.62 | Distanza goal: 5.32 | Motivo: Schianto a terra
+Step: 907 | Rwd: 2006.83 | Distanza goal: 1.00 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 990 | Rwd: -4856.56 | Distanza goal: 0.82 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1094 | Rwd: -14123.01 | Distanza goal: 281.79 | Motivo: Deviazione eccessiva
+Step: 1289 | Rwd: -18590.11 | Distanza goal: 6.12 | Motivo: Schianto a terra
+Step: 1237 | Rwd: -12216.40 | Distanza goal: 6.83 | Motivo: Schianto a terra
+Step: 11 | Rwd: -1113.44 | Distanza goal: 1061.27 | Motivo: Schianto a terra
+Step: 748 | Rwd: -10674.13 | Distanza goal: 6.58 | Motivo: Schianto a terra
+Step: 799 | Rwd: -20034.94 | Distanza goal: 183.52 | Motivo: Deviazione eccessiva
+Step: 949 | Rwd: 964.13 | Distanza goal: 0.87 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 991 | Rwd: -14288.82 | Distanza goal: 4.09 | Motivo: Schianto a terra
+Step: 1277 | Rwd: -18573.24 | Distanza goal: 5.93 | Motivo: Schianto a terra
+Step: 759 | Rwd: -14365.41 | Distanza goal: 12.91 | Motivo: Schianto a terra
+Step: 843 | Rwd: -339.18 | Distanza goal: 0.79 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 991 | Rwd: -12837.68 | Distanza goal: 1.49 | Motivo: Schianto a terra
+Step: 1042 | Rwd: -270.94 | Distanza goal: 0.66 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1080 | Rwd: -18800.34 | Distanza goal: 9.23 | Motivo: Schianto a terra
+Step: 1101 | Rwd: -755.97 | Distanza goal: 0.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 707 | Rwd: -13095.47 | Distanza goal: 241.85 | Motivo: Deviazione eccessiva
+Step: 826 | Rwd: -9529.39 | Distanza goal: 8.44 | Motivo: Schianto a terra
+Step: 980 | Rwd: -10046.16 | Distanza goal: 20.44 | Motivo: Schianto a terra
+Step: 1078 | Rwd: -16150.25 | Distanza goal: 2.71 | Motivo: Schianto a terra
+Step: 948 | Rwd: -22530.72 | Distanza goal: 114.73 | Motivo: Deviazione eccessiva
+Step: 1066 | Rwd: -11945.99 | Distanza goal: 4.17 | Motivo: Schianto a terra
+Step: 864 | Rwd: -14546.19 | Distanza goal: 2.33 | Motivo: Schianto a terra
+Step: 760 | Rwd: -11265.63 | Distanza goal: 6.44 | Motivo: Schianto a terra
+Step: 984 | Rwd: -518.27 | Distanza goal: 0.83 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1320 | Rwd: -14371.28 | Distanza goal: 14.08 | Motivo: Schianto a terra
+Step: 1307 | Rwd: -22956.53 | Distanza goal: 2.81 | Motivo: Schianto a terra
+Step: 1337 | Rwd: -14863.10 | Distanza goal: 242.91 | Motivo: Deviazione eccessiva
+Step: 739 | Rwd: -8933.65 | Distanza goal: 3.67 | Motivo: Schianto a terra
+Step: 857 | Rwd: -9018.35 | Distanza goal: 10.95 | Motivo: Schianto a terra
+Step: 957 | Rwd: -12735.53 | Distanza goal: 219.12 | Motivo: Deviazione eccessiva
+Step: 1007 | Rwd: -11471.76 | Distanza goal: 5.40 | Motivo: Schianto a terra
+Step: 1004 | Rwd: -12225.18 | Distanza goal: 2.96 | Motivo: Schianto a terra
+Step: 1102 | Rwd: -14993.57 | Distanza goal: 271.80 | Motivo: Deviazione eccessiva
+Step: 1003 | Rwd: -11469.91 | Distanza goal: 1.66 | Motivo: Schianto a terra
+Step: 1063 | Rwd: -13148.20 | Distanza goal: 1.99 | Motivo: Schianto a terra
+Step: 1078 | Rwd: -13852.87 | Distanza goal: 304.51 | Motivo: Deviazione eccessiva
+Step: 1020 | Rwd: -228.58 | Distanza goal: 0.93 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1080 | Rwd: -15008.07 | Distanza goal: 1.90 | Motivo: Schianto a terra
+Step: 1339 | Rwd: -13891.77 | Distanza goal: 238.35 | Motivo: Deviazione eccessiva
+Step: 213 | Rwd: -7666.49 | Distanza goal: 1080.41 | Motivo: Deviazione eccessiva
+Step: 770 | Rwd: -7260.73 | Distanza goal: 75.64 | Motivo: Schianto a terra
+Step: 703 | Rwd: -12151.90 | Distanza goal: 177.63 | Motivo: Deviazione eccessiva
+Step: 905 | Rwd: -11281.67 | Distanza goal: 4.54 | Motivo: Schianto a terra
+Step: 1042 | Rwd: -18006.35 | Distanza goal: 10.51 | Motivo: Schianto a terra
+Step: 1086 | Rwd: -17427.42 | Distanza goal: 1.92 | Motivo: Schianto a terra
+Step: 707 | Rwd: -2399.11 | Distanza goal: 0.65 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 859 | Rwd: -11355.92 | Distanza goal: 11.36 | Motivo: Schianto a terra
+Step: 996 | Rwd: -10929.61 | Distanza goal: 2.38 | Motivo: Schianto a terra
+Step: 983 | Rwd: -13041.71 | Distanza goal: 12.47 | Motivo: Schianto a terra
+Step: 1122 | Rwd: -22062.90 | Distanza goal: 3.82 | Motivo: Schianto a terra
+Step: 1318 | Rwd: -17790.59 | Distanza goal: 10.20 | Motivo: Schianto a terra
+Step: 749 | Rwd: -11522.86 | Distanza goal: 3.57 | Motivo: Schianto a terra
+Step: 866 | Rwd: -13357.57 | Distanza goal: 5.07 | Motivo: Schianto a terra
+Step: 995 | Rwd: -11247.07 | Distanza goal: 4.08 | Motivo: Schianto a terra
+Step: 1057 | Rwd: -20233.83 | Distanza goal: 3.74 | Motivo: Schianto a terra
+Step: 1118 | Rwd: -19115.66 | Distanza goal: 18.13 | Motivo: Schianto a terra
+Step: 1240 | Rwd: -12380.35 | Distanza goal: 5.50 | Motivo: Schianto a terra
+Step: 774 | Rwd: -13597.98 | Distanza goal: 4.23 | Motivo: Schianto a terra
+Step: 825 | Rwd: -13403.24 | Distanza goal: 3.07 | Motivo: Schianto a terra
+Step: 816 | Rwd: -19570.62 | Distanza goal: 161.83 | Motivo: Deviazione eccessiva
+Step: 861 | Rwd: -10058.53 | Distanza goal: 8.51 | Motivo: Schianto a terra
+Step: 859 | Rwd: -10198.04 | Distanza goal: 5.88 | Motivo: Schianto a terra
+Step: 1311 | Rwd: -15620.55 | Distanza goal: 3.38 | Motivo: Schianto a terra
+Step: 714 | Rwd: -11679.55 | Distanza goal: 162.97 | Motivo: Deviazione eccessiva
+Step: 846 | Rwd: -8805.46 | Distanza goal: 12.03 | Motivo: Schianto a terra
+Step: 863 | Rwd: -11254.22 | Distanza goal: 14.52 | Motivo: Schianto a terra
+Step: 962 | Rwd: -18619.42 | Distanza goal: 2.98 | Motivo: Schianto a terra
+Step: 1002 | Rwd: -10081.20 | Distanza goal: 7.25 | Motivo: Schianto a terra
+Step: 1095 | Rwd: -10284.26 | Distanza goal: 11.50 | Motivo: Schianto a terra
+Step: 313 | Rwd: -5762.56 | Distanza goal: 1130.81 | Motivo: Collisione ostacolo
+Step: 986 | Rwd: -11433.05 | Distanza goal: 2.40 | Motivo: Schianto a terra
+Step: 992 | Rwd: -21359.91 | Distanza goal: 3.21 | Motivo: Schianto a terra
+Step: 1091 | Rwd: -20097.08 | Distanza goal: 5.98 | Motivo: Schianto a terra
+Step: 1069 | Rwd: -16297.46 | Distanza goal: 2.83 | Motivo: Schianto a terra
+Step: 1322 | Rwd: -17066.30 | Distanza goal: 4.80 | Motivo: Schianto a terra
+Step: 853 | Rwd: -9778.97 | Distanza goal: 10.06 | Motivo: Schianto a terra
+Step: 999 | Rwd: -12785.54 | Distanza goal: 9.67 | Motivo: Schianto a terra
+Step: 1009 | Rwd: -11323.80 | Distanza goal: 7.11 | Motivo: Schianto a terra
+Step: 995 | Rwd: -20553.95 | Distanza goal: 2.26 | Motivo: Schianto a terra
+Step: 1069 | Rwd: -3025.85 | Distanza goal: 0.98 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1334 | Rwd: -13721.05 | Distanza goal: 246.74 | Motivo: Deviazione eccessiva
+Step: 920 | Rwd: -16046.52 | Distanza goal: 2.28 | Motivo: Schianto a terra
+Step: 935 | Rwd: 1686.43 | Distanza goal: 0.98 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 987 | Rwd: -10427.33 | Distanza goal: 16.77 | Motivo: Schianto a terra
+Step: 1059 | Rwd: -17775.45 | Distanza goal: 6.94 | Motivo: Schianto a terra
+Step: 1231 | Rwd: -14457.48 | Distanza goal: 1.84 | Motivo: Schianto a terra
+Step: 1326 | Rwd: -22017.56 | Distanza goal: 3.90 | Motivo: Schianto a terra
+Step: 859 | Rwd: -12089.60 | Distanza goal: 18.21 | Motivo: Schianto a terra
+Step: 859 | Rwd: -10863.17 | Distanza goal: 3.40 | Motivo: Schianto a terra
+Step: 1002 | Rwd: -11852.24 | Distanza goal: 2.34 | Motivo: Schianto a terra
+Step: 969 | Rwd: -9293.37 | Distanza goal: 2.56 | Motivo: Schianto a terra
+Step: 1049 | Rwd: -15553.01 | Distanza goal: 2.66 | Motivo: Schianto a terra
+Step: 1118 | Rwd: -14446.65 | Distanza goal: 5.65 | Motivo: Schianto a terra
+Step: 754 | Rwd: -10493.13 | Distanza goal: 12.60 | Motivo: Schianto a terra
+Step: 895 | Rwd: -12883.51 | Distanza goal: 118.67 | Motivo: Deviazione eccessiva
+Step: 984 | Rwd: -11034.29 | Distanza goal: 3.55 | Motivo: Schianto a terra
+Step: 1082 | Rwd: -12063.15 | Distanza goal: 1.68 | Motivo: Schianto a terra
+Step: 1030 | Rwd: -12143.55 | Distanza goal: 10.28 | Motivo: Schianto a terra
+Step: 1265 | Rwd: -12907.09 | Distanza goal: 409.93 | Motivo: Deviazione eccessiva
+Step: 784 | Rwd: -13169.75 | Distanza goal: 11.24 | Motivo: Schianto a terra
+Step: 893 | Rwd: -11206.48 | Distanza goal: 1.97 | Motivo: Schianto a terra
+Step: 812 | Rwd: -8573.35 | Distanza goal: 8.41 | Motivo: Schianto a terra
+Step: 989 | Rwd: -13521.07 | Distanza goal: 2.85 | Motivo: Schianto a terra
+Step: 1040 | Rwd: -172.75 | Distanza goal: 0.78 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1120 | Rwd: -9938.28 | Distanza goal: 3.83 | Motivo: Schianto a terra
+Step: 724 | Rwd: -15610.72 | Distanza goal: 8.14 | Motivo: Schianto a terra
+Step: 859 | Rwd: 1100.03 | Distanza goal: 0.69 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 916 | Rwd: -11051.48 | Distanza goal: 5.90 | Motivo: Schianto a terra
+Step: 946 | Rwd: -13451.26 | Distanza goal: 4.89 | Motivo: Schianto a terra
+Step: 997 | Rwd: -16896.91 | Distanza goal: 24.63 | Motivo: Schianto a terra
+Step: 1300 | Rwd: -19489.34 | Distanza goal: 6.48 | Motivo: Schianto a terra
+Step: 686 | Rwd: -10518.12 | Distanza goal: 198.64 | Motivo: Deviazione eccessiva
+Step: 757 | Rwd: -975.31 | Distanza goal: 0.92 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 900 | Rwd: 525.47 | Distanza goal: 0.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 999 | Rwd: -10793.01 | Distanza goal: 2.03 | Motivo: Schianto a terra
+Step: 1145 | Rwd: -9969.06 | Distanza goal: 1.41 | Motivo: Schianto a terra
+Step: 1307 | Rwd: -14360.12 | Distanza goal: 2.54 | Motivo: Schianto a terra
+Step: 746 | Rwd: -8423.71 | Distanza goal: 9.03 | Motivo: Schianto a terra
+Step: 839 | Rwd: -10098.25 | Distanza goal: 3.19 | Motivo: Schianto a terra
+Step: 883 | Rwd: -8732.65 | Distanza goal: 2.54 | Motivo: Schianto a terra
+Step: 1015 | Rwd: -10885.04 | Distanza goal: 1.01 | Motivo: Schianto a terra
+Step: 1020 | Rwd: -9904.95 | Distanza goal: 9.05 | Motivo: Schianto a terra
+Step: 1058 | Rwd: -12056.61 | Distanza goal: 332.23 | Motivo: Deviazione eccessiva
+Step: 11 | Rwd: -1091.48 | Distanza goal: 1154.43 | Motivo: Schianto a terra
+Step: 836 | Rwd: -9975.31 | Distanza goal: 14.17 | Motivo: Schianto a terra
+Step: 837 | Rwd: -9083.16 | Distanza goal: 8.51 | Motivo: Schianto a terra
+Step: 905 | Rwd: -10788.04 | Distanza goal: 6.84 | Motivo: Schianto a terra
+Step: 1235 | Rwd: -11277.31 | Distanza goal: 1.81 | Motivo: Schianto a terra
+Step: 1285 | Rwd: -13714.65 | Distanza goal: 380.20 | Motivo: Deviazione eccessiva
+Step: 766 | Rwd: -13559.76 | Distanza goal: 3.33 | Motivo: Schianto a terra
+Step: 986 | Rwd: -10489.03 | Distanza goal: 2.13 | Motivo: Schianto a terra
+Step: 990 | Rwd: -10685.69 | Distanza goal: 2.24 | Motivo: Schianto a terra
+Step: 1040 | Rwd: -12890.71 | Distanza goal: 6.09 | Motivo: Schianto a terra
+Step: 1104 | Rwd: -11453.51 | Distanza goal: 2.97 | Motivo: Schianto a terra
+Step: 1112 | Rwd: -8991.62 | Distanza goal: 11.56 | Motivo: Schianto a terra
+Step: 700 | Rwd: -10977.97 | Distanza goal: 180.72 | Motivo: Deviazione eccessiva
+Step: 798 | Rwd: 395.29 | Distanza goal: 0.99 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 946 | Rwd: -10489.38 | Distanza goal: 232.89 | Motivo: Deviazione eccessiva
+Step: 1121 | Rwd: 370.01 | Distanza goal: 0.83 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1111 | Rwd: -12345.59 | Distanza goal: 2.17 | Motivo: Schianto a terra
+Step: 1269 | Rwd: -11295.60 | Distanza goal: 2.40 | Motivo: Schianto a terra
+Step: 707 | Rwd: -12567.52 | Distanza goal: 2.95 | Motivo: Schianto a terra
+Step: 705 | Rwd: -10882.88 | Distanza goal: 175.21 | Motivo: Deviazione eccessiva
+Step: 794 | Rwd: -18629.54 | Distanza goal: 188.16 | Motivo: Deviazione eccessiva
+Step: 843 | Rwd: -8469.14 | Distanza goal: 9.86 | Motivo: Schianto a terra
+Step: 1045 | Rwd: -15139.66 | Distanza goal: 2.20 | Motivo: Schianto a terra
+Step: 1083 | Rwd: -15565.26 | Distanza goal: 3.23 | Motivo: Schianto a terra
+Step: 757 | Rwd: -15399.47 | Distanza goal: 3.95 | Motivo: Schianto a terra
+Step: 844 | Rwd: -10698.58 | Distanza goal: 9.39 | Motivo: Schianto a terra
+Step: 849 | Rwd: -9557.73 | Distanza goal: 1.53 | Motivo: Schianto a terra
+Step: 967 | Rwd: -10288.89 | Distanza goal: 1.79 | Motivo: Schianto a terra
+Step: 982 | Rwd: -12951.40 | Distanza goal: 6.20 | Motivo: Schianto a terra
+Step: 1093 | Rwd: -9776.90 | Distanza goal: 12.04 | Motivo: Schianto a terra
+Step: 884 | Rwd: 2422.76 | Distanza goal: 0.99 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 962 | Rwd: -11469.94 | Distanza goal: 212.01 | Motivo: Deviazione eccessiva
+Step: 830 | Rwd: -7610.85 | Distanza goal: 5.86 | Motivo: Schianto a terra
+Step: 1047 | Rwd: -14359.62 | Distanza goal: 2.10 | Motivo: Schianto a terra
+Step: 1107 | Rwd: -13443.33 | Distanza goal: 265.94 | Motivo: Deviazione eccessiva
+Step: 1354 | Rwd: -13366.98 | Distanza goal: 216.81 | Motivo: Deviazione eccessiva
+Step: 14 | Rwd: -1193.87 | Distanza goal: 1059.44 | Motivo: Schianto a terra
+Step: 789 | Rwd: -12448.41 | Distanza goal: 21.18 | Motivo: Schianto a terra
+Step: 845 | Rwd: -9015.51 | Distanza goal: 6.91 | Motivo: Schianto a terra
+Step: 1044 | Rwd: -15425.76 | Distanza goal: 1.72 | Motivo: Schianto a terra
+Step: 1100 | Rwd: -814.72 | Distanza goal: 0.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1056 | Rwd: -15089.35 | Distanza goal: 6.58 | Motivo: Schianto a terra
+Step: 753 | Rwd: -12583.90 | Distanza goal: 2.58 | Motivo: Schianto a terra
+Step: 833 | Rwd: -8757.50 | Distanza goal: 7.26 | Motivo: Schianto a terra
+Step: 940 | Rwd: -4832.62 | Distanza goal: 0.97 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1078 | Rwd: -11132.58 | Distanza goal: 6.63 | Motivo: Schianto a terra
+Step: 1100 | Rwd: -12168.94 | Distanza goal: 3.16 | Motivo: Schianto a terra
+Step: 1213 | Rwd: -28515.43 | Distanza goal: 2.07 | Motivo: Schianto a terra
+Step: 946 | Rwd: -11040.09 | Distanza goal: 232.99 | Motivo: Deviazione eccessiva
+Step: 748 | Rwd: 658.87 | Distanza goal: 0.51 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 868 | Rwd: -11992.94 | Distanza goal: 153.58 | Motivo: Deviazione eccessiva
+Step: 906 | Rwd: -16589.25 | Distanza goal: 1.51 | Motivo: Schianto a terra
+Step: 893 | Rwd: -12079.72 | Distanza goal: 1.95 | Motivo: Schianto a terra
+Step: 1027 | Rwd: -12677.75 | Distanza goal: 2.82 | Motivo: Schianto a terra
+Step: 827 | Rwd: -12669.25 | Distanza goal: 1.57 | Motivo: Schianto a terra
+Step: 872 | Rwd: -10210.18 | Distanza goal: 7.90 | Motivo: Schianto a terra
+Step: 987 | Rwd: -9990.35 | Distanza goal: 2.55 | Motivo: Schianto a terra
+Step: 961 | Rwd: 2864.24 | Distanza goal: 1.00 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1076 | Rwd: -11710.79 | Distanza goal: 4.14 | Motivo: Schianto a terra
+Step: 1261 | Rwd: -13245.38 | Distanza goal: 5.73 | Motivo: Schianto a terra
+Step: 888 | Rwd: -10341.54 | Distanza goal: 2.37 | Motivo: Schianto a terra
+Step: 986 | Rwd: -17500.61 | Distanza goal: 5.63 | Motivo: Schianto a terra
+Step: 1002 | Rwd: -11137.58 | Distanza goal: 1.84 | Motivo: Schianto a terra
+Step: 989 | Rwd: 331.11 | Distanza goal: 0.83 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 979 | Rwd: -19797.55 | Distanza goal: 13.11 | Motivo: Schianto a terra
+Step: 1138 | Rwd: -17252.61 | Distanza goal: 0.60 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 856 | Rwd: -14623.81 | Distanza goal: 2.07 | Motivo: Schianto a terra
+Step: 937 | Rwd: -15736.31 | Distanza goal: 2.94 | Motivo: Schianto a terra
+Step: 868 | Rwd: -9362.17 | Distanza goal: 1.26 | Motivo: Schianto a terra
+Step: 909 | Rwd: -11635.36 | Distanza goal: 3.65 | Motivo: Schianto a terra
+Step: 1143 | Rwd: 2917.71 | Distanza goal: 0.92 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1267 | Rwd: -15366.09 | Distanza goal: 4.72 | Motivo: Schianto a terra
+Step: 842 | Rwd: -12897.87 | Distanza goal: 9.99 | Motivo: Schianto a terra
+Step: 705 | Rwd: -11045.31 | Distanza goal: 176.05 | Motivo: Deviazione eccessiva
+Step: 898 | Rwd: -12252.38 | Distanza goal: 111.92 | Motivo: Deviazione eccessiva
+Step: 933 | Rwd: -11341.09 | Distanza goal: 2.75 | Motivo: Schianto a terra
+Step: 939 | Rwd: -10887.84 | Distanza goal: 6.62 | Motivo: Schianto a terra
+Step: 1059 | Rwd: -16552.55 | Distanza goal: 9.04 | Motivo: Schianto a terra
+Step: 209 | Rwd: -7451.55 | Distanza goal: 1084.90 | Motivo: Deviazione eccessiva
+Step: 875 | Rwd: -9575.83 | Distanza goal: 1.61 | Motivo: Schianto a terra
+Step: 859 | Rwd: -12823.17 | Distanza goal: 3.16 | Motivo: Schianto a terra
+Step: 1067 | Rwd: -23581.83 | Distanza goal: 1.59 | Motivo: Schianto a terra
+Step: 1237 | Rwd: -11762.36 | Distanza goal: 4.04 | Motivo: Schianto a terra
+Step: 810 | Rwd: -11285.69 | Distanza goal: 1.54 | Motivo: Schianto a terra
+Step: 1233 | Rwd: -2419.59 | Distanza goal: 0.94 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 744 | Rwd: -14459.34 | Distanza goal: 106.99 | Motivo: Schianto a terra
+Step: 833 | Rwd: -18643.75 | Distanza goal: 3.01 | Motivo: Schianto a terra
+Step: 943 | Rwd: 235.44 | Distanza goal: 0.81 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1016 | Rwd: -13089.59 | Distanza goal: 2.78 | Motivo: Schianto a terra
+Step: 1160 | Rwd: -24652.27 | Distanza goal: 2.22 | Motivo: Schianto a terra
+Step: 458 | Rwd: -11471.83 | Distanza goal: 531.87 | Motivo: Deviazione eccessiva
+Step: 716 | Rwd: -10822.50 | Distanza goal: 7.02 | Motivo: Schianto a terra
+Step: 230 | Rwd: -7952.25 | Distanza goal: 1053.94 | Motivo: Deviazione eccessiva
+Step: 871 | Rwd: -5826.22 | Distanza goal: 1.00 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1171 | Rwd: 515.81 | Distanza goal: 0.68 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1126 | Rwd: 190.95 | Distanza goal: 0.85 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1129 | Rwd: -8743.82 | Distanza goal: 14.17 | Motivo: Schianto a terra
+Step: 876 | Rwd: -13348.30 | Distanza goal: 4.08 | Motivo: Schianto a terra
+Step: 995 | Rwd: -19933.58 | Distanza goal: 5.78 | Motivo: Schianto a terra
+Step: 992 | Rwd: -19659.63 | Distanza goal: 2.32 | Motivo: Schianto a terra
+Step: 1017 | Rwd: -12911.72 | Distanza goal: 1.86 | Motivo: Schianto a terra
+Step: 1075 | Rwd: -9148.99 | Distanza goal: 10.75 | Motivo: Schianto a terra
+Step: 803 | Rwd: -16180.84 | Distanza goal: 178.83 | Motivo: Deviazione eccessiva
+Step: 1022 | Rwd: -10129.03 | Distanza goal: 1.65 | Motivo: Schianto a terra
+Step: 1058 | Rwd: 1603.23 | Distanza goal: 0.95 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1067 | Rwd: -15500.14 | Distanza goal: 10.30 | Motivo: Schianto a terra
+Step: 1064 | Rwd: -14835.98 | Distanza goal: 9.67 | Motivo: Schianto a terra
+Step: 1231 | Rwd: -1813.82 | Distanza goal: 0.52 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1354 | Rwd: -12203.63 | Distanza goal: 216.47 | Motivo: Deviazione eccessiva
+Step: 682 | Rwd: -9369.32 | Distanza goal: 203.91 | Motivo: Deviazione eccessiva
+Step: 755 | Rwd: -10658.52 | Distanza goal: 5.70 | Motivo: Schianto a terra
+Step: 844 | Rwd: -4372.56 | Distanza goal: 1.00 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1060 | Rwd: -13067.69 | Distanza goal: 1.76 | Motivo: Schianto a terra
+Step: 1021 | Rwd: -11131.60 | Distanza goal: 12.78 | Motivo: Schianto a terra
+Step: 764 | Rwd: -11149.67 | Distanza goal: 10.44 | Motivo: Schianto a terra
+Step: 853 | Rwd: -14666.36 | Distanza goal: 2.32 | Motivo: Schianto a terra
+Step: 948 | Rwd: -15646.37 | Distanza goal: 4.61 | Motivo: Schianto a terra
+Step: 1002 | Rwd: -10874.09 | Distanza goal: 2.58 | Motivo: Schianto a terra
+Step: 1105 | Rwd: -16701.52 | Distanza goal: 2.65 | Motivo: Schianto a terra
+Step: 1098 | Rwd: -11769.63 | Distanza goal: 2.03 | Motivo: Schianto a terra
+Step: 801 | Rwd: -16825.51 | Distanza goal: 2.35 | Motivo: Schianto a terra
+Step: 857 | Rwd: -17768.88 | Distanza goal: 110.33 | Motivo: Deviazione eccessiva
+Step: 775 | Rwd: -11987.70 | Distanza goal: 12.37 | Motivo: Schianto a terra
+Step: 863 | Rwd: -8878.80 | Distanza goal: 3.77 | Motivo: Schianto a terra
+Step: 1066 | Rwd: -15013.49 | Distanza goal: 2.53 | Motivo: Schianto a terra
+Step: 1330 | Rwd: -11871.24 | Distanza goal: 252.44 | Motivo: Deviazione eccessiva
+Step: 889 | Rwd: -15156.52 | Distanza goal: 1.75 | Motivo: Schianto a terra
+Step: 818 | Rwd: -18117.92 | Distanza goal: 2.46 | Motivo: Schianto a terra
+Step: 879 | Rwd: -9040.38 | Distanza goal: 2.72 | Motivo: Schianto a terra
+Step: 1065 | Rwd: -9408.42 | Distanza goal: 5.87 | Motivo: Schianto a terra
+Step: 1234 | Rwd: -12752.29 | Distanza goal: 1.89 | Motivo: Schianto a terra
+Step: 1277 | Rwd: -15802.79 | Distanza goal: 6.58 | Motivo: Schianto a terra
+Step: 761 | Rwd: -11984.36 | Distanza goal: 7.12 | Motivo: Schianto a terra
+Step: 919 | Rwd: -8469.73 | Distanza goal: 8.23 | Motivo: Schianto a terra
+Step: 1008 | Rwd: -11911.32 | Distanza goal: 2.36 | Motivo: Schianto a terra
+Step: 1077 | Rwd: -14707.12 | Distanza goal: 7.68 | Motivo: Schianto a terra
+Step: 1115 | Rwd: -19515.28 | Distanza goal: 2.47 | Motivo: Schianto a terra
+Step: 1342 | Rwd: -11666.05 | Distanza goal: 235.02 | Motivo: Deviazione eccessiva
+Step: 767 | Rwd: -11987.06 | Distanza goal: 5.14 | Motivo: Schianto a terra
+Step: 852 | Rwd: -2730.53 | Distanza goal: 0.63 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 961 | Rwd: -8911.21 | Distanza goal: 6.25 | Motivo: Schianto a terra
+Step: 1000 | Rwd: -34.40 | Distanza goal: 0.97 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1105 | Rwd: -17382.66 | Distanza goal: 180.78 | Motivo: Schianto a terra
+Step: 1513 | Rwd: -18864.46 | Distanza goal: 5.03 | Motivo: Schianto a terra
+Step: 733 | Rwd: -8255.70 | Distanza goal: 5.31 | Motivo: Schianto a terra
+Step: 865 | Rwd: -11420.59 | Distanza goal: 158.12 | Motivo: Deviazione eccessiva
+Step: 841 | Rwd: -8296.64 | Distanza goal: 15.71 | Motivo: Schianto a terra
+Step: 996 | Rwd: -19738.31 | Distanza goal: 8.85 | Motivo: Schianto a terra
+Step: 1035 | Rwd: -15030.56 | Distanza goal: 11.15 | Motivo: Schianto a terra
+Step: 1123 | Rwd: -19479.83 | Distanza goal: 2.01 | Motivo: Schianto a terra
+Step: 704 | Rwd: -12701.79 | Distanza goal: 5.48 | Motivo: Schianto a terra
+Step: 849 | Rwd: 2470.46 | Distanza goal: 0.68 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 887 | Rwd: 932.03 | Distanza goal: 0.66 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 913 | Rwd: -11950.87 | Distanza goal: 1.96 | Motivo: Schianto a terra
+Step: 1077 | Rwd: -14833.81 | Distanza goal: 1.36 | Motivo: Schianto a terra
+Step: 1072 | Rwd: -15239.08 | Distanza goal: 3.31 | Motivo: Schianto a terra
+Step: 884 | Rwd: -10358.27 | Distanza goal: 1.73 | Motivo: Schianto a terra
+Step: 956 | Rwd: -12044.41 | Distanza goal: 9.17 | Motivo: Schianto a terra
+Step: 1109 | Rwd: -19287.19 | Distanza goal: 2.60 | Motivo: Schianto a terra
+Step: 1069 | Rwd: -15886.83 | Distanza goal: 2.87 | Motivo: Schianto a terra
+Step: 1159 | Rwd: -8808.78 | Distanza goal: 8.78 | Motivo: Schianto a terra
+Step: 1137 | Rwd: -8516.06 | Distanza goal: 10.97 | Motivo: Schianto a terra
+Step: 864 | Rwd: -9375.27 | Distanza goal: 2.88 | Motivo: Schianto a terra
+Step: 970 | Rwd: -11350.19 | Distanza goal: 199.03 | Motivo: Deviazione eccessiva
+Step: 1146 | Rwd: -8906.89 | Distanza goal: 3.01 | Motivo: Schianto a terra
+Step: 1090 | Rwd: -12152.86 | Distanza goal: 287.84 | Motivo: Deviazione eccessiva
+Step: 1063 | Rwd: -8980.47 | Distanza goal: 11.54 | Motivo: Schianto a terra
+Step: 1335 | Rwd: -16530.58 | Distanza goal: 13.14 | Motivo: Schianto a terra
+Step: 870 | Rwd: -9075.81 | Distanza goal: 2.82 | Motivo: Schianto a terra
+Step: 843 | Rwd: -9908.09 | Distanza goal: 2.23 | Motivo: Schianto a terra
+Step: 857 | Rwd: -9653.04 | Distanza goal: 12.23 | Motivo: Schianto a terra
+Step: 1016 | Rwd: -11534.13 | Distanza goal: 1.76 | Motivo: Schianto a terra
+Step: 1042 | Rwd: -16734.66 | Distanza goal: 1.54 | Motivo: Schianto a terra
+Step: 1099 | Rwd: -11107.12 | Distanza goal: 4.73 | Motivo: Schianto a terra
+Step: 840 | Rwd: -7649.13 | Distanza goal: 14.14 | Motivo: Schianto a terra
+Step: 841 | Rwd: 2682.06 | Distanza goal: 0.53 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 811 | Rwd: -16991.47 | Distanza goal: 1.61 | Motivo: Schianto a terra
+Step: 850 | Rwd: -13613.43 | Distanza goal: 8.56 | Motivo: Schianto a terra
+Step: 907 | Rwd: -18265.86 | Distanza goal: 1.63 | Motivo: Schianto a terra
+Step: 1085 | Rwd: -19659.81 | Distanza goal: 12.63 | Motivo: Schianto a terra
+Step: 774 | Rwd: -9861.62 | Distanza goal: 4.68 | Motivo: Schianto a terra
+Step: 1004 | Rwd: -10105.80 | Distanza goal: 4.82 | Motivo: Schianto a terra
+Step: 1003 | Rwd: 868.95 | Distanza goal: 0.87 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1006 | Rwd: -10932.11 | Distanza goal: 2.14 | Motivo: Schianto a terra
+Step: 1073 | Rwd: -4735.06 | Distanza goal: 0.92 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1219 | Rwd: -13197.93 | Distanza goal: 24.93 | Motivo: Schianto a terra
+Step: 860 | Rwd: -3573.75 | Distanza goal: 0.81 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 832 | Rwd: -16255.25 | Distanza goal: 5.67 | Motivo: Schianto a terra
+Step: 943 | Rwd: 882.97 | Distanza goal: 0.86 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 922 | Rwd: -8387.63 | Distanza goal: 4.15 | Motivo: Schianto a terra
+Step: 849 | Rwd: -7537.81 | Distanza goal: 11.89 | Motivo: Schianto a terra
+Step: 1134 | Rwd: -31826.73 | Distanza goal: 2.09 | Motivo: Schianto a terra
+Step: 261 | Rwd: -9188.08 | Distanza goal: 1009.49 | Motivo: Deviazione eccessiva
+Step: 974 | Rwd: 933.34 | Distanza goal: 0.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1007 | Rwd: -9677.42 | Distanza goal: 7.44 | Motivo: Schianto a terra
+Step: 1113 | Rwd: -8515.90 | Distanza goal: 11.59 | Motivo: Schianto a terra
+Step: 1228 | Rwd: -12370.28 | Distanza goal: 7.85 | Motivo: Schianto a terra
+Step: 1336 | Rwd: -11547.79 | Distanza goal: 243.92 | Motivo: Deviazione eccessiva
+Step: 754 | Rwd: -12099.33 | Distanza goal: 13.57 | Motivo: Schianto a terra
+Step: 883 | Rwd: -8522.13 | Distanza goal: 5.15 | Motivo: Schianto a terra
+Step: 940 | Rwd: -8664.84 | Distanza goal: 13.73 | Motivo: Schianto a terra
+Step: 1003 | Rwd: -17540.14 | Distanza goal: 1.50 | Motivo: Schianto a terra
+Step: 1063 | Rwd: 1328.10 | Distanza goal: 0.88 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1073 | Rwd: -12707.03 | Distanza goal: 1.97 | Motivo: Schianto a terra
+Step: 744 | Rwd: -9199.34 | Distanza goal: 6.79 | Motivo: Schianto a terra
+Step: 770 | Rwd: -10541.98 | Distanza goal: 2.04 | Motivo: Schianto a terra
+Step: 929 | Rwd: -15360.05 | Distanza goal: 1.99 | Motivo: Schianto a terra
+Step: 1066 | Rwd: -14972.88 | Distanza goal: 1.52 | Motivo: Schianto a terra
+Step: 961 | Rwd: -16430.69 | Distanza goal: 14.29 | Motivo: Schianto a terra
+Step: 1111 | Rwd: -17993.98 | Distanza goal: 21.58 | Motivo: Schianto a terra
+Step: 897 | Rwd: -10130.61 | Distanza goal: 1.73 | Motivo: Schianto a terra
+Step: 1063 | Rwd: -9932.32 | Distanza goal: 1.19 | Motivo: Schianto a terra
+Step: 1068 | Rwd: -10700.24 | Distanza goal: 2.00 | Motivo: Schianto a terra
+Step: 1009 | Rwd: -12066.45 | Distanza goal: 1.56 | Motivo: Schianto a terra
+Step: 1076 | Rwd: -15944.56 | Distanza goal: 1.98 | Motivo: Schianto a terra
+Step: 1346 | Rwd: -12999.93 | Distanza goal: 228.23 | Motivo: Deviazione eccessiva
+Step: 737 | Rwd: -8575.52 | Distanza goal: 1.96 | Motivo: Schianto a terra
+Step: 778 | Rwd: -16995.30 | Distanza goal: 210.00 | Motivo: Deviazione eccessiva
+Step: 895 | Rwd: -12318.31 | Distanza goal: 119.33 | Motivo: Deviazione eccessiva
+Step: 947 | Rwd: -10803.42 | Distanza goal: 232.06 | Motivo: Deviazione eccessiva
+Step: 996 | Rwd: -10252.06 | Distanza goal: 2.05 | Motivo: Schianto a terra
+Step: 918 | Rwd: -11627.11 | Distanza goal: 2.38 | Motivo: Schianto a terra
+Step: 758 | Rwd: -11900.49 | Distanza goal: 13.46 | Motivo: Schianto a terra
+Step: 844 | Rwd: -7708.01 | Distanza goal: 6.69 | Motivo: Schianto a terra
+Step: 1020 | Rwd: -523.93 | Distanza goal: 0.91 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1004 | Rwd: -898.56 | Distanza goal: 0.69 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 945 | Rwd: -10441.85 | Distanza goal: 3.67 | Motivo: Schianto a terra
+Step: 1007 | Rwd: -12263.19 | Distanza goal: 4.30 | Motivo: Schianto a terra
+Step: 859 | Rwd: -15045.71 | Distanza goal: 12.92 | Motivo: Schianto a terra
+Step: 890 | Rwd: 924.63 | Distanza goal: 0.71 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1121 | Rwd: 1714.36 | Distanza goal: 1.00 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1010 | Rwd: 378.32 | Distanza goal: 0.80 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1085 | Rwd: -15297.58 | Distanza goal: 3.60 | Motivo: Schianto a terra
+Step: 1088 | Rwd: -5605.74 | Distanza goal: 0.68 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 970 | Rwd: -26547.90 | Distanza goal: 100.23 | Motivo: Deviazione eccessiva
+Step: 944 | Rwd: -9837.58 | Distanza goal: 1.94 | Motivo: Schianto a terra
+Step: 1078 | Rwd: -12873.70 | Distanza goal: 9.66 | Motivo: Schianto a terra
+Step: 1064 | Rwd: -9679.70 | Distanza goal: 1.50 | Motivo: Schianto a terra
+Step: 1192 | Rwd: -25716.68 | Distanza goal: 1.72 | Motivo: Schianto a terra
+Step: 1123 | Rwd: -11182.79 | Distanza goal: 1.84 | Motivo: Schianto a terra
+Step: 724 | Rwd: -13373.43 | Distanza goal: 218.96 | Motivo: Deviazione eccessiva
+Step: 904 | Rwd: -21053.36 | Distanza goal: 2.80 | Motivo: Schianto a terra
+Step: 860 | Rwd: -9312.46 | Distanza goal: 2.25 | Motivo: Schianto a terra
+Step: 988 | Rwd: -10751.31 | Distanza goal: 2.42 | Motivo: Schianto a terra
+Step: 1071 | Rwd: -482.85 | Distanza goal: 0.80 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1145 | Rwd: -9743.21 | Distanza goal: 8.56 | Motivo: Schianto a terra
+Step: 693 | Rwd: -10160.80 | Distanza goal: 188.37 | Motivo: Deviazione eccessiva
+Step: 734 | Rwd: -12192.92 | Distanza goal: 203.49 | Motivo: Deviazione eccessiva
+Step: 963 | Rwd: -8992.18 | Distanza goal: 2.17 | Motivo: Schianto a terra
+Step: 987 | Rwd: -10808.07 | Distanza goal: 2.43 | Motivo: Schianto a terra
+Step: 1006 | Rwd: -15085.32 | Distanza goal: 12.39 | Motivo: Schianto a terra
+Step: 1061 | Rwd: -13939.50 | Distanza goal: 2.04 | Motivo: Schianto a terra
+Step: 763 | Rwd: 688.85 | Distanza goal: 0.91 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 859 | Rwd: -16457.24 | Distanza goal: 12.72 | Motivo: Schianto a terra
+Step: 1011 | Rwd: -10782.49 | Distanza goal: 1.60 | Motivo: Schianto a terra
+Step: 1062 | Rwd: -19099.20 | Distanza goal: 2.57 | Motivo: Schianto a terra
+Step: 1067 | Rwd: -11291.00 | Distanza goal: 1.78 | Motivo: Schianto a terra
+Step: 1031 | Rwd: 1794.85 | Distanza goal: 0.74 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 766 | Rwd: 821.99 | Distanza goal: 0.60 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 851 | Rwd: -10655.72 | Distanza goal: 5.03 | Motivo: Schianto a terra
+Step: 851 | Rwd: -8552.05 | Distanza goal: 10.87 | Motivo: Schianto a terra
+Step: 1112 | Rwd: -8999.61 | Distanza goal: 6.71 | Motivo: Schianto a terra
+Step: 1312 | Rwd: -14003.31 | Distanza goal: 341.54 | Motivo: Deviazione eccessiva
+Step: 1344 | Rwd: -12650.89 | Distanza goal: 232.66 | Motivo: Deviazione eccessiva
+Step: 12 | Rwd: -1106.85 | Distanza goal: 1353.17 | Motivo: Schianto a terra
+Step: 708 | Rwd: -8698.36 | Distanza goal: 3.42 | Motivo: Schianto a terra
+Step: 848 | Rwd: -8180.47 | Distanza goal: 9.26 | Motivo: Schianto a terra
+Step: 1001 | Rwd: 202.51 | Distanza goal: 0.76 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1060 | Rwd: -11435.80 | Distanza goal: 2.18 | Motivo: Schianto a terra
+Step: 1150 | Rwd: -19594.21 | Distanza goal: 1.69 | Motivo: Schianto a terra
+Step: 752 | Rwd: -9990.64 | Distanza goal: 2.20 | Motivo: Schianto a terra
+Step: 860 | Rwd: 1648.39 | Distanza goal: 0.93 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 862 | Rwd: -16032.80 | Distanza goal: 7.68 | Motivo: Schianto a terra
+Step: 969 | Rwd: 1229.34 | Distanza goal: 0.76 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1001 | Rwd: -11694.01 | Distanza goal: 4.44 | Motivo: Schianto a terra
+Step: 1325 | Rwd: -13920.15 | Distanza goal: 11.77 | Motivo: Schianto a terra
+Step: 873 | Rwd: -14041.86 | Distanza goal: 3.73 | Motivo: Schianto a terra
+Step: 855 | Rwd: -8858.45 | Distanza goal: 2.07 | Motivo: Schianto a terra
+Step: 1118 | Rwd: -9108.82 | Distanza goal: 4.75 | Motivo: Schianto a terra
+Step: 1088 | Rwd: -15656.52 | Distanza goal: 1.72 | Motivo: Schianto a terra
+Step: 1148 | Rwd: -9959.08 | Distanza goal: 13.53 | Motivo: Schianto a terra
+Step: 1344 | Rwd: -12335.62 | Distanza goal: 231.93 | Motivo: Deviazione eccessiva
+Step: 714 | Rwd: -10715.23 | Distanza goal: 3.06 | Motivo: Schianto a terra
+Step: 884 | Rwd: -14048.51 | Distanza goal: 3.58 | Motivo: Schianto a terra
+Step: 941 | Rwd: -10480.39 | Distanza goal: 5.90 | Motivo: Schianto a terra
+Step: 922 | Rwd: -9995.03 | Distanza goal: 107.02 | Motivo: Deviazione eccessiva
+Step: 997 | Rwd: -13270.47 | Distanza goal: 13.13 | Motivo: Schianto a terra
+Step: 1044 | Rwd: -13416.93 | Distanza goal: 2.51 | Motivo: Schianto a terra
+Step: 35 | Rwd: -1830.30 | Distanza goal: 1166.03 | Motivo: Schianto a terra
+Step: 769 | Rwd: -15096.88 | Distanza goal: 2.61 | Motivo: Schianto a terra
+Step: 879 | Rwd: -9930.73 | Distanza goal: 7.86 | Motivo: Schianto a terra
+Step: 920 | Rwd: -9482.72 | Distanza goal: 11.28 | Motivo: Schianto a terra
+Step: 1337 | Rwd: -12260.15 | Distanza goal: 242.59 | Motivo: Deviazione eccessiva
+Step: 1512 | Rwd: -17720.55 | Distanza goal: 12.99 | Motivo: Schianto a terra
+Step: 732 | Rwd: -12402.57 | Distanza goal: 10.57 | Motivo: Schianto a terra
+Step: 784 | Rwd: -13220.79 | Distanza goal: 8.61 | Motivo: Schianto a terra
+Step: 720 | Rwd: -13505.64 | Distanza goal: 7.63 | Motivo: Schianto a terra
+Step: 893 | Rwd: -12599.73 | Distanza goal: 121.86 | Motivo: Deviazione eccessiva
+Step: 944 | Rwd: -12566.78 | Distanza goal: 1.93 | Motivo: Schianto a terra
+Step: 994 | Rwd: -11975.95 | Distanza goal: 2.34 | Motivo: Schianto a terra
+Step: 1089 | Rwd: -10946.83 | Distanza goal: 1.87 | Motivo: Schianto a terra
+Step: 1228 | Rwd: -11325.22 | Distanza goal: 6.91 | Motivo: Schianto a terra
+Step: 1102 | Rwd: -11640.60 | Distanza goal: 2.27 | Motivo: Schianto a terra
+Step: 1228 | Rwd: -10833.22 | Distanza goal: 7.86 | Motivo: Schianto a terra
+Step: 1329 | Rwd: -9540.98 | Distanza goal: 0.75 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1336 | Rwd: -12646.69 | Distanza goal: 242.90 | Motivo: Deviazione eccessiva
+Step: 753 | Rwd: -12048.02 | Distanza goal: 1.84 | Motivo: Schianto a terra
+Step: 964 | Rwd: -13405.28 | Distanza goal: 3.09 | Motivo: Schianto a terra
+Step: 1001 | Rwd: -24571.17 | Distanza goal: 5.40 | Motivo: Schianto a terra
+Step: 1003 | Rwd: -11627.06 | Distanza goal: 2.92 | Motivo: Schianto a terra
+Step: 980 | Rwd: -10218.34 | Distanza goal: 3.38 | Motivo: Schianto a terra
+Step: 1042 | Rwd: -10047.49 | Distanza goal: 3.92 | Motivo: Schianto a terra
+Step: 703 | Rwd: -13237.04 | Distanza goal: 11.40 | Motivo: Schianto a terra
+Step: 938 | Rwd: -13871.26 | Distanza goal: 8.41 | Motivo: Schianto a terra
+Step: 1065 | Rwd: -10195.94 | Distanza goal: 3.10 | Motivo: Schianto a terra
+Step: 1101 | Rwd: 1907.77 | Distanza goal: 0.54 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1092 | Rwd: -718.23 | Distanza goal: 0.69 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1336 | Rwd: -12718.98 | Distanza goal: 242.95 | Motivo: Deviazione eccessiva
+Step: 833 | Rwd: -11879.05 | Distanza goal: 2.37 | Motivo: Schianto a terra
+Step: 971 | Rwd: -13654.08 | Distanza goal: 176.19 | Motivo: Deviazione eccessiva
+Step: 961 | Rwd: -8163.05 | Distanza goal: 1.99 | Motivo: Schianto a terra
+Step: 972 | Rwd: -8844.71 | Distanza goal: 8.31 | Motivo: Schianto a terra
+Step: 1060 | Rwd: -2939.66 | Distanza goal: 0.47 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1050 | Rwd: -846.24 | Distanza goal: 0.83 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 715 | Rwd: -10850.51 | Distanza goal: 6.61 | Motivo: Schianto a terra
+Step: 742 | Rwd: -10332.87 | Distanza goal: 3.77 | Motivo: Schianto a terra
+Step: 730 | Rwd: -10100.76 | Distanza goal: 2.40 | Motivo: Schianto a terra
+Step: 942 | Rwd: -15016.27 | Distanza goal: 4.61 | Motivo: Schianto a terra
+Step: 1018 | Rwd: -10019.21 | Distanza goal: 5.08 | Motivo: Schianto a terra
+Step: 1071 | Rwd: -16590.50 | Distanza goal: 1.79 | Motivo: Schianto a terra
+Step: 778 | Rwd: -11960.95 | Distanza goal: 9.52 | Motivo: Schianto a terra
+Step: 944 | Rwd: -11817.11 | Distanza goal: 1.19 | Motivo: Schianto a terra
+Step: 821 | Rwd: -8339.60 | Distanza goal: 7.20 | Motivo: Schianto a terra
+Step: 1040 | Rwd: -14636.55 | Distanza goal: 8.29 | Motivo: Schianto a terra
+Step: 1033 | Rwd: 1312.65 | Distanza goal: 0.93 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1070 | Rwd: -17528.35 | Distanza goal: 4.04 | Motivo: Schianto a terra
+Step: 855 | Rwd: -10573.68 | Distanza goal: 6.04 | Motivo: Schianto a terra
+Step: 961 | Rwd: -10987.82 | Distanza goal: 13.40 | Motivo: Schianto a terra
+Step: 918 | Rwd: -7803.18 | Distanza goal: 7.62 | Motivo: Schianto a terra
+Step: 1101 | Rwd: 647.13 | Distanza goal: 0.92 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1084 | Rwd: 1827.80 | Distanza goal: 0.99 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1315 | Rwd: -13743.37 | Distanza goal: 9.05 | Motivo: Schianto a terra
+Step: 759 | Rwd: -10571.50 | Distanza goal: 5.18 | Motivo: Schianto a terra
+Step: 977 | Rwd: -10873.45 | Distanza goal: 9.74 | Motivo: Schianto a terra
+Step: 1002 | Rwd: 1718.28 | Distanza goal: 0.91 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1038 | Rwd: -1076.87 | Distanza goal: 0.85 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1012 | Rwd: -9257.22 | Distanza goal: 5.80 | Motivo: Schianto a terra
+Step: 1236 | Rwd: 109.53 | Distanza goal: 0.27 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 841 | Rwd: -7370.50 | Distanza goal: 2.76 | Motivo: Schianto a terra
+Step: 938 | Rwd: -8406.61 | Distanza goal: 8.90 | Motivo: Schianto a terra
+Step: 869 | Rwd: -8481.15 | Distanza goal: 1.89 | Motivo: Schianto a terra
+Step: 848 | Rwd: -8131.96 | Distanza goal: 10.36 | Motivo: Schianto a terra
+Step: 989 | Rwd: -15136.08 | Distanza goal: 5.90 | Motivo: Schianto a terra
+Step: 1009 | Rwd: -10124.66 | Distanza goal: 4.65 | Motivo: Schianto a terra
+Step: 772 | Rwd: -13433.20 | Distanza goal: 75.82 | Motivo: Schianto a terra
+Step: 978 | Rwd: 2314.67 | Distanza goal: 0.69 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1070 | Rwd: -9373.67 | Distanza goal: 4.21 | Motivo: Schianto a terra
+Step: 1067 | Rwd: -18916.02 | Distanza goal: 2.78 | Motivo: Schianto a terra
+Step: 1119 | Rwd: -13329.20 | Distanza goal: 248.52 | Motivo: Deviazione eccessiva
+Step: 1511 | Rwd: -20260.44 | Distanza goal: 10.75 | Motivo: Schianto a terra
+Step: 833 | Rwd: -11226.96 | Distanza goal: 1.36 | Motivo: Schianto a terra
+Step: 873 | Rwd: -15129.95 | Distanza goal: 1.68 | Motivo: Schianto a terra
+Step: 867 | Rwd: -8640.42 | Distanza goal: 2.18 | Motivo: Schianto a terra
+Step: 1076 | Rwd: -10540.61 | Distanza goal: 11.19 | Motivo: Schianto a terra
+Step: 1004 | Rwd: -3983.44 | Distanza goal: 0.95 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1058 | Rwd: 685.66 | Distanza goal: 0.76 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 757 | Rwd: -10891.14 | Distanza goal: 10.19 | Motivo: Schianto a terra
+Step: 737 | Rwd: 2286.05 | Distanza goal: 0.29 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 829 | Rwd: 3540.31 | Distanza goal: 0.62 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 812 | Rwd: -16907.17 | Distanza goal: 1.51 | Motivo: Schianto a terra
+Step: 972 | Rwd: -11785.57 | Distanza goal: 195.85 | Motivo: Deviazione eccessiva
+Step: 955 | Rwd: 2856.87 | Distanza goal: 0.77 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 769 | Rwd: -2817.37 | Distanza goal: 0.90 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 866 | Rwd: 3151.66 | Distanza goal: 0.89 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 850 | Rwd: -8517.13 | Distanza goal: 2.06 | Motivo: Schianto a terra
+Step: 838 | Rwd: -8227.48 | Distanza goal: 16.30 | Motivo: Schianto a terra
+Step: 854 | Rwd: -7462.78 | Distanza goal: 7.07 | Motivo: Schianto a terra
+Step: 1154 | Rwd: -24242.99 | Distanza goal: 1.62 | Motivo: Schianto a terra
+Step: 231 | Rwd: -8053.09 | Distanza goal: 1053.60 | Motivo: Deviazione eccessiva
+Step: 765 | Rwd: -12494.80 | Distanza goal: 23.18 | Motivo: Schianto a terra
+Step: 905 | Rwd: 544.39 | Distanza goal: 0.80 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 964 | Rwd: 2340.01 | Distanza goal: 0.95 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 942 | Rwd: -11222.26 | Distanza goal: 3.49 | Motivo: Schianto a terra
+Step: 1132 | Rwd: -8417.23 | Distanza goal: 9.27 | Motivo: Schianto a terra
+Step: 861 | Rwd: -12702.85 | Distanza goal: 18.54 | Motivo: Schianto a terra
+Step: 831 | Rwd: -7844.10 | Distanza goal: 12.75 | Motivo: Schianto a terra
+Step: 1044 | Rwd: -14795.01 | Distanza goal: 3.34 | Motivo: Schianto a terra
+Step: 992 | Rwd: -7038.67 | Distanza goal: 0.74 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1078 | Rwd: -11307.56 | Distanza goal: 10.01 | Motivo: Schianto a terra
+Step: 1269 | Rwd: -14075.90 | Distanza goal: 4.77 | Motivo: Schianto a terra
+Step: 702 | Rwd: -13260.39 | Distanza goal: 6.48 | Motivo: Schianto a terra
+Step: 915 | Rwd: -9780.18 | Distanza goal: 9.67 | Motivo: Schianto a terra
+Step: 903 | Rwd: -1512.79 | Distanza goal: 0.95 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1042 | Rwd: 2254.73 | Distanza goal: 0.70 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1169 | Rwd: -23249.20 | Distanza goal: 10.81 | Motivo: Schianto a terra
+Step: 1120 | Rwd: -12318.29 | Distanza goal: 7.26 | Motivo: Schianto a terra
+Step: 465 | Rwd: -5375.01 | Distanza goal: 720.75 | Motivo: Schianto a terra
+Step: 868 | Rwd: -8543.61 | Distanza goal: 2.26 | Motivo: Schianto a terra
+Step: 945 | Rwd: 1848.42 | Distanza goal: 0.74 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 992 | Rwd: 383.26 | Distanza goal: 0.55 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1118 | Rwd: -7654.94 | Distanza goal: 4.89 | Motivo: Schianto a terra
+Step: 1240 | Rwd: -11227.58 | Distanza goal: 6.03 | Motivo: Schianto a terra
+Step: 709 | Rwd: -10883.89 | Distanza goal: 171.67 | Motivo: Deviazione eccessiva
+Step: 884 | Rwd: -9205.25 | Distanza goal: 1.71 | Motivo: Schianto a terra
+Step: 973 | Rwd: -10750.13 | Distanza goal: 12.83 | Motivo: Schianto a terra
+Step: 922 | Rwd: -528.18 | Distanza goal: 0.77 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 982 | Rwd: -13152.88 | Distanza goal: 9.71 | Motivo: Schianto a terra
+Step: 1263 | Rwd: -15761.08 | Distanza goal: 3.97 | Motivo: Schianto a terra
+Step: 876 | Rwd: -14175.39 | Distanza goal: 4.91 | Motivo: Schianto a terra
+Step: 895 | Rwd: -15257.39 | Distanza goal: 1.64 | Motivo: Schianto a terra
+Step: 980 | Rwd: -10112.57 | Distanza goal: 1.78 | Motivo: Schianto a terra
+Step: 1006 | Rwd: -10898.42 | Distanza goal: 3.66 | Motivo: Schianto a terra
+Step: 1106 | Rwd: -22250.14 | Distanza goal: 1.80 | Motivo: Schianto a terra
+Step: 1332 | Rwd: -18698.72 | Distanza goal: 2.12 | Motivo: Schianto a terra
+Step: 763 | Rwd: -12684.65 | Distanza goal: 16.49 | Motivo: Schianto a terra
+Step: 816 | Rwd: -7235.17 | Distanza goal: 8.17 | Motivo: Schianto a terra
+Step: 916 | Rwd: -8096.01 | Distanza goal: 12.66 | Motivo: Schianto a terra
+Step: 849 | Rwd: -13298.14 | Distanza goal: 1.51 | Motivo: Schianto a terra
+Step: 839 | Rwd: -7123.01 | Distanza goal: 13.70 | Motivo: Schianto a terra
+Step: 987 | Rwd: 975.35 | Distanza goal: 0.96 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 747 | Rwd: -10384.75 | Distanza goal: 2.90 | Motivo: Schianto a terra
+Step: 821 | Rwd: 4461.83 | Distanza goal: 0.78 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 875 | Rwd: -14381.65 | Distanza goal: 2.41 | Motivo: Schianto a terra
+Step: 1042 | Rwd: -15118.57 | Distanza goal: 4.08 | Motivo: Schianto a terra
+Step: 948 | Rwd: -9897.47 | Distanza goal: 2.51 | Motivo: Schianto a terra
+Step: 1329 | Rwd: -11350.71 | Distanza goal: 254.28 | Motivo: Deviazione eccessiva
+Step: 720 | Rwd: -11155.54 | Distanza goal: 153.68 | Motivo: Deviazione eccessiva
+Step: 702 | Rwd: -11234.95 | Distanza goal: 2.75 | Motivo: Schianto a terra
+Step: 820 | Rwd: -7562.16 | Distanza goal: 0.51 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 920 | Rwd: 3596.16 | Distanza goal: 0.77 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 995 | Rwd: -14521.02 | Distanza goal: 0.49 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1118 | Rwd: -16844.32 | Distanza goal: 7.46 | Motivo: Schianto a terra
+Step: 777 | Rwd: -3523.69 | Distanza goal: 0.99 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1032 | Rwd: -10990.17 | Distanza goal: 10.15 | Motivo: Schianto a terra
+Step: 992 | Rwd: -8684.39 | Distanza goal: 16.69 | Motivo: Schianto a terra
+Step: 1079 | Rwd: -11240.64 | Distanza goal: 8.01 | Motivo: Schianto a terra
+Step: 1056 | Rwd: -2562.70 | Distanza goal: 0.58 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1507 | Rwd: -20792.99 | Distanza goal: 8.39 | Motivo: Schianto a terra
+Step: 967 | Rwd: -8914.02 | Distanza goal: 2.59 | Motivo: Schianto a terra
+Step: 891 | Rwd: -11055.97 | Distanza goal: 1.79 | Motivo: Schianto a terra
+Step: 945 | Rwd: -10836.78 | Distanza goal: 2.06 | Motivo: Schianto a terra
+Step: 1001 | Rwd: -21337.64 | Distanza goal: 163.08 | Motivo: Schianto a terra
+Step: 1018 | Rwd: 1461.89 | Distanza goal: 0.76 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1107 | Rwd: -8641.51 | Distanza goal: 14.05 | Motivo: Schianto a terra
+Step: 300 | Rwd: -10730.31 | Distanza goal: 952.20 | Motivo: Deviazione eccessiva
+Step: 734 | Rwd: -11617.45 | Distanza goal: 2.61 | Motivo: Schianto a terra
+Step: 1011 | Rwd: -9709.39 | Distanza goal: 2.95 | Motivo: Schianto a terra
+Step: 1012 | Rwd: -9860.51 | Distanza goal: 1.83 | Motivo: Schianto a terra
+Step: 1001 | Rwd: -17492.89 | Distanza goal: 9.05 | Motivo: Schianto a terra
+Step: 1066 | Rwd: -16211.19 | Distanza goal: 3.25 | Motivo: Schianto a terra
+Step: 737 | Rwd: 1802.79 | Distanza goal: 0.98 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 820 | Rwd: -3293.65 | Distanza goal: 0.83 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 848 | Rwd: -22429.98 | Distanza goal: 126.59 | Motivo: Deviazione eccessiva
+Step: 921 | Rwd: -7808.09 | Distanza goal: 1.73 | Motivo: Schianto a terra
+Step: 949 | Rwd: -10031.94 | Distanza goal: 229.35 | Motivo: Deviazione eccessiva
+Step: 1043 | Rwd: -11165.79 | Distanza goal: 3.47 | Motivo: Schianto a terra
+Step: 924 | Rwd: -11174.31 | Distanza goal: 237.19 | Motivo: Deviazione eccessiva
+Step: 1071 | Rwd: -17694.91 | Distanza goal: 5.21 | Motivo: Schianto a terra
+Step: 1156 | Rwd: -8148.10 | Distanza goal: 3.02 | Motivo: Schianto a terra
+Step: 1504 | Rwd: -17482.16 | Distanza goal: 2.15 | Motivo: Schianto a terra
+Step: 1495 | Rwd: -15739.86 | Distanza goal: 6.05 | Motivo: Schianto a terra
+Step: 289 | Rwd: -10585.51 | Distanza goal: 968.68 | Motivo: Deviazione eccessiva
+Step: 840 | Rwd: -9434.21 | Distanza goal: 4.80 | Motivo: Schianto a terra
+Step: 837 | Rwd: -9780.48 | Distanza goal: 4.94 | Motivo: Schianto a terra
+Step: 993 | Rwd: 1602.68 | Distanza goal: 0.56 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1027 | Rwd: 2719.85 | Distanza goal: 0.88 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1042 | Rwd: -8217.11 | Distanza goal: 3.94 | Motivo: Schianto a terra
+Step: 906 | Rwd: -5207.51 | Distanza goal: 0.88 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 866 | Rwd: -14086.55 | Distanza goal: 5.02 | Motivo: Schianto a terra
+Step: 1006 | Rwd: -9817.02 | Distanza goal: 1.66 | Motivo: Schianto a terra
+Step: 962 | Rwd: 3007.90 | Distanza goal: 0.30 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 963 | Rwd: 2391.36 | Distanza goal: 0.96 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1100 | Rwd: -9915.71 | Distanza goal: 2.62 | Motivo: Schianto a terra
+Step: 851 | Rwd: -3617.17 | Distanza goal: 0.99 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 866 | Rwd: -12994.39 | Distanza goal: 6.56 | Motivo: Schianto a terra
+Step: 842 | Rwd: -9328.86 | Distanza goal: 5.12 | Motivo: Schianto a terra
+Step: 1047 | Rwd: -22282.85 | Distanza goal: 2.35 | Motivo: Schianto a terra
+Step: 1058 | Rwd: -16470.69 | Distanza goal: 8.73 | Motivo: Schianto a terra
+Step: 1058 | Rwd: -16828.58 | Distanza goal: 9.28 | Motivo: Schianto a terra
+Step: 1072 | Rwd: -11448.27 | Distanza goal: 4.01 | Motivo: Schianto a terra
+Step: 1335 | Rwd: -12740.77 | Distanza goal: 245.47 | Motivo: Deviazione eccessiva
+Step: 1313 | Rwd: -13320.19 | Distanza goal: 15.27 | Motivo: Schianto a terra
+Step: 1341 | Rwd: -14906.43 | Distanza goal: 6.41 | Motivo: Schianto a terra
+Step: 1334 | Rwd: -13886.71 | Distanza goal: 246.75 | Motivo: Deviazione eccessiva
+Step: 1577 | Rwd: -1676.54 | Distanza goal: 0.92 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 837 | Rwd: -13568.39 | Distanza goal: 6.39 | Motivo: Schianto a terra
+Step: 959 | Rwd: -7772.93 | Distanza goal: 4.24 | Motivo: Schianto a terra
+Step: 1004 | Rwd: -726.44 | Distanza goal: 0.74 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 956 | Rwd: -10812.37 | Distanza goal: 219.25 | Motivo: Deviazione eccessiva
+Step: 1078 | Rwd: -13418.73 | Distanza goal: 7.78 | Motivo: Schianto a terra
+Step: 1308 | Rwd: -6845.14 | Distanza goal: 0.64 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 718 | Rwd: -12447.52 | Distanza goal: 227.37 | Motivo: Deviazione eccessiva
+Step: 910 | Rwd: -14364.50 | Distanza goal: 1.56 | Motivo: Schianto a terra
+Step: 911 | Rwd: -8638.26 | Distanza goal: 11.90 | Motivo: Schianto a terra
+Step: 992 | Rwd: -9020.76 | Distanza goal: 2.30 | Motivo: Schianto a terra
+Step: 1061 | Rwd: -10026.51 | Distanza goal: 2.22 | Motivo: Schianto a terra
+Step: 1205 | Rwd: 1216.79 | Distanza goal: 0.97 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 840 | Rwd: -7722.62 | Distanza goal: 13.14 | Motivo: Schianto a terra
+Step: 855 | Rwd: -13320.49 | Distanza goal: 17.99 | Motivo: Schianto a terra
+Step: 769 | Rwd: -10126.40 | Distanza goal: 9.21 | Motivo: Schianto a terra
+Step: 809 | Rwd: -15777.52 | Distanza goal: 171.61 | Motivo: Deviazione eccessiva
+Step: 918 | Rwd: -7651.19 | Distanza goal: 9.58 | Motivo: Schianto a terra
+Step: 1327 | Rwd: -17814.28 | Distanza goal: 3.28 | Motivo: Schianto a terra
+Step: 969 | Rwd: -10998.96 | Distanza goal: 199.68 | Motivo: Deviazione eccessiva
+Step: 929 | Rwd: -11363.87 | Distanza goal: 1.66 | Motivo: Schianto a terra
+Step: 925 | Rwd: -7133.99 | Distanza goal: 6.37 | Motivo: Schianto a terra
+Step: 918 | Rwd: -4847.26 | Distanza goal: 0.91 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1079 | Rwd: -11093.69 | Distanza goal: 302.35 | Motivo: Deviazione eccessiva
+Step: 1245 | Rwd: -13523.96 | Distanza goal: 11.21 | Motivo: Schianto a terra
+Step: 763 | Rwd: -13705.95 | Distanza goal: 2.81 | Motivo: Schianto a terra
+Step: 865 | Rwd: -8566.68 | Distanza goal: 6.04 | Motivo: Schianto a terra
+Step: 994 | Rwd: 284.63 | Distanza goal: 0.94 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1066 | Rwd: -36596.36 | Distanza goal: 1.69 | Motivo: Schianto a terra
+Step: 1035 | Rwd: -1808.92 | Distanza goal: 0.90 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1101 | Rwd: -9138.54 | Distanza goal: 2.98 | Motivo: Schianto a terra
+Step: 775 | Rwd: -16269.84 | Distanza goal: 214.25 | Motivo: Deviazione eccessiva
+Step: 854 | Rwd: -11318.35 | Distanza goal: 7.50 | Motivo: Schianto a terra
+Step: 812 | Rwd: -15840.24 | Distanza goal: 166.92 | Motivo: Deviazione eccessiva
+Step: 855 | Rwd: -11544.73 | Distanza goal: 1.74 | Motivo: Schianto a terra
+Step: 1005 | Rwd: -338.08 | Distanza goal: 0.82 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1041 | Rwd: -15246.86 | Distanza goal: 2.43 | Motivo: Schianto a terra
+Step: 701 | Rwd: -12011.35 | Distanza goal: 250.91 | Motivo: Deviazione eccessiva
+Step: 734 | Rwd: 3023.15 | Distanza goal: 1.00 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 753 | Rwd: -13198.42 | Distanza goal: 114.71 | Motivo: Deviazione eccessiva
+Step: 866 | Rwd: -7376.10 | Distanza goal: 13.16 | Motivo: Schianto a terra
+Step: 833 | Rwd: -11355.20 | Distanza goal: 3.67 | Motivo: Schianto a terra
+Step: 867 | Rwd: -8585.77 | Distanza goal: 2.72 | Motivo: Schianto a terra
+Step: 890 | Rwd: -10984.08 | Distanza goal: 2.45 | Motivo: Schianto a terra
+Step: 912 | Rwd: -8777.70 | Distanza goal: 9.76 | Motivo: Schianto a terra
+Step: 1026 | Rwd: -10360.49 | Distanza goal: 7.72 | Motivo: Schianto a terra
+Step: 1099 | Rwd: 2853.03 | Distanza goal: 0.74 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1063 | Rwd: -8573.40 | Distanza goal: 1.34 | Motivo: Schianto a terra
+Step: 1076 | Rwd: -10987.34 | Distanza goal: 306.80 | Motivo: Deviazione eccessiva
+Step: 1005 | Rwd: -8236.26 | Distanza goal: 1.53 | Motivo: Schianto a terra
+Step: 1024 | Rwd: -17119.06 | Distanza goal: 0.42 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1013 | Rwd: -1183.18 | Distanza goal: 0.97 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1081 | Rwd: -10701.45 | Distanza goal: 15.11 | Motivo: Schianto a terra
+Step: 1088 | Rwd: -16610.93 | Distanza goal: 3.89 | Motivo: Schianto a terra
+Step: 1342 | Rwd: -11605.39 | Distanza goal: 235.75 | Motivo: Deviazione eccessiva
+Step: 720 | Rwd: -10442.42 | Distanza goal: 9.93 | Motivo: Schianto a terra
+Step: 872 | Rwd: -9473.56 | Distanza goal: 7.18 | Motivo: Schianto a terra
+Step: 971 | Rwd: 486.76 | Distanza goal: 0.91 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 855 | Rwd: -12046.98 | Distanza goal: 1.59 | Motivo: Schianto a terra
+Step: 1077 | Rwd: -14115.71 | Distanza goal: 1.54 | Motivo: Schianto a terra
+Step: 1240 | Rwd: -10165.46 | Distanza goal: 4.42 | Motivo: Schianto a terra
+Step: 837 | Rwd: -7799.20 | Distanza goal: 20.48 | Motivo: Schianto a terra
+Step: 821 | Rwd: 4506.65 | Distanza goal: 0.67 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 974 | Rwd: -11069.88 | Distanza goal: 18.34 | Motivo: Schianto a terra
+Step: 1097 | Rwd: -8846.41 | Distanza goal: 2.90 | Motivo: Schianto a terra
+Step: 1093 | Rwd: 2024.27 | Distanza goal: 0.93 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1522 | Rwd: -20628.51 | Distanza goal: 8.53 | Motivo: Schianto a terra
+Step: 857 | Rwd: -20482.54 | Distanza goal: 109.41 | Motivo: Deviazione eccessiva
+Step: 966 | Rwd: -10152.77 | Distanza goal: 15.70 | Motivo: Schianto a terra
+Step: 1074 | Rwd: -16364.70 | Distanza goal: 9.35 | Motivo: Schianto a terra
+Step: 1018 | Rwd: 2285.93 | Distanza goal: 0.85 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1097 | Rwd: -5641.14 | Distanza goal: 0.57 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1338 | Rwd: -10523.60 | Distanza goal: 240.33 | Motivo: Deviazione eccessiva
+Step: 725 | Rwd: -10478.45 | Distanza goal: 5.75 | Motivo: Schianto a terra
+Step: 859 | Rwd: -7318.18 | Distanza goal: 10.30 | Motivo: Schianto a terra
+Step: 885 | Rwd: -16769.70 | Distanza goal: 5.56 | Motivo: Schianto a terra
+Step: 845 | Rwd: -13013.83 | Distanza goal: 7.99 | Motivo: Schianto a terra
+Step: 980 | Rwd: -17820.53 | Distanza goal: 1.99 | Motivo: Schianto a terra
+Step: 1081 | Rwd: -12098.08 | Distanza goal: 16.25 | Motivo: Schianto a terra
+Step: 766 | Rwd: -11760.25 | Distanza goal: 6.68 | Motivo: Schianto a terra
+Step: 846 | Rwd: -7946.48 | Distanza goal: 6.45 | Motivo: Schianto a terra
+Step: 808 | Rwd: -16584.61 | Distanza goal: 106.13 | Motivo: Deviazione eccessiva
+Step: 915 | Rwd: -10790.34 | Distanza goal: 8.14 | Motivo: Schianto a terra
+Step: 1140 | Rwd: 3730.34 | Distanza goal: 0.65 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1270 | Rwd: -13893.50 | Distanza goal: 5.61 | Motivo: Schianto a terra
+Step: 705 | Rwd: -11864.74 | Distanza goal: 244.99 | Motivo: Deviazione eccessiva
+Step: 793 | Rwd: -15974.10 | Distanza goal: 40.92 | Motivo: Schianto a terra
+Step: 742 | Rwd: 52.13 | Distanza goal: 0.51 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1000 | Rwd: 426.49 | Distanza goal: 0.99 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1089 | Rwd: -12089.19 | Distanza goal: 289.30 | Motivo: Deviazione eccessiva
+Step: 1087 | Rwd: -1051.63 | Distanza goal: 0.65 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 772 | Rwd: -10964.09 | Distanza goal: 4.07 | Motivo: Schianto a terra
+Step: 847 | Rwd: -9111.70 | Distanza goal: 12.05 | Motivo: Schianto a terra
+Step: 822 | Rwd: -7340.51 | Distanza goal: 8.83 | Motivo: Schianto a terra
+Step: 959 | Rwd: -7518.66 | Distanza goal: 4.24 | Motivo: Schianto a terra
+Step: 1088 | Rwd: 788.51 | Distanza goal: 0.89 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1503 | Rwd: -5996.10 | Distanza goal: 0.99 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 749 | Rwd: -8432.38 | Distanza goal: 12.80 | Motivo: Schianto a terra
+Step: 988 | Rwd: -4386.04 | Distanza goal: 0.65 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1049 | Rwd: -15541.56 | Distanza goal: 6.25 | Motivo: Schianto a terra
+Step: 1043 | Rwd: -14948.12 | Distanza goal: 2.67 | Motivo: Schianto a terra
+Step: 1047 | Rwd: 2684.95 | Distanza goal: 0.56 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1505 | Rwd: -17772.39 | Distanza goal: 5.10 | Motivo: Schianto a terra
+Step: 910 | Rwd: -9214.19 | Distanza goal: 10.36 | Motivo: Schianto a terra
+Step: 872 | Rwd: -9534.62 | Distanza goal: 1.51 | Motivo: Schianto a terra
+Step: 920 | Rwd: -10039.93 | Distanza goal: 110.17 | Motivo: Deviazione eccessiva
+Step: 1023 | Rwd: 2596.87 | Distanza goal: 0.86 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1090 | Rwd: -11831.27 | Distanza goal: 13.65 | Motivo: Schianto a terra
+Step: 1057 | Rwd: -8074.04 | Distanza goal: 3.91 | Motivo: Schianto a terra
+Step: 731 | Rwd: -14973.55 | Distanza goal: 10.44 | Motivo: Schianto a terra
+Step: 878 | Rwd: 2431.98 | Distanza goal: 0.65 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 915 | Rwd: -7655.37 | Distanza goal: 10.66 | Motivo: Schianto a terra
+Step: 1128 | Rwd: -16205.67 | Distanza goal: 8.56 | Motivo: Schianto a terra
+Step: 1071 | Rwd: -19328.35 | Distanza goal: 2.79 | Motivo: Schianto a terra
+Step: 1124 | Rwd: -3975.95 | Distanza goal: 0.95 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 864 | Rwd: -14165.04 | Distanza goal: 1.66 | Motivo: Schianto a terra
+Step: 770 | Rwd: -17501.01 | Distanza goal: 154.43 | Motivo: Deviazione eccessiva
+Step: 899 | Rwd: -10109.78 | Distanza goal: 1.60 | Motivo: Schianto a terra
+Step: 1141 | Rwd: 3167.11 | Distanza goal: 0.96 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1079 | Rwd: -11375.31 | Distanza goal: 10.03 | Motivo: Schianto a terra
+Step: 1522 | Rwd: -20470.43 | Distanza goal: 11.38 | Motivo: Schianto a terra
+Step: 758 | Rwd: -15662.60 | Distanza goal: 5.23 | Motivo: Schianto a terra
+Step: 744 | Rwd: -11856.51 | Distanza goal: 11.13 | Motivo: Schianto a terra
+Step: 897 | Rwd: -12315.43 | Distanza goal: 113.71 | Motivo: Deviazione eccessiva
+Step: 1018 | Rwd: -10209.94 | Distanza goal: 16.81 | Motivo: Schianto a terra
+Step: 970 | Rwd: -9867.76 | Distanza goal: 1.73 | Motivo: Schianto a terra
+Step: 1061 | Rwd: -4324.47 | Distanza goal: 0.98 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 734 | Rwd: -16184.63 | Distanza goal: 3.35 | Motivo: Schianto a terra
+Step: 806 | Rwd: -16664.56 | Distanza goal: 109.85 | Motivo: Deviazione eccessiva
+Step: 1036 | Rwd: -8612.78 | Distanza goal: 14.31 | Motivo: Schianto a terra
+Step: 1106 | Rwd: -8228.27 | Distanza goal: 0.35 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1095 | Rwd: -21642.91 | Distanza goal: 0.66 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1315 | Rwd: -13357.33 | Distanza goal: 11.32 | Motivo: Schianto a terra
+Step: 715 | Rwd: -11271.36 | Distanza goal: 161.66 | Motivo: Deviazione eccessiva
+Step: 703 | Rwd: -12207.10 | Distanza goal: 5.66 | Motivo: Schianto a terra
+Step: 761 | Rwd: 1631.80 | Distanza goal: 0.86 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1005 | Rwd: -21735.79 | Distanza goal: 6.60 | Motivo: Schianto a terra
+Step: 1026 | Rwd: -8912.37 | Distanza goal: 11.42 | Motivo: Schianto a terra
+Step: 1096 | Rwd: -1054.13 | Distanza goal: 0.78 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 742 | Rwd: -14085.79 | Distanza goal: 1.95 | Motivo: Schianto a terra
+Step: 847 | Rwd: -7830.63 | Distanza goal: 12.80 | Motivo: Schianto a terra
+Step: 960 | Rwd: -9811.73 | Distanza goal: 18.30 | Motivo: Schianto a terra
+Step: 919 | Rwd: -8116.91 | Distanza goal: 2.60 | Motivo: Schianto a terra
+Step: 1013 | Rwd: -12092.69 | Distanza goal: 10.95 | Motivo: Schianto a terra
+Step: 1046 | Rwd: 2207.50 | Distanza goal: 0.57 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 710 | Rwd: -7988.68 | Distanza goal: 7.96 | Motivo: Schianto a terra
+Step: 848 | Rwd: -8893.94 | Distanza goal: 17.85 | Motivo: Schianto a terra
+Step: 876 | Rwd: -12291.45 | Distanza goal: 9.52 | Motivo: Schianto a terra
+Step: 900 | Rwd: -11524.43 | Distanza goal: 107.02 | Motivo: Deviazione eccessiva
+Step: 986 | Rwd: 1190.22 | Distanza goal: 0.95 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 992 | Rwd: -16798.92 | Distanza goal: 10.57 | Motivo: Schianto a terra
+Step: 692 | Rwd: -10106.52 | Distanza goal: 190.38 | Motivo: Deviazione eccessiva
+Step: 767 | Rwd: -9530.08 | Distanza goal: 7.70 | Motivo: Schianto a terra
+Step: 840 | Rwd: -7733.19 | Distanza goal: 7.02 | Motivo: Schianto a terra
+Step: 907 | Rwd: 580.56 | Distanza goal: 0.96 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1020 | Rwd: -1617.95 | Distanza goal: 0.96 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1076 | Rwd: -8810.11 | Distanza goal: 13.47 | Motivo: Schianto a terra
+Step: 786 | Rwd: 576.93 | Distanza goal: 0.91 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 769 | Rwd: -13455.34 | Distanza goal: 156.73 | Motivo: Deviazione eccessiva
+Step: 703 | Rwd: -10444.15 | Distanza goal: 178.27 | Motivo: Deviazione eccessiva
+Step: 887 | Rwd: -13085.27 | Distanza goal: 2.22 | Motivo: Schianto a terra
+Step: 958 | Rwd: -7882.04 | Distanza goal: 7.17 | Motivo: Schianto a terra
+Step: 1041 | Rwd: 2838.32 | Distanza goal: 0.90 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 685 | Rwd: -9694.62 | Distanza goal: 199.71 | Motivo: Deviazione eccessiva
+Step: 736 | Rwd: -8238.62 | Distanza goal: 4.42 | Motivo: Schianto a terra
+Step: 842 | Rwd: -11795.85 | Distanza goal: 13.20 | Motivo: Schianto a terra
+Step: 878 | Rwd: -8965.15 | Distanza goal: 8.62 | Motivo: Schianto a terra
+Step: 1160 | Rwd: -8043.71 | Distanza goal: 16.20 | Motivo: Schianto a terra
+Step: 1130 | Rwd: -13197.52 | Distanza goal: 233.91 | Motivo: Deviazione eccessiva
+Step: 840 | Rwd: -7055.15 | Distanza goal: 6.25 | Motivo: Schianto a terra
+Step: 856 | Rwd: -6489.85 | Distanza goal: 0.40 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1065 | Rwd: -12175.12 | Distanza goal: 0.54 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1001 | Rwd: -896.13 | Distanza goal: 0.93 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1081 | Rwd: -13427.46 | Distanza goal: 1.86 | Motivo: Schianto a terra
+Step: 1081 | Rwd: -10150.46 | Distanza goal: 10.40 | Motivo: Schianto a terra
+Step: 799 | Rwd: -19085.27 | Distanza goal: 124.10 | Motivo: Deviazione eccessiva
+Step: 854 | Rwd: -16001.94 | Distanza goal: 115.69 | Motivo: Deviazione eccessiva
+Step: 912 | Rwd: -7171.32 | Distanza goal: 17.65 | Motivo: Schianto a terra
+Step: 928 | Rwd: -7823.77 | Distanza goal: 6.12 | Motivo: Schianto a terra
+Step: 1078 | Rwd: -13383.79 | Distanza goal: 304.08 | Motivo: Deviazione eccessiva
+Step: 1234 | Rwd: -1276.58 | Distanza goal: 0.94 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 830 | Rwd: -13085.58 | Distanza goal: 6.21 | Motivo: Schianto a terra
+Step: 905 | Rwd: -15339.31 | Distanza goal: 1.87 | Motivo: Schianto a terra
+Step: 986 | Rwd: -5121.59 | Distanza goal: 0.88 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1270 | Rwd: -13595.51 | Distanza goal: 3.21 | Motivo: Schianto a terra
+Step: 1346 | Rwd: -11797.15 | Distanza goal: 229.05 | Motivo: Deviazione eccessiva
+Step: 1504 | Rwd: -19984.01 | Distanza goal: 4.17 | Motivo: Schianto a terra
+Step: 823 | Rwd: 4109.34 | Distanza goal: 0.49 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 765 | Rwd: 904.27 | Distanza goal: 0.97 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 834 | Rwd: -7846.42 | Distanza goal: 9.53 | Motivo: Schianto a terra
+Step: 858 | Rwd: -10685.51 | Distanza goal: 2.37 | Motivo: Schianto a terra
+Step: 1077 | Rwd: -77.56 | Distanza goal: 0.94 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1232 | Rwd: -4085.90 | Distanza goal: 0.15 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 644 | Rwd: -11515.56 | Distanza goal: 184.46 | Motivo: Deviazione eccessiva
+Step: 871 | Rwd: -8343.34 | Distanza goal: 5.60 | Motivo: Schianto a terra
+Step: 836 | Rwd: -15695.34 | Distanza goal: 7.94 | Motivo: Schianto a terra
+Step: 957 | Rwd: -11570.77 | Distanza goal: 3.21 | Motivo: Schianto a terra
+Step: 1016 | Rwd: -9229.37 | Distanza goal: 1.54 | Motivo: Schianto a terra
+Step: 1266 | Rwd: -12542.75 | Distanza goal: 7.62 | Motivo: Schianto a terra
+Step: 771 | Rwd: -17469.10 | Distanza goal: 219.89 | Motivo: Deviazione eccessiva
+Step: 940 | Rwd: -7466.73 | Distanza goal: 21.52 | Motivo: Schianto a terra
+Step: 889 | Rwd: -9267.16 | Distanza goal: 2.08 | Motivo: Schianto a terra
+Step: 942 | Rwd: -10422.47 | Distanza goal: 239.29 | Motivo: Deviazione eccessiva
+Step: 1068 | Rwd: -8784.03 | Distanza goal: 7.73 | Motivo: Schianto a terra
+Step: 1040 | Rwd: 2611.96 | Distanza goal: 0.79 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 840 | Rwd: -8174.28 | Distanza goal: 17.15 | Motivo: Schianto a terra
+Step: 1263 | Rwd: -1473.97 | Distanza goal: 0.60 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1355 | Rwd: -14341.07 | Distanza goal: 1.94 | Motivo: Schianto a terra
+Step: 1271 | Rwd: -12443.91 | Distanza goal: 9.96 | Motivo: Schianto a terra
+Step: 1275 | Rwd: -18383.04 | Distanza goal: 3.54 | Motivo: Schianto a terra
+Step: 1329 | Rwd: -14409.75 | Distanza goal: 14.28 | Motivo: Schianto a terra
+Step: 253 | Rwd: -8792.93 | Distanza goal: 1021.64 | Motivo: Deviazione eccessiva
+Step: 954 | Rwd: -7457.17 | Distanza goal: 16.03 | Motivo: Schianto a terra
+Step: 942 | Rwd: 2265.22 | Distanza goal: 0.18 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1061 | Rwd: -11413.90 | Distanza goal: 327.91 | Motivo: Deviazione eccessiva
+Step: 1059 | Rwd: -4022.88 | Distanza goal: 0.40 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1143 | Rwd: -7873.12 | Distanza goal: 6.04 | Motivo: Schianto a terra
+Step: 860 | Rwd: -11677.39 | Distanza goal: 5.96 | Motivo: Schianto a terra
+Step: 854 | Rwd: -23728.01 | Distanza goal: 1.66 | Motivo: Schianto a terra
+Step: 958 | Rwd: -12367.94 | Distanza goal: 14.40 | Motivo: Schianto a terra
+Step: 1016 | Rwd: 1804.01 | Distanza goal: 0.75 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1089 | Rwd: -16894.77 | Distanza goal: 2.74 | Motivo: Schianto a terra
+Step: 1328 | Rwd: -14827.89 | Distanza goal: 11.18 | Motivo: Schianto a terra
+Step: 898 | Rwd: -13262.68 | Distanza goal: 1.72 | Motivo: Schianto a terra
+Step: 1065 | Rwd: -16694.24 | Distanza goal: 5.48 | Motivo: Schianto a terra
+Step: 1057 | Rwd: -16991.60 | Distanza goal: 5.44 | Motivo: Schianto a terra
+Step: 1302 | Rwd: -12546.98 | Distanza goal: 354.81 | Motivo: Deviazione eccessiva
+Step: 1274 | Rwd: -11583.66 | Distanza goal: 13.56 | Motivo: Schianto a terra
+Step: 1500 | Rwd: -18057.59 | Distanza goal: 2.89 | Motivo: Schianto a terra
+Step: 1017 | Rwd: -9846.51 | Distanza goal: 4.51 | Motivo: Schianto a terra
+Step: 1055 | Rwd: -14808.84 | Distanza goal: 8.89 | Motivo: Schianto a terra
+Step: 1092 | Rwd: -11362.80 | Distanza goal: 285.50 | Motivo: Deviazione eccessiva
+Step: 1090 | Rwd: -2288.22 | Distanza goal: 0.86 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1128 | Rwd: -8017.63 | Distanza goal: 6.96 | Motivo: Schianto a terra
+Step: 1508 | Rwd: -17775.95 | Distanza goal: 5.37 | Motivo: Schianto a terra
+Step: 700 | Rwd: -9771.04 | Distanza goal: 182.15 | Motivo: Deviazione eccessiva
+Step: 847 | Rwd: -7658.20 | Distanza goal: 6.06 | Motivo: Schianto a terra
+Step: 1004 | Rwd: 1605.42 | Distanza goal: 0.95 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 979 | Rwd: 2658.58 | Distanza goal: 0.97 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1073 | Rwd: -10213.11 | Distanza goal: 9.27 | Motivo: Schianto a terra
+Step: 1346 | Rwd: -11735.74 | Distanza goal: 229.12 | Motivo: Deviazione eccessiva
+Step: 762 | Rwd: -9409.52 | Distanza goal: 5.06 | Motivo: Schianto a terra
+Step: 852 | Rwd: -7857.36 | Distanza goal: 3.37 | Motivo: Schianto a terra
+Step: 1001 | Rwd: 1467.40 | Distanza goal: 0.94 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1008 | Rwd: -8564.20 | Distanza goal: 4.49 | Motivo: Schianto a terra
+Step: 997 | Rwd: -16175.65 | Distanza goal: 15.36 | Motivo: Schianto a terra
+Step: 1508 | Rwd: -19412.81 | Distanza goal: 3.17 | Motivo: Schianto a terra
+Step: 867 | Rwd: -12303.89 | Distanza goal: 2.01 | Motivo: Schianto a terra
+Step: 852 | Rwd: -8037.76 | Distanza goal: 6.25 | Motivo: Schianto a terra
+Step: 1113 | Rwd: -15839.34 | Distanza goal: 12.39 | Motivo: Schianto a terra
+Step: 1095 | Rwd: -11599.81 | Distanza goal: 280.90 | Motivo: Deviazione eccessiva
+Step: 1097 | Rwd: 1592.40 | Distanza goal: 0.79 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1333 | Rwd: -7708.69 | Distanza goal: 0.81 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 828 | Rwd: -7573.02 | Distanza goal: 6.92 | Motivo: Schianto a terra
+Step: 989 | Rwd: 942.96 | Distanza goal: 0.90 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 905 | Rwd: -9283.39 | Distanza goal: 3.91 | Motivo: Schianto a terra
+Step: 988 | Rwd: -1948.96 | Distanza goal: 0.82 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1112 | Rwd: -9037.21 | Distanza goal: 16.24 | Motivo: Schianto a terra
+Step: 1021 | Rwd: 2710.27 | Distanza goal: 0.99 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 741 | Rwd: -9081.48 | Distanza goal: 6.59 | Motivo: Schianto a terra
+Step: 776 | Rwd: -15361.21 | Distanza goal: 212.50 | Motivo: Deviazione eccessiva
+Step: 850 | Rwd: -7712.75 | Distanza goal: 12.15 | Motivo: Schianto a terra
+Step: 948 | Rwd: -10067.24 | Distanza goal: 230.36 | Motivo: Deviazione eccessiva
+Step: 1096 | Rwd: -8938.55 | Distanza goal: 5.14 | Motivo: Schianto a terra
+Step: 1148 | Rwd: -13956.84 | Distanza goal: 211.47 | Motivo: Deviazione eccessiva
+Step: 778 | Rwd: -14017.82 | Distanza goal: 13.70 | Motivo: Schianto a terra
+Step: 840 | Rwd: -7957.29 | Distanza goal: 18.52 | Motivo: Schianto a terra
+Step: 854 | Rwd: 3266.36 | Distanza goal: 0.96 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 914 | Rwd: -6925.75 | Distanza goal: 8.56 | Motivo: Schianto a terra
+Step: 985 | Rwd: -3609.62 | Distanza goal: 0.62 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1230 | Rwd: -1936.71 | Distanza goal: 0.97 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 674 | Rwd: -8835.45 | Distanza goal: 216.39 | Motivo: Deviazione eccessiva
+Step: 736 | Rwd: -10696.47 | Distanza goal: 5.92 | Motivo: Schianto a terra
+Step: 960 | Rwd: 2083.24 | Distanza goal: 0.90 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1096 | Rwd: -10733.22 | Distanza goal: 8.71 | Motivo: Schianto a terra
+Step: 1110 | Rwd: -9315.62 | Distanza goal: 11.58 | Motivo: Schianto a terra
+Step: 1086 | Rwd: -546.42 | Distanza goal: 0.71 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 918 | Rwd: -8848.18 | Distanza goal: 16.72 | Motivo: Schianto a terra
+Step: 1025 | Rwd: -10093.56 | Distanza goal: 11.84 | Motivo: Schianto a terra
+Step: 1028 | Rwd: -9082.79 | Distanza goal: 17.21 | Motivo: Schianto a terra
+Step: 1134 | Rwd: -8605.31 | Distanza goal: 6.92 | Motivo: Schianto a terra
+Step: 1255 | Rwd: -11185.38 | Distanza goal: 14.09 | Motivo: Schianto a terra
+Step: 1321 | Rwd: -13508.25 | Distanza goal: 5.94 | Motivo: Schianto a terra
+Step: 714 | Rwd: -10860.95 | Distanza goal: 163.74 | Motivo: Deviazione eccessiva
+Step: 703 | Rwd: -11567.00 | Distanza goal: 1.36 | Motivo: Schianto a terra
+Step: 821 | Rwd: -2314.57 | Distanza goal: 0.47 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 866 | Rwd: -11623.58 | Distanza goal: 9.42 | Motivo: Schianto a terra
+Step: 1131 | Rwd: -16086.91 | Distanza goal: 0.83 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1332 | Rwd: -11136.25 | Distanza goal: 249.12 | Motivo: Deviazione eccessiva
+Step: 817 | Rwd: -16599.69 | Distanza goal: 159.62 | Motivo: Deviazione eccessiva
+Step: 1027 | Rwd: -12682.21 | Distanza goal: 12.27 | Motivo: Schianto a terra
+Step: 1046 | Rwd: -8317.76 | Distanza goal: 1.33 | Motivo: Schianto a terra
+Step: 988 | Rwd: -3004.29 | Distanza goal: 0.92 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1140 | Rwd: 3094.82 | Distanza goal: 0.67 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1180 | Rwd: -22562.91 | Distanza goal: 0.97 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 921 | Rwd: 4231.21 | Distanza goal: 0.81 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 822 | Rwd: 4121.01 | Distanza goal: 0.76 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 868 | Rwd: -11668.55 | Distanza goal: 5.14 | Motivo: Schianto a terra
+Step: 966 | Rwd: -1890.17 | Distanza goal: 0.59 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 953 | Rwd: -10669.83 | Distanza goal: 223.06 | Motivo: Deviazione eccessiva
+Step: 1021 | Rwd: 2974.29 | Distanza goal: 0.70 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 842 | Rwd: -7877.57 | Distanza goal: 13.35 | Motivo: Schianto a terra
+Step: 952 | Rwd: -10530.55 | Distanza goal: 224.81 | Motivo: Deviazione eccessiva
+Step: 953 | Rwd: 1439.43 | Distanza goal: 0.78 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 941 | Rwd: -10222.13 | Distanza goal: 2.75 | Motivo: Schianto a terra
+Step: 1042 | Rwd: -1305.29 | Distanza goal: 0.65 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1096 | Rwd: -11664.21 | Distanza goal: 10.38 | Motivo: Schianto a terra
+Step: 865 | Rwd: -15081.88 | Distanza goal: 4.23 | Motivo: Schianto a terra
+Step: 844 | Rwd: -8916.40 | Distanza goal: 3.85 | Motivo: Schianto a terra
+Step: 961 | Rwd: 4123.01 | Distanza goal: 0.40 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1107 | Rwd: -9005.29 | Distanza goal: 13.02 | Motivo: Schianto a terra
+Step: 1104 | Rwd: -8382.36 | Distanza goal: 3.78 | Motivo: Schianto a terra
+Step: 1073 | Rwd: -10221.65 | Distanza goal: 8.86 | Motivo: Schianto a terra
+Step: 823 | Rwd: -1142.77 | Distanza goal: 0.81 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1049 | Rwd: -15904.60 | Distanza goal: 4.90 | Motivo: Schianto a terra
+Step: 1108 | Rwd: -17139.97 | Distanza goal: 24.51 | Motivo: Schianto a terra
+Step: 1000 | Rwd: -5080.04 | Distanza goal: 0.89 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1086 | Rwd: -3691.07 | Distanza goal: 0.99 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1146 | Rwd: -14755.29 | Distanza goal: 213.21 | Motivo: Deviazione eccessiva
+Step: 875 | Rwd: -8646.97 | Distanza goal: 1.94 | Motivo: Schianto a terra
+Step: 857 | Rwd: -8732.89 | Distanza goal: 10.47 | Motivo: Schianto a terra
+Step: 991 | Rwd: 2304.64 | Distanza goal: 0.59 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 857 | Rwd: -9134.89 | Distanza goal: 2.80 | Motivo: Schianto a terra
+Step: 1135 | Rwd: -8218.69 | Distanza goal: 9.53 | Motivo: Schianto a terra
+Step: 1332 | Rwd: -11052.44 | Distanza goal: 249.15 | Motivo: Deviazione eccessiva
+Step: 687 | Rwd: -9762.61 | Distanza goal: 196.25 | Motivo: Deviazione eccessiva
+Step: 801 | Rwd: -13242.91 | Distanza goal: 5.58 | Motivo: Schianto a terra
+Step: 1050 | Rwd: -1671.75 | Distanza goal: 0.83 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1122 | Rwd: -9013.82 | Distanza goal: 0.70 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1142 | Rwd: 3299.28 | Distanza goal: 0.85 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1338 | Rwd: -14252.55 | Distanza goal: 1.68 | Motivo: Schianto a terra
+Step: 871 | Rwd: -6620.94 | Distanza goal: 0.52 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 816 | Rwd: -7295.24 | Distanza goal: 3.85 | Motivo: Schianto a terra
+Step: 861 | Rwd: -9922.35 | Distanza goal: 12.19 | Motivo: Schianto a terra
+Step: 825 | Rwd: -7495.32 | Distanza goal: 0.46 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1011 | Rwd: -17563.99 | Distanza goal: 0.79 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1149 | Rwd: -8658.57 | Distanza goal: 1.66 | Motivo: Schianto a terra
+Step: 971 | Rwd: 315.57 | Distanza goal: 0.83 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 849 | Rwd: -19332.13 | Distanza goal: 2.46 | Motivo: Schianto a terra
+Step: 892 | Rwd: -11803.20 | Distanza goal: 125.99 | Motivo: Deviazione eccessiva
+Step: 983 | Rwd: 65.43 | Distanza goal: 0.68 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1084 | Rwd: -11639.54 | Distanza goal: 297.04 | Motivo: Deviazione eccessiva
+Step: 1532 | Rwd: -22449.11 | Distanza goal: 2.25 | Motivo: Schianto a terra
+Step: 681 | Rwd: -13153.41 | Distanza goal: 112.03 | Motivo: Schianto a terra
+Step: 754 | Rwd: -12060.49 | Distanza goal: 113.76 | Motivo: Deviazione eccessiva
+Step: 925 | Rwd: -10079.04 | Distanza goal: 102.55 | Motivo: Deviazione eccessiva
+Step: 1065 | Rwd: 1365.50 | Distanza goal: 0.85 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1068 | Rwd: -9975.84 | Distanza goal: 7.44 | Motivo: Schianto a terra
+Step: 1144 | Rwd: -8556.37 | Distanza goal: 9.36 | Motivo: Schianto a terra
+Step: 727 | Rwd: -11138.73 | Distanza goal: 17.54 | Motivo: Schianto a terra
+Step: 713 | Rwd: -12336.21 | Distanza goal: 233.99 | Motivo: Deviazione eccessiva
+Step: 798 | Rwd: -6824.30 | Distanza goal: 32.11 | Motivo: Schianto a terra
+Step: 927 | Rwd: -6943.35 | Distanza goal: 12.09 | Motivo: Schianto a terra
+Step: 908 | Rwd: 487.70 | Distanza goal: 0.82 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 928 | Rwd: -11359.29 | Distanza goal: 11.15 | Motivo: Schianto a terra
+Step: 874 | Rwd: -14547.45 | Distanza goal: 7.58 | Motivo: Schianto a terra
+Step: 944 | Rwd: -13343.64 | Distanza goal: 8.97 | Motivo: Schianto a terra
+Step: 948 | Rwd: -10751.98 | Distanza goal: 230.79 | Motivo: Deviazione eccessiva
+Step: 992 | Rwd: -9250.94 | Distanza goal: 1.92 | Motivo: Schianto a terra
+Step: 1112 | Rwd: -9618.65 | Distanza goal: 11.68 | Motivo: Schianto a terra
+Step: 1118 | Rwd: -12264.77 | Distanza goal: 7.10 | Motivo: Schianto a terra
+Step: 929 | Rwd: -6777.01 | Distanza goal: 0.67 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 896 | Rwd: -1815.03 | Distanza goal: 0.99 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 846 | Rwd: -14961.37 | Distanza goal: 14.70 | Motivo: Schianto a terra
+Step: 1064 | Rwd: -9896.45 | Distanza goal: 1.98 | Motivo: Schianto a terra
+Step: 1066 | Rwd: -4519.44 | Distanza goal: 0.28 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1177 | Rwd: -9032.92 | Distanza goal: 16.81 | Motivo: Schianto a terra
+Step: 768 | Rwd: -10953.79 | Distanza goal: 6.44 | Motivo: Schianto a terra
+Step: 772 | Rwd: -14386.37 | Distanza goal: 4.10 | Motivo: Schianto a terra
+Step: 895 | Rwd: 1826.47 | Distanza goal: 0.67 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1122 | Rwd: 2862.21 | Distanza goal: 0.82 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1122 | Rwd: -18125.36 | Distanza goal: 0.41 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1334 | Rwd: 43.68 | Distanza goal: 0.87 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 848 | Rwd: -13203.14 | Distanza goal: 15.35 | Motivo: Schianto a terra
+Step: 807 | Rwd: -12051.98 | Distanza goal: 5.13 | Motivo: Schianto a terra
+Step: 842 | Rwd: -8558.87 | Distanza goal: 4.39 | Motivo: Schianto a terra
+Step: 793 | Rwd: -19102.39 | Distanza goal: 188.55 | Motivo: Deviazione eccessiva
+Step: 971 | Rwd: -16007.93 | Distanza goal: 20.16 | Motivo: Schianto a terra
+Step: 1210 | Rwd: -953.20 | Distanza goal: 0.94 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 842 | Rwd: -8299.75 | Distanza goal: 13.65 | Motivo: Schianto a terra
+Step: 850 | Rwd: -8527.97 | Distanza goal: 7.58 | Motivo: Schianto a terra
+Step: 981 | Rwd: 1691.37 | Distanza goal: 0.77 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1034 | Rwd: -8779.81 | Distanza goal: 13.67 | Motivo: Schianto a terra
+Step: 1119 | Rwd: -8762.75 | Distanza goal: 3.92 | Motivo: Schianto a terra
+Step: 1263 | Rwd: -15318.99 | Distanza goal: 2.56 | Motivo: Schianto a terra
+Step: 859 | Rwd: -12568.16 | Distanza goal: 10.38 | Motivo: Schianto a terra
+Step: 990 | Rwd: 1445.66 | Distanza goal: 0.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1010 | Rwd: -8466.64 | Distanza goal: 4.36 | Motivo: Schianto a terra
+Step: 1000 | Rwd: 1767.69 | Distanza goal: 0.76 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1034 | Rwd: -1240.20 | Distanza goal: 0.76 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1235 | Rwd: 810.96 | Distanza goal: 1.00 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 745 | Rwd: -980.19 | Distanza goal: 0.62 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 760 | Rwd: -10287.30 | Distanza goal: 3.57 | Motivo: Schianto a terra
+Step: 851 | Rwd: -8029.23 | Distanza goal: 7.32 | Motivo: Schianto a terra
+Step: 962 | Rwd: 3566.19 | Distanza goal: 0.56 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 950 | Rwd: -10940.43 | Distanza goal: 6.60 | Motivo: Schianto a terra
+Step: 929 | Rwd: -16433.22 | Distanza goal: 1.91 | Motivo: Schianto a terra
+Step: 716 | Rwd: -10526.21 | Distanza goal: 159.47 | Motivo: Deviazione eccessiva
+Step: 784 | Rwd: -10819.67 | Distanza goal: 5.10 | Motivo: Schianto a terra
+Step: 846 | Rwd: -8457.38 | Distanza goal: 2.74 | Motivo: Schianto a terra
+Step: 960 | Rwd: -7090.99 | Distanza goal: 7.94 | Motivo: Schianto a terra
+Step: 1015 | Rwd: -9702.59 | Distanza goal: 12.73 | Motivo: Schianto a terra
+Step: 1269 | Rwd: -15255.72 | Distanza goal: 4.36 | Motivo: Schianto a terra
+Step: 684 | Rwd: -9416.01 | Distanza goal: 201.24 | Motivo: Deviazione eccessiva
+Step: 762 | Rwd: -14697.46 | Distanza goal: 169.09 | Motivo: Deviazione eccessiva
+Step: 894 | Rwd: 1412.02 | Distanza goal: 0.94 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 870 | Rwd: 2620.18 | Distanza goal: 0.74 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1080 | Rwd: -17374.66 | Distanza goal: 0.65 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1042 | Rwd: 2847.55 | Distanza goal: 0.79 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 786 | Rwd: -11911.29 | Distanza goal: 9.91 | Motivo: Schianto a terra
+Step: 767 | Rwd: -2903.62 | Distanza goal: 0.94 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 851 | Rwd: -9197.04 | Distanza goal: 7.31 | Motivo: Schianto a terra
+Step: 1011 | Rwd: -9184.61 | Distanza goal: 2.82 | Motivo: Schianto a terra
+Step: 1144 | Rwd: -8256.72 | Distanza goal: 1.13 | Motivo: Schianto a terra
+Step: 1125 | Rwd: -15946.96 | Distanza goal: 4.65 | Motivo: Schianto a terra
+Step: 864 | Rwd: -11536.60 | Distanza goal: 160.20 | Motivo: Deviazione eccessiva
+Step: 916 | Rwd: 817.06 | Distanza goal: 0.94 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 967 | Rwd: 3475.93 | Distanza goal: 0.72 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 916 | Rwd: -10368.46 | Distanza goal: 12.01 | Motivo: Schianto a terra
+Step: 1005 | Rwd: -13682.01 | Distanza goal: 5.34 | Motivo: Schianto a terra
+Step: 1343 | Rwd: -12139.42 | Distanza goal: 234.11 | Motivo: Deviazione eccessiva
+Step: 757 | Rwd: -8341.03 | Distanza goal: 15.96 | Motivo: Schianto a terra
+Step: 914 | Rwd: -7586.16 | Distanza goal: 9.78 | Motivo: Schianto a terra
+Step: 875 | Rwd: -11975.42 | Distanza goal: 143.44 | Motivo: Deviazione eccessiva
+Step: 944 | Rwd: -17819.56 | Distanza goal: 2.26 | Motivo: Schianto a terra
+Step: 1077 | Rwd: -16689.20 | Distanza goal: 1.81 | Motivo: Schianto a terra
+Step: 1093 | Rwd: -12877.87 | Distanza goal: 283.59 | Motivo: Deviazione eccessiva
+Step: 776 | Rwd: -15709.27 | Distanza goal: 1.79 | Motivo: Schianto a terra
+Step: 833 | Rwd: -11494.98 | Distanza goal: 6.55 | Motivo: Schianto a terra
+Step: 955 | Rwd: -9383.39 | Distanza goal: 17.76 | Motivo: Schianto a terra
+Step: 1018 | Rwd: -8393.05 | Distanza goal: 10.04 | Motivo: Schianto a terra
+Step: 1072 | Rwd: -11299.07 | Distanza goal: 9.96 | Motivo: Schianto a terra
+Step: 1511 | Rwd: -20420.93 | Distanza goal: 5.44 | Motivo: Schianto a terra
+Step: 739 | Rwd: -13710.13 | Distanza goal: 11.00 | Motivo: Schianto a terra
+Step: 712 | Rwd: -10247.06 | Distanza goal: 166.32 | Motivo: Deviazione eccessiva
+Step: 959 | Rwd: -12342.21 | Distanza goal: 19.66 | Motivo: Schianto a terra
+Step: 920 | Rwd: -7976.63 | Distanza goal: 3.70 | Motivo: Schianto a terra
+Step: 921 | Rwd: 3426.47 | Distanza goal: 0.59 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1148 | Rwd: -3570.00 | Distanza goal: 0.93 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 804 | Rwd: -4686.47 | Distanza goal: 0.81 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 936 | Rwd: -9597.98 | Distanza goal: 9.22 | Motivo: Schianto a terra
+Step: 921 | Rwd: -9738.59 | Distanza goal: 2.47 | Motivo: Schianto a terra
+Step: 990 | Rwd: -16645.03 | Distanza goal: 4.54 | Motivo: Schianto a terra
+Step: 1330 | Rwd: -11228.02 | Distanza goal: 251.97 | Motivo: Deviazione eccessiva
+Step: 1342 | Rwd: -15514.32 | Distanza goal: 2.76 | Motivo: Schianto a terra
+Step: 732 | Rwd: -8825.88 | Distanza goal: 5.02 | Motivo: Schianto a terra
+Step: 803 | Rwd: -17787.40 | Distanza goal: 115.27 | Motivo: Deviazione eccessiva
+Step: 918 | Rwd: -7754.98 | Distanza goal: 5.24 | Motivo: Schianto a terra
+Step: 979 | Rwd: -2459.31 | Distanza goal: 0.42 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1072 | Rwd: -10443.63 | Distanza goal: 2.88 | Motivo: Schianto a terra
+Step: 1016 | Rwd: -8280.61 | Distanza goal: 5.86 | Motivo: Schianto a terra
+Step: 411 | Rwd: -5269.25 | Distanza goal: 800.88 | Motivo: Schianto a terra
+Step: 728 | Rwd: -12742.02 | Distanza goal: 132.34 | Motivo: Schianto a terra
+Step: 943 | Rwd: -9971.15 | Distanza goal: 236.51 | Motivo: Deviazione eccessiva
+Step: 949 | Rwd: -9947.54 | Distanza goal: 228.42 | Motivo: Deviazione eccessiva
+Step: 1093 | Rwd: -15933.80 | Distanza goal: 2.01 | Motivo: Schianto a terra
+Step: 1109 | Rwd: -11393.03 | Distanza goal: 15.78 | Motivo: Schianto a terra
+Step: 970 | Rwd: 1199.39 | Distanza goal: 0.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 924 | Rwd: -8048.65 | Distanza goal: 5.23 | Motivo: Schianto a terra
+Step: 1003 | Rwd: -9469.95 | Distanza goal: 1.57 | Motivo: Schianto a terra
+Step: 1011 | Rwd: 781.47 | Distanza goal: 0.95 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1143 | Rwd: -8748.92 | Distanza goal: 18.05 | Motivo: Schianto a terra
+Step: 1504 | Rwd: -17752.29 | Distanza goal: 4.09 | Motivo: Schianto a terra
+Step: 698 | Rwd: -10132.44 | Distanza goal: 184.07 | Motivo: Deviazione eccessiva
+Step: 839 | Rwd: -7561.97 | Distanza goal: 14.53 | Motivo: Schianto a terra
+Step: 827 | Rwd: -8008.31 | Distanza goal: 9.80 | Motivo: Schianto a terra
+Step: 850 | Rwd: -7937.16 | Distanza goal: 8.19 | Motivo: Schianto a terra
+Step: 1000 | Rwd: 34.29 | Distanza goal: 0.89 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1076 | Rwd: -1864.67 | Distanza goal: 0.93 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 722 | Rwd: -9115.27 | Distanza goal: 7.42 | Motivo: Schianto a terra
+Step: 857 | Rwd: -8061.78 | Distanza goal: 7.30 | Motivo: Schianto a terra
+Step: 846 | Rwd: -8580.63 | Distanza goal: 9.34 | Motivo: Schianto a terra
+Step: 895 | Rwd: 1132.13 | Distanza goal: 0.89 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 922 | Rwd: -11342.20 | Distanza goal: 1.63 | Motivo: Schianto a terra
+Step: 1080 | Rwd: -18498.09 | Distanza goal: 2.25 | Motivo: Schianto a terra
+Step: 712 | Rwd: -13943.17 | Distanza goal: 236.53 | Motivo: Deviazione eccessiva
+Step: 750 | Rwd: -8649.40 | Distanza goal: 10.31 | Motivo: Schianto a terra
+Step: 959 | Rwd: -9606.53 | Distanza goal: 0.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 976 | Rwd: -10548.41 | Distanza goal: 11.09 | Motivo: Schianto a terra
+Step: 1079 | Rwd: -3336.17 | Distanza goal: 0.74 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1528 | Rwd: -22039.49 | Distanza goal: 5.10 | Motivo: Schianto a terra
+Step: 872 | Rwd: -8598.43 | Distanza goal: 1.93 | Motivo: Schianto a terra
+Step: 996 | Rwd: 387.07 | Distanza goal: 0.80 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 856 | Rwd: -9628.77 | Distanza goal: 2.70 | Motivo: Schianto a terra
+Step: 1346 | Rwd: -12024.59 | Distanza goal: 228.65 | Motivo: Deviazione eccessiva
+Step: 1503 | Rwd: -4963.85 | Distanza goal: 0.76 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1499 | Rwd: -16468.10 | Distanza goal: 6.38 | Motivo: Schianto a terra
+Step: 771 | Rwd: -10803.98 | Distanza goal: 9.19 | Motivo: Schianto a terra
+Step: 835 | Rwd: -7750.92 | Distanza goal: 0.83 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 959 | Rwd: -17486.93 | Distanza goal: 16.94 | Motivo: Schianto a terra
+Step: 1038 | Rwd: -13918.91 | Distanza goal: 6.55 | Motivo: Schianto a terra
+Step: 1079 | Rwd: -11041.35 | Distanza goal: 12.34 | Motivo: Schianto a terra
+Step: 1118 | Rwd: -11633.27 | Distanza goal: 2.26 | Motivo: Schianto a terra
+Step: 19 | Rwd: -1335.44 | Distanza goal: 1181.42 | Motivo: Schianto a terra
+Step: 728 | Rwd: -8904.11 | Distanza goal: 9.53 | Motivo: Schianto a terra
+Step: 880 | Rwd: -10507.82 | Distanza goal: 2.10 | Motivo: Schianto a terra
+Step: 825 | Rwd: -7539.93 | Distanza goal: 10.95 | Motivo: Schianto a terra
+Step: 907 | Rwd: -6177.62 | Distanza goal: 0.50 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1070 | Rwd: -5016.31 | Distanza goal: 0.69 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 854 | Rwd: -9184.09 | Distanza goal: 10.96 | Motivo: Schianto a terra
+Step: 941 | Rwd: -8685.99 | Distanza goal: 5.77 | Motivo: Schianto a terra
+Step: 1040 | Rwd: 2760.94 | Distanza goal: 0.92 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1101 | Rwd: -10734.70 | Distanza goal: 7.43 | Motivo: Schianto a terra
+Step: 1325 | Rwd: -13598.74 | Distanza goal: 12.11 | Motivo: Schianto a terra
+Step: 1339 | Rwd: -11754.97 | Distanza goal: 239.33 | Motivo: Deviazione eccessiva
+Step: 510 | Rwd: -5278.09 | Distanza goal: 454.39 | Motivo: Schianto a terra
+Step: 708 | Rwd: -5591.91 | Distanza goal: 164.82 | Motivo: Schianto a terra
+Step: 769 | Rwd: -12615.42 | Distanza goal: 13.26 | Motivo: Schianto a terra
+Step: 965 | Rwd: -14452.15 | Distanza goal: 10.80 | Motivo: Schianto a terra
+Step: 990 | Rwd: 832.60 | Distanza goal: 0.63 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1333 | Rwd: -11244.63 | Distanza goal: 248.63 | Motivo: Deviazione eccessiva
+Step: 776 | Rwd: -8799.67 | Distanza goal: 15.59 | Motivo: Schianto a terra
+Step: 960 | Rwd: -9705.18 | Distanza goal: 17.81 | Motivo: Schianto a terra
+Step: 1090 | Rwd: -18060.07 | Distanza goal: 1.84 | Motivo: Schianto a terra
+Step: 1339 | Rwd: -11498.29 | Distanza goal: 238.88 | Motivo: Deviazione eccessiva
+Step: 1287 | Rwd: -15576.88 | Distanza goal: 6.20 | Motivo: Schianto a terra
+Step: 1331 | Rwd: -14968.82 | Distanza goal: 314.63 | Motivo: Deviazione eccessiva
+Step: 405 | Rwd: -4867.86 | Distanza goal: 809.81 | Motivo: Schianto a terra
+Step: 792 | Rwd: -15386.00 | Distanza goal: 37.45 | Motivo: Schianto a terra
+Step: 871 | Rwd: -10762.34 | Distanza goal: 148.10 | Motivo: Deviazione eccessiva
+Step: 833 | Rwd: -2659.80 | Distanza goal: 0.80 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1061 | Rwd: -3313.95 | Distanza goal: 0.61 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1032 | Rwd: -2878.60 | Distanza goal: 0.67 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 785 | Rwd: 390.63 | Distanza goal: 1.00 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 892 | Rwd: -494.69 | Distanza goal: 0.60 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 886 | Rwd: -15230.75 | Distanza goal: 18.65 | Motivo: Schianto a terra
+Step: 1045 | Rwd: 2186.11 | Distanza goal: 0.57 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1117 | Rwd: -8283.24 | Distanza goal: 0.63 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1307 | Rwd: -12377.10 | Distanza goal: 9.19 | Motivo: Schianto a terra
+Step: 884 | Rwd: -11023.16 | Distanza goal: 0.83 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 893 | Rwd: -11387.08 | Distanza goal: 121.52 | Motivo: Deviazione eccessiva
+Step: 976 | Rwd: -10531.02 | Distanza goal: 12.57 | Motivo: Schianto a terra
+Step: 1065 | Rwd: -3764.42 | Distanza goal: 0.44 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1103 | Rwd: -11537.10 | Distanza goal: 13.01 | Motivo: Schianto a terra
+Step: 1277 | Rwd: -13877.78 | Distanza goal: 9.45 | Motivo: Schianto a terra
+Step: 861 | Rwd: -11090.90 | Distanza goal: 7.51 | Motivo: Schianto a terra
+Step: 838 | Rwd: -7706.30 | Distanza goal: 8.08 | Motivo: Schianto a terra
+Step: 1053 | Rwd: -3243.34 | Distanza goal: 0.82 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1077 | Rwd: -13470.29 | Distanza goal: 10.90 | Motivo: Schianto a terra
+Step: 1095 | Rwd: -4967.81 | Distanza goal: 0.73 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1069 | Rwd: -11152.19 | Distanza goal: 317.11 | Motivo: Deviazione eccessiva
+Step: 722 | Rwd: -11289.19 | Distanza goal: 149.82 | Motivo: Deviazione eccessiva
+Step: 900 | Rwd: -11673.76 | Distanza goal: 2.39 | Motivo: Schianto a terra
+Step: 1065 | Rwd: -16512.56 | Distanza goal: 11.55 | Motivo: Schianto a terra
+Step: 1317 | Rwd: -13335.59 | Distanza goal: 12.27 | Motivo: Schianto a terra
+Step: 1334 | Rwd: -11535.16 | Distanza goal: 246.19 | Motivo: Deviazione eccessiva
+Step: 1344 | Rwd: -11308.13 | Distanza goal: 231.73 | Motivo: Deviazione eccessiva
+Step: 806 | Rwd: -18526.92 | Distanza goal: 110.20 | Motivo: Deviazione eccessiva
+Step: 765 | Rwd: 888.88 | Distanza goal: 0.75 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 839 | Rwd: -10104.68 | Distanza goal: 6.69 | Motivo: Schianto a terra
+Step: 1099 | Rwd: -6431.65 | Distanza goal: 0.68 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1143 | Rwd: -7950.98 | Distanza goal: 15.24 | Motivo: Schianto a terra
+Step: 1276 | Rwd: -19824.30 | Distanza goal: 1.97 | Motivo: Schianto a terra
+Step: 749 | Rwd: -10213.05 | Distanza goal: 11.46 | Motivo: Schianto a terra
+Step: 824 | Rwd: 4291.27 | Distanza goal: 0.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 927 | Rwd: -8656.75 | Distanza goal: 2.15 | Motivo: Schianto a terra
+Step: 906 | Rwd: -7272.88 | Distanza goal: 0.67 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1078 | Rwd: -12450.70 | Distanza goal: 7.94 | Motivo: Schianto a terra
+Step: 1288 | Rwd: -16285.23 | Distanza goal: 7.30 | Motivo: Schianto a terra
+Step: 841 | Rwd: 2350.31 | Distanza goal: 0.73 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 820 | Rwd: 4510.23 | Distanza goal: 0.70 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 893 | Rwd: 2346.57 | Distanza goal: 0.88 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 913 | Rwd: -9985.38 | Distanza goal: 16.40 | Motivo: Schianto a terra
+Step: 983 | Rwd: 2484.23 | Distanza goal: 0.93 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1042 | Rwd: -15168.99 | Distanza goal: 5.05 | Motivo: Schianto a terra
+Step: 842 | Rwd: -18194.35 | Distanza goal: 4.54 | Motivo: Schianto a terra
+Step: 897 | Rwd: -11699.86 | Distanza goal: 114.31 | Motivo: Deviazione eccessiva
+Step: 1042 | Rwd: -3231.70 | Distanza goal: 0.75 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1084 | Rwd: -11003.01 | Distanza goal: 296.71 | Motivo: Deviazione eccessiva
+Step: 1130 | Rwd: -9149.18 | Distanza goal: 0.35 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1116 | Rwd: -3270.45 | Distanza goal: 0.80 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 843 | Rwd: -7171.38 | Distanza goal: 10.73 | Motivo: Schianto a terra
+Step: 822 | Rwd: -6991.66 | Distanza goal: 14.63 | Motivo: Schianto a terra
+Step: 960 | Rwd: -9780.00 | Distanza goal: 20.60 | Motivo: Schianto a terra
+Step: 1091 | Rwd: -11610.08 | Distanza goal: 286.69 | Motivo: Deviazione eccessiva
+Step: 1121 | Rwd: -11654.22 | Distanza goal: 3.63 | Motivo: Schianto a terra
+Step: 1516 | Rwd: -19191.29 | Distanza goal: 8.82 | Motivo: Schianto a terra
+Step: 716 | Rwd: -10436.22 | Distanza goal: 159.08 | Motivo: Deviazione eccessiva
+Step: 892 | Rwd: -12010.78 | Distanza goal: 125.34 | Motivo: Deviazione eccessiva
+Step: 957 | Rwd: -10402.89 | Distanza goal: 218.15 | Motivo: Deviazione eccessiva
+Step: 927 | Rwd: -9311.61 | Distanza goal: 1.26 | Motivo: Schianto a terra
+Step: 971 | Rwd: 1560.20 | Distanza goal: 0.48 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 962 | Rwd: 3810.90 | Distanza goal: 0.90 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 856 | Rwd: -8335.22 | Distanza goal: 3.47 | Motivo: Schianto a terra
+Step: 779 | Rwd: -11306.01 | Distanza goal: 10.11 | Motivo: Schianto a terra
+Step: 872 | Rwd: -9158.43 | Distanza goal: 2.33 | Motivo: Schianto a terra
+Step: 939 | Rwd: -7937.56 | Distanza goal: 1.62 | Motivo: Schianto a terra
+Step: 1047 | Rwd: -1803.17 | Distanza goal: 0.48 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1042 | Rwd: 3291.00 | Distanza goal: 0.81 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 701 | Rwd: -12053.43 | Distanza goal: 6.80 | Motivo: Schianto a terra
+Step: 882 | Rwd: -14982.25 | Distanza goal: 1.78 | Motivo: Schianto a terra
+Step: 968 | Rwd: 3229.86 | Distanza goal: 0.85 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 993 | Rwd: -18909.92 | Distanza goal: 0.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1099 | Rwd: -7828.03 | Distanza goal: 0.82 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1107 | Rwd: -10917.79 | Distanza goal: 13.46 | Motivo: Schianto a terra
+Step: 847 | Rwd: -10236.93 | Distanza goal: 9.90 | Motivo: Schianto a terra
+Step: 897 | Rwd: -12729.19 | Distanza goal: 112.89 | Motivo: Deviazione eccessiva
+Step: 843 | Rwd: -9230.37 | Distanza goal: 3.14 | Motivo: Schianto a terra
+Step: 860 | Rwd: -8766.77 | Distanza goal: 16.03 | Motivo: Schianto a terra
+Step: 913 | Rwd: -6909.60 | Distanza goal: 14.90 | Motivo: Schianto a terra
+Step: 1234 | Rwd: -1622.29 | Distanza goal: 0.90 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 897 | Rwd: -15293.78 | Distanza goal: 1.51 | Motivo: Schianto a terra
+Step: 1129 | Rwd: -8729.59 | Distanza goal: 5.27 | Motivo: Schianto a terra
+Step: 1028 | Rwd: -6915.52 | Distanza goal: 0.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1100 | Rwd: -370.44 | Distanza goal: 0.83 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1168 | Rwd: -10431.09 | Distanza goal: 18.34 | Motivo: Schianto a terra
+Step: 1495 | Rwd: -18511.90 | Distanza goal: 5.65 | Motivo: Schianto a terra
+Step: 848 | Rwd: -3848.83 | Distanza goal: 0.67 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 868 | Rwd: -11356.50 | Distanza goal: 151.85 | Motivo: Deviazione eccessiva
+Step: 847 | Rwd: -13225.94 | Distanza goal: 10.33 | Motivo: Schianto a terra
+Step: 998 | Rwd: -10910.57 | Distanza goal: 2.75 | Motivo: Schianto a terra
+Step: 1076 | Rwd: -13462.30 | Distanza goal: 2.03 | Motivo: Schianto a terra
+Step: 1121 | Rwd: -8642.82 | Distanza goal: 5.12 | Motivo: Schianto a terra
+Step: 707 | Rwd: -10211.03 | Distanza goal: 4.46 | Motivo: Schianto a terra
+Step: 876 | Rwd: 2284.25 | Distanza goal: 0.76 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 861 | Rwd: -15340.68 | Distanza goal: 1.72 | Motivo: Schianto a terra
+Step: 1049 | Rwd: -14956.69 | Distanza goal: 1.44 | Motivo: Schianto a terra
+Step: 1067 | Rwd: -8394.93 | Distanza goal: 11.55 | Motivo: Schianto a terra
+Step: 1111 | Rwd: -19077.43 | Distanza goal: 0.94 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 794 | Rwd: -5535.38 | Distanza goal: 0.69 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 903 | Rwd: -7994.24 | Distanza goal: 2.65 | Motivo: Schianto a terra
+Step: 1028 | Rwd: -10570.49 | Distanza goal: 6.57 | Motivo: Schianto a terra
+Step: 1050 | Rwd: -974.28 | Distanza goal: 0.73 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1113 | Rwd: -8673.48 | Distanza goal: 8.62 | Motivo: Schianto a terra
+Step: 1128 | Rwd: -9115.94 | Distanza goal: 0.64 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 14 | Rwd: -1161.16 | Distanza goal: 1287.69 | Motivo: Schianto a terra
+Step: 881 | Rwd: -8903.34 | Distanza goal: 3.57 | Motivo: Schianto a terra
+Step: 887 | Rwd: -12265.23 | Distanza goal: 134.89 | Motivo: Deviazione eccessiva
+Step: 1123 | Rwd: -1502.15 | Distanza goal: 0.68 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1019 | Rwd: -9649.75 | Distanza goal: 7.77 | Motivo: Schianto a terra
+Step: 1062 | Rwd: -11512.15 | Distanza goal: 4.20 | Motivo: Schianto a terra
+Step: 684 | Rwd: -10319.55 | Distanza goal: 201.26 | Motivo: Deviazione eccessiva
+Step: 953 | Rwd: -23156.28 | Distanza goal: 104.63 | Motivo: Deviazione eccessiva
+Step: 993 | Rwd: -259.76 | Distanza goal: 0.79 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1044 | Rwd: -8937.61 | Distanza goal: 4.45 | Motivo: Schianto a terra
+Step: 1053 | Rwd: -16327.13 | Distanza goal: 4.78 | Motivo: Schianto a terra
+Step: 1330 | Rwd: -12119.03 | Distanza goal: 251.85 | Motivo: Deviazione eccessiva
+Step: 1025 | Rwd: 1111.92 | Distanza goal: 0.74 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 853 | Rwd: -7953.42 | Distanza goal: 6.29 | Motivo: Schianto a terra
+Step: 843 | Rwd: -13018.70 | Distanza goal: 7.70 | Motivo: Schianto a terra
+Step: 1023 | Rwd: -11996.99 | Distanza goal: 1.29 | Motivo: Schianto a terra
+Step: 1028 | Rwd: -9008.84 | Distanza goal: 10.23 | Motivo: Schianto a terra
+Step: 1040 | Rwd: -18104.71 | Distanza goal: 0.79 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 318 | Rwd: -4508.42 | Distanza goal: 938.22 | Motivo: Schianto a terra
+Step: 895 | Rwd: 1742.84 | Distanza goal: 1.00 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 878 | Rwd: -4393.42 | Distanza goal: 0.95 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 943 | Rwd: -9632.00 | Distanza goal: 236.86 | Motivo: Deviazione eccessiva
+Step: 1018 | Rwd: -9352.86 | Distanza goal: 11.51 | Motivo: Schianto a terra
+Step: 1016 | Rwd: -11557.86 | Distanza goal: 1.94 | Motivo: Schianto a terra
+Step: 1165 | Rwd: -8555.51 | Distanza goal: 20.29 | Motivo: Schianto a terra
+Step: 767 | Rwd: -13988.78 | Distanza goal: 6.69 | Motivo: Schianto a terra
+Step: 1140 | Rwd: -8067.76 | Distanza goal: 12.63 | Motivo: Schianto a terra
+Step: 1104 | Rwd: -20753.07 | Distanza goal: 2.16 | Motivo: Schianto a terra
+Step: 1116 | Rwd: -17584.70 | Distanza goal: 3.43 | Motivo: Schianto a terra
+Step: 1263 | Rwd: -14245.63 | Distanza goal: 0.63 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 842 | Rwd: -8008.02 | Distanza goal: 5.50 | Motivo: Schianto a terra
+Step: 853 | Rwd: -14499.28 | Distanza goal: 13.89 | Motivo: Schianto a terra
+Step: 1001 | Rwd: 1406.52 | Distanza goal: 1.00 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 933 | Rwd: -7902.93 | Distanza goal: 7.31 | Motivo: Schianto a terra
+Step: 985 | Rwd: -11372.38 | Distanza goal: 2.16 | Motivo: Schianto a terra
+Step: 1092 | Rwd: -12103.56 | Distanza goal: 285.56 | Motivo: Deviazione eccessiva
+Step: 986 | Rwd: -2441.56 | Distanza goal: 0.42 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 743 | Rwd: -11603.13 | Distanza goal: 12.16 | Motivo: Schianto a terra
+Step: 1065 | Rwd: -9882.78 | Distanza goal: 4.20 | Motivo: Schianto a terra
+Step: 1114 | Rwd: -15099.27 | Distanza goal: 1.53 | Motivo: Schianto a terra
+Step: 1106 | Rwd: -13765.57 | Distanza goal: 266.98 | Motivo: Deviazione eccessiva
+Step: 1145 | Rwd: -15679.82 | Distanza goal: 13.30 | Motivo: Schianto a terra
+Step: 840 | Rwd: -8218.13 | Distanza goal: 11.88 | Motivo: Schianto a terra
+Step: 903 | Rwd: 2693.30 | Distanza goal: 0.94 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 836 | Rwd: -8290.66 | Distanza goal: 1.77 | Motivo: Schianto a terra
+Step: 985 | Rwd: 1736.36 | Distanza goal: 0.88 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1112 | Rwd: -9851.41 | Distanza goal: 16.69 | Motivo: Schianto a terra
+Step: 1039 | Rwd: -1370.63 | Distanza goal: 0.81 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1058 | Rwd: -4021.78 | Distanza goal: 0.71 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 870 | Rwd: -9814.14 | Distanza goal: 12.57 | Motivo: Schianto a terra
+Step: 911 | Rwd: -9147.43 | Distanza goal: 0.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 892 | Rwd: -8875.40 | Distanza goal: 2.78 | Motivo: Schianto a terra
+Step: 958 | Rwd: -10694.08 | Distanza goal: 6.20 | Motivo: Schianto a terra
+Step: 1289 | Rwd: -10328.77 | Distanza goal: 0.97 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 767 | Rwd: -14513.18 | Distanza goal: 159.34 | Motivo: Deviazione eccessiva
+Step: 847 | Rwd: -12515.36 | Distanza goal: 6.58 | Motivo: Schianto a terra
+Step: 860 | Rwd: -12536.26 | Distanza goal: 3.29 | Motivo: Schianto a terra
+Step: 1002 | Rwd: 1718.32 | Distanza goal: 0.68 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1018 | Rwd: -9812.93 | Distanza goal: 6.14 | Motivo: Schianto a terra
+Step: 1352 | Rwd: -13029.54 | Distanza goal: 219.44 | Motivo: Deviazione eccessiva
+Step: 686 | Rwd: -9480.69 | Distanza goal: 197.78 | Motivo: Deviazione eccessiva
+Step: 922 | Rwd: 1413.01 | Distanza goal: 0.93 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1009 | Rwd: -15937.24 | Distanza goal: 12.56 | Motivo: Schianto a terra
+Step: 1077 | Rwd: -2811.79 | Distanza goal: 0.65 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1047 | Rwd: -18895.09 | Distanza goal: 4.67 | Motivo: Schianto a terra
+Step: 1219 | Rwd: 2616.82 | Distanza goal: 0.94 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 21 | Rwd: -1368.01 | Distanza goal: 1401.05 | Motivo: Schianto a terra
+Step: 998 | Rwd: -518.65 | Distanza goal: 0.90 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1034 | Rwd: -1101.18 | Distanza goal: 0.62 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1016 | Rwd: -9287.99 | Distanza goal: 4.29 | Motivo: Schianto a terra
+Step: 1051 | Rwd: -3036.17 | Distanza goal: 0.66 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1176 | Rwd: -22592.29 | Distanza goal: 5.98 | Motivo: Schianto a terra
+Step: 1368 | Rwd: -5020.22 | Distanza goal: 0.49 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 212 | Rwd: -3749.02 | Distanza goal: 1095.06 | Motivo: Schianto a terra
+Step: 884 | Rwd: -10435.09 | Distanza goal: 2.66 | Motivo: Schianto a terra
+Step: 831 | Rwd: -7442.70 | Distanza goal: 8.29 | Motivo: Schianto a terra
+Step: 1002 | Rwd: -18106.93 | Distanza goal: 1.50 | Motivo: Schianto a terra
+Step: 1051 | Rwd: -13751.50 | Distanza goal: 0.58 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1140 | Rwd: 3664.41 | Distanza goal: 0.91 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 751 | Rwd: -9452.71 | Distanza goal: 8.21 | Motivo: Schianto a terra
+Step: 867 | Rwd: -8074.43 | Distanza goal: 6.07 | Motivo: Schianto a terra
+Step: 831 | Rwd: -7464.99 | Distanza goal: 9.17 | Motivo: Schianto a terra
+Step: 1085 | Rwd: -2049.35 | Distanza goal: 0.58 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1030 | Rwd: -25454.36 | Distanza goal: 13.60 | Motivo: Schianto a terra
+Step: 1185 | Rwd: -8666.46 | Distanza goal: 0.53 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 811 | Rwd: -7323.85 | Distanza goal: 0.46 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 813 | Rwd: -7404.07 | Distanza goal: 9.56 | Motivo: Schianto a terra
+Step: 840 | Rwd: -8420.29 | Distanza goal: 1.78 | Motivo: Schianto a terra
+Step: 914 | Rwd: -8903.77 | Distanza goal: 0.13 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 972 | Rwd: -18854.65 | Distanza goal: 10.94 | Motivo: Schianto a terra
+Step: 1275 | Rwd: -11663.62 | Distanza goal: 12.27 | Motivo: Schianto a terra
+Step: 745 | Rwd: -9934.17 | Distanza goal: 13.58 | Motivo: Schianto a terra
+Step: 711 | Rwd: -8775.23 | Distanza goal: 5.60 | Motivo: Schianto a terra
+Step: 951 | Rwd: -9784.70 | Distanza goal: 225.85 | Motivo: Deviazione eccessiva
+Step: 1016 | Rwd: -8936.50 | Distanza goal: 7.73 | Motivo: Schianto a terra
+Step: 1031 | Rwd: -10429.37 | Distanza goal: 10.95 | Motivo: Schianto a terra
+Step: 1306 | Rwd: -3940.93 | Distanza goal: 1.00 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 787 | Rwd: -3590.43 | Distanza goal: 0.96 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 873 | Rwd: -16282.06 | Distanza goal: 3.90 | Motivo: Schianto a terra
+Step: 938 | Rwd: -6431.47 | Distanza goal: 0.59 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 877 | Rwd: -10061.09 | Distanza goal: 14.08 | Motivo: Schianto a terra
+Step: 1108 | Rwd: -12369.74 | Distanza goal: 265.38 | Motivo: Deviazione eccessiva
+Step: 1310 | Rwd: -12870.58 | Distanza goal: 11.30 | Motivo: Schianto a terra
+Step: 20 | Rwd: -1359.99 | Distanza goal: 1180.15 | Motivo: Schianto a terra
+Step: 847 | Rwd: -8206.33 | Distanza goal: 16.73 | Motivo: Schianto a terra
+Step: 917 | Rwd: 3601.62 | Distanza goal: 0.63 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1003 | Rwd: 23.57 | Distanza goal: 0.65 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 954 | Rwd: -16114.84 | Distanza goal: 11.76 | Motivo: Schianto a terra
+Step: 1319 | Rwd: -12908.78 | Distanza goal: 10.96 | Motivo: Schianto a terra
+Step: 238 | Rwd: -8749.33 | Distanza goal: 1044.89 | Motivo: Deviazione eccessiva
+Step: 838 | Rwd: -8046.01 | Distanza goal: 14.90 | Motivo: Schianto a terra
+Step: 889 | Rwd: 1367.49 | Distanza goal: 0.58 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 826 | Rwd: -7596.18 | Distanza goal: 9.61 | Motivo: Schianto a terra
+Step: 890 | Rwd: -13146.67 | Distanza goal: 1.81 | Motivo: Schianto a terra
+Step: 964 | Rwd: -9567.11 | Distanza goal: 13.57 | Motivo: Schianto a terra
+Step: 853 | Rwd: -18712.37 | Distanza goal: 117.36 | Motivo: Deviazione eccessiva
+Step: 907 | Rwd: 1952.98 | Distanza goal: 0.85 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 962 | Rwd: -9900.72 | Distanza goal: 8.84 | Motivo: Schianto a terra
+Step: 967 | Rwd: 3396.54 | Distanza goal: 0.93 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1103 | Rwd: -8846.95 | Distanza goal: 9.67 | Motivo: Schianto a terra
+Step: 1313 | Rwd: -5520.41 | Distanza goal: 0.94 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 843 | Rwd: 2343.45 | Distanza goal: 0.94 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 847 | Rwd: -8424.49 | Distanza goal: 19.11 | Motivo: Schianto a terra
+Step: 877 | Rwd: 1806.74 | Distanza goal: 0.75 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 858 | Rwd: -10790.78 | Distanza goal: 170.73 | Motivo: Deviazione eccessiva
+Step: 1099 | Rwd: -540.89 | Distanza goal: 0.71 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1122 | Rwd: -5838.02 | Distanza goal: 0.87 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 994 | Rwd: -10411.02 | Distanza goal: 4.70 | Motivo: Schianto a terra
+Step: 892 | Rwd: 3901.57 | Distanza goal: 0.89 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 984 | Rwd: -11954.30 | Distanza goal: 5.18 | Motivo: Schianto a terra
+Step: 1071 | Rwd: -15318.05 | Distanza goal: 3.60 | Motivo: Schianto a terra
+Step: 1050 | Rwd: -11641.71 | Distanza goal: 5.87 | Motivo: Schianto a terra
+Step: 1147 | Rwd: -7566.49 | Distanza goal: 7.23 | Motivo: Schianto a terra
+Step: 747 | Rwd: -9363.33 | Distanza goal: 9.85 | Motivo: Schianto a terra
+Step: 839 | Rwd: -7901.58 | Distanza goal: 10.46 | Motivo: Schianto a terra
+Step: 858 | Rwd: -9604.68 | Distanza goal: 6.02 | Motivo: Schianto a terra
+Step: 1105 | Rwd: -2047.02 | Distanza goal: 0.69 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1138 | Rwd: -8169.99 | Distanza goal: 12.05 | Motivo: Schianto a terra
+Step: 1516 | Rwd: -16602.54 | Distanza goal: 12.56 | Motivo: Schianto a terra
+Step: 719 | Rwd: -14382.48 | Distanza goal: 599.89 | Motivo: Deviazione eccessiva
+Step: 759 | Rwd: 1488.71 | Distanza goal: 0.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 847 | Rwd: -8953.22 | Distanza goal: 8.32 | Motivo: Schianto a terra
+Step: 1010 | Rwd: 1596.05 | Distanza goal: 0.66 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1063 | Rwd: -3730.97 | Distanza goal: 0.27 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1068 | Rwd: -15698.25 | Distanza goal: 3.22 | Motivo: Schianto a terra
+Step: 737 | Rwd: 2511.57 | Distanza goal: 0.85 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 780 | Rwd: -14301.56 | Distanza goal: 5.61 | Motivo: Schianto a terra
+Step: 870 | Rwd: -6683.28 | Distanza goal: 0.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1071 | Rwd: -10918.21 | Distanza goal: 3.63 | Motivo: Schianto a terra
+Step: 987 | Rwd: -15659.78 | Distanza goal: 1.54 | Motivo: Schianto a terra
+Step: 1261 | Rwd: -14106.34 | Distanza goal: 5.89 | Motivo: Schianto a terra
+Step: 706 | Rwd: -13781.02 | Distanza goal: 244.17 | Motivo: Deviazione eccessiva
+Step: 774 | Rwd: -14659.36 | Distanza goal: 2.39 | Motivo: Schianto a terra
+Step: 844 | Rwd: -7882.43 | Distanza goal: 6.42 | Motivo: Schianto a terra
+Step: 887 | Rwd: -10054.43 | Distanza goal: 2.81 | Motivo: Schianto a terra
+Step: 967 | Rwd: -8079.54 | Distanza goal: 4.04 | Motivo: Schianto a terra
+Step: 1039 | Rwd: 2457.94 | Distanza goal: 0.69 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 695 | Rwd: -11435.37 | Distanza goal: 13.31 | Motivo: Schianto a terra
+Step: 752 | Rwd: -11339.27 | Distanza goal: 8.35 | Motivo: Schianto a terra
+Step: 820 | Rwd: 4337.51 | Distanza goal: 0.85 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1013 | Rwd: 672.82 | Distanza goal: 0.95 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1061 | Rwd: 2425.18 | Distanza goal: 0.28 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1077 | Rwd: -15108.41 | Distanza goal: 8.75 | Motivo: Schianto a terra
+Step: 783 | Rwd: -14256.82 | Distanza goal: 7.87 | Motivo: Schianto a terra
+Step: 880 | Rwd: 1778.66 | Distanza goal: 0.90 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 888 | Rwd: -4633.34 | Distanza goal: 0.78 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1063 | Rwd: -2942.80 | Distanza goal: 0.83 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1099 | Rwd: -2839.71 | Distanza goal: 0.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1242 | Rwd: -12788.52 | Distanza goal: 4.84 | Motivo: Schianto a terra
+Step: 703 | Rwd: -1667.30 | Distanza goal: 0.69 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 932 | Rwd: -12417.64 | Distanza goal: 10.26 | Motivo: Schianto a terra
+Step: 1000 | Rwd: -4807.31 | Distanza goal: 0.90 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1061 | Rwd: 3405.01 | Distanza goal: 0.59 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1121 | Rwd: -15638.65 | Distanza goal: 1.69 | Motivo: Schianto a terra
+Step: 1107 | Rwd: -13949.65 | Distanza goal: 264.68 | Motivo: Deviazione eccessiva
+Step: 862 | Rwd: -16847.97 | Distanza goal: 8.45 | Motivo: Schianto a terra
+Step: 997 | Rwd: -9493.89 | Distanza goal: 1.89 | Motivo: Schianto a terra
+Step: 984 | Rwd: -19638.26 | Distanza goal: 5.18 | Motivo: Schianto a terra
+Step: 1049 | Rwd: -13524.30 | Distanza goal: 14.27 | Motivo: Schianto a terra
+Step: 956 | Rwd: -11959.18 | Distanza goal: 6.13 | Motivo: Schianto a terra
+Step: 1186 | Rwd: -8564.45 | Distanza goal: 14.28 | Motivo: Schianto a terra
+Step: 860 | Rwd: -23653.22 | Distanza goal: 105.04 | Motivo: Deviazione eccessiva
+Step: 951 | Rwd: -10258.61 | Distanza goal: 225.99 | Motivo: Deviazione eccessiva
+Step: 901 | Rwd: 2428.13 | Distanza goal: 0.76 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1082 | Rwd: -10693.52 | Distanza goal: 17.40 | Motivo: Schianto a terra
+Step: 952 | Rwd: -18738.54 | Distanza goal: 2.59 | Motivo: Schianto a terra
+Step: 1279 | Rwd: -2850.62 | Distanza goal: 0.95 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 760 | Rwd: -8673.29 | Distanza goal: 12.50 | Motivo: Schianto a terra
+Step: 848 | Rwd: -22454.32 | Distanza goal: 125.45 | Motivo: Deviazione eccessiva
+Step: 1037 | Rwd: -11995.86 | Distanza goal: 6.26 | Motivo: Schianto a terra
+Step: 951 | Rwd: -10326.42 | Distanza goal: 226.17 | Motivo: Deviazione eccessiva
+Step: 1068 | Rwd: -9213.68 | Distanza goal: 10.26 | Motivo: Schianto a terra
+Step: 1337 | Rwd: -14990.01 | Distanza goal: 241.84 | Motivo: Deviazione eccessiva
+Step: 731 | Rwd: -12002.18 | Distanza goal: 2.50 | Motivo: Schianto a terra
+Step: 888 | Rwd: -11119.62 | Distanza goal: 133.98 | Motivo: Deviazione eccessiva
+Step: 899 | Rwd: -10934.25 | Distanza goal: 2.22 | Motivo: Schianto a terra
+Step: 1080 | Rwd: -9033.00 | Distanza goal: 13.61 | Motivo: Schianto a terra
+Step: 1074 | Rwd: -899.55 | Distanza goal: 0.97 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1502 | Rwd: -19132.92 | Distanza goal: 4.76 | Motivo: Schianto a terra
+Step: 663 | Rwd: -11876.95 | Distanza goal: 303.90 | Motivo: Deviazione eccessiva
+Step: 834 | Rwd: -8509.11 | Distanza goal: 10.86 | Motivo: Schianto a terra
+Step: 750 | Rwd: -13157.57 | Distanza goal: 121.80 | Motivo: Deviazione eccessiva
+Step: 924 | Rwd: -17918.88 | Distanza goal: 1.99 | Motivo: Schianto a terra
+Step: 1033 | Rwd: -1324.11 | Distanza goal: 0.96 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 985 | Rwd: -5709.51 | Distanza goal: 0.67 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 784 | Rwd: -5312.12 | Distanza goal: 0.91 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 755 | Rwd: -11805.06 | Distanza goal: 11.93 | Motivo: Schianto a terra
+Step: 964 | Rwd: -13417.16 | Distanza goal: 16.18 | Motivo: Schianto a terra
+Step: 1000 | Rwd: -18.79 | Distanza goal: 0.65 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 945 | Rwd: -11996.34 | Distanza goal: 5.52 | Motivo: Schianto a terra
+Step: 1124 | Rwd: -11446.98 | Distanza goal: 7.71 | Motivo: Schianto a terra
+Step: 946 | Rwd: -10234.85 | Distanza goal: 232.75 | Motivo: Deviazione eccessiva
+Step: 870 | Rwd: -11660.40 | Distanza goal: 1.39 | Motivo: Schianto a terra
+Step: 1068 | Rwd: -2979.01 | Distanza goal: 0.97 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1046 | Rwd: 3070.60 | Distanza goal: 0.98 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1138 | Rwd: -8541.05 | Distanza goal: 5.68 | Motivo: Schianto a terra
+Step: 1293 | Rwd: -15243.90 | Distanza goal: 6.46 | Motivo: Schianto a terra
+Step: 695 | Rwd: -9943.10 | Distanza goal: 186.49 | Motivo: Deviazione eccessiva
+Step: 826 | Rwd: -10329.78 | Distanza goal: 4.93 | Motivo: Schianto a terra
+Step: 740 | Rwd: -11826.97 | Distanza goal: 1.68 | Motivo: Schianto a terra
+Step: 1076 | Rwd: -4396.55 | Distanza goal: 0.37 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1251 | Rwd: -14113.69 | Distanza goal: 13.64 | Motivo: Schianto a terra
+Step: 1504 | Rwd: -18164.41 | Distanza goal: 2.38 | Motivo: Schianto a terra
+Step: 713 | Rwd: -13541.34 | Distanza goal: 4.73 | Motivo: Schianto a terra
+Step: 736 | Rwd: -11559.01 | Distanza goal: 12.29 | Motivo: Schianto a terra
+Step: 718 | Rwd: -11090.77 | Distanza goal: 156.16 | Motivo: Deviazione eccessiva
+Step: 754 | Rwd: -14687.37 | Distanza goal: 179.98 | Motivo: Deviazione eccessiva
+Step: 891 | Rwd: 2882.04 | Distanza goal: 0.92 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1019 | Rwd: -2136.46 | Distanza goal: 0.97 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 764 | Rwd: -9567.07 | Distanza goal: 3.26 | Motivo: Schianto a terra
+Step: 877 | Rwd: -11830.36 | Distanza goal: 12.36 | Motivo: Schianto a terra
+Step: 863 | Rwd: -3212.97 | Distanza goal: 0.93 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 891 | Rwd: -10217.86 | Distanza goal: 1.99 | Motivo: Schianto a terra
+Step: 878 | Rwd: -2848.75 | Distanza goal: 0.86 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1519 | Rwd: -20507.77 | Distanza goal: 5.51 | Motivo: Schianto a terra
+Step: 816 | Rwd: -7258.95 | Distanza goal: 9.31 | Motivo: Schianto a terra
+Step: 835 | Rwd: -11960.87 | Distanza goal: 2.39 | Motivo: Schianto a terra
+Step: 1006 | Rwd: -18925.05 | Distanza goal: 14.04 | Motivo: Schianto a terra
+Step: 1012 | Rwd: -9196.73 | Distanza goal: 2.68 | Motivo: Schianto a terra
+Step: 1063 | Rwd: 2928.83 | Distanza goal: 0.98 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1041 | Rwd: 2810.30 | Distanza goal: 0.22 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 692 | Rwd: -10932.58 | Distanza goal: 190.30 | Motivo: Deviazione eccessiva
+Step: 839 | Rwd: 860.61 | Distanza goal: 0.97 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 874 | Rwd: -16232.64 | Distanza goal: 3.76 | Motivo: Schianto a terra
+Step: 824 | Rwd: -2160.50 | Distanza goal: 0.95 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 884 | Rwd: -11639.33 | Distanza goal: 1.38 | Motivo: Schianto a terra
+Step: 973 | Rwd: 1681.80 | Distanza goal: 0.66 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 753 | Rwd: -11725.08 | Distanza goal: 10.98 | Motivo: Schianto a terra
+Step: 861 | Rwd: -9350.03 | Distanza goal: 4.15 | Motivo: Schianto a terra
+Step: 835 | Rwd: -12584.74 | Distanza goal: 5.27 | Motivo: Schianto a terra
+Step: 941 | Rwd: -7053.83 | Distanza goal: 0.43 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1042 | Rwd: 1251.21 | Distanza goal: 0.92 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1149 | Rwd: -12661.45 | Distanza goal: 224.95 | Motivo: Deviazione eccessiva
+Step: 816 | Rwd: -16328.01 | Distanza goal: 161.44 | Motivo: Deviazione eccessiva
+Step: 954 | Rwd: -10763.09 | Distanza goal: 222.16 | Motivo: Deviazione eccessiva
+Step: 821 | Rwd: -7218.94 | Distanza goal: 14.13 | Motivo: Schianto a terra
+Step: 1010 | Rwd: -8950.33 | Distanza goal: 2.06 | Motivo: Schianto a terra
+Step: 1111 | Rwd: -12810.35 | Distanza goal: 259.62 | Motivo: Deviazione eccessiva
+Step: 1141 | Rwd: -7417.56 | Distanza goal: 16.16 | Motivo: Schianto a terra
+Step: 841 | Rwd: -8573.75 | Distanza goal: 3.54 | Motivo: Schianto a terra
+Step: 813 | Rwd: -19710.38 | Distanza goal: 165.27 | Motivo: Deviazione eccessiva
+Step: 1148 | Rwd: -9275.03 | Distanza goal: 9.36 | Motivo: Schianto a terra
+Step: 1112 | Rwd: -9314.85 | Distanza goal: 16.00 | Motivo: Schianto a terra
+Step: 1061 | Rwd: -17751.41 | Distanza goal: 6.38 | Motivo: Schianto a terra
+Step: 1106 | Rwd: -7918.77 | Distanza goal: 0.56 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 814 | Rwd: -825.24 | Distanza goal: 0.74 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 922 | Rwd: -8054.14 | Distanza goal: 4.57 | Motivo: Schianto a terra
+Step: 834 | Rwd: -7913.48 | Distanza goal: 9.58 | Motivo: Schianto a terra
+Step: 909 | Rwd: -10686.83 | Distanza goal: 1.84 | Motivo: Schianto a terra
+Step: 986 | Rwd: -9324.97 | Distanza goal: 0.76 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1120 | Rwd: -12386.10 | Distanza goal: 2.35 | Motivo: Schianto a terra
+Step: 808 | Rwd: -1565.36 | Distanza goal: 0.80 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 759 | Rwd: -10326.29 | Distanza goal: 12.56 | Motivo: Schianto a terra
+Step: 856 | Rwd: -13577.01 | Distanza goal: 8.65 | Motivo: Schianto a terra
+Step: 868 | Rwd: -8981.04 | Distanza goal: 8.70 | Motivo: Schianto a terra
+Step: 1007 | Rwd: -16902.71 | Distanza goal: 2.59 | Motivo: Schianto a terra
+Step: 1200 | Rwd: -8262.94 | Distanza goal: 7.13 | Motivo: Schianto a terra
+Step: 750 | Rwd: -9006.34 | Distanza goal: 8.71 | Motivo: Schianto a terra
+Step: 961 | Rwd: 4101.52 | Distanza goal: 0.96 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 963 | Rwd: 826.27 | Distanza goal: 0.98 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1054 | Rwd: -15627.94 | Distanza goal: 6.13 | Motivo: Schianto a terra
+Step: 1255 | Rwd: -12483.20 | Distanza goal: 12.55 | Motivo: Schianto a terra
+Step: 1334 | Rwd: -12253.98 | Distanza goal: 246.07 | Motivo: Deviazione eccessiva
+Step: 804 | Rwd: -15242.46 | Distanza goal: 113.12 | Motivo: Deviazione eccessiva
+Step: 763 | Rwd: -10539.44 | Distanza goal: 12.20 | Motivo: Schianto a terra
+Step: 843 | Rwd: -9310.95 | Distanza goal: 15.47 | Motivo: Schianto a terra
+Step: 892 | Rwd: -11820.45 | Distanza goal: 124.66 | Motivo: Deviazione eccessiva
+Step: 1107 | Rwd: -10462.46 | Distanza goal: 13.07 | Motivo: Schianto a terra
+Step: 1352 | Rwd: -12095.04 | Distanza goal: 218.99 | Motivo: Deviazione eccessiva
+Step: 12 | Rwd: -1106.82 | Distanza goal: 1153.97 | Motivo: Schianto a terra
+Step: 683 | Rwd: -21298.70 | Distanza goal: 462.35 | Motivo: Deviazione eccessiva
+Step: 827 | Rwd: -7593.11 | Distanza goal: 5.03 | Motivo: Schianto a terra
+Step: 876 | Rwd: -9264.80 | Distanza goal: 17.51 | Motivo: Schianto a terra
+Step: 1059 | Rwd: -2514.63 | Distanza goal: 0.88 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1322 | Rwd: -13153.67 | Distanza goal: 13.19 | Motivo: Schianto a terra
+Step: 746 | Rwd: -9836.70 | Distanza goal: 9.77 | Motivo: Schianto a terra
+Step: 973 | Rwd: 777.55 | Distanza goal: 0.89 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 924 | Rwd: -6858.01 | Distanza goal: 9.51 | Motivo: Schianto a terra
+Step: 1078 | Rwd: -15224.33 | Distanza goal: 10.56 | Motivo: Schianto a terra
+Step: 1127 | Rwd: -13158.29 | Distanza goal: 237.60 | Motivo: Deviazione eccessiva
+Step: 1230 | Rwd: -3051.92 | Distanza goal: 0.96 | Motivo: TRAGUARDO RAGGIUNTO!

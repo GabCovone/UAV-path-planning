@@ -2,11 +2,15 @@ plantModelFi = 1;
 useHeading = 1;              
 initialGainsMultiplier = 15;
 
+%%
+
 path = "SAC_RL_env/Inner Loop and Plant Model/High-FidelityModel/";
 
 if get_param(strcat(path, "pos_agente To File"), 'Commented') == "off"
     set_param(strcat(path, "pos_agente To File"), 'Commented', 'on');
 end
+
+%%
 
 Ts = 0.1; % Tempo di campionamento (10 Hz)
 assignin('base', 'Ts', Ts);
