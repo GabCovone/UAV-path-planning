@@ -51,6 +51,7 @@ load('sim_pos_agente_1.mat');
 if ~isempty(sim_pos_agente)
     % Prende il primo risultato trovato
     dati_pos = sim_pos_agente.Data;
+    vettore_tempi = experience.Reward.Time;
     
     % Gestione formato [1 x 3 x N] o [N x 3]
     if size(dati_pos, 2) ~= 3
@@ -58,7 +59,7 @@ if ~isempty(sim_pos_agente)
     end
     
     disp('✅ Telemetria recuperata con successo dalla gerarchia!');
-    graphic_func(dati_pos, scenario_corrente, path_DB_scenari); 
+    graphic_func(dati_pos, scenario_corrente, path_DB_scenari, vettore_tempi); 
 else
     disp('❌ Errore: "log_posizione" non trovato in nessuna sottocartella.');
 end
