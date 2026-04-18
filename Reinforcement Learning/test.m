@@ -23,8 +23,10 @@ path_DB_scenari = 'testing_scenarios.mat';
 [obsInfo, actInfo, numObs, numAct, actLimit, StructNumObs] = get_obsInfo_actInfo();
 env = get_RL_env(obsInfo, actInfo, path_DB_scenari, true, fullfile(pwd, 'registro_morti.txt'));
 
+agent_name = 'agent'; % certe volte è saved_agent'
+
 % 2. Carica l'agente salvato
-load('versioni_agenti/agente_v10_cnn_300.mat', 'saved_agent');
+load('versioni_agenti/agente_v11_velocita_1601.mat', agent_name);
 
 % 3. Definisci le opzioni di simulazione
 % Vogliamo fargli fare 1 solo episodio, con un massimo di 5500 step (es. 50 secondi a 10Hz)
@@ -32,7 +34,7 @@ simOpts = rlSimulationOptions('MaxSteps', 5500, 'NumSimulations', 1);
 
 % 4. Avvia il test!
 disp('Avvio simulazione di test...');
-experience = sim(env, saved_agent, simOpts);
+experience = sim(env, eval(agent_name), simOpts);
 
 % 5. Estrai e stampa i risultati
 %reward_totale = sum(experience.Reward);
