@@ -6,6 +6,9 @@ disp('Scansione di tutto il volo alla ricerca di ostacoli...');
 % Estraiamo tutti i dati del sensore
 data_voxels = experience.Observation.Voxels_Observations.Data;
 
+% Si estrae l'istante di ciascuno step
+tempi_step = experience.Observation.Voxels_Observations.Time;
+
 % Sommiamo i valori per ogni step per vedere quanti voxel erano a 1
 if ndims(data_voxels) == 4
     % Caso [10 x 10 x 10 x N]
@@ -33,12 +36,19 @@ end
 try
     % 1. Scegli quale momento del volo vuoi guardare
     % (In questo caso l'ultimo step prima della fine)
-    %step_da_analizzare = length(experience.Reward.Data); 
-    
-    step_da_analizzare = 480
+    %step_da_analizzare = length(experience.Reward.Data);
+
+    % 0.005
+
+    tempo_da_analizzare = 253.85;
+
+    tempo_per_step = round(tempo_da_analizzare,1)
+
+    step_da_analizzare = find(tempi_step == tempo_per_step)
 
     % 2. Estrai la posizione del drone a quello step
-    pos_corrente = dati_pos(step_da_analizzare, :);
+    idx = find(sim_pos_agente.Time == tempo_da_analizzare);
+    pos_corrente = sim_pos_agente.Data(idx,:);
     
     % 3. Estrazione intelligente dei Voxel
     data_voxels = experience.Observation.Voxels_Observations.Data;
