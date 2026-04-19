@@ -1,0 +1,212 @@
+========================================================
+INIZIO NUOVO ADDESTRAMENTO: 19-Apr-2026 22:39:12
+========================================================
+Ep (Worker) | Step | Reward Totale | Motivo Terminazione
+--------------------------------------------------------
+Step: 40 | Rwd: -2027.17 | Distanza goal: 1140.96 | Motivo: Schianto a terra
+Step: 163 | Rwd: -2118.28 | Distanza goal: 934.95 | Motivo: Collisione ostacolo
+Step: 204 | Rwd: -2145.89 | Distanza goal: 1177.34 | Motivo: Collisione ostacolo
+Step: 240 | Rwd: -2172.78 | Distanza goal: 844.12 | Motivo: Collisione ostacolo
+Step: 314 | Rwd: -2229.69 | Distanza goal: 704.07 | Motivo: Collisione ostacolo
+Step: 348 | Rwd: -2255.20 | Distanza goal: 636.34 | Motivo: Collisione ostacolo
+Step: 544 | Rwd: -2389.84 | Distanza goal: 1173.77 | Motivo: Collisione ostacolo
+Step: 674 | Rwd: -2492.39 | Distanza goal: 486.46 | Motivo: Collisione ostacolo
+Step: 179 | Rwd: -2129.75 | Distanza goal: 914.09 | Motivo: Collisione ostacolo
+Step: 331 | Rwd: -2237.18 | Distanza goal: 1611.49 | Motivo: Collisione ostacolo
+Step: 311 | Rwd: -2222.36 | Distanza goal: 1514.99 | Motivo: Collisione ostacolo
+Step: 624 | Rwd: -2459.35 | Distanza goal: 463.49 | Motivo: Collisione ostacolo
+Step: 489 | Rwd: -2350.08 | Distanza goal: 489.86 | Motivo: Collisione ostacolo
+Step: 593 | Rwd: -2435.09 | Distanza goal: 321.09 | Motivo: Collisione ostacolo
+Step: 218 | Rwd: -2157.17 | Distanza goal: 937.76 | Motivo: Collisione ostacolo
+Step: 373 | Rwd: -2263.44 | Distanza goal: 1028.03 | Motivo: Collisione ostacolo
+Step: 379 | Rwd: -2266.94 | Distanza goal: 1289.27 | Motivo: Collisione ostacolo
+Step: 219 | Rwd: -2157.05 | Distanza goal: 1188.63 | Motivo: Collisione ostacolo
+Step: 187 | Rwd: -2136.13 | Distanza goal: 913.85 | Motivo: Collisione ostacolo
+Step: 218 | Rwd: -2155.69 | Distanza goal: 993.15 | Motivo: Collisione ostacolo
+Step: 232 | Rwd: -2163.86 | Distanza goal: 1338.85 | Motivo: Collisione ostacolo
+Step: 177 | Rwd: -2127.56 | Distanza goal: 871.72 | Motivo: Collisione ostacolo
+Step: 218 | Rwd: -2155.14 | Distanza goal: 1000.67 | Motivo: Collisione ostacolo
+Step: 235 | Rwd: -2172.80 | Distanza goal: 861.45 | Motivo: Collisione ostacolo
+Step: 480 | Rwd: -2351.65 | Distanza goal: 675.06 | Motivo: Collisione ostacolo
+Step: 310 | Rwd: -2214.39 | Distanza goal: 1513.25 | Motivo: Collisione ostacolo
+Step: 313 | Rwd: -2223.44 | Distanza goal: 704.30 | Motivo: Collisione ostacolo
+Step: 401 | Rwd: -2283.02 | Distanza goal: 497.03 | Motivo: Collisione ostacolo
+Step: 430 | Rwd: -2312.03 | Distanza goal: 991.46 | Motivo: Collisione ostacolo
+Step: 392 | Rwd: -2276.03 | Distanza goal: 657.63 | Motivo: Collisione ostacolo
+Step: 521 | Rwd: -2361.53 | Distanza goal: 640.56 | Motivo: Collisione ostacolo
+Step: 177 | Rwd: -2128.30 | Distanza goal: 872.59 | Motivo: Collisione ostacolo
+Step: 283 | Rwd: -2202.86 | Distanza goal: 1271.21 | Motivo: Collisione ostacolo
+Step: 1084 | Rwd: -2798.86 | Distanza goal: 12.70 | Motivo: Schianto a terra
+Step: 164 | Rwd: -2118.90 | Distanza goal: 778.54 | Motivo: Collisione ostacolo
+Step: 277 | Rwd: -2199.24 | Distanza goal: 664.01 | Motivo: Collisione ostacolo
+Step: 157 | Rwd: -2113.20 | Distanza goal: 786.75 | Motivo: Collisione ostacolo
+Step: 341 | Rwd: -2235.51 | Distanza goal: 699.27 | Motivo: Collisione ostacolo
+Step: 342 | Rwd: -2248.10 | Distanza goal: 643.31 | Motivo: Collisione ostacolo
+Step: 332 | Rwd: -2228.26 | Distanza goal: 1611.77 | Motivo: Collisione ostacolo
+Step: 228 | Rwd: -2161.85 | Distanza goal: 850.54 | Motivo: Collisione ostacolo
+Step: 252 | Rwd: -2176.20 | Distanza goal: 1172.35 | Motivo: Collisione ostacolo
+Step: 387 | Rwd: -2268.99 | Distanza goal: 904.72 | Motivo: Collisione ostacolo
+Step: 881 | Rwd: -2646.33 | Distanza goal: 3.36 | Motivo: Schianto a terra
+Step: 197 | Rwd: -2141.77 | Distanza goal: 901.04 | Motivo: Collisione ostacolo
+Step: 375 | Rwd: -2258.88 | Distanza goal: 1027.08 | Motivo: Collisione ostacolo
+Step: 753 | Rwd: -2548.81 | Distanza goal: 368.25 | Motivo: Collisione ostacolo
+Step: 194 | Rwd: -2140.10 | Distanza goal: 746.62 | Motivo: Collisione ostacolo
+Step: 213 | Rwd: -2152.29 | Distanza goal: 866.64 | Motivo: Collisione ostacolo
+Step: 325 | Rwd: -2237.10 | Distanza goal: 755.42 | Motivo: Collisione ostacolo
+Step: 940 | Rwd: -2682.76 | Distanza goal: 5.53 | Motivo: Schianto a terra
+Step: 226 | Rwd: -2161.30 | Distanza goal: 852.75 | Motivo: Collisione ostacolo
+Step: 179 | Rwd: -2128.41 | Distanza goal: 871.98 | Motivo: Collisione ostacolo
+Step: 277 | Rwd: -2197.94 | Distanza goal: 1219.11 | Motivo: Collisione ostacolo
+Step: 298 | Rwd: -2207.09 | Distanza goal: 982.40 | Motivo: Collisione ostacolo
+Step: 368 | Rwd: -2255.16 | Distanza goal: 1135.34 | Motivo: Collisione ostacolo
+Step: 186 | Rwd: -2133.61 | Distanza goal: 1079.95 | Motivo: Collisione ostacolo
+Step: 567 | Rwd: -2412.06 | Distanza goal: 646.19 | Motivo: Collisione ostacolo
+Step: 294 | Rwd: -2209.59 | Distanza goal: 989.16 | Motivo: Collisione ostacolo
+Step: 724 | Rwd: -2527.81 | Distanza goal: 570.42 | Motivo: Collisione ostacolo
+Step: 677 | Rwd: -2481.37 | Distanza goal: 810.07 | Motivo: Collisione ostacolo
+Step: 366 | Rwd: -2248.75 | Distanza goal: 717.15 | Motivo: Collisione ostacolo
+Step: 889 | Rwd: -2650.16 | Distanza goal: 3.70 | Motivo: Schianto a terra
+Step: 12 | Rwd: -2006.92 | Distanza goal: 1354.50 | Motivo: Schianto a terra
+Step: 268 | Rwd: -2187.67 | Distanza goal: 799.04 | Motivo: Collisione ostacolo
+Step: 478 | Rwd: -2343.95 | Distanza goal: 780.02 | Motivo: Collisione ostacolo
+Step: 353 | Rwd: -2242.51 | Distanza goal: 657.65 | Motivo: Collisione ostacolo
+Step: 198 | Rwd: -2144.11 | Distanza goal: 741.24 | Motivo: Collisione ostacolo
+Step: 339 | Rwd: -2238.01 | Distanza goal: 704.01 | Motivo: Collisione ostacolo
+Step: 283 | Rwd: -2203.37 | Distanza goal: 689.68 | Motivo: Collisione ostacolo
+Step: 383 | Rwd: -2275.67 | Distanza goal: 1285.74 | Motivo: Collisione ostacolo
+Step: 307 | Rwd: -2215.70 | Distanza goal: 1516.75 | Motivo: Collisione ostacolo
+Step: 216 | Rwd: -2154.96 | Distanza goal: 751.52 | Motivo: Collisione ostacolo
+Step: 399 | Rwd: -2285.20 | Distanza goal: 1220.66 | Motivo: Collisione ostacolo
+Step: 190 | Rwd: -2137.87 | Distanza goal: 821.30 | Motivo: Collisione ostacolo
+Step: 222 | Rwd: -2157.09 | Distanza goal: 1184.55 | Motivo: Collisione ostacolo
+Step: 418 | Rwd: -2302.04 | Distanza goal: 868.83 | Motivo: Collisione ostacolo
+Step: 947 | Rwd: 310.85 | Distanza goal: 0.95 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 1024 | Rwd: -2752.94 | Distanza goal: 133.69 | Motivo: Schianto a terra
+Step: 185 | Rwd: -2134.04 | Distanza goal: 786.84 | Motivo: Collisione ostacolo
+Step: 338 | Rwd: -2238.26 | Distanza goal: 704.94 | Motivo: Collisione ostacolo
+Step: 333 | Rwd: -2231.56 | Distanza goal: 1611.74 | Motivo: Collisione ostacolo
+Step: 662 | Rwd: -2447.40 | Distanza goal: 845.64 | Motivo: Collisione ostacolo
+Step: 20 | Rwd: -2012.54 | Distanza goal: 1403.39 | Motivo: Schianto a terra
+Step: 186 | Rwd: -2133.33 | Distanza goal: 862.51 | Motivo: Collisione ostacolo
+Step: 219 | Rwd: -2155.42 | Distanza goal: 1000.42 | Motivo: Collisione ostacolo
+Step: 188 | Rwd: -2135.65 | Distanza goal: 1019.93 | Motivo: Collisione ostacolo
+Step: 329 | Rwd: -2218.01 | Distanza goal: 714.26 | Motivo: Collisione ostacolo
+Step: 221 | Rwd: -2158.55 | Distanza goal: 730.75 | Motivo: Collisione ostacolo
+Step: 259 | Rwd: -2183.64 | Distanza goal: 940.89 | Motivo: Collisione ostacolo
+Step: 308 | Rwd: -2215.98 | Distanza goal: 1015.95 | Motivo: Collisione ostacolo
+Step: 366 | Rwd: -2252.53 | Distanza goal: 1142.27 | Motivo: Collisione ostacolo
+Step: 722 | Rwd: -2522.61 | Distanza goal: 575.61 | Motivo: Collisione ostacolo
+Step: 842 | Rwd: -2620.10 | Distanza goal: 5.88 | Motivo: Schianto a terra
+Step: 573 | Rwd: -2390.25 | Distanza goal: 707.80 | Motivo: Collisione ostacolo
+Step: 157 | Rwd: -2112.91 | Distanza goal: 785.20 | Motivo: Collisione ostacolo
+Step: 181 | Rwd: -2131.17 | Distanza goal: 787.23 | Motivo: Collisione ostacolo
+Step: 181 | Rwd: -2130.38 | Distanza goal: 793.93 | Motivo: Collisione ostacolo
+Step: 196 | Rwd: -2138.68 | Distanza goal: 953.85 | Motivo: Collisione ostacolo
+Step: 339 | Rwd: -2234.48 | Distanza goal: 1602.71 | Motivo: Collisione ostacolo
+Step: 277 | Rwd: -2194.95 | Distanza goal: 1218.56 | Motivo: Collisione ostacolo
+Step: 181 | Rwd: -2130.61 | Distanza goal: 794.54 | Motivo: Collisione ostacolo
+Step: 257 | Rwd: -2182.11 | Distanza goal: 690.54 | Motivo: Collisione ostacolo
+Step: 429 | Rwd: -2307.66 | Distanza goal: 993.24 | Motivo: Collisione ostacolo
+Step: 237 | Rwd: -2165.28 | Distanza goal: 1332.53 | Motivo: Collisione ostacolo
+Step: 602 | Rwd: -2414.02 | Distanza goal: 518.84 | Motivo: Collisione ostacolo
+Step: 273 | Rwd: -2187.16 | Distanza goal: 793.54 | Motivo: Collisione ostacolo
+Step: 222 | Rwd: -2161.12 | Distanza goal: 1083.60 | Motivo: Collisione ostacolo
+Step: 671 | Rwd: -2490.30 | Distanza goal: 396.49 | Motivo: Collisione ostacolo
+Step: 952 | Rwd: -2697.45 | Distanza goal: 3.59 | Motivo: Schianto a terra
+Step: 1075 | Rwd: 218.74 | Distanza goal: 0.84 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 237 | Rwd: -2170.59 | Distanza goal: 1331.21 | Motivo: Collisione ostacolo
+Step: 307 | Rwd: -2220.87 | Distanza goal: 1516.91 | Motivo: Collisione ostacolo
+Step: 206 | Rwd: -2147.70 | Distanza goal: 874.21 | Motivo: Collisione ostacolo
+Step: 294 | Rwd: -2204.56 | Distanza goal: 988.66 | Motivo: Collisione ostacolo
+Step: 718 | Rwd: -2521.66 | Distanza goal: 749.29 | Motivo: Collisione ostacolo
+Step: 214 | Rwd: -2152.35 | Distanza goal: 1006.76 | Motivo: Collisione ostacolo
+Step: 207 | Rwd: -2147.65 | Distanza goal: 790.28 | Motivo: Collisione ostacolo
+Step: 187 | Rwd: -2136.32 | Distanza goal: 913.76 | Motivo: Collisione ostacolo
+Step: 376 | Rwd: -2265.59 | Distanza goal: 1292.93 | Motivo: Collisione ostacolo
+Step: 340 | Rwd: -2238.00 | Distanza goal: 1602.68 | Motivo: Collisione ostacolo
+Step: 381 | Rwd: -2269.34 | Distanza goal: 1020.03 | Motivo: Collisione ostacolo
+Step: 227 | Rwd: -2161.03 | Distanza goal: 851.39 | Motivo: Collisione ostacolo
+Step: 249 | Rwd: -2177.70 | Distanza goal: 877.60 | Motivo: Collisione ostacolo
+Step: 551 | Rwd: -2393.18 | Distanza goal: 669.26 | Motivo: Collisione ostacolo
+Step: 791 | Rwd: -2573.85 | Distanza goal: 471.57 | Motivo: Collisione ostacolo
+Step: 1248 | Rwd: -2913.73 | Distanza goal: 11.25 | Motivo: Schianto a terra
+Step: 336 | Rwd: -2241.30 | Distanza goal: 825.73 | Motivo: Collisione ostacolo
+Step: 313 | Rwd: -2215.58 | Distanza goal: 794.62 | Motivo: Collisione ostacolo
+Step: 419 | Rwd: -2285.87 | Distanza goal: 859.13 | Motivo: Collisione ostacolo
+Step: 552 | Rwd: -2404.44 | Distanza goal: 668.67 | Motivo: Collisione ostacolo
+Step: 922 | Rwd: -2677.05 | Distanza goal: 3.20 | Motivo: Schianto a terra
+Step: 162 | Rwd: -2117.22 | Distanza goal: 934.74 | Motivo: Collisione ostacolo
+Step: 323 | Rwd: -2224.95 | Distanza goal: 699.54 | Motivo: Collisione ostacolo
+Step: 359 | Rwd: -2261.82 | Distanza goal: 641.61 | Motivo: Collisione ostacolo
+Step: 217 | Rwd: -2154.26 | Distanza goal: 993.46 | Motivo: Collisione ostacolo
+Step: 318 | Rwd: -2226.29 | Distanza goal: 831.20 | Motivo: Collisione ostacolo
+Step: 179 | Rwd: -2126.94 | Distanza goal: 914.89 | Motivo: Collisione ostacolo
+Step: 477 | Rwd: -2343.99 | Distanza goal: 779.03 | Motivo: Collisione ostacolo
+Step: 594 | Rwd: -2402.49 | Distanza goal: 368.79 | Motivo: Collisione ostacolo
+Step: 249 | Rwd: -2176.05 | Distanza goal: 876.82 | Motivo: Collisione ostacolo
+Step: 617 | Rwd: -2445.30 | Distanza goal: 533.03 | Motivo: Collisione ostacolo
+Step: 667 | Rwd: -2458.46 | Distanza goal: 837.85 | Motivo: Collisione ostacolo
+Step: 212 | Rwd: -2153.19 | Distanza goal: 782.69 | Motivo: Collisione ostacolo
+Step: 254 | Rwd: -2180.91 | Distanza goal: 949.17 | Motivo: Collisione ostacolo
+Step: 334 | Rwd: -2236.11 | Distanza goal: 1610.12 | Motivo: Collisione ostacolo
+Step: 578 | Rwd: -2401.02 | Distanza goal: 967.15 | Motivo: Collisione ostacolo
+Step: 1030 | Rwd: -2758.68 | Distanza goal: 2.10 | Motivo: Schianto a terra
+Step: 217 | Rwd: -2155.21 | Distanza goal: 1087.94 | Motivo: Collisione ostacolo
+Step: 278 | Rwd: -2194.24 | Distanza goal: 1217.70 | Motivo: Collisione ostacolo
+Step: 213 | Rwd: -2153.22 | Distanza goal: 1093.27 | Motivo: Collisione ostacolo
+Step: 170 | Rwd: -2123.65 | Distanza goal: 909.84 | Motivo: Collisione ostacolo
+Step: 263 | Rwd: -2190.16 | Distanza goal: 926.75 | Motivo: Collisione ostacolo
+Step: 480 | Rwd: -2352.61 | Distanza goal: 673.90 | Motivo: Collisione ostacolo
+Step: 366 | Rwd: -2263.62 | Distanza goal: 1141.77 | Motivo: Collisione ostacolo
+Step: 165 | Rwd: -2118.46 | Distanza goal: 917.64 | Motivo: Collisione ostacolo
+Step: 189 | Rwd: -2134.16 | Distanza goal: 1073.12 | Motivo: Collisione ostacolo
+Step: 189 | Rwd: -2136.08 | Distanza goal: 1073.28 | Motivo: Collisione ostacolo
+Step: 724 | Rwd: -2516.24 | Distanza goal: 741.16 | Motivo: Collisione ostacolo
+Step: 293 | Rwd: -2208.17 | Distanza goal: 636.85 | Motivo: Collisione ostacolo
+Step: 332 | Rwd: -2230.43 | Distanza goal: 713.07 | Motivo: Collisione ostacolo
+Step: 402 | Rwd: -2290.07 | Distanza goal: 1214.37 | Motivo: Collisione ostacolo
+Step: 340 | Rwd: -2240.34 | Distanza goal: 971.10 | Motivo: Collisione ostacolo
+Step: 993 | Rwd: -2730.11 | Distanza goal: 4.85 | Motivo: Schianto a terra
+Step: 250 | Rwd: -2175.88 | Distanza goal: 876.37 | Motivo: Collisione ostacolo
+Step: 288 | Rwd: -2210.63 | Distanza goal: 1104.67 | Motivo: Collisione ostacolo
+Step: 164 | Rwd: -2119.41 | Distanza goal: 917.49 | Motivo: Collisione ostacolo
+Step: 351 | Rwd: -2244.58 | Distanza goal: 1296.63 | Motivo: Collisione ostacolo
+Step: 307 | Rwd: -2219.22 | Distanza goal: 1017.37 | Motivo: Collisione ostacolo
+Step: 228 | Rwd: -2158.11 | Distanza goal: 1126.03 | Motivo: Collisione ostacolo
+Step: 321 | Rwd: -2234.31 | Distanza goal: 934.10 | Motivo: Collisione ostacolo
+Step: 403 | Rwd: -2286.01 | Distanza goal: 1213.32 | Motivo: Collisione ostacolo
+Step: 161 | Rwd: -2116.36 | Distanza goal: 934.98 | Motivo: Collisione ostacolo
+Step: 220 | Rwd: -2155.92 | Distanza goal: 861.21 | Motivo: Collisione ostacolo
+Step: 341 | Rwd: -2236.27 | Distanza goal: 698.79 | Motivo: Collisione ostacolo
+Step: 193 | Rwd: -2137.96 | Distanza goal: 746.99 | Motivo: Collisione ostacolo
+Step: 223 | Rwd: -2160.08 | Distanza goal: 1134.38 | Motivo: Collisione ostacolo
+Step: 189 | Rwd: -2135.38 | Distanza goal: 1019.46 | Motivo: Collisione ostacolo
+Step: 477 | Rwd: -2346.37 | Distanza goal: 779.15 | Motivo: Collisione ostacolo
+Step: 396 | Rwd: -2268.35 | Distanza goal: 649.87 | Motivo: Collisione ostacolo
+Step: 193 | Rwd: -2137.79 | Distanza goal: 746.71 | Motivo: Collisione ostacolo
+Step: 185 | Rwd: -2132.84 | Distanza goal: 787.95 | Motivo: Collisione ostacolo
+Step: 228 | Rwd: -2160.38 | Distanza goal: 850.34 | Motivo: Collisione ostacolo
+Step: 307 | Rwd: -2212.05 | Distanza goal: 724.11 | Motivo: Collisione ostacolo
+Step: 239 | Rwd: -2169.55 | Distanza goal: 837.06 | Motivo: Collisione ostacolo
+Step: 157 | Rwd: -2113.50 | Distanza goal: 785.57 | Motivo: Collisione ostacolo
+Step: 303 | Rwd: -2215.54 | Distanza goal: 1022.15 | Motivo: Collisione ostacolo
+Step: 364 | Rwd: -2264.17 | Distanza goal: 871.72 | Motivo: Collisione ostacolo
+Step: 473 | Rwd: -2335.95 | Distanza goal: 1009.63 | Motivo: Collisione ostacolo
+Step: 222 | Rwd: -2158.16 | Distanza goal: 858.92 | Motivo: Collisione ostacolo
+Step: 279 | Rwd: -2196.21 | Distanza goal: 1277.25 | Motivo: Collisione ostacolo
+Step: 189 | Rwd: -2136.20 | Distanza goal: 1073.84 | Motivo: Collisione ostacolo
+Step: 252 | Rwd: -2182.72 | Distanza goal: 812.68 | Motivo: Collisione ostacolo
+Step: 164 | Rwd: -2119.12 | Distanza goal: 916.53 | Motivo: Collisione ostacolo
+Step: 221 | Rwd: -2158.15 | Distanza goal: 730.36 | Motivo: Collisione ostacolo
+Step: 482 | Rwd: -2347.24 | Distanza goal: 772.05 | Motivo: Collisione ostacolo
+Step: 278 | Rwd: -2197.30 | Distanza goal: 1218.10 | Motivo: Collisione ostacolo
+Step: 207 | Rwd: -2150.17 | Distanza goal: 875.16 | Motivo: Collisione ostacolo
+Step: 420 | Rwd: -2284.16 | Distanza goal: 902.51 | Motivo: Collisione ostacolo
+Step: 342 | Rwd: -2245.35 | Distanza goal: 643.17 | Motivo: Collisione ostacolo
+Step: 488 | Rwd: -2341.11 | Distanza goal: 870.30 | Motivo: Collisione ostacolo
+Step: 337 | Rwd: -2236.96 | Distanza goal: 1130.86 | Motivo: Collisione ostacolo
+Step: 685 | Rwd: -2497.38 | Distanza goal: 471.32 | Motivo: Collisione ostacolo
+Step: 246 | Rwd: -2178.94 | Distanza goal: 1048.15 | Motivo: Collisione ostacolo
+Step: 752 | Rwd: -2543.69 | Distanza goal: 529.79 | Motivo: Collisione ostacolo
+Step: 484 | Rwd: -2355.09 | Distanza goal: 719.42 | Motivo: Collisione ostacolo
+Step: 1136 | Rwd: -2837.90 | Distanza goal: 2.54 | Motivo: Schianto a terra

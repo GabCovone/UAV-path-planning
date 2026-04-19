@@ -1,0 +1,6 @@
+Step: 3371 | Rwd: -1317.27 | Distanza goal: 0.76 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 3371 | Rwd: -1317.27 | Distanza goal: 0.76 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 5367 | Rwd: -2669.80 | Distanza goal: 1.00 | Motivo: TRAGUARDO RAGGIUNTO!
+Step: 55 | Rwd: -2038.76 | Distanza goal: 263.59 | Motivo: Collisione ostacolo
+Step: 106 | Rwd: -2076.87 | Distanza goal: 187.52 | Motivo: Collisione ostacolo
+Step: 247 | Rwd: -2180.72 | Distanza goal: 1031.40 | Motivo: Deviazione eccessiva

@@ -10,12 +10,12 @@ if get_param(strcat(path, "pos_agente To File"), 'Commented') == "on"
     set_param(strcat(path, "pos_agente To File"), 'Commented', 'off');
 end
 
-rng(3);
+rng(2);
 
 Ts = 0.1; % Tempo di campionamento (10 Hz)
 assignin('base', 'Ts', Ts);
 
-path_DB_scenari = 'testing_scenarios.mat';
+path_DB_scenari = 'training_scenarios.mat';
 
 %%
 
@@ -26,7 +26,8 @@ env = get_RL_env(obsInfo, actInfo, path_DB_scenari, true, fullfile(pwd, 'registr
 agent_name = 'agent'; % certe volte è saved_agent'
 
 % 2. Carica l'agente salvato
-load('versioni_agenti/agente_v11_velocita_1601.mat', agent_name);
+%load('versioni_agenti/agente_v12_rewardexpscaling_816.mat', agent_name);
+load('versioni_agenti/agente_v12.5_ostacoli_198.mat', agent_name);
 
 % 3. Definisci le opzioni di simulazione
 % Vogliamo fargli fare 1 solo episodio, con un massimo di 5500 step (es. 50 secondi a 10Hz)
@@ -51,6 +52,12 @@ disp(['Reward totale ottenuto: ', num2str(reward_totale)]);
 load('sim_pos_agente_1.mat');
     
 if ~isempty(sim_pos_agente)
+    
+    
+    sim_pos_agente  = getsamples(sim_pos_agente, 2:sim_pos_agente.Length);   % keep all times except the first
+
+    %experience.Reward.Time  = experience.Reward.Time(2:end,:); % keep all data rows except the first
+
     % Prende il primo risultato trovato
     dati_pos = sim_pos_agente.Data;
     vettore_tempi = experience.Reward.Time;
@@ -61,7 +68,7 @@ if ~isempty(sim_pos_agente)
     end
     
     disp('✅ Telemetria recuperata con successo dalla gerarchia!');
-    graphic_func(dati_pos, scenario_corrente, path_DB_scenari, vettore_tempi); 
+    graphic_func(path_DB_scenari, scenario_corrente, dati_pos, vettore_tempi); 
 else
     disp('❌ Errore: "log_posizione" non trovato in nessuna sottocartella.');
 end
