@@ -59,7 +59,7 @@ function in = localResetFcn(in, path_DB_scenari)
     %init_vel = [(rand()-0.5)*1.0; (rand()-0.5)*1.0; 0]; % +/- 0.5 m/s
     %init_euler = [(rand()-0.5)*0.2; (rand()-0.5)*0.2; 0]; % Roll e Pitch non nulli
     % Usa la posizione esatta
-    initial_pos = scenario.map.q_start; 
+    initial_pos = scenario.map.q_start; % è 1 x 3, a differenza di velocità e orientamento
     init_vel = [0; 0; 0]; % Parti da fermo
     init_euler = [0; 0; 0]; % Parti in hovering perfetto
 
@@ -67,7 +67,7 @@ function in = localResetFcn(in, path_DB_scenari)
     bounds.x_min = squeeze(min(scenario.map.v(:,1,:))); bounds.x_max = squeeze(max(scenario.map.v(:,1,:)));
     bounds.y_min = squeeze(min(scenario.map.v(:,2,:))); bounds.y_max = squeeze(max(scenario.map.v(:,2,:)));
     bounds.z_min = squeeze(min(scenario.map.v(:,3,:))); bounds.z_max = squeeze(max(scenario.map.v(:,3,:)));
-    
+
     % Assegnazione variabili nel workspace
     assignin('base', 'init_pos', initial_pos);
     assignin('base', 'init_vel', init_vel);
@@ -75,7 +75,7 @@ function in = localResetFcn(in, path_DB_scenari)
     assignin('base', 'sim_pos_des', scenario.sim_pos_des);
     assignin('base', 'sim_vel_des', scenario.sim_vel_des);
     assignin('base', 'sim_yaw_des', scenario.sim_yaw_des);
-    assignin('base', 'pos_goal', scenario.map.q_goal);
+    assignin('base', 'pos_goal', scenario.map.q_goal); % Si traspone in modo che sia 3 x 1
     assignin('base', 'bounds', bounds);
     assignin('base', 'dyn_obs', scenario.dynamic_obstacles);
 

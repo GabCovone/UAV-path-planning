@@ -1,4 +1,4 @@
-function graphic_func(log_posizione, idx_scenario, path_DB_scenari, vettore_tempi)
+function graphic_func(path_DB_scenari, idx_scenario, log_posizione, vettore_tempi)
     set(gcf, 'Renderer', 'opengl');
 
     disp('Generazione del grafico 3D statico in corso...');
@@ -29,15 +29,17 @@ function graphic_func(log_posizione, idx_scenario, path_DB_scenari, vettore_temp
     end
     
     % 3. Setup della Figura
-    figure('Name', 'Analisi Volo SAC (Statica)', 'Color', 'w', 'Position', [100, 100, 800, 600]);
+    set(gcf, 'Name', 'Analisi Volo SAC (Statica)')
+    set(gcf, 'Color', 'w');
+    set(gcf,'Position', [100, 100, 800, 600]);
     hold on; grid on; view(30, 30);
     xlabel('X [m]'); ylabel('Y [m]'); zlabel('Z [m]');
     title('Traiettoria 3D Completa vs Ostacoli Dinamici');
     
-    % 4. Caricamento Dati Scenario
+    % % 4. Caricamento Dati Scenario
     data = load(path_DB_scenari); 
     scenario = data.scenari(idx_scenario);
-    
+
     v = scenario.map.v;
     pos_des = scenario.sim_pos_des.Data;
     n_collision = scenario.map.n_collision;
@@ -45,34 +47,41 @@ function graphic_func(log_posizione, idx_scenario, path_DB_scenari, vettore_temp
     dyn_obs = scenario.dynamic_obstacles;
     
     % 5. Rendering Città (Ostacoli Statici - OTTIMIZZATO PER LE PERFORMANCE)
-    disp('Rendering della città 3D in corso (Modalità Ottimizzata)...');
-    
-    % Pre-allochiamo le matrici per massima velocità
-    num_faces_per_block = 6;
-    num_vertices_per_block = 8;
-    
-    F_tot = zeros(n_collision * num_faces_per_block, 4);
-    V_tot = zeros(n_collision * num_vertices_per_block, 3);
-    
-    base_f = [1 2 3 4; 2 6 7 3; 4 3 7 8; 1 5 8 4; 1 2 6 5; 5 6 7 8];
-    
+    % disp('Rendering della città 3D in corso...');
+
+    disp('Disegno della città 3D in corso...');
     for k = 1:n_collision
         V_b = v(:,:,k); 
-        
-        % Calcoliamo l'offset per non sovrascrivere i vertici precedenti
-        v_offset = (k - 1) * num_vertices_per_block;
-        
-        % Inseriamo i vertici
-        V_tot(v_offset + 1 : v_offset + num_vertices_per_block, :) = V_b;
-        
-        % Inseriamo le facce, "scalandole" con l'offset dei vertici
-        f_idx = (k - 1) * num_faces_per_block + 1 : k * num_faces_per_block;
-        F_tot(f_idx, :) = base_f + v_offset;
+        f = [1 2 3 4; 2 6 7 3; 4 3 7 8; 1 5 8 4; 1 2 6 5; 5 6 7 8];
+        patch('Faces', f, 'Vertices', V_b, 'FaceColor', [0.2 0.5 0.8], 'FaceAlpha', 0.6, 'EdgeColor', 'none', 'HandleVisibility', 'off');
     end
     
-    % Disegniamo l'INTERA CITTÀ con un singolo comando!
-    patch('Faces', F_tot, 'Vertices', V_tot, 'FaceColor', [0.2 0.5 0.8], ...
-          'FaceAlpha', 0.6, 'EdgeColor', 'none', 'HandleVisibility', 'off');
+    % % Pre-allochiamo le matrici per massima velocità
+    % num_faces_per_block = 6;
+    % num_vertices_per_block = 8;
+    % 
+    % F_tot = zeros(n_collision * num_faces_per_block, 4);
+    % V_tot = zeros(n_collision * num_vertices_per_block, 3);
+    % 
+    % base_f = [1 2 3 4; 2 6 7 3; 4 3 7 8; 1 5 8 4; 1 2 6 5; 5 6 7 8];
+    % 
+    % for k = 1:n_collision
+    %     V_b = v(:,:,k); 
+    % 
+    %     % Calcoliamo l'offset per non sovrascrivere i vertici precedenti
+    %     v_offset = (k - 1) * num_vertices_per_block;
+    % 
+    %     % Inseriamo i vertici
+    %     V_tot(v_offset + 1 : v_offset + num_vertices_per_block, :) = V_b;
+    % 
+    %     % Inseriamo le facce, "scalandole" con l'offset dei vertici
+    %     f_idx = (k - 1) * num_faces_per_block + 1 : k * num_faces_per_block;
+    %     F_tot(f_idx, :) = base_f + v_offset;
+    % end
+    
+    % % Disegniamo l'INTERA CITTÀ con un singolo comando!
+    % patch('Faces', F_tot, 'Vertices', V_tot, 'FaceColor', [0.2 0.5 0.8], ...
+    %       'FaceAlpha', 0.6, 'EdgeColor', 'none', 'HandleVisibility', 'off');
     
     % 6. Rendering Ostacoli Dinamici (Traiettorie e Sfere)
     if ~isempty(dyn_obs)
@@ -105,13 +114,13 @@ function graphic_func(log_posizione, idx_scenario, path_DB_scenari, vettore_temp
     % Traiettoria Ideale
     plot3(pos_des(:,1), pos_des(:,2), pos_des(:,3), 'Color', [0 0.8 1], 'LineWidth', 1, 'DisplayName', 'Traiettoria Ideale');
     
-    % Ground Truth Reale (Tutta la linea disegnata in un solo colpo)
-    plot3(X, Y, Z, 'Color', 'b', 'LineWidth', 2.5, 'DisplayName', 'Ground truth (Reale)');
+    % Traiettoria reale
+    plot3(X, Y, Z, 'Color', 'b', 'LineWidth', 2.5, 'DisplayName', 'Traiettoria reale');
     
     % Marker Start, End, Target
     plot3(X(1), Y(1), Z(1), 'go', 'MarkerSize', 10, 'MarkerFaceColor', 'g', 'DisplayName', 'Start');
     plot3(X(end), Y(end), Z(end), 'ro', 'MarkerSize', 10, 'MarkerFaceColor', 'r', 'DisplayName', 'End/Crash');
-    plot3(goal(1), goal(2), goal(3), 'ro', 'MarkerSize', 10, 'MarkerFaceColor', 'y', 'DisplayName', 'Target');
+    plot3(goal(1), goal(2), goal(3), 'mo', 'MarkerSize', 10, 'MarkerFaceColor', 'm', 'DisplayName', 'Target');
     
     % 8. Configurazione Finale Assi e Legenda
     axis([min(X)-15, max(X)+15, min(Y)-15, max(Y)+15, min(Z)-5, max(Z)+15]);
