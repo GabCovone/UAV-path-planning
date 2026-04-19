@@ -11,7 +11,16 @@ function dyn_obs = genera_ostacoli_dinamici(sim_pos_des, num_dyn_obs)
 
     % Se il numero di ostacoli non è specificato, impostalo a 3 di default
     if nargin < 2
-        num_dyn_obs = 3;
+        num_dyn_obs = 0;
+    end
+
+    if num_dyn_obs == 0
+        num_dyn_obs = 1;
+        dyn_obs = struct('p0', cell(1, num_dyn_obs), 'v', cell(1, num_dyn_obs), 'radius', cell(1, num_dyn_obs));
+        dyn_obs(1).p0 = [0 0 0];
+        dyn_obs(1).v = [0 0 0];
+        dyn_obs(1).radius = 0;
+        return;
     end
     
     % Inizializza la struttura vuota per prestazioni ottimali

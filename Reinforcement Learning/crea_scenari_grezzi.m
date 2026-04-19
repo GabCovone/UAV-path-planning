@@ -19,13 +19,13 @@ function scenari = crea_scenari_grezzi(livello, num_scenari, n_collision, x_max,
             [v, q_start, q_goal] = crea_citta(false, false, n_collision, x_max, y_max, z_max);
             map = pack_struct(v, n_collision, x_max, y_max, z_max, q_start, q_goal);
             
-            if livello == 1
+            %if livello == 1
                 % 2. Si ottiene una traiettoria lineare semplice (collegando
                 % q_start e q_goal ?)
-                [ground_truth_trajectory] = % boh %MinimumSnapCorridors_3D(false, true, waypoints_pruned, map);
-            else
-                [ground_truth_trajectory] = % boh
-            end
+                %[ground_truth_trajectory] = % boh %MinimumSnapCorridors_3D(false, true, waypoints_pruned, map);
+            %else
+                %[ground_truth_trajectory] = % boh
+            %end
             
             % 3. Estrazione timeseries
             [sim_pos_des, sim_vel_des, sim_yaw_des] = estrai_timeseries(ground_truth_trajectory);

@@ -83,7 +83,7 @@ end
 disp('✅ Padding completato con successo!');
 
 %% --- FASE 3: SALVATAGGIO SU DISCO ---
-nome_file = 'training_scenarios.mat';
+nome_file = 'scenarios.mat';
 save(nome_file, 'scenari', '-v7.3'); % -v7.3 è utile se i file superano i 2GB
 disp(['🎉 Generazione completata! Database salvato in: ', nome_file]);
 
