@@ -40,7 +40,7 @@ try
 
     % 0.005
 
-    tempo_da_analizzare = 0.1;
+    tempo_da_analizzare = 16.2;
 
     tempo_per_step = round(tempo_da_analizzare,1)
 
