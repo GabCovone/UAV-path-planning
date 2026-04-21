@@ -5,7 +5,10 @@ clear; clc;
 % Impostazioni
 num_scenari = 50; % Numero di città/traiettorie da pre-calcolare
 
-livello = 4;
+livello = 1;
+
+% Parametro per il filtro delle traiettorie banali
+z_threshold = 1.5; % Quota minima che il drone deve superare per non essere considerato "banale"
 
 if livello == 4
     n_collision = 40; % Numero edifici, di base 500
@@ -14,17 +17,14 @@ if livello == 4
     z_max = 1000;
     num_dyn_obs = 10; % Numero di ostacoli dinamici
 
-    % Parametro per il filtro delle traiettorie banali
-    z_threshold = 1.5; % Quota minima che il drone deve superare per non essere considerato "banale"
-
 % ... restanti scenari da configurare ...
 
 elseif livello == 1
-    n_collision = 0; % Numero edifici, non servono per questo livello
+    n_collision = 1;
     x_max = 500;
     y_max = 500;
     z_max = 500;
-    num_dyn_obs = 10; % Numero di ostacoli dinamici
+    num_dyn_obs = 1; % Numero di ostacoli dinamici
 end
 
 scenari = crea_scenari_grezzi(livello, num_scenari, n_collision, x_max, y_max, z_max, num_dyn_obs, z_threshold);

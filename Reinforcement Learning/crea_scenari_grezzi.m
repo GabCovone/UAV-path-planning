@@ -9,32 +9,49 @@ function scenari = crea_scenari_grezzi(livello, num_scenari, n_collision, x_max,
 
         count = 0;
 
+        v = zeros(8, 3, 1);
+        n_collision = 1;
+        frazione_margine = 15;
+
         disp(['Avvio generazione di ', num2str(num_scenari), ' scenari ']);
         
         while count < num_scenari
-            attempts = attempts + 1;
             fprintf('\n---- Generazione Scenario %d...\n', count);
             
-            % 1. Generazione città
-            [v, q_start, q_goal] = crea_citta(false, false, n_collision, x_max, y_max, z_max);
+            x_min_margine = round(x_max/frazione_margine);
+            x_max_margine = round(x_max - x_min_margine);
+            y_min_margine = round(y_max/frazione_margine);
+            y_max_margine = round(y_max - y_min_margine);
+            z_min_margine = round(z_max/frazione_margine);
+            z_max_margine = round(z_max - z_min_margine);
+
+            
+            q_start = [randi([x_min_margine, x_max_margine]), randi([y_min_margine, y_max_margine]), randi([z_min_margine, z_max_margine])];
+            q_goal = q_start;
+            while norm(q_goal - q_start) < min(y_max, x_max) / 1.5
+                q_goal = [randi([x_min_margine, x_max_margine]), randi([y_min_margine, y_max_margine]), randi([z_min_margine, z_max_margine])];
+            end
+            
             map = pack_struct(v, n_collision, x_max, y_max, z_max, q_start, q_goal);
             
-            %if livello == 1
-                % 2. Si ottiene una traiettoria lineare semplice (collegando
-                % q_start e q_goal ?)
-                %[ground_truth_trajectory] = % boh %MinimumSnapCorridors_3D(false, true, waypoints_pruned, map);
-            %else
-                %[ground_truth_trajectory] = % boh
-            %end
-            
-            % 3. Estrazione timeseries
-            [sim_pos_des, sim_vel_des, sim_yaw_des] = estrai_timeseries(ground_truth_trajectory);
-            
-            % 4. Creazione ostacoli dinamici
-            dynamic_obstacles = genera_ostacoli_dinamici(sim_pos_des, num_dyn_obs);
+            [waypoints_raw, waypoints_pruned, traguardo_raggiunto] = run_path_planning(false, false, map);
+                    
+            if traguardo_raggiunto
+                % 3. Ottimizzazione minimum snap
+                [ground_truth_trajectory] = MinimumSnapCorridors_3D(false, true, waypoints_pruned, map);
+                
+                % 4. Estrazione timeseries
+                [sim_pos_des, sim_vel_des, sim_yaw_des] = estrai_timeseries(ground_truth_trajectory);
+                
+                % 4. Creazione ostacoli dinamici
+                dynamic_obstacles = genera_ostacoli_dinamici(sim_pos_des, num_dyn_obs);
+            else
+                disp('ERRORE');
+                return
+            end
             
             % 5. Salvataggio dei dati nella struttura
-            count = count + 1; % Incrementa solo se lo scenario supera tutti i controlli
+            count = count + 1;
             
             scenari(count).map = map;
             scenari(count).sim_pos_des = sim_pos_des;
