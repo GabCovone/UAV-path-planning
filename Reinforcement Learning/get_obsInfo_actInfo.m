@@ -36,7 +36,7 @@ function [obsInfo, actInfo, numObs, numAct, actLimit, StructNumObs] = get_obsInf
     
     % Limiti massimi sulle deviazioni
     max_delta_pos = 2.0;  % +/- 2 metri
-    max_delta_vel = 1.0;  % +/- 1 m/s
+    max_delta_vel = 3.0;  % +/- 3 m/s
     %max_delta_yaw = 0.5;  % +/- 0.5 rad
     
     actLimit = [max_delta_pos*ones(3,1); max_delta_vel*ones(3,1)];%; max_delta_yaw];

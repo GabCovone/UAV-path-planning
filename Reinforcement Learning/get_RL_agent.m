@@ -70,7 +70,7 @@ function agent = get_RL_agent(obsInfo, actInfo, numAct, actLimit, Ts, StructNumO
     criticNetwork = connectLayers(criticNetwork, 'CriticObsLN', 'CriticAdd/in1');
     criticNetwork = connectLayers(criticNetwork, 'CriticActionLN', 'CriticAdd/in2');
     
-    criticOptions = rlOptimizerOptions('LearnRate', 5e-4, 'GradientThreshold', 10, 'L2RegularizationFactor', 1e-4);
+    criticOptions = rlOptimizerOptions('LearnRate', 8e-4, 'GradientThreshold', 10, 'L2RegularizationFactor', 1e-4);
     
     % Nota: ObservationInputNames ora è un cell array con i due rami di input
     critic1 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...

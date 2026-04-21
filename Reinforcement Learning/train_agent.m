@@ -17,9 +17,12 @@ assignin('base', 'Ts', Ts);
 
 [obsInfo, actInfo, numObs, numAct, actLimit, StructNumObs] = get_obsInfo_actInfo();
 
-agent = get_RL_agent(obsInfo, actInfo, numAct, actLimit, Ts, StructNumObs);
+%agent = get_RL_agent(obsInfo, actInfo, numAct, actLimit, Ts, StructNumObs);
 
-env = get_RL_env(obsInfo, actInfo, 'training_scenarios.mat', true, fullfile(pwd, 'registro_morti.txt'));
+agent = load('agente_v14_lv1.mat', 'agent');
+agent = agent.agent;
+
+env = get_RL_env(obsInfo, actInfo, 'training_scenarios_lv2.mat', true, fullfile(pwd, 'registro_morti.txt'));
 
 delete(gcp('nocreate'))
 cluster = parcluster('local');
