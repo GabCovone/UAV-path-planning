@@ -2,7 +2,7 @@ function plot_scenario(nome_scenari, num)
 
     scenari = load(nome_scenari);
 
-    scenari = scenari(num).scenari;
+    scenari = scenari.scenari(num);
 
     waypoints = scenari.sim_pos_des.Data;
     q_start = scenari.map.q_start; 

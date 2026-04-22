@@ -6,6 +6,8 @@ initialGainsMultiplier = 15;
 
 path = "SAC_RL_env/Inner Loop and Plant Model/High-FidelityModel/";
 
+load_system("SAC_RL_env");
+
 if get_param(strcat(path, "pos_agente To File"), 'Commented') == "off"
     set_param(strcat(path, "pos_agente To File"), 'Commented', 'on');
 end
@@ -19,10 +21,10 @@ assignin('base', 'Ts', Ts);
 
 %agent = get_RL_agent(obsInfo, actInfo, numAct, actLimit, Ts, StructNumObs);
 
-agent = load('agente_v14_lv1.mat', 'agent');
+agent = load('agente_v14_lv2.mat', 'agent');
 agent = agent.agent;
 
-env = get_RL_env(obsInfo, actInfo, 'training_scenarios_lv2.mat', true, fullfile(pwd, 'registro_morti.txt'));
+env = get_RL_env(obsInfo, actInfo, 'training_scenarios.mat', true, fullfile(pwd, 'registro_morti.txt'));
 
 delete(gcp('nocreate'))
 cluster = parcluster('local');
@@ -35,7 +37,7 @@ trainOpts = rlTrainingOptions(...
     'MaxStepsPerEpisode', 5500, ... % orig era 1000
     'ScoreAveragingWindowLength', 50, ...
     'StopTrainingCriteria', 'AverageReward', ...
-    'StopTrainingValue', 1000, ... % Determine this based on your reward scaling
+    'StopTrainingValue', 2000, ... % Determine this based on your reward scaling
     'SimulationStorageType', "none", ...
     'SaveFileVersion', "-v7.3", ...
     'SaveAgentCriteria', 'EpisodeFrequency', ...

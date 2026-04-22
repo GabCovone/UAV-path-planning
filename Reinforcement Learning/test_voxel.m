@@ -40,7 +40,7 @@ try
 
     % 0.005
 
-    tempo_da_analizzare = 16.2;
+    tempo_da_analizzare = 196.3;
 
     tempo_per_step = round(tempo_da_analizzare,1)
 
@@ -65,7 +65,7 @@ try
     end
     
     % 4. Apri la finestra indipendente
-    visualizza_voxel(voxel_corrente, pos_corrente, 5.0, 5);
+    visualizza_voxel(voxel_corrente, pos_corrente, 1, 5);
     
 catch ME
     disp('❌ Errore durante l''estrazione dei dati:');
