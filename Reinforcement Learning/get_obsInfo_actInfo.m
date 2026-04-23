@@ -1,18 +1,23 @@
 function [obsInfo, actInfo, numObs, numAct, actLimit, StructNumObs] = get_obsInfo_actInfo()
     % Definizione costanti del problema
-    numVoxels = 1000;
+    
+    numDelays = 3;
+    assignin('base', 'delays', numDelays);
+    baseNumRays = 256;
+    assignin('base', 'num_rays', baseNumRays);
+    numRays = baseNumRays * numDelays; % 256 raggi x 3 step (frame stacking)
     numState = 10; % 3 vel + 3 omega + 4 quat
     numErrors = 6; % 3 pos + 3 vel || + 1 yaw
-    numObs = numState + numErrors + numVoxels; % 10 stato + 7 errori + 1000 voxels = 1017
-    StructNumObs = pack_struct(numState, numErrors, numVoxels); % 10 stato, 1000 voxels, 7 errori, tot 1017
-    numAct = 6; % 3 per posizione, 3 per velocità ||, 1 per lo yaw
+    numObs = numState + numErrors + numRays; % 10 stato + 7 errori + 728 raggi
+    StructNumObs = pack_struct(numState, numErrors, numRays); % 10 stato, 728 voxels, 7 errori
+    numAct = 6; % 3 per posizione, 3 per velocità
     
     % Spazio delle Osservazioni (Observation Space)
 
     % 1. Definisci l'elemento del Bus per i Voxel
     voxelElem = Simulink.BusElement;
-    voxelElem.Name = 'Voxels_Observations'; % DEVE corrispondere al nome del layer di input
-    voxelElem.Dimensions = [10 10 10];
+    voxelElem.Name = 'Rays_Observations'; % DEVE corrispondere al nome del layer di input
+    voxelElem.Dimensions = [1, numRays];
     voxelElem.DataType = 'double';
     
     % 2. Definisci l'elemento del Bus per lo Stato

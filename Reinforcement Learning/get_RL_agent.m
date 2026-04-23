@@ -3,9 +3,7 @@ function agent = get_RL_agent(obsInfo, actInfo, numAct, actLimit, Ts, StructNumO
     % Calcola il numero totale di variabili di stato (cinematica + errori)
     numStateVars = StructNumObs.numState + StructNumObs.numErrors;
     
-    % Calcola la dimensione del lato del cubo di voxel (es. 1000 -> 10)
-    latoCubo = round(StructNumObs.numVoxels^(1/3));
-    voxelDim = [latoCubo, latoCubo, latoCubo, 1]; % Formato per image3dInputLayer
+    numRays = StructNumObs.numRays;
     
     %% 1. DEFINIZIONE DELLE RETI NEURALI
     hiddenLayerSize = 256; 
@@ -14,21 +12,19 @@ function agent = get_RL_agent(obsInfo, actInfo, numAct, actLimit, Ts, StructNumO
     % --- CRITIC NETWORKS (Twin Critics) ---
     % ==========================================
     
-    % Ramo 1: Voxel (Convoluzionale 3D)
-    criticVoxelPath = [
-        image3dInputLayer(voxelDim, 'Normalization', 'none', 'Name', 'voxel_input')
-        convolution3dLayer(3, 16, 'Stride', 2, 'Padding', 'same', 'Name', 'CriticConv1')
-        reluLayer('Name', 'CriticRelu1')
-        convolution3dLayer(3, 32, 'Stride', 2, 'Padding', 'same', 'Name', 'CriticConv2')
-        reluLayer('Name', 'CriticRelu2')
-        flattenLayer('Name', 'CriticFlatten')
-        fullyConnectedLayer(128, 'Name', 'CriticVoxelFC')
+    % Ramo 1: Rays (Fully Connected per vettori impilati)
+    criticRaysPath = [
+        featureInputLayer(numRays, 'Normalization', 'none', 'Name', 'rays_input')
+        fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticRaysFC1')
+        swishLayer('Name', 'CriticRaysSwish1')
+        fullyConnectedLayer(hiddenLayerSize/2, 'Name', 'CriticRaysFC2')
+        swishLayer('Name', 'CriticRaysSwish2')
         ];
         
     % Ramo 2: Stato Cinematico ed Errori (Fully Connected)
     criticStatePath = [
         featureInputLayer(numStateVars, 'Normalization', 'none', 'Name', 'state_input')
-        fullyConnectedLayer(128, 'Name', 'CriticStateFC1')
+        fullyConnectedLayer(hiddenLayerSize/2, 'Name', 'CriticStateFC1')
         swishLayer('Name', 'CriticStateSwish')
         ];
         
@@ -58,14 +54,14 @@ function agent = get_RL_agent(obsInfo, actInfo, numAct, actLimit, Ts, StructNumO
     
     % Assemblaggio Grafo Critic
     criticNetwork = layerGraph();
-    criticNetwork = addLayers(criticNetwork, criticVoxelPath);
+    criticNetwork = addLayers(criticNetwork, criticRaysPath);
     criticNetwork = addLayers(criticNetwork, criticStatePath);
     criticNetwork = addLayers(criticNetwork, criticObsConcatPath);
     criticNetwork = addLayers(criticNetwork, criticActionPath);
     criticNetwork = addLayers(criticNetwork, criticCommonPath);
     
     % Connessioni Critic
-    criticNetwork = connectLayers(criticNetwork, 'CriticVoxelFC', 'CriticObsConcat/in1');
+    criticNetwork = connectLayers(criticNetwork, 'CriticRaysSwish2', 'CriticObsConcat/in1');
     criticNetwork = connectLayers(criticNetwork, 'CriticStateSwish', 'CriticObsConcat/in2');
     criticNetwork = connectLayers(criticNetwork, 'CriticObsLN', 'CriticAdd/in1');
     criticNetwork = connectLayers(criticNetwork, 'CriticActionLN', 'CriticAdd/in2');
@@ -74,24 +70,22 @@ function agent = get_RL_agent(obsInfo, actInfo, numAct, actLimit, Ts, StructNumO
     
     % Nota: ObservationInputNames ora è un cell array con i due rami di input
     critic1 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
-        'ObservationInputNames', {'voxel_input', 'state_input'}, 'ActionInputNames', 'action');
+        'ObservationInputNames', {'rays_input', 'state_input'}, 'ActionInputNames', 'action');
     critic2 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
-        'ObservationInputNames', {'voxel_input', 'state_input'}, 'ActionInputNames', 'action');
+        'ObservationInputNames', {'rays_input', 'state_input'}, 'ActionInputNames', 'action');
     
     % ==========================================
     % --- ACTOR NETWORK (Policy: Obs -> Action) ---
     % ==========================================
     
-    % Ramo 1: Voxel Actor
-    actorVoxelPath = [
-        image3dInputLayer(voxelDim, 'Normalization', 'none', 'Name', 'voxel_input')
-        convolution3dLayer(3, 16, 'Stride', 2, 'Padding', 'same', 'Name', 'ActorConv1')
-        reluLayer('Name', 'ActorRelu1')
-        convolution3dLayer(3, 32, 'Stride', 2, 'Padding', 'same', 'Name', 'ActorConv2')
-        reluLayer('Name', 'ActorRelu2')
-        flattenLayer('Name', 'ActorFlatten')
-        fullyConnectedLayer(128, 'Name', 'ActorVoxelFC')
-        ];
+    % Ramo 1: Rays Actor
+    actorRaysPath = [
+            featureInputLayer(numRays, 'Normalization', 'none', 'Name', 'rays_input')
+            fullyConnectedLayer(256, 'Name', 'ActorRaysFC1')
+            swishLayer('Name', 'ActorRaysSwish1')
+            fullyConnectedLayer(128, 'Name', 'ActorRaysFC2')
+            swishLayer('Name', 'ActorRaysSwish2')
+            ];
         
     % Ramo 2: Stato Actor
     actorStatePath = [
@@ -126,14 +120,14 @@ function agent = get_RL_agent(obsInfo, actInfo, numAct, actLimit, Ts, StructNumO
     
     % Assemblaggio Grafo Actor
     actorGraph = layerGraph();
-    actorGraph = addLayers(actorGraph, actorVoxelPath);
+    actorGraph = addLayers(actorGraph, actorRaysPath);
     actorGraph = addLayers(actorGraph, actorStatePath);
     actorGraph = addLayers(actorGraph, actorCommonPath);
     actorGraph = addLayers(actorGraph, meanPath);
     actorGraph = addLayers(actorGraph, stdPath);
     
     % Connessioni Actor
-    actorGraph = connectLayers(actorGraph, 'ActorVoxelFC', 'ActorConcat/in1');
+    actorGraph = connectLayers(actorGraph, 'ActorRaysSwish2', 'ActorConcat/in1');
     actorGraph = connectLayers(actorGraph, 'ActorStateSwish', 'ActorConcat/in2');
     actorGraph = connectLayers(actorGraph, 'ActorSwish2', 'MeanFC');
     actorGraph = connectLayers(actorGraph, 'ActorSwish2', 'StdFC');
@@ -142,7 +136,7 @@ function agent = get_RL_agent(obsInfo, actInfo, numAct, actLimit, Ts, StructNumO
     
     % Anche qui, l'actor accetta le due osservazioni separate
     actor = rlContinuousGaussianActor(dlnetwork(actorGraph), obsInfo, actInfo, ...
-        'ObservationInputNames', {'voxel_input', 'state_input'}, ...
+        'ObservationInputNames', {'rays_input', 'state_input'}, ...
         'ActionMeanOutputNames', 'MeanScale', ...
         'ActionStandardDeviationOutputNames', 'StdSoftplus');
     
