@@ -44,11 +44,11 @@ initialGainsMultiplier = 15;
  Ts = 0.1; % Tempo di campionamento (10 Hz)
  assignin('base', 'Ts', Ts);
 
-[obsInfo, actInfo, numObs, numAct, actLimit, StructNumObs] = get_obsInfo_actInfo();
+[obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
 
-agent = get_RL_agent(obsInfo, actInfo, numAct, actLimit, Ts, StructNumObs);
+agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
 
-env = get_RL_env(obsInfo, actInfo, 'training_scenarios.mat', true, fullfile(pwd, 'registro_morti.txt'));
+env = get_RL_env(obsInfo, actInfo, actLimit, 'training_scenarios.mat', true, fullfile(pwd, 'registro_morti.txt'));
 
 %% Check ambiente e agente
 

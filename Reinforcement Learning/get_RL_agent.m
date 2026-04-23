@@ -1,102 +1,51 @@
-function agent = get_RL_agent(obsInfo, actInfo, numAct, actLimit, Ts, StructNumObs)
-    %% 0. CALCOLO DIMENSIONI INPUT DA STRUCT
-    % Calcola il numero totale di variabili di stato (cinematica + errori)
-    numStateVars = StructNumObs.numState + StructNumObs.numErrors;
-    
-    numRays = StructNumObs.numRays;
-    
+function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts)
     %% 1. DEFINIZIONE DELLE RETI NEURALI
+    % Dimensioni dei layer nascosti
     hiddenLayerSize = 256; 
     
-    % ==========================================
-    % --- CRITIC NETWORKS (Twin Critics) ---
-    % ==========================================
-    
-    % Ramo 1: Rays (Fully Connected per vettori impilati)
-    criticRaysPath = [
-        featureInputLayer(numRays, 'Normalization', 'none', 'Name', 'rays_input')
-        fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticRaysFC1')
-        swishLayer('Name', 'CriticRaysSwish1')
-        fullyConnectedLayer(hiddenLayerSize/2, 'Name', 'CriticRaysFC2')
-        swishLayer('Name', 'CriticRaysSwish2')
-        ];
-        
-    % Ramo 2: Stato Cinematico ed Errori (Fully Connected)
-    criticStatePath = [
-        featureInputLayer(numStateVars, 'Normalization', 'none', 'Name', 'state_input')
-        fullyConnectedLayer(hiddenLayerSize/2, 'Name', 'CriticStateFC1')
-        swishLayer('Name', 'CriticStateSwish')
-        ];
-        
-    % Ramo Fusione Osservazioni (Voxel + Stato)
-    criticObsConcatPath = [
-        concatenationLayer(1, 2, 'Name', 'CriticObsConcat')
-        fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticObsFC')
-        layerNormalizationLayer('Name', 'CriticObsLN')
+    % --- CRITIC NETWORKS (Q-Values: [Obs, Act] -> Q) ---
+    criticNetwork = [
+        featureInputLayer(numObs, 'Normalization', 'none', 'Name', 'observation')
+        fullyConnectedLayer(hiddenLayerSize * 2, 'Name', 'CriticStateFC1')
+        layerNormalizationLayer('Name', 'CriticStateLN1')
+        swishLayer('Name', 'CriticSwish1')
+        fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticStateFC2')
+        layerNormalizationLayer('Name', 'CriticStateLN2')
         ];
     
-    % Ramo Azione
-    criticActionPath = [
+    actionPath = [
         featureInputLayer(numAct, 'Normalization', 'none', 'Name', 'action')
-        fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticActionFC')
-        layerNormalizationLayer('Name', 'CriticActionLN')
+        fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticActionFC1')
+        layerNormalizationLayer('Name', 'CriticActionLN1')
         ];
     
-    % Ramo Comune (Osservazioni + Azioni -> Q-Value)
     criticCommonPath = [
-        additionLayer(2, 'Name', 'CriticAdd')
+        additionLayer(2, 'Name', 'add')
         swishLayer('Name', 'CriticCommonSwish1')
-        fullyConnectedLayer(hiddenLayerSize/2, 'Name', 'CriticCommonFC')
-        layerNormalizationLayer('Name', 'CriticCommonLN')
+        fullyConnectedLayer(hiddenLayerSize/2, 'Name', 'CriticCommonFC1')
+        layerNormalizationLayer('Name', 'CriticCommonLN1')
         swishLayer('Name', 'CriticCommonSwish2')
         fullyConnectedLayer(1, 'Name', 'QValue')
         ];
     
-    % Assemblaggio Grafo Critic
-    criticNetwork = layerGraph();
-    criticNetwork = addLayers(criticNetwork, criticRaysPath);
-    criticNetwork = addLayers(criticNetwork, criticStatePath);
-    criticNetwork = addLayers(criticNetwork, criticObsConcatPath);
-    criticNetwork = addLayers(criticNetwork, criticActionPath);
+    criticNetwork = layerGraph(criticNetwork);
+    criticNetwork = addLayers(criticNetwork, actionPath);
     criticNetwork = addLayers(criticNetwork, criticCommonPath);
     
-    % Connessioni Critic
-    criticNetwork = connectLayers(criticNetwork, 'CriticRaysSwish2', 'CriticObsConcat/in1');
-    criticNetwork = connectLayers(criticNetwork, 'CriticStateSwish', 'CriticObsConcat/in2');
-    criticNetwork = connectLayers(criticNetwork, 'CriticObsLN', 'CriticAdd/in1');
-    criticNetwork = connectLayers(criticNetwork, 'CriticActionLN', 'CriticAdd/in2');
+    criticNetwork = connectLayers(criticNetwork, 'CriticStateLN2', 'add/in1'); % <-- Modificato collegamento
+    criticNetwork = connectLayers(criticNetwork, 'CriticActionLN1', 'add/in2'); % <-- Modificato collegamento
     
-    criticOptions = rlOptimizerOptions('LearnRate', 8e-4, 'GradientThreshold', 10, 'L2RegularizationFactor', 1e-4);
-    
-    % Nota: ObservationInputNames ora è un cell array con i due rami di input
+    % Inizializza due Critic identici
+    criticOptions = rlOptimizerOptions('LearnRate', 5e-4, 'GradientThreshold', 10, 'L2RegularizationFactor', 1e-4);
     critic1 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
-        'ObservationInputNames', {'rays_input', 'state_input'}, 'ActionInputNames', 'action');
+        'ObservationInputNames', 'observation', 'ActionInputNames', 'action');
     critic2 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
-        'ObservationInputNames', {'rays_input', 'state_input'}, 'ActionInputNames', 'action');
+        'ObservationInputNames', 'observation', 'ActionInputNames', 'action');
     
-    % ==========================================
-    % --- ACTOR NETWORK (Policy: Obs -> Action) ---
-    % ==========================================
-    
-    % Ramo 1: Rays Actor
-    actorRaysPath = [
-            featureInputLayer(numRays, 'Normalization', 'none', 'Name', 'rays_input')
-            fullyConnectedLayer(256, 'Name', 'ActorRaysFC1')
-            swishLayer('Name', 'ActorRaysSwish1')
-            fullyConnectedLayer(128, 'Name', 'ActorRaysFC2')
-            swishLayer('Name', 'ActorRaysSwish2')
-            ];
-        
-    % Ramo 2: Stato Actor
-    actorStatePath = [
-        featureInputLayer(numStateVars, 'Normalization', 'none', 'Name', 'state_input')
-        fullyConnectedLayer(128, 'Name', 'ActorStateFC')
-        swishLayer('Name', 'ActorStateSwish')
-        ];
-        
-    % Ramo Comune Actor (Fusione -> Feature condivise per Media/Std)
-    actorCommonPath = [
-        concatenationLayer(1, 2, 'Name', 'ActorConcat')
+    % --- ACTOR NETWORK (Policy: Obs -> Action Mean & Std) ---
+    % SAC utilizza una policy gaussiana, quindi l'attore deve fornire media e deviazione standard
+    actorNetwork = [
+        featureInputLayer(numObs, 'Normalization', 'none', 'Name', 'observation')
         fullyConnectedLayer(hiddenLayerSize * 2, 'Name', 'ActorFC1')
         layerNormalizationLayer('Name', 'ActorLN1')
         swishLayer('Name', 'ActorSwish1')
@@ -105,55 +54,50 @@ function agent = get_RL_agent(obsInfo, actInfo, numAct, actLimit, Ts, StructNumO
         swishLayer('Name', 'ActorSwish2')
         ];
     
-    % Ramo della Media (Mean)
+    % Ramo della Media (Mean) - Satura ai limiti definiti in actInfo
     meanPath = [
         fullyConnectedLayer(numAct, 'Name', 'MeanFC')
-        tanhLayer('Name', 'MeanTanh') 
-        scalingLayer('Name', 'MeanScale', 'Scale', actLimit) 
+        tanhLayer('Name', 'MeanTanh') % Scala in [-1, 1]
+        scalingLayer('Name', 'MeanScale', 'Scale', actLimit) % Riscala sui limiti fisici
         ];
     
-    % Ramo della Deviazione Standard (StdDev)
+    % Ramo della Deviazione Standard (StdDev) - Valori positivi (Softplus)
     stdPath = [
         fullyConnectedLayer(numAct, 'Name', 'StdFC')
         softplusLayer('Name', 'StdSoftplus') 
         ];
     
-    % Assemblaggio Grafo Actor
-    actorGraph = layerGraph();
-    actorGraph = addLayers(actorGraph, actorRaysPath);
-    actorGraph = addLayers(actorGraph, actorStatePath);
-    actorGraph = addLayers(actorGraph, actorCommonPath);
+    actorGraph = layerGraph(actorNetwork);
     actorGraph = addLayers(actorGraph, meanPath);
     actorGraph = addLayers(actorGraph, stdPath);
     
-    % Connessioni Actor
-    actorGraph = connectLayers(actorGraph, 'ActorRaysSwish2', 'ActorConcat/in1');
-    actorGraph = connectLayers(actorGraph, 'ActorStateSwish', 'ActorConcat/in2');
     actorGraph = connectLayers(actorGraph, 'ActorSwish2', 'MeanFC');
     actorGraph = connectLayers(actorGraph, 'ActorSwish2', 'StdFC');
     
     actorOptions = rlOptimizerOptions('LearnRate', 1e-4, 'GradientThreshold', 5, 'L2RegularizationFactor', 1e-4);
-    
-    % Anche qui, l'actor accetta le due osservazioni separate
     actor = rlContinuousGaussianActor(dlnetwork(actorGraph), obsInfo, actInfo, ...
-        'ObservationInputNames', {'rays_input', 'state_input'}, ...
+        'ObservationInputNames', 'observation', ...
         'ActionMeanOutputNames', 'MeanScale', ...
         'ActionStandardDeviationOutputNames', 'StdSoftplus');
     
     disp('✅ Reti critics e actor create con successo');
     
     %% 2. CREAZIONE DELL'AGENTE SAC
+    % Opzioni specifiche dell'agente
+    
     agentOpts = rlSACAgentOptions(...
         'SampleTime', Ts, ...
         'DiscountFactor', 0.99, ...
         'TargetSmoothFactor', 5e-3, ...
         'ExperienceBufferLength', 1e6, ...
         'MiniBatchSize', 256, ...
-        'NumStepsToLookAhead', 1); 
+        'NumStepsToLookAhead', 1); % Standard per SAC
     
+    % Assegnazione degli ottimizzatori all'interno delle opzioni
     agentOpts.CriticOptimizerOptions = criticOptions;
     agentOpts.ActorOptimizerOptions = actorOptions;
     
+    % Creazione dell'agente
     agent = rlSACAgent(actor, [critic1, critic2], agentOpts);
     
     disp('✅ Agente RL SAC creato con successo!');

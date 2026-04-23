@@ -1,13 +1,27 @@
-function env = get_RL_env(obsInfo, actInfo, path_DB_scenari, logging, logPath)
+function env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, logging, logPath)
     
-    if nargin < 3, path_DB_scenari = 'training_scenarios.mat'; end
-    if nargin < 4, logging = false; logPath = fullfile(pwd, 'registro_morti.txt'); end
+    if nargin < 4, path_DB_scenari = 'training_scenarios.mat'; end
+    if nargin < 5, logging = false; logPath = fullfile(pwd, 'registro_morti.txt'); end
     assignin('base', 'logging', logging);
     logPath_padded = sprintf('%-250s', logPath);
     assignin('base', 'logPath_num', int8(logPath_padded));
 
     mdl = 'SAC_RL_env';
     agentBlk = [mdl, '/Inner Loop and Plant Model/High-FidelityModel/RL Agent'];
+
+    % Assegnazione nel workspace dei limiti per la normalizzazione
+    assignin('base', 'max_delta', actLimit);
+
+    max_deviazione_pos = 100; % Deviazione massima in metri consentita per l'agente
+    assignin('base', 'max_deviazione_pos', max_deviazione_pos);
+    
+    max_deviazione_vel = 20; % Deviazione massima in m/s per la velocità
+    assignin('base', 'max_deviazione_vel', max_deviazione_vel);
+
+    max_vel = 30; % Massima velocità lineare
+    max_angular_vel = double(pi); % Massima velocità angolare
+    assignin('base', 'max_vel', max_vel);
+    assignin('base', 'max_angular_vel', max_angular_vel);
     
     % Creazione dell'ambiente Simulink
     env = rlSimulinkEnv(mdl, agentBlk, obsInfo, actInfo);

@@ -15,19 +15,20 @@ rng(2);
 Ts = 0.1; % Tempo di campionamento (10 Hz)
 assignin('base', 'Ts', Ts);
 
-path_DB_scenari = 'test_ostacoli_complicato.mat';
+path_DB_scenari = 'training_scenarios_lv1.mat';
 
 %%
 
 % 1. Carica l'ambiente
-[obsInfo, actInfo, numObs, numAct, actLimit, StructNumObs] = get_obsInfo_actInfo();
-env = get_RL_env(obsInfo, actInfo, path_DB_scenari, true, fullfile(pwd, 'registro_morti.txt'));
+[obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
 
-agent_name = 'agent'; % certe volte è saved_agent'
+env = get_RL_env(obsInfo, actInfo, actLimit, 'training_scenarios_lv1.mat', true, fullfile(pwd, 'registro_morti.txt'));
+
+agent_name = 'saved_agent'; % in genere agent, certe volte è saved_agent
 
 % 2. Carica l'agente salvato
 %load('versioni_agenti/agente_v12_rewardexpscaling_816.mat', agent_name);
-load('versioni_agenti/agente_v14_lv1_v4.mat', agent_name);
+load('versioni_agenti/agente_v15_lv1_v1.mat', agent_name);
 
 % 3. Definisci le opzioni di simulazione
 % Vogliamo fargli fare 1 solo episodio, con un massimo di 5500 step (es. 50 secondi a 10Hz)
