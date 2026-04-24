@@ -10,12 +10,12 @@ if get_param(strcat(path, "pos_agente To File"), 'Commented') == "on"
     set_param(strcat(path, "pos_agente To File"), 'Commented', 'off');
 end
 
-rng(2);
+rng(5);
 
 Ts = 0.1; % Tempo di campionamento (10 Hz)
 assignin('base', 'Ts', Ts);
 
-path_DB_scenari = 'test_ostacoli_complicato.mat';
+path_DB_scenari = 'training_scenarios.mat';
 
 %%
 
