@@ -15,14 +15,14 @@ rng(2);
 Ts = 0.1; % Tempo di campionamento (10 Hz)
 assignin('base', 'Ts', Ts);
 
-path_DB_scenari = 'training_scenarios_lv1.mat';
+path_DB_scenari = 'test_ostacoli_complicato.mat';
 
 %%
 
 % 1. Carica l'ambiente
 [obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
 
-env = get_RL_env(obsInfo, actInfo, actLimit, 'training_scenarios_lv1.mat', true, fullfile(pwd, 'registro_morti.txt'));
+env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, true, fullfile(pwd, 'registro_morti.txt'));
 
 agent_name = 'saved_agent'; % in genere agent, certe volte è saved_agent
 
