@@ -12,6 +12,14 @@ if get_param(strcat(path, "pos_agente To File"), 'Commented') == "off"
     set_param(strcat(path, "pos_agente To File"), 'Commented', 'on');
 end
 
+displayBlks = find_system(path,'SearchDepth',1,'IncludeCommented', 'on','BlockType','Display');
+
+for k = 1:length(displayBlks)
+   set_param(displayBlks{k}, 'Commented','on');
+end
+
+save_system('SAC_RL_env')
+
 %%
 
 Ts = 0.1; % Tempo di campionamento (10 Hz)
@@ -19,22 +27,30 @@ assignin('base', 'Ts', Ts);
 
 [obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
 
-agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
+%agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
+
+agent = load('versioni_agenti/agente_v15_lv1_v1'); 
+agent = agent.saved_agent;
+
+% agent.AgentOptions.ActorOptimizerOptions.LearnRate = 5e-5;
+% [agent.AgentOptions.CriticOptimizerOptions.LearnRate] = deal(1e-4);
 
 % agent = load('agente_v14_lv2.mat', 'agent');
 % agent = agent.agent;
+
+num_workers = 8;
 
 env = get_RL_env(obsInfo, actInfo, actLimit, 'training_scenarios_lv1.mat', true, fullfile(pwd, 'registro_morti.txt'));
 
 delete(gcp('nocreate'))
 cluster = parcluster('local');
-cluster.NumWorkers = 8;
-pool = parpool(cluster, 8);  
+cluster.NumWorkers = num_workers;
+pool = parpool(cluster, 8);
 
 %% Training
 trainOpts = rlTrainingOptions(...
-    'MaxEpisodes', 5500, ...
-    'MaxStepsPerEpisode', 5500, ... % orig era 1000
+    'MaxEpisodes', 2500, ...
+    'MaxStepsPerEpisode', 3000, ... % orig era 1000
     'ScoreAveragingWindowLength', 50, ...
     'StopTrainingCriteria', 'AverageReward', ...
     'StopTrainingValue', 2000, ... % Determine this based on your reward scaling
@@ -72,3 +88,7 @@ end
 
 trainStats = train(agent, env, trainOpts);
 
+%% Salva agente
+
+agent.UseExplorationPolicy = 0;
+save('trained_agent.mat', 'agent', 'trainStats');

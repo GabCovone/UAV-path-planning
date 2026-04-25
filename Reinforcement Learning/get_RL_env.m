@@ -23,6 +23,9 @@ function env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, logging, 
     assignin('base', 'max_vel', max_vel);
     assignin('base', 'max_angular_vel', max_angular_vel);
     
+    % Definizione della tolleranza per il raggiungimento dell'obiettivo
+    assignin('base', 'tolleranza_goal', 2);
+    
     % Creazione dell'ambiente Simulink
     env = rlSimulinkEnv(mdl, agentBlk, obsInfo, actInfo);
     
@@ -34,7 +37,7 @@ end
 
 function in = localResetFcn(in, path_DB_scenari)
     % Dichiarazione variabili persistenti
-    persistent DB_scenari scenario_corrente tentativi_attuali max_tentativi
+    persistent DB_scenari scenario_corrente episodi
     persistent path_DB_scenari_persistent
     
     % Inizializzazione ad inizio training
@@ -44,23 +47,15 @@ function in = localResetFcn(in, path_DB_scenari)
         path_DB_scenari_persistent = path_DB_scenari;
         data = load(path_DB_scenari_persistent); 
         DB_scenari = data.scenari; 
-        
-        scenario_corrente = randi(length(DB_scenari)); % Primo scenario casuale
-        tentativi_attuali = 0;
-        max_tentativi = 1; % Quante volte si può riprovare la stessa mappa
-    end
-    
-    % Si valuta se cambiare scenario
-    if tentativi_attuali >= max_tentativi
-        
-        % Si sceglie un nuovo scenario casuale
-        disp("Superato il max numero di tentativi per lo scenario corrente. Cambio di scenario.")
-        scenario_corrente = randi(length(DB_scenari));
-        tentativi_attuali = 0; % Resetta il contatore
+        episodi = 0;
     end
 
+    scenario_corrente = randi(length(DB_scenari)); % Primo scenario casuale
+
     % Aggiornamento contatore dei tentativi
-    tentativi_attuali = tentativi_attuali + 1;
+    episodi = episodi + 1;
+
+    disp("Inizio episodio " + episodi)
     
     % Si estraggono i dati dello scenario da usare in questo episodio
     scenario = DB_scenari(scenario_corrente);
@@ -94,6 +89,8 @@ function in = localResetFcn(in, path_DB_scenari)
     assignin('base', 'dyn_obs', scenario.dynamic_obstacles);
 
     assignin('base', 'scenario_corrente', scenario_corrente);
+
+    assignin('base', 'episodi', episodi);
     
     disp(['✅ Punto spawn drone: [', num2str(initial_pos(:)'), '], Goal a [', num2str(scenario.map.q_goal(:)'),']']);
 

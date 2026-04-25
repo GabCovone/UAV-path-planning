@@ -10,12 +10,21 @@ if get_param(strcat(path, "pos_agente To File"), 'Commented') == "on"
     set_param(strcat(path, "pos_agente To File"), 'Commented', 'off');
 end
 
-rng(5);
+displayBlks = find_system(path,'SearchDepth',1,'IncludeCommented', 'on','BlockType','Display');
+
+for k = 1:length(displayBlks)
+   set_param(displayBlks{k}, 'Commented','off');
+end
+
+save_system('SAC_RL_env')
+
+
+rng(1);
 
 Ts = 0.1; % Tempo di campionamento (10 Hz)
 assignin('base', 'Ts', Ts);
 
-path_DB_scenari = 'training_scenarios.mat';
+path_DB_scenari = 'test_ostacoli_complicato.mat';
 
 %%
 
@@ -26,9 +35,12 @@ env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, true, fullfile(pwd
 
 agent_name = 'saved_agent'; % in genere agent, certe volte è saved_agent
 
+pathSalvati = 'agenti_salvati - v15_lv1_v2/Agent1200.mat';
+pathVersione = 'versioni_agenti/agente_v15_lv1_v1.mat';
+
 % 2. Carica l'agente salvato
 %load('versioni_agenti/agente_v12_rewardexpscaling_816.mat', agent_name);
-load('versioni_agenti/agente_v15_lv1_v1.mat', agent_name);
+load(pathVersione, agent_name);
 
 % 3. Definisci le opzioni di simulazione
 % Vogliamo fargli fare 1 solo episodio, con un massimo di 5500 step (es. 50 secondi a 10Hz)
