@@ -37,7 +37,7 @@ function in = localResetFcn(in, path_DB_scenari)
     persistent DB_scenari scenario_corrente tentativi_attuali max_tentativi
     persistent path_DB_scenari_persistent
     
-    % Inizializzazione ad inizio training
+    % --- 1. Inizializzazione ad inizio training o se cambia il file del DB ---
     if isempty(DB_scenari) || ~strcmp(path_DB_scenari, path_DB_scenari_persistent)
         disp("Inizializzazione DB scenari...")
         % Carica il file .mat pre-calcolato una volta sola
@@ -45,17 +45,42 @@ function in = localResetFcn(in, path_DB_scenari)
         data = load(path_DB_scenari_persistent); 
         DB_scenari = data.scenari; 
         
-        scenario_corrente = randi(length(DB_scenari)); % Primo scenario casuale
         tentativi_attuali = 0;
         max_tentativi = 1; % Quante volte si può riprovare la stessa mappa
+        
+        % Inizializzazione del primo scenario
+        try
+            forced_idx = evalin('base', 'eval_scenario_idx');
+            if ~isempty(forced_idx)
+                scenario_corrente = forced_idx;
+            else
+                scenario_corrente = randi(length(DB_scenari));
+            end
+        catch
+            scenario_corrente = randi(length(DB_scenari));
+        end
     end
     
-    % Si valuta se cambiare scenario
+    % --- 2. Si valuta se cambiare scenario (durante il training normale) ---
     if tentativi_attuali >= max_tentativi
+        % Verifica se stiamo forzando l'indice (Testing)
+        try
+            forced_idx = evalin('base', 'eval_scenario_idx');
+            is_testing = ~isempty(forced_idx);
+        catch
+            is_testing = false;
+        end
         
-        % Si sceglie un nuovo scenario casuale
-        disp("Superato il max numero di tentativi per lo scenario corrente. Cambio di scenario.")
-        scenario_corrente = randi(length(DB_scenari));
+        if is_testing
+            % Se siamo in modalità Test, aggiorniamo SEMPRE lo scenario 
+            % con quello imposto dal main script, ignorando il random
+            scenario_corrente = evalin('base', 'eval_scenario_idx');
+        else
+            % Se siamo in Training, procediamo con il cambio casuale
+            disp("Superato il max numero di tentativi. Cambio casuale di scenario.")
+            scenario_corrente = randi(length(DB_scenari));
+        end
+        
         tentativi_attuali = 0; % Resetta il contatore
     end
 
@@ -65,13 +90,7 @@ function in = localResetFcn(in, path_DB_scenari)
     % Si estraggono i dati dello scenario da usare in questo episodio
     scenario = DB_scenari(scenario_corrente);
     
-    % Domain randomization, in forma di rumore sulla partenza
-    %x0 = scenario.map.q_start(1) + (rand() - 0.5) * 0.5; % +/- 25 cm
-    %y0 = scenario.map.q_start(2) + (rand() - 0.5) * 0.5;
-    %z0 = scenario.map.q_start(3);
-    %initial_pos = [x0; y0; z0];
-    %init_vel = [(rand()-0.5)*1.0; (rand()-0.5)*1.0; 0]; % +/- 0.5 m/s
-    %init_euler = [(rand()-0.5)*0.2; (rand()-0.5)*0.2; 0]; % Roll e Pitch non nulli
+    % --- Resto della funzione inalterato ---
     % Usa la posizione esatta
     initial_pos = scenario.map.q_start; % è 1 x 3, a differenza di velocità e orientamento
     init_vel = [0; 0; 0]; % Parti da fermo
@@ -93,6 +112,7 @@ function in = localResetFcn(in, path_DB_scenari)
     assignin('base', 'bounds', bounds);
     assignin('base', 'dyn_obs', scenario.dynamic_obstacles);
 
+    % IMPORTANTISSIMO: questa variabile ora sarà 'i' durante il loop di test!
     assignin('base', 'scenario_corrente', scenario_corrente);
     
     disp(['✅ Punto spawn drone: [', num2str(initial_pos(:)'), '], Goal a [', num2str(scenario.map.q_goal(:)'),']']);
