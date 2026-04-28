@@ -22,6 +22,8 @@ function env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, logging, 
     max_angular_vel = double(pi); % Massima velocità angolare
     assignin('base', 'max_vel', max_vel);
     assignin('base', 'max_angular_vel', max_angular_vel);
+
+    assignin('base', 'tolleranza_goal', 2);
     
     % Creazione dell'ambiente Simulink
     env = rlSimulinkEnv(mdl, agentBlk, obsInfo, actInfo);
@@ -34,7 +36,7 @@ end
 
 function in = localResetFcn(in, path_DB_scenari)
     % Dichiarazione variabili persistenti
-    persistent DB_scenari scenario_corrente tentativi_attuali max_tentativi
+    persistent DB_scenari scenario_corrente episodi
     persistent path_DB_scenari_persistent
     
     % --- 1. Inizializzazione ad inizio training o se cambia il file del DB ---
@@ -45,8 +47,7 @@ function in = localResetFcn(in, path_DB_scenari)
         data = load(path_DB_scenari_persistent); 
         DB_scenari = data.scenari; 
         
-        tentativi_attuali = 0;
-        max_tentativi = 1; % Quante volte si può riprovare la stessa mappa
+        episodi = 0;
         
         % Inizializzazione del primo scenario
         try
@@ -62,30 +63,26 @@ function in = localResetFcn(in, path_DB_scenari)
     end
     
     % --- 2. Si valuta se cambiare scenario (durante il training normale) ---
-    if tentativi_attuali >= max_tentativi
-        % Verifica se stiamo forzando l'indice (Testing)
-        try
-            forced_idx = evalin('base', 'eval_scenario_idx');
-            is_testing = ~isempty(forced_idx);
-        catch
-            is_testing = false;
-        end
-        
-        if is_testing
-            % Se siamo in modalità Test, aggiorniamo SEMPRE lo scenario 
-            % con quello imposto dal main script, ignorando il random
-            scenario_corrente = evalin('base', 'eval_scenario_idx');
-        else
-            % Se siamo in Training, procediamo con il cambio casuale
-            disp("Superato il max numero di tentativi. Cambio casuale di scenario.")
-            scenario_corrente = randi(length(DB_scenari));
-        end
-        
-        tentativi_attuali = 0; % Resetta il contatore
+    % Verifica se stiamo forzando l'indice (Testing)
+    try
+        forced_idx = evalin('base', 'eval_scenario_idx');
+        is_testing = ~isempty(forced_idx);
+    catch
+        is_testing = false;
+    end
+    
+    if is_testing
+        % Se siamo in modalità Test, aggiorniamo SEMPRE lo scenario 
+        % con quello imposto dal main script, ignorando il random
+        scenario_corrente = evalin('base', 'eval_scenario_idx');
+    else
+        % Se siamo in Training, procediamo con il cambio casuale
+        disp("Cambio casuale di scenario.")
+        scenario_corrente = randi(length(DB_scenari));
     end
 
-    % Aggiornamento contatore dei tentativi
-    tentativi_attuali = tentativi_attuali + 1;
+    % Aggiornamento contatore degli episodi
+    episodi = episodi + 1;
     
     % Si estraggono i dati dello scenario da usare in questo episodio
     scenario = DB_scenari(scenario_corrente);
