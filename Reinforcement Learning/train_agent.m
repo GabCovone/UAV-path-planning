@@ -4,6 +4,8 @@ initialGainsMultiplier = 15;
 
 %%
 
+evalin('base', 'clear eval_scenario_idx');
+
 path = "SAC_RL_env/Inner Loop and Plant Model/High-FidelityModel/";
 
 load_system("SAC_RL_env");
@@ -29,23 +31,20 @@ assignin('base', 'Ts', Ts);
 
 %agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
 
-agent = load('versioni_agenti/agente_v15_lv1_v1'); 
+agent = load('versioni_agenti/agente_v15_lv1_v1.5.mat'); 
 agent = agent.saved_agent;
 
-% agent.AgentOptions.ActorOptimizerOptions.LearnRate = 5e-5;
-% [agent.AgentOptions.CriticOptimizerOptions.LearnRate] = deal(1e-4);
-
-% agent = load('agente_v14_lv2.mat', 'agent');
-% agent = agent.agent;
+% agent.AgentOptions.ActorOptimizerOptions.LearnRate = 8e-5;
+% [agent.AgentOptions.CriticOptimizerOptions.LearnRate] = deal(3e-4);
 
 num_workers = 8;
 
-env = get_RL_env(obsInfo, actInfo, actLimit, 'training_scenarios_lv1.mat', true, fullfile(pwd, 'registro_morti.txt'));
+env = get_RL_env(obsInfo, actInfo, actLimit, 'training_scenarios.mat', true, fullfile(pwd, 'registro_morti.txt'));
 
-delete(gcp('nocreate'))
-cluster = parcluster('local');
-cluster.NumWorkers = num_workers;
-pool = parpool(cluster, 8);
+% delete(gcp('nocreate'))
+% cluster = parcluster('local');
+% cluster.NumWorkers = num_workers;
+% pool = parpool(cluster, 8);
 
 %% Training
 trainOpts = rlTrainingOptions(...
