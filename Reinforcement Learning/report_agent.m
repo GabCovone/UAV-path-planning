@@ -17,7 +17,7 @@ rng(2);
 Ts = 0.1;
 assignin('base', 'Ts', Ts);
 
-path_DB_scenari = 'testing_scenarios.mat';
+path_DB_scenari = 'training_scenarios.mat';
 % Usa il percorso assoluto per garantire che MATLAB e Simulink scrivano nello stesso posto
 file_registro = fullfile(pwd, 'registro_morti.txt'); 
 
@@ -29,8 +29,8 @@ num_scenari = length(data_scenari.scenari);
 [obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
 env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, true, file_registro);
 
-agent_name = 'saved_agent'; 
-load('agente_v17_lv4_v1_TEMP', agent_name);
+agent_name = 'agent'; 
+load('agente_v17_lv4_v1', agent_name);
 
 simOpts = rlSimulationOptions('MaxSteps', 5500, 'NumSimulations', 1);
 

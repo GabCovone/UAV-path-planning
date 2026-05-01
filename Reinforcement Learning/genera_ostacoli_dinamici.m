@@ -45,7 +45,7 @@ function dyn_obs = genera_ostacoli_dinamici(sim_pos_des, num_dyn_obs, raggi, sta
     if statici == "si"
         isStatic = true;
     elseif statici == "no"
-        isStatic = falsi;
+        isStatic = false;
     end
 
     for k = 1:num_dyn_obs
@@ -74,15 +74,15 @@ function dyn_obs = genera_ostacoli_dinamici(sim_pos_des, num_dyn_obs, raggi, sta
             
             % 3. Calcola la velocità costante necessaria per "scontrarsi" col drone.
             % v = spazio / tempo
-            v = (punto_impatto - p0) / tempo_impatto;
+            v = double((punto_impatto - p0) / tempo_impatto);
         else
-            v = 0.0;
+            v = zeros(1,3,"double");
             p0 = punto_impatto;
         end
         
         % 4. Salva i parametri dell'ostacolo (raggio impostato a 2 metri)
         dyn_obs(k).p0 = p0;
-        dyn_obs(k).v = v;
+        dyn_obs(k).v = double(v);
         dyn_obs(k).radius = min_radius + (max_radius - min_radius) * rand;
     end
 end

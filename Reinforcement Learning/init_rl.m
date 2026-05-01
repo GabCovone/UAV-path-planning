@@ -48,7 +48,7 @@ initialGainsMultiplier = 15;
 
 agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
 
-env = get_RL_env(obsInfo, actInfo, actLimit, 'training_scenarios.mat', true, fullfile(pwd, 'registro_morti.txt'));
+env = get_RL_env(obsInfo, actInfo, actLimit, 'training_scenarios_lv3.mat', true, fullfile(pwd, 'registro_morti.txt'));
 
 %% Check ambiente e agente
 

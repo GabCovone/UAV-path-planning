@@ -12,6 +12,9 @@ initialGainsMultiplier = 15;
 if get_param(strcat(path, "pos_agente To File"), 'Commented') == "on"
     set_param(strcat(path, "pos_agente To File"), 'Commented', 'off');
 end
+if get_param(strcat(path, "rays_curr To File"), 'Commented') == "on"
+    set_param(strcat(path, "rays_curr To File"), 'Commented', 'off');
+end
 
 displayBlks = find_system(path,'SearchDepth',1,'IncludeCommented', 'on','BlockType','Display');
 
@@ -27,7 +30,7 @@ assignin('base', 'eval_scenario_idx', 1);
 Ts = 0.1;
 assignin('base', 'Ts', Ts);
 
-path_DB_scenari = 'test_ostacoli_complicato.mat';
+path_DB_scenari = 'training_scenarios.mat';
 % Usa il percorso assoluto per garantire che MATLAB e Simulink scrivano nello stesso posto
 file_registro = fullfile(pwd, 'registro_morti.txt'); 
 
@@ -39,7 +42,7 @@ file_registro = fullfile(pwd, 'registro_morti.txt');
 
 env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, true, fullfile(pwd, 'registro_morti.txt'));
 
-agent_name = 'saved_agent'; % in genere agent, certe volte è saved_agent
+agent_name = 'agent'; % in genere agent, certe volte è saved_agent
 
 % 2. Carica l'agente salvato
 %load('versioni_agenti/agente_v12_rewardexpscaling_816.mat', agent_name);

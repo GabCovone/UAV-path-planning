@@ -13,6 +13,9 @@ load_system("SAC_RL_env");
 if get_param(strcat(path, "pos_agente To File"), 'Commented') == "off"
     set_param(strcat(path, "pos_agente To File"), 'Commented', 'on');
 end
+if get_param(strcat(path, "rays_curr To File"), 'Commented') == "off"
+    set_param(strcat(path, "rays_curr To File"), 'Commented', 'on');
+end
 
 displayBlks = find_system(path,'SearchDepth',1,'IncludeCommented', 'on','BlockType','Display');
 
@@ -39,7 +42,7 @@ agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
 
 num_workers = 8;
 
-env = get_RL_env(obsInfo, actInfo, actLimit, 'training_scenarios.mat', true, fullfile(pwd, 'registro_morti.txt'));
+env = get_RL_env(obsInfo, actInfo, actLimit, 'training_scenarios_lv5.mat', true, fullfile(pwd, 'registro_morti.txt'));
 
 delete(gcp('nocreate'))
 cluster = parcluster('local');

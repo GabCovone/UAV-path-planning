@@ -3,12 +3,13 @@ clear; clc;
 
 %% --- FASE 1: GENERAZIONE SCENARI GREZZI ---
 % Impostazioni
-num_scenari = 1; % Numero di città/traiettorie da pre-calcolare
+num_scenari = 50; % Numero di città/traiettorie da pre-calcolare
 
-livello = 2;
+livello = 3;
 
 % Parametro per il filtro delle traiettorie banali
-z_threshold = 4; % Quota minima che il drone deve superare per non essere considerato "banale"
+z_threshold = 1.5; % Quota minima che il drone deve superare per non essere considerato "banale"
+% 4 per livelli più semplici, 1.5 altrimenti
 
 if livello == 4
     n_collision = 40; % Numero edifici, di base 500
@@ -16,18 +17,16 @@ if livello == 4
     y_max = 2000;
     z_max = 1000;
     num_dyn_obs = 10; % Numero di ostacoli dinamici
-
-% ... restanti scenari da configurare ...
-if livello == 0
+elseif livello == 1
     n_collision = 0;
     x_max = 500;
     y_max = 500;
     z_max = 500;
-    num_dyn_obs = 0;
-    statici = "si";
+    num_dyn_obs = 2;
+    statici = "casuale";
     min_raggi = 0.0;
     max_raggi = 0.0;
-elseif livello == 1
+elseif livello == 2
     n_collision = 0;
     x_max = 500;
     y_max = 500;
@@ -36,24 +35,15 @@ elseif livello == 1
     statici = "si";
     min_raggi = 2.0;
     max_raggi = 2.0;
-elseif livello == 2
-    n_collision = 0;
-    x_max = 500;
-    y_max = 500;
-    z_max = 500;
-    num_dyn_obs = 2; % massimo numero di ostacoli statici o dinamici
-    statici = "casuale";
-    min_raggi = 1.0;
-    max_raggi = 3.0;
 elseif livello == 3
-    n_collision = 1;
-    x_max = 500;
-    y_max = 500;
-    z_max = 500;
-    num_dyn_obs = 3; % massimo numero di ostacoli statici o dinamici
-    statici = "no";
+    n_collision = 40; % Numero edifici, di base 500
+    x_max = 2000;
+    y_max = 2000;
+    z_max = 1000;
+    num_dyn_obs = 10; % Numero di ostacoli dinamici
     min_raggi = 2.0;
-    max_raggi = 2.0;
+    max_raggi = 5.0;
+    statici = "casuale";
 end
 
 dynamic_obs.numero = num_dyn_obs;

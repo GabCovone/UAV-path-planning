@@ -20,7 +20,7 @@ function [v, q_start, q_goal] = crea_citta(enable_save, enable_plot, n_collision
     % 2. Parametrizzazione Dinamica in base alle dimensioni della mappa
     min_dim = min(x_max, y_max);
     
-    city_params.edge_offset = max(50, min_dim * 0.05); % 5% della dimensione minima
+    city_params.edge_offset = max(50, min_dim * 0.01); % 1% della dimensione minima
     city_params.min_pos = city_params.edge_offset;
     city_params.min_len = max(20, min_dim * 0.0125);   % Dimensione minima edificio
     city_params.max_len = max(50, min_dim * 0.0375);   % Dimensione massima edificio
@@ -52,7 +52,7 @@ function [v, q_start, q_goal] = crea_citta(enable_save, enable_plot, n_collision
 
     % 5. Parametri per Start e Goal
     sg_params.margin = max(15.0, min_dim * 0.01);      
-    sg_params.min_dist = min(x_max/2, y_max/2); % Corretto typo originale 'y_min'    
+    sg_params.min_dist = min(x_max/1.5, y_max/1.5); % Corretto typo originale 'y_min'    
     sg_params.z_start = 1.0;      
     sg_params.z_goal = 1.0;       
     sg_params.edge_offset = city_params.edge_offset; % Margine dai bordi per i punti

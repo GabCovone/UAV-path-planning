@@ -1,4 +1,4 @@
-function scenari = crea_scenari_grezzi(livello, num_scenari, n_collision, x_max, y_max, z_max, num_dyn_obs, z_threshold)
+function scenari = crea_scenari_grezzi(livello, num_scenari, n_collision, x_max, y_max, z_max, dynamic_obs, z_threshold)
 
     if nargin < 8, z_threshold = 1.5; end
 
