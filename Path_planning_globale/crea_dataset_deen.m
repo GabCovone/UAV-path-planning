@@ -4,7 +4,7 @@ clear; clc; close all;
 %% =======================================================================
 % 1. IMPOSTAZIONI E PARAMETRI GENERALI
 % ========================================================================
-num_scenari_target = 5;    % Quanti scenari VALIDI vogliamo generare (aumentare per il training finale)
+num_scenari_target = 200;    % Quanti scenari VALIDI vogliamo generare (aumentare per il training finale)
 livello = 3;                  % Livello mappa (es. 3 o 4 per città con ostacoli)
 z_threshold = 4.0;            % Quota minima (Z) per non scartare traiettorie banali
 dim_drone = 0.3;              % Raggio del drone (metri) per calcolo collisioni
@@ -269,8 +269,8 @@ h5create(file_h5_output, '/transitions', size(dataset_transposto), 'Datatype', '
 h5write(file_h5_output, '/transitions', dataset_transposto);
 
 % Salva l'array degli indici di split direttamente nel file HDF5
-h5create('file_h5_output', '/split_indices', [1 2]);
-h5write('file_h5_output', '/split_indices', indici_split);
+h5create(file_h5_output, '/split_indices', [1 2]);
+h5write(file_h5_output, '/split_indices', indici_split);
 disp('💾 Indici di split salvati con successo nel file HDF5!');
 
 fprintf('🎉 Dataset generato con successo!\n');
