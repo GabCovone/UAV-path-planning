@@ -56,33 +56,6 @@ function graphic_func(path_DB_scenari, idx_scenario, log_posizione, vettore_temp
         patch('Faces', f, 'Vertices', V_b, 'FaceColor', [0.2 0.5 0.8], 'FaceAlpha', 0.6, 'EdgeColor', 'none', 'HandleVisibility', 'off');
     end
     
-    % % Pre-allochiamo le matrici per massima velocità
-    % num_faces_per_block = 6;
-    % num_vertices_per_block = 8;
-    % 
-    % F_tot = zeros(n_collision * num_faces_per_block, 4);
-    % V_tot = zeros(n_collision * num_vertices_per_block, 3);
-    % 
-    % base_f = [1 2 3 4; 2 6 7 3; 4 3 7 8; 1 5 8 4; 1 2 6 5; 5 6 7 8];
-    % 
-    % for k = 1:n_collision
-    %     V_b = v(:,:,k); 
-    % 
-    %     % Calcoliamo l'offset per non sovrascrivere i vertici precedenti
-    %     v_offset = (k - 1) * num_vertices_per_block;
-    % 
-    %     % Inseriamo i vertici
-    %     V_tot(v_offset + 1 : v_offset + num_vertices_per_block, :) = V_b;
-    % 
-    %     % Inseriamo le facce, "scalandole" con l'offset dei vertici
-    %     f_idx = (k - 1) * num_faces_per_block + 1 : k * num_faces_per_block;
-    %     F_tot(f_idx, :) = base_f + v_offset;
-    % end
-    
-    % % Disegniamo l'INTERA CITTÀ con un singolo comando!
-    % patch('Faces', F_tot, 'Vertices', V_tot, 'FaceColor', [0.2 0.5 0.8], ...
-    %       'FaceAlpha', 0.6, 'EdgeColor', 'none', 'HandleVisibility', 'off');
-    
     % 6. Rendering Ostacoli Dinamici (Traiettorie e Sfere)
     if ~isempty(dyn_obs)
         % Calcolo scala visiva per mappe molto grandi

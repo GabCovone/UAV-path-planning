@@ -29,30 +29,30 @@ assignin('base', 'Ts', Ts);
 
 [obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
 
-%agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
+agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
 
-agent = load('versioni_agenti/agente_v15_lv1_v1.5.mat'); 
-agent = agent.saved_agent;
-
-% agent.AgentOptions.ActorOptimizerOptions.LearnRate = 8e-5;
-% [agent.AgentOptions.CriticOptimizerOptions.LearnRate] = deal(3e-4);
+% agent = load('trained_agent_part1.mat'); 
+% agent = agent.agent;
+% 
+% agent.AgentOptions.ActorOptimizerOptions.LearnRate = 5e-5;
+% [agent.AgentOptions.CriticOptimizerOptions.LearnRate] = deal(1e-4);
 
 num_workers = 8;
 
 env = get_RL_env(obsInfo, actInfo, actLimit, 'training_scenarios.mat', true, fullfile(pwd, 'registro_morti.txt'));
 
-% delete(gcp('nocreate'))
-% cluster = parcluster('local');
-% cluster.NumWorkers = num_workers;
-% pool = parpool(cluster, 8);
+delete(gcp('nocreate'))
+cluster = parcluster('local');
+cluster.NumWorkers = num_workers;
+pool = parpool(cluster, 8);
 
 %% Training
 trainOpts = rlTrainingOptions(...
-    'MaxEpisodes', 2500, ...
+    'MaxEpisodes', 5000, ...
     'MaxStepsPerEpisode', 3000, ... % orig era 1000
     'ScoreAveragingWindowLength', 50, ...
     'StopTrainingCriteria', 'AverageReward', ...
-    'StopTrainingValue', 2000, ... % Determine this based on your reward scaling
+    'StopTrainingValue', 10000, ... % Determine this based on your reward scaling
     'SimulationStorageType', "none", ...
     'SaveFileVersion', "-v7.3", ...
     'SaveAgentCriteria', 'EpisodeFrequency', ...

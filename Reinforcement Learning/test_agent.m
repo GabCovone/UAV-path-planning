@@ -21,11 +21,13 @@ end
 
 save_system('SAC_RL_env')
 
-rng(2);
+rng(1);
+assignin('base', 'eval_scenario_idx', 1);
+
 Ts = 0.1;
 assignin('base', 'Ts', Ts);
 
-path_DB_scenari = 'testing_scenarios.mat';
+path_DB_scenari = 'test_ostacoli_complicato.mat';
 % Usa il percorso assoluto per garantire che MATLAB e Simulink scrivano nello stesso posto
 file_registro = fullfile(pwd, 'registro_morti.txt'); 
 
@@ -41,7 +43,7 @@ agent_name = 'saved_agent'; % in genere agent, certe volte è saved_agent
 
 % 2. Carica l'agente salvato
 %load('versioni_agenti/agente_v12_rewardexpscaling_816.mat', agent_name);
-load('versioni_agenti/agente_v15_lv1_v1.5.mat', agent_name);
+load('agente_v17_lv4_v1.mat', agent_name);
 
 % 3. Definisci le opzioni di simulazione
 % Vogliamo fargli fare 1 solo episodio, con un massimo di 5500 step (es. 50 secondi a 10Hz)
@@ -50,6 +52,8 @@ simOpts = rlSimulationOptions('MaxSteps', 5500, 'NumSimulations', 1);
 % 4. Avvia il test!
 disp('Avvio simulazione di test...');
 experience = sim(env, eval(agent_name), simOpts);
+
+clear eval_scenario_idx
 
 % 5. Estrai e stampa i risultati
 %reward_totale = sum(experience.Reward);

@@ -21,6 +21,33 @@ function plot_scenario(nome_scenari, num)
         patch('Faces', f, 'Vertices', V_b, 'FaceColor', [0.2 0.5 0.8], 'FaceAlpha', 0.6, 'EdgeColor', 'none', 'HandleVisibility', 'off');
     end
 
+    % 6. Rendering Ostacoli Dinamici (Traiettorie e Sfere)
+    if ~isempty(dyn_obs)
+        % Calcolo scala visiva per mappe molto grandi
+        max_span = max(max(X)-min(X), max(Y)-min(Y));
+        visual_scale = max(1, max_span / 500); 
+        [sphere_X, sphere_Y, sphere_Z] = sphere(20); 
+        
+        for k = 1:length(dyn_obs)
+            r_visivo = dyn_obs(k).radius * visual_scale; 
+            p0 = dyn_obs(k).p0;
+            p_end = p0 + dyn_obs(k).v * t_end; % Posizione finale dell'ostacolo
+            
+            % Disegna Sfera di PARTENZA (Più opaca)
+            surf(sphere_X * r_visivo + p0(1), sphere_Y * r_visivo + p0(2), sphere_Z * r_visivo + p0(3), ...
+                 'FaceColor', [1 0.2 0.2], 'EdgeColor', 'none', 'FaceAlpha', 0.6, 'HandleVisibility', 'off');
+                 
+            % Disegna Sfera di ARRIVO (Trasparente, indica la direzione)
+            surf(sphere_X * r_visivo + p_end(1), sphere_Y * r_visivo + p_end(2), sphere_Z * r_visivo + p_end(3), ...
+                 'FaceColor', [1 0.2 0.2], 'EdgeColor', 'none', 'FaceAlpha', 0.15, 'HandleVisibility', 'off');
+                 
+            % Disegna la LINEA di moto dell'ostacolo
+            plot3([p0(1), p_end(1)], [p0(2), p_end(2)], [p0(3), p_end(3)], ...
+                  'Color', [1 0.3 0.3], 'LineStyle', '--', 'LineWidth', 1.5, ...
+                  'DisplayName', ['Moto Ostacolo ' num2str(k)]);
+        end
+    end
+
     plot3(waypoints(:,1), waypoints(:,2), waypoints(:,3), 'Color', 'g', 'LineWidth', 4, 'HandleVisibility', 'off');
     plot3(waypoints(:,1), waypoints(:,2), waypoints(:,3), 'ko', 'MarkerSize', 6, 'MarkerFaceColor', 'y', 'HandleVisibility', 'off');
     
