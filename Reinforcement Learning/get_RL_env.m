@@ -22,8 +22,9 @@ function env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, logging, 
     max_angular_vel = double(pi); % Massima velocità angolare
     assignin('base', 'max_vel', max_vel);
     assignin('base', 'max_angular_vel', max_angular_vel);
-
-    assignin('base', 'tolleranza_goal', 2);
+    
+    tolleranza_goal = 20; % di base 2, per curriculum 20
+    assignin('base', 'tolleranza_goal', tolleranza_goal);
     
     % Creazione dell'ambiente Simulink
     env = rlSimulinkEnv(mdl, agentBlk, obsInfo, actInfo);
