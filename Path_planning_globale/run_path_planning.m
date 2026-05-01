@@ -1,19 +1,17 @@
-function [waypoints_raw, waypoints_pruned, traguardo_raggiunto] = run_path_planning(enable_save, enable_plot, map)
+function [waypoints_raw, waypoints_pruned, traguardo_raggiunto] = run_path_planning(enable_save, enable_plot, map, margine_sicurezza)
     % RUN_URBAN_SIMULATION Esegue l'APF-RRT* su una mappa esistente
     %
     % Parametri di ingresso (Opzionali):
-    %   enable_save - Booleano. Se true, salva in 'waypoints_estratti.mat' (Default: true)
-    %   enable_plot - Booleano. Se true, mostra l'albero e il pruning (Default: true)
-    %   map_file    - Stringa. Il nome del file .mat da cui caricare la mappa (Default: 'mappa_urbana.mat')
-    %
-    % Output:
-    %   waypoints_raw    - I nodi grezzi estratti dall'albero RRT*
-    %   waypoints_pruned - I punti pruned finali (line-of-sight)
+    %   enable_save       - Booleano. Se true, salva in 'waypoints_estratti.mat'
+    %   enable_plot       - Booleano. Se true, mostra l'albero e il pruning
+    %   map               - Struct o Stringa con la mappa urbana
+    %   margine_sicurezza - [NUOVO] Float. Distanza minima dagli ostacoli
 
     % Impostazione dei default se i parametri non vengono passati
     if nargin < 1, enable_save = true; end
     if nargin < 2, enable_plot = true; end
     if nargin < 3, map = 'mappa_urbana.mat'; end
+    if nargin < 4, margine_sicurezza = 10.0; end % Default originale
     
     disp('Inizializzazione simulatore urbano...');
     tic
@@ -29,7 +27,12 @@ function [waypoints_raw, waypoints_pruned, traguardo_raggiunto] = run_path_plann
     params.k_rep = 1.5;        % Repulsione
     params.r_rewire = 150;     % Raggio di rewiring RRT*
     params.goal_tol = 55;      % Tolleranza arrivo
-    params.margin = 10.0;      % Margine ostacoli
+    
+    % ---------------------------------------------------------
+    % MARGINE DINAMICO (Per implementare il Near-Miss del DEEN)
+    % ---------------------------------------------------------
+    params.margin = margine_sicurezza; 
+    
     params.step_size = 5.0;    % Risoluzione collision checking
     
     % 2. Ricerca del percorso (APF-RRT*)
@@ -56,8 +59,6 @@ function [waypoints_raw, waypoints_pruned, traguardo_raggiunto] = run_path_plann
         if enable_save
             save('waypoints_estratti.mat', 'waypoints_pruned');
             disp('Waypoints salvati con successo in "waypoints_estratti.mat".');
-        else
-            disp('Salvataggio dati disabilitato tramite parametro.');
         end
     else
         waypoints_raw = NaN;

@@ -1,21 +1,20 @@
-function [ground_truth_trajectory] = MinimumSnapCorridors_3D(enable_save, enable_plot, waypoints, map)
+function [ground_truth_trajectory] = MinimumSnapCorridors_3D(enable_save, enable_plot, waypoints, map, margine_sicurezza)
     % MinimumSnapCorridors_3D Calcola la traiettoria ottima in un Safe Flight Corridor 3D
     %
     % Parametri di ingresso (Opzionali):
-    %   enable_save    - Booleano. Se true, salva in 'traiettoria_finale.mat' (Default: true)
-    %   enable_plot    - Booleano. Se true, renderizza la mappa, il tubo e la traiettoria (Default: true)
-    %   waypoints_file - Stringa. File contenente i waypoint (Default: 'waypoints_estratti.mat')
-    %   map_file       - Stringa. File contenente la mappa urbana (Default: 'mappa_urbana.mat')
+    %   enable_save       - Booleano
+    %   enable_plot       - Booleano
+    %   waypoints         - Dati o file
+    %   map               - Dati o file
+    %   margine_sicurezza - [NUOVO] Float. Raggio del Safe Flight Corridor
 
     if nargin < 1, enable_save = true; end
     if nargin < 2, enable_plot = true; end
     if nargin < 3, waypoints = 'waypoints_estratti.mat'; end
     if nargin < 4, map = 'mappa_urbana.mat'; end
+    if nargin < 5, margine_sicurezza = 5.0; end % Default originale del tuo codice
 
     disp('Caricamento dati (Mappa e Waypoints)...');
-    % 1. CARICAMENTO DATI
-    % Se è una stringa allora lo si considera un file con i dati, altrimenti lo si
-    % considera pari ai dati
     
     % caricamento waypoints
     if isstring(waypoints) || ischar(waypoints)
@@ -39,9 +38,14 @@ function [ground_truth_trajectory] = MinimumSnapCorridors_3D(enable_save, enable
     n_order = 7; 
     Velocita_Media = 15; % m/s
 
-    %% 2. DENSIFICAZIONE WAYPOINT (Il Golden Ratio)
+    %% 2. DENSIFICAZIONE WAYPOINT E CORRIDOI
     disp('Densificazione dei waypoint per stabilità e fluidità...');
-    r = 5.0; % raggio dei corridoi di volo
+    
+    % ---------------------------------------------------------
+    % RAGGIO CORRIDOI DINAMICO (Per il Near-Miss del DEEN)
+    % ---------------------------------------------------------
+    r = margine_sicurezza; 
+    
     step = 30.0; % Step di densificazione
     
     new_waypts = waypts(:,1);
@@ -74,7 +78,6 @@ function [ground_truth_trajectory] = MinimumSnapCorridors_3D(enable_save, enable
     disp(['Solver QP convergente con successo in ', num2str(tempo_qp), ' secondi!']);
 
     %% 5. GRAFICA E SALVATAGGIO
-
     disp('Campionamento della traiettoria finale a 10 Hz...');
     XX = []; YY = []; ZZ = [];
     t_res = 0.1; % 10 Hz
@@ -88,18 +91,13 @@ function [ground_truth_trajectory] = MinimumSnapCorridors_3D(enable_save, enable
         end
     end
     
-    % Salvataggio Ground Truth
     ground_truth_trajectory = [XX', YY', ZZ'];
     
-    % Grafica
     if enable_plot
         figure(); hold on;
-        title('Traiettoria Minimum Snap Definitiva (Step 30m) + Ambiente Urbano');
+        title('Traiettoria Minimum Snap Definitiva + Ambiente Urbano');
         xlabel('X'); ylabel('Y'); zlabel('Z');
         
-        % ---------------------------------------------------------------------
-        % DISEGNO DELLA CITTÀ (Grattacieli Blu)
-        % ---------------------------------------------------------------------
         disp('Rendering della città 3D in corso...');
         for k = 1:n_collision
             V_b = v(:,:,k); 
@@ -107,18 +105,13 @@ function [ground_truth_trajectory] = MinimumSnapCorridors_3D(enable_save, enable
             patch('Faces', f, 'Vertices', V_b, 'FaceColor', [0.2 0.5 0.8], 'FaceAlpha', 0.6, 'EdgeColor', 'none');
         end
         
-        % Disegna i chiodi (waypoint) usati dal solver
         plot3(waypts(1,:), waypts(2,:), waypts(3,:), 'ko', 'MarkerSize', 5, 'MarkerFaceColor', 'y');
         
-        % ---------------------------------------------------------------------
-        % RENDERING DEL TUBO CONTINUO
-        % ---------------------------------------------------------------------
         disp('Rendering del Safe Flight Corridor 3D continuo...');
         for i = 1:num_segments
             p1 = waypts(:,i);
             p2 = waypts(:,i+1);
             dist = norm(p2 - p1);
-            % Calcola quanti cubi servono per fare un tubo senza buchi
             num_cubes = ceil(dist / (r * 1.5)) + 1; 
             for j = 0:max(1, num_cubes-1)
                 cube_center = p1 + (j/max(1, num_cubes-1)) * (p2 - p1);
@@ -126,20 +119,13 @@ function [ground_truth_trajectory] = MinimumSnapCorridors_3D(enable_save, enable
             end
         end
         
-        % Disegna la traiettoria azzurra 
         plot3(XX, YY, ZZ, 'Color', [0 0.8 1], 'LineWidth', 4);
-        
-        % Avvia la vista corretta
         view(30, 30); grid on; axis equal; hold off;
         shg
     end
     
-    % Salvataggio Ground Truth su file
     if enable_save
         save('traiettoria_finale.mat', 'ground_truth_trajectory');
-        disp('File "traiettoria_finale.mat" salvato. Pronto per l''estrazione Voxel!');
-    else
-        disp('Salvataggio dati disabilitato tramite parametro.');
     end
 end
 
