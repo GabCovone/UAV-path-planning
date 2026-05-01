@@ -7,23 +7,19 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts)
     criticNetwork = [
         featureInputLayer(numObs, 'Normalization', 'none', 'Name', 'observation')
         fullyConnectedLayer(hiddenLayerSize * 2, 'Name', 'CriticStateFC1')
-        layerNormalizationLayer('Name', 'CriticStateLN1')
         swishLayer('Name', 'CriticSwish1')
         fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticStateFC2')
-        layerNormalizationLayer('Name', 'CriticStateLN2')
         ];
     
     actionPath = [
         featureInputLayer(numAct, 'Normalization', 'none', 'Name', 'action')
         fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticActionFC1')
-        layerNormalizationLayer('Name', 'CriticActionLN1')
         ];
     
     criticCommonPath = [
         additionLayer(2, 'Name', 'add')
         swishLayer('Name', 'CriticCommonSwish1')
         fullyConnectedLayer(hiddenLayerSize/2, 'Name', 'CriticCommonFC1')
-        layerNormalizationLayer('Name', 'CriticCommonLN1')
         swishLayer('Name', 'CriticCommonSwish2')
         fullyConnectedLayer(1, 'Name', 'QValue')
         ];
@@ -32,8 +28,8 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts)
     criticNetwork = addLayers(criticNetwork, actionPath);
     criticNetwork = addLayers(criticNetwork, criticCommonPath);
     
-    criticNetwork = connectLayers(criticNetwork, 'CriticStateLN2', 'add/in1'); % <-- Modificato collegamento
-    criticNetwork = connectLayers(criticNetwork, 'CriticActionLN1', 'add/in2'); % <-- Modificato collegamento
+    criticNetwork = connectLayers(criticNetwork, 'CriticActionFC1/out', 'add/in1'); % <-- Modificato collegamento
+    criticNetwork = connectLayers(criticNetwork, 'CriticStateFC2/out', 'add/in2'); % <-- Modificato collegamento
     
     % Inizializza due Critic identici
     criticOptions = rlOptimizerOptions('LearnRate', 5e-4, 'GradientThreshold', 10, 'L2RegularizationFactor', 1e-4);
@@ -47,23 +43,22 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts)
     actorNetwork = [
         featureInputLayer(numObs, 'Normalization', 'none', 'Name', 'observation')
         fullyConnectedLayer(hiddenLayerSize * 2, 'Name', 'ActorFC1')
-        layerNormalizationLayer('Name', 'ActorLN1')
         swishLayer('Name', 'ActorSwish1')
         fullyConnectedLayer(hiddenLayerSize, 'Name', 'ActorFC2')
-        layerNormalizationLayer('Name', 'ActorLN2')
         swishLayer('Name', 'ActorSwish2')
         ];
     
-    % Ramo della Media (Mean) - Satura ai limiti definiti in actInfo
+    % Ramo della Media (Mean)
     meanPath = [
-        fullyConnectedLayer(numAct, 'Name', 'MeanFC')
-        tanhLayer('Name', 'MeanTanh') % Scala in [-1, 1]
-        scalingLayer('Name', 'MeanScale', 'Scale', actLimit) % Riscala sui limiti fisici
+        fullyConnectedLayer(hiddenLayerSize/2, 'Name', 'MeanFC1')
+        swishLayer('Name', 'MeanSwish')
+        fullyConnectedLayer(numAct, 'Name', 'MeanFC2')
         ];
     
     % Ramo della Deviazione Standard (StdDev) - Valori positivi (Softplus)
     stdPath = [
         fullyConnectedLayer(numAct, 'Name', 'StdFC')
+        swishLayer('Name', 'StdSwish')
         softplusLayer('Name', 'StdSoftplus') 
         ];
     
@@ -71,13 +66,13 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts)
     actorGraph = addLayers(actorGraph, meanPath);
     actorGraph = addLayers(actorGraph, stdPath);
     
-    actorGraph = connectLayers(actorGraph, 'ActorSwish2', 'MeanFC');
-    actorGraph = connectLayers(actorGraph, 'ActorSwish2', 'StdFC');
+    actorGraph = connectLayers(actorGraph, 'ActorSwish2', 'MeanFC1/in');
+    actorGraph = connectLayers(actorGraph, 'ActorSwish2', 'StdFC/in');
     
-    actorOptions = rlOptimizerOptions('LearnRate', 1e-4, 'GradientThreshold', 5, 'L2RegularizationFactor', 1e-4);
+    actorOptions = rlOptimizerOptions('LearnRate', 1e-4, 'GradientThreshold', 10, 'L2RegularizationFactor', 1e-4);
     actor = rlContinuousGaussianActor(dlnetwork(actorGraph), obsInfo, actInfo, ...
         'ObservationInputNames', 'observation', ...
-        'ActionMeanOutputNames', 'MeanScale', ...
+        'ActionMeanOutputNames', 'MeanFC2', ...
         'ActionStandardDeviationOutputNames', 'StdSoftplus');
     
     disp('✅ Reti critics e actor create con successo');
