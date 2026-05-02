@@ -1,0 +1,8 @@
+================ REPORT FINALE ================
+Scenari Totali: 10
+Successi:       1 (10.0%)
+Collisioni:     6 (60.0%)
+Schianti Terra: 0 (0.0%)
+Fuori Rotta:    2 (20.0%)
+Timeout:        1 (10.0%)
+===============================================

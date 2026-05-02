@@ -28,6 +28,7 @@ save_system('SAC_RL_env')
 %%
 
 Ts = 0.1; % Tempo di campionamento (10 Hz)
+rng(1);
 assignin('base', 'Ts', Ts);
 
 [obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
@@ -44,10 +45,10 @@ num_workers = 8;
 
 env = get_RL_env(obsInfo, actInfo, actLimit, 'training_scenarios.mat', true, fullfile(pwd, 'registro_morti.txt'));
 
-% delete(gcp('nocreate'))
-% cluster = parcluster('local');
-% cluster.NumWorkers = num_workers;
-% pool = parpool(cluster, 8);
+delete(gcp('nocreate'))
+cluster = parcluster('local');
+cluster.NumWorkers = num_workers;
+pool = parpool(cluster, 8);
 
 %% Training
 trainOpts = rlTrainingOptions(...
@@ -62,8 +63,10 @@ trainOpts = rlTrainingOptions(...
     'SaveAgentValue', 300, ...
     'SaveAgentDirectory', fullfile(pwd, 'agenti_salvati') ...
 );
-% trainOpts.UseParallel = true;
-% trainOpts.ParallelizationOptions.Mode = "async";
+trainOpts.UseParallel = true;
+trainOpts.ParallelizationOptions.Mode = "async";
+
+evalOpts = rlEvaluator("EvaluationFrequency",300, "NumEpisodes", 3, "RandomSeeds", 1);
 
 logging = true; 
 logPath = fullfile(pwd, 'registro_morti.txt');
@@ -88,7 +91,7 @@ end
 
 %load('deen_network.mat', 'deen_net');
 
-trainStats = train(agent, env, trainOpts);
+trainStats = train(agent, env, trainOpts, "Evaluator", evalOpts);
 
 %% Salva agente
 

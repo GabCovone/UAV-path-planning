@@ -30,7 +30,7 @@ assignin('base', 'eval_scenario_idx', 1);
 Ts = 0.1;
 assignin('base', 'Ts', Ts);
 
-path_DB_scenari = 'training_scenarios.mat';
+path_DB_scenari = 'testing_scenarios.mat';
 % Usa il percorso assoluto per garantire che MATLAB e Simulink scrivano nello stesso posto
 file_registro = fullfile(pwd, 'registro_morti.txt'); 
 
@@ -46,7 +46,7 @@ agent_name = 'agent'; % in genere agent, certe volte è saved_agent
 
 % 2. Carica l'agente salvato
 %load('versioni_agenti/agente_v12_rewardexpscaling_816.mat', agent_name);
-load('agente_v17_lv4_v1.mat', agent_name);
+load('agente_v17_lv4_v2.mat', agent_name);
 
 % 3. Definisci le opzioni di simulazione
 % Vogliamo fargli fare 1 solo episodio, con un massimo di 5500 step (es. 50 secondi a 10Hz)
