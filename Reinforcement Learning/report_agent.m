@@ -27,7 +27,7 @@ data_scenari = load(path_DB_scenari);
 num_scenari = length(data_scenari.scenari);
 
 [obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
-env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, true, file_registro);
+env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, "validation_scenarios.mat", true, file_registro);
 
 agent_name = 'agent'; 
 load('agente_v17_lv4_v2', agent_name);

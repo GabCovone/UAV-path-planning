@@ -1,7 +1,15 @@
-function env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, logging, logPath)
+function env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, path_DB_scenari_eval, logging, logPath)
     
     if nargin < 4, path_DB_scenari = 'training_scenarios.mat'; end
-    if nargin < 5, logging = false; logPath = fullfile(pwd, 'registro_morti.txt'); end
+    if nargin < 4, path_DB_scenari_eval = 'validation_scenarios.mat'; end
+    
+    % Assegnazione nel workspace dei path di scenari di training e
+    % validation
+    assignin('base', 'path_DB_scenari', path_DB_scenari);
+    assignin('base', 'path_DB_scenari_eval', path_DB_scenari_eval);
+    
+    % Logging
+    if nargin < 6, logging = false; logPath = fullfile(pwd, 'registro_morti.txt'); end
     assignin('base', 'logging', logging);
     logPath_padded = sprintf('%-250s', logPath);
     assignin('base', 'logPath_num', int8(logPath_padded));
@@ -30,15 +38,22 @@ function env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, logging, 
     env = rlSimulinkEnv(mdl, agentBlk, obsInfo, actInfo);
     
     % Assegnazione all'ambiente della funzione di reset
-    env.ResetFcn = @(in) localResetFcn(in, path_DB_scenari);
+    is_validation = false;
+    env.ResetFcn = @(in) localResetFcn(in, is_validation);
 
     disp('✅ Ambiente RL Simulink creato con successo');
 end
 
-function in = localResetFcn(in, path_DB_scenari)
+function in = localResetFcn(in, is_validation)
     % Dichiarazione variabili persistenti
-    persistent DB_scenari scenario_corrente episodi
-    persistent path_DB_scenari_persistent
+    persistent DB_scenari DB_scenari_eval scenario_corrente episodi
+    persistent path_DB_scenari_persistent path_DB_scenari_eval_persistent
+
+    if nargin < 2
+        is_validation = false;
+    end
+
+    path_DB_scenari = evalin('base', 'path_DB_scenari');
     
     % --- 1. Inizializzazione ad inizio training o se cambia il file del DB ---
     if isempty(DB_scenari) || ~strcmp(path_DB_scenari, path_DB_scenari_persistent)
@@ -62,31 +77,48 @@ function in = localResetFcn(in, path_DB_scenari)
             scenario_corrente = randi(length(DB_scenari));
         end
     end
-    
-    % --- 2. Si valuta se cambiare scenario (durante il training normale) ---
-    % Verifica se stiamo forzando l'indice (Testing)
-    try
-        forced_idx = evalin('base', 'eval_scenario_idx');
-        is_testing = ~isempty(forced_idx);
-    catch
-        is_testing = false;
-    end
-    
-    if is_testing
-        % Se siamo in modalità Test, aggiorniamo SEMPRE lo scenario 
-        % con quello imposto dal main script, ignorando il random
-        scenario_corrente = evalin('base', 'eval_scenario_idx');
-    else
-        % Se siamo in Training, procediamo con il cambio casuale
-        disp("Cambio casuale di scenario.")
-        scenario_corrente = randi(length(DB_scenari));
+
+    if isempty(DB_scenari_eval)
+        disp("Inizializzazione DB scenari di validation...")
+        % Carica il file .mat pre-calcolato una volta sola
+        path_DB_scenari_eval = evalin('base', 'path_DB_scenari_eval');
+        path_DB_scenari_eval_persistent = path_DB_scenari_eval;
+        data = load(path_DB_scenari_eval_persistent); 
+        DB_scenari_eval = data.scenari; 
     end
 
-    % Aggiornamento contatore degli episodi
-    episodi = episodi + 1;
+    if is_validation
+        disp("Cambio casuale di scenario di validation.")
+        scenario_corrente = randi(length(DB_scenari_eval));
+        scenario = DB_scenari_eval(scenario_corrente);
+    end
     
-    % Si estraggono i dati dello scenario da usare in questo episodio
-    scenario = DB_scenari(scenario_corrente);
+    if ~is_validation
+        % --- 2. Si valuta se cambiare scenario (durante il training normale) ---
+        % Verifica se stiamo forzando l'indice (Testing)
+        try
+            forced_idx = evalin('base', 'eval_scenario_idx');
+            is_testing = ~isempty(forced_idx);
+        catch
+            is_testing = false;
+        end
+        
+        if is_testing
+            % Se siamo in modalità Test, aggiorniamo SEMPRE lo scenario 
+            % con quello imposto dal main script, ignorando il random
+            scenario_corrente = evalin('base', 'eval_scenario_idx');
+        else
+            % Se siamo in Training, procediamo con il cambio casuale
+            disp("Cambio casuale di scenario.")
+            scenario_corrente = randi(length(DB_scenari));
+        end
+    
+        % Aggiornamento contatore degli episodi
+        episodi = episodi + 1;
+        
+        % Si estraggono i dati dello scenario da usare in questo episodio
+        scenario = DB_scenari(scenario_corrente);
+    end
     
     % --- Resto della funzione inalterato ---
     % Usa la posizione esatta

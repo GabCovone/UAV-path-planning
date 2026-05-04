@@ -7,6 +7,17 @@ num_scenari = 50; % Numero di città/traiettorie da pre-calcolare
 
 livello = 3;
 
+% validation_scenarios.mat:
+% livello = 4;
+% n_collision = 40; % Numero edifici, di base 500
+% x_max = 1000;
+% y_max = 1000;
+% z_max = 1000;
+% num_dyn_obs = 3; % Numero di ostacoli dinamici
+% statici = "no";
+% min_raggi = 2.0;
+% max_raggi = 2.0;
+
 % Parametro per il filtro delle traiettorie banali
 z_threshold = 1.5; % Quota minima che il drone deve superare per non essere considerato "banale"
 % 4 per livelli più semplici, 1.5 altrimenti
@@ -17,6 +28,9 @@ if livello == 4
     y_max = 2000;
     z_max = 1000;
     num_dyn_obs = 10; % Numero di ostacoli dinamici
+    statici = "no";
+    min_raggi = 2.0;
+    max_raggi = 2.0;
 elseif livello == 1
     n_collision = 0;
     x_max = 500;

@@ -43,12 +43,16 @@ agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
 
 num_workers = 8;
 
-env = get_RL_env(obsInfo, actInfo, actLimit, 'training_scenarios.mat', true, fullfile(pwd, 'registro_morti.txt'));
+env = get_RL_env(obsInfo, actInfo, actLimit, 'training_scenarios.mat', "validation_scenarios.mat", true, fullfile(pwd, 'registro_morti.txt'));
 
-delete(gcp('nocreate'))
-cluster = parcluster('local');
-cluster.NumWorkers = num_workers;
-pool = parpool(cluster, 8);
+useParallel = false;
+
+if useParallel
+    delete(gcp('nocreate'))
+    cluster = parcluster('local');
+    cluster.NumWorkers = num_workers;
+    pool = parpool(cluster, 8);
+end
 
 %% Training
 trainOpts = rlTrainingOptions(...
@@ -63,10 +67,13 @@ trainOpts = rlTrainingOptions(...
     'SaveAgentValue', 300, ...
     'SaveAgentDirectory', fullfile(pwd, 'agenti_salvati') ...
 );
-trainOpts.UseParallel = true;
-trainOpts.ParallelizationOptions.Mode = "async";
+if useParallel
+    trainOpts.UseParallel = true;
+    trainOpts.ParallelizationOptions.Mode = "async";
+end
 
-evalOpts = rlEvaluator("EvaluationFrequency",300, "NumEpisodes", 3, "RandomSeeds", 1);
+% 300
+evalOpts = rlCustomEvaluator(@evaluationFcn, "EvaluationFrequency",3);
 
 logging = true; 
 logPath = fullfile(pwd, 'registro_morti.txt');
