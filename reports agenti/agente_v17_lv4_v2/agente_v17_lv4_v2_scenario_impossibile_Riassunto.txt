@@ -1,0 +1,11 @@
+
+================ REPORT FINALE ================
+Agente Valutato: agente_v17_lv4_v2
+Database Scenari: scenario_impossibile.mat
+Scenari Selezionati: 1 su 1
+Successi:       0 (0.0%)
+Collisioni:     0 (0.0%)
+Schianti Terra: 0 (0.0%)
+Fuori Rotta:    1 (100.0%)
+Timeout:        0 (0.0%)
+===============================================
