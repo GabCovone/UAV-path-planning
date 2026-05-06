@@ -1,7 +1,5 @@
 function [statistic, scores, data] = ...
     evaluationFcn(agent, env, trainingInfo)
-
-    disp("debug1")
     
     % Do not use an exploration policy for evaluation.
     agent.UseExplorationPolicy = false;
@@ -12,18 +10,14 @@ function [statistic, scores, data] = ...
     % Initialize the rewards and data arrays.
     episodeRewards = zeros(numEpisodes, 1);
     data = cell(numEpisodes, 1);
-    
-    is_validation = true;
+
+    assignin('base',"is_validation",true);
     
     % Run numEpisodes consecutive evaluation episodes.
     for evaluationEpisode = 1:numEpisodes
     
         % Use a fixed random seed for reproducibility.
-        rng(evaluationEpisode*10)
-
-        reset(env, is_validation);
-
-        disp("debug2")
+        rng(evaluationEpisode*10);
     
         % Run one evaluation episode. The output is a structure
         % containing several agent simulation information,
@@ -31,8 +25,6 @@ function [statistic, scores, data] = ...
         episodeResults = runEpisode(env, agent, ...
             MaxSteps=5500, ...
             CleanupPostSim=false);
-        
-        disp("debug3")
     
         if isa(episodeResults,"rl.env.Future")
     
@@ -55,13 +47,12 @@ function [statistic, scores, data] = ...
         end
     end
     
-    % Imposta di nuovo gli scenari da usare a quelli di training
-    assignin('base', 'path_DB_scenari', path_DB_scenari);
-    
     % Return the smallest reward
     statistic = min(episodeRewards);
-
-    disp("debug4")
+    
+    % Reset variables for training
+    assignin('base',"is_validation",false);
+    agent.UseExplorationPolicy = true;
     
     % Return the rewards vector.
     scores = episodeRewards;

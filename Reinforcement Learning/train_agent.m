@@ -51,10 +51,13 @@ if useParallel
     delete(gcp('nocreate'))
     cluster = parcluster('local');
     cluster.NumWorkers = num_workers;
-    pool = parpool(cluster, 8);
+    pool = parpool(cluster, num_workers);
 end
 
 %% Training
+
+saveAgentFrequency = 300;
+
 trainOpts = rlTrainingOptions(...
     'MaxEpisodes', 5000, ...
     'MaxStepsPerEpisode', 3000, ... % orig era 1000
@@ -64,7 +67,7 @@ trainOpts = rlTrainingOptions(...
     'SimulationStorageType', "none", ...
     'SaveFileVersion', "-v7.3", ...
     'SaveAgentCriteria', 'EpisodeFrequency', ...
-    'SaveAgentValue', 300, ...
+    'SaveAgentValue', saveAgentFrequency, ...
     'SaveAgentDirectory', fullfile(pwd, 'agenti_salvati') ...
 );
 if useParallel
@@ -73,7 +76,8 @@ if useParallel
 end
 
 % 300
-evalOpts = rlCustomEvaluator(@evaluationFcn, "EvaluationFrequency",3);
+evalOpts = rlCustomEvaluator_fun(@evaluationFcn, ...
+    "EvaluationFrequency", saveAgentFrequency);
 
 logging = true; 
 logPath = fullfile(pwd, 'registro_morti.txt');
