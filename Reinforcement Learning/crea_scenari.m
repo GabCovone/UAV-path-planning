@@ -5,18 +5,33 @@ clear; clc;
 % Impostazioni
 num_scenari = 50; % Numero di città/traiettorie da pre-calcolare
 
-livello = 3;
+%livello = 3;
+
+% validation_scenarios.mat:
+livello = 4;
+n_collision = 40; % Numero edifici, di base 500
+x_max = 1000;
+y_max = 1000;
+z_max = 1000;
+num_dyn_obs = 3; % Numero di ostacoli dinamici
+statici = "no";
+min_raggi = 2.0;
+max_raggi = 2.0;
+paddingDynObs = true;
 
 % Parametro per il filtro delle traiettorie banali
 z_threshold = 1.5; % Quota minima che il drone deve superare per non essere considerato "banale"
 % 4 per livelli più semplici, 1.5 altrimenti
 
 if livello == 4
-    n_collision = 40; % Numero edifici, di base 500
-    x_max = 2000;
-    y_max = 2000;
-    z_max = 1000;
-    num_dyn_obs = 10; % Numero di ostacoli dinamici
+    % n_collision = 40; % Numero edifici, di base 500
+    % x_max = 2000;
+    % y_max = 2000;
+    % z_max = 1000;
+    % num_dyn_obs = 10; % Numero di ostacoli dinamici
+    % statici = "no";
+    % min_raggi = 2.0;
+    % max_raggi = 2.0;
 elseif livello == 1
     n_collision = 0;
     x_max = 500;
@@ -53,7 +68,7 @@ dynamic_obs.raggi = [min_raggi max_raggi];
 scenari = crea_scenari_grezzi(livello, num_scenari, n_collision, x_max, y_max, z_max, dynamic_obs, z_threshold);
 
 %% --- FASE 2: UNIFORMAZIONE A POSTERIORI (PADDING) ---
-disp('\nAvvio uniformazione delle timeseries per Fast Restart...');
+disp('\nAvvio uniformazione delle timeseries e ostacoli dinamici per Fast Restart...');
 
 % 1. Trova la lunghezza massima (MAX_STEPS) in tutto il database
 MAX_STEPS = 0;
@@ -69,6 +84,17 @@ fprintf('La traiettoria più lunga dura %d step. Eseguo il padding...\n', MAX_ST
 
 % 2. Applica il padding a tutti gli scenari
 for i = 1:length(scenari)
+    
+    % Padding ostacoli dinamici
+    if paddingDynObs
+        for k = length(scenari(i).dynamic_obstacles):10
+            scenari(i).dynamic_obstacles(k).p0 = [0 0 0];
+            scenari(i).dynamic_obstacles(k).v = [0 0 0];
+            scenari(i).dynamic_obstacles(k).radius = 0;
+        end
+    end
+    
+    % Padding timeseries
     lunghezza_attuale = scenari(i).sim_pos_des.Length;
     steps_mancanti = MAX_STEPS - lunghezza_attuale;
     

@@ -40,7 +40,7 @@ file_registro = fullfile(pwd, 'registro_morti.txt');
 % 1. Carica l'ambiente
 [obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
 
-env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, true, fullfile(pwd, 'registro_morti.txt'));
+env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, "validation_scenarios.mat", true, fullfile(pwd, 'registro_morti.txt'));
 
 agent_name = 'agent'; % in genere agent, certe volte è saved_agent
 

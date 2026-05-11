@@ -52,7 +52,7 @@ end
 num_scenari_selezionati = length(scenari_da_testare);
 
 [obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
-env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, true, file_registro);
+env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, "validation_scenarios.mat", true, file_registro);
 
 % --- CARICAMENTO OTTIMIZZATO AGENTE ---
 agent_name = 'agent'; 

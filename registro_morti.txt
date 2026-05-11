@@ -1,30 +1,17 @@
-Step: 930 | Rwd: 1969.19 | Distanza goal: 4321.23 | Motivo: Collisione ostacolo
-azioni: -3503.487998 | ostacoli: -108.404248 | posizione: -142.446157 | velocita: 0.000000 | progresso: 6445.751953
+========================================================
+INIZIO NUOVO ADDESTRAMENTO: 06-May-2026 17:46:26
+========================================================
+Ep (Worker) | Step | Reward Totale | Motivo Terminazione
+--------------------------------------------------------
+Step: 498 | Rwd: 1247.32 | Distanza goal: 856.10 | Motivo: Collisione ostacolo
+azioni: -1180.380969 | ostacoli: -473.917207 | posizione: -48.048190 | velocita: 0.000000 | progresso: 3606.921387
 
-Step: 3389 | Rwd: 9946.26 | Distanza goal: 19.36 | Motivo: TRAGUARDO RAGGIUNTO!
-azioni: -12751.636659 | ostacoli: -274.266090 | posizione: -288.254295 | velocita: 0.000000 | progresso: 23610.577202
+Step: 12 | Rwd: -554.58 | Distanza goal: 1174.92 | Motivo: Schianto a terra
+azioni: -24.260535 | ostacoli: -39.296980 | posizione: -0.192317 | velocita: 0.000000 | progresso: 4.260254
 
-Step: 1373 | Rwd: 3378.48 | Distanza goal: 3791.69 | Motivo: Collisione ostacolo
-azioni: -5125.821650 | ostacoli: -147.662775 | posizione: -173.412993 | velocita: 0.000000 | progresso: 9674.438477
+Step: 255 | Rwd: -45.51 | Distanza goal: 811.96 | Motivo: Collisione ostacolo
+azioni: -510.803521 | ostacoli: -745.182609 | posizione: -28.606713 | velocita: 0.000000 | progresso: 1779.986572
 
-Step: 2378 | Rwd: 6492.79 | Distanza goal: 4162.35 | Motivo: Collisione ostacolo
-azioni: -8929.240635 | ostacoli: -116.635615 | posizione: -245.067012 | velocita: 0.000000 | progresso: 16913.085938
-
-Step: 128 | Rwd: -329.04 | Distanza goal: 7440.56 | Motivo: Collisione ostacolo
-azioni: -454.621407 | ostacoli: -113.796600 | posizione: -44.842872 | velocita: 0.000000 | progresso: 799.609375
-
-Step: 2531 | Rwd: 7095.16 | Distanza goal: 1200.85 | Motivo: Collisione ostacolo
-azioni: -9539.987699 | ostacoli: -304.984118 | posizione: -144.267417 | velocita: 0.000000 | progresso: 18267.968750
-
-Step: 4093 | Rwd: 11460.60 | Distanza goal: 111.79 | Motivo: Deviazione eccessiva
-azioni: -15398.756713 | ostacoli: -366.126382 | posizione: -500.799134 | velocita: 0.000000 | progresso: 29302.738190
-
-Step: 818 | Rwd: 1744.98 | Distanza goal: 4370.59 | Motivo: Collisione ostacolo
-azioni: -3079.448885 | ostacoli: -107.273541 | posizione: -65.170404 | velocita: 0.000000 | progresso: 5698.925781
-
-Step: 4898 | Rwd: 13518.11 | Distanza goal: 224.99 | Motivo: Deviazione eccessiva
-azioni: -18502.197174 | ostacoli: -256.218241 | posizione: -368.867619 | velocita: 0.000000 | progresso: 34407.017517
-
-Step: 930 | Rwd: 1969.19 | Distanza goal: 4321.23 | Motivo: Collisione ostacolo
-azioni: -3503.487998 | ostacoli: -108.404248 | posizione: -142.446157 | velocita: 0.000000 | progresso: 6445.751953
+Step: 378 | Rwd: 1112.80 | Distanza goal: 1291.24 | Motivo: Collisione ostacolo
+azioni: -793.477947 | ostacoli: -153.401789 | posizione: -38.190332 | velocita: 0.000000 | progresso: 2743.017578
 
