@@ -68,6 +68,9 @@ function in = localResetFcn(in, path_DB_scenari)
     try
         forced_idx = evalin('base', 'eval_scenario_idx');
         is_testing = ~isempty(forced_idx);
+        % Se la variabile esiste ed è valida, la usiamo (modalità testing)
+        scenario_corrente = forced_idx;
+        disp(['Modalità Testing: Scenario forzato a ', num2str(scenario_corrente)]);
     catch
         is_testing = false;
     end
@@ -79,7 +82,9 @@ function in = localResetFcn(in, path_DB_scenari)
     else
         % Se siamo in Training, procediamo con il cambio casuale
         disp("Cambio casuale di scenario.")
+        % Altrimenti, siamo in modalità training e scegliamo a caso
         scenario_corrente = randi(length(DB_scenari));
+        disp(['Modalità Training: Cambio casuale allo scenario ', num2str(scenario_corrente)]);
     end
 
     % Aggiornamento contatore degli episodi
