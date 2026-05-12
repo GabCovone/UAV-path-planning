@@ -9,7 +9,7 @@ function scenari = crea_scenari_grezzi(livello, num_scenari, n_collision, x_max,
     raggi = dynamic_obs.raggi;
 
 %% DATASET CON TRAIETTORIA SEMPLICE O COMPLESSA E OSTACOLI DINAMICI
-    if livello == 1 || livello == 2
+    if livello == 1
 
         count = 0;
 
@@ -73,7 +73,7 @@ function scenari = crea_scenari_grezzi(livello, num_scenari, n_collision, x_max,
 % ... TODO ... 
 
 %% DATASET ORIGINALE
-    elseif livello == 3 || livello == 4 
+    elseif livello == 2 || livello == 3 || livello == 4 
 
         disp(['Avvio generazione di ', num2str(num_scenari), ' scenari validi...']);
 

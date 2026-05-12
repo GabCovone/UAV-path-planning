@@ -54,8 +54,20 @@ function [v, q_start, q_goal] = crea_citta(enable_save, enable_plot, n_collision
     sg_params.margin = max(15.0, min_dim * 0.01);      
     sg_params.min_dist = min(x_max/1.5, y_max/1.5); % Corretto typo originale 'y_min'    
     sg_params.z_start = 1.0;      
-    sg_params.z_goal = 1.0;       
+    sg_params.z_goal = 1.0;
+
+    % --- MODIFICA ROBUSTA: Z CASUALE CON SEPARAZIONE MINIMA ---
+    % Garantisce che start e goal abbiano una differenza di quota significativa
+    min_z_separation = z_max * 0.1; % Es. minimo 10% dell'altezza della mappa
+    z_start_cand = 1.0 + rand() * (z_max / 2 - 1.0);
+    z_goal_cand = z_start_cand;
+    while abs(z_goal_cand - z_start_cand) < min_z_separation
+        z_goal_cand = 1.0 + rand() * (z_max / 2 - 1.0);
+    end
+    sg_params.z_start = z_start_cand;
+    sg_params.z_goal  = z_goal_cand;
     sg_params.edge_offset = city_params.edge_offset; % Margine dai bordi per i punti
+
 
     % 6. Ricerca di Start e Goal sicuri
     disp('Ricerca di Start e Goal sicuri...');
