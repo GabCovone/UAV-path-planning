@@ -1,5 +1,11 @@
 function [statistic, scores, data] = ...
     evaluationFcn(agent, env, trainingInfo)
+
+    persistent logPath
+    if isempty(logPath)
+        logPathValid_num = evalin('base', 'logPathValid_num');
+        logPath = strtrim(char(logPathValid_num));
+    end
     
     % Do not use an exploration policy for evaluation.
     agent.UseExplorationPolicy = false;
@@ -47,8 +53,14 @@ function [statistic, scores, data] = ...
         end
     end
     
+    % Logging
+
+    fileID = fopen(logPath, 'a');
+    fprintf(fileID, ['Rewards: ' repmat(' %1.0f ',1,numel(episodeRewards)) '\n'], episodeRewards);
+    fclose(fileID);
+    
     % Return the smallest reward
-    statistic = min(episodeRewards);
+    statistic = median(episodeRewards);
     
     % Reset variables for training
     assignin('base',"is_validation",false);

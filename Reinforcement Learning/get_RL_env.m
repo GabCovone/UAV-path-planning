@@ -39,7 +39,7 @@ function env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, path_DB_s
     assignin('base', 'max_vel', max_vel);
     assignin('base', 'max_angular_vel', max_angular_vel);
     
-    tolleranza_goal = 20; % di base 2, per curriculum 20
+    tolleranza_goal = 2; % di base 2
     assignin('base', 'tolleranza_goal', tolleranza_goal);
     
     % Creazione dell'ambiente Simulink
@@ -84,9 +84,9 @@ function in = localResetFcn(in)
             scenario_corrente = randi(length(DB_scenari));
         end
     end
-<<<<<<< HEAD
     
-    % --- 2. Si valuta se cambiare scenario (durante il training normale) ---
+    % --- 2. Cambio di scenario ---
+
     % Verifica se stiamo forzando l'indice (Testing)
     try
         forced_idx = evalin('base', 'eval_scenario_idx');
@@ -98,18 +98,6 @@ function in = localResetFcn(in)
         is_testing = false;
     end
     
-    if is_testing
-        % Se siamo in modalità Test, aggiorniamo SEMPRE lo scenario 
-        % con quello imposto dal main script, ignorando il random
-        scenario_corrente = evalin('base', 'eval_scenario_idx');
-    else
-        % Se siamo in Training, procediamo con il cambio casuale
-        disp("Cambio casuale di scenario.")
-        % Altrimenti, siamo in modalità training e scegliamo a caso
-        scenario_corrente = randi(length(DB_scenari));
-        disp(['Modalità Training: Cambio casuale allo scenario ', num2str(scenario_corrente)]);
-=======
-
     if isempty(DB_scenari_eval)
         disp("Inizializzazione DB scenari di validation...")
         % Carica il file .mat pre-calcolato una volta sola
@@ -117,34 +105,23 @@ function in = localResetFcn(in)
         path_DB_scenari_eval_persistent = path_DB_scenari_eval;
         data = load(path_DB_scenari_eval_persistent); 
         DB_scenari_eval = data.scenari; 
->>>>>>> c3d84b118727a2ffa900aeefbe2503122c540a90
     end
+    
+    if is_testing
+        % Se siamo in modalità Test, aggiorniamo SEMPRE lo scenario 
+        % con quello imposto dal main script, ignorando il random
+        scenario_corrente = evalin('base', 'eval_scenario_idx');
+        scenario = DB_scenari(scenario_corrente);
 
-    if is_validation
+    elseif is_validation
         disp("Cambio casuale di scenario di validation.")
         scenario_corrente = randi(length(DB_scenari_eval));
         scenario = DB_scenari_eval(scenario_corrente);
-    end
-    
-    if ~is_validation
-        % --- 2. Si valuta se cambiare scenario (durante il training normale) ---
-        % Verifica se stiamo forzando l'indice (Testing)
-        try
-            forced_idx = evalin('base', 'eval_scenario_idx');
-            is_testing = ~isempty(forced_idx);
-        catch
-            is_testing = false;
-        end
-        
-        if is_testing
-            % Se siamo in modalità Test, aggiorniamo SEMPRE lo scenario 
-            % con quello imposto dal main script, ignorando il random
-            scenario_corrente = evalin('base', 'eval_scenario_idx');
-        else
-            % Se siamo in Training, procediamo con il cambio casuale
-            disp("Cambio casuale di scenario.")
-            scenario_corrente = randi(length(DB_scenari));
-        end
+    else
+
+        % Se siamo in Training, procediamo con il cambio casuale
+        disp("Modalità training: Cambio casuale di scenario")
+        scenario_corrente = randi(length(DB_scenari));
     
         % Aggiornamento contatore degli episodi
         episodi = episodi + 1;
@@ -153,7 +130,6 @@ function in = localResetFcn(in)
         scenario = DB_scenari(scenario_corrente);
     end
     
-    % --- Resto della funzione inalterato ---
     % Usa la posizione esatta
     initial_pos = scenario.map.q_start; % è 1 x 3, a differenza di velocità e orientamento
     init_vel = [0; 0; 0]; % Parti da fermo
@@ -174,8 +150,11 @@ function in = localResetFcn(in)
     assignin('base', 'pos_goal', scenario.map.q_goal);
     assignin('base', 'bounds', bounds);
     assignin('base', 'dyn_obs', scenario.dynamic_obstacles);
+    
+    max_distanza_goal = double(norm(initial_pos - scenario.map.q_goal));
+    assignin('base', 'max_distanza_goal', max_distanza_goal);
 
-    % IMPORTANTISSIMO: questa variabile ora sarà 'i' durante il loop di test!
+    % Si utilizza questa variabile come contatore nel loop di test
     assignin('base', 'scenario_corrente', scenario_corrente);
     
     disp(['✅ Punto spawn drone: [', num2str(initial_pos(:)'), '], Goal a [', num2str(scenario.map.q_goal(:)'),']']);

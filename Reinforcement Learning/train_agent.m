@@ -43,9 +43,9 @@ agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
 
 num_workers = 8;
 
-env = get_RL_env(obsInfo, actInfo, actLimit, 'training_scenarios.mat', "validation_scenarios.mat", true, fullfile(pwd, 'registro_morti.txt'));
+env = get_RL_env(obsInfo, actInfo, actLimit, 'train_scenarios_L1.mat', "validation_scenarios_L1.mat", true, fullfile(pwd, 'registro_morti.txt'));
 
-useParallel = false;
+useParallel = true;
 
 if useParallel
     delete(gcp('nocreate'))
@@ -96,6 +96,18 @@ if fileID ~= -1
     disp('File di log inizializzato con successo.');
 else
     error('Impossibile creare il file di log. Controlla i permessi della cartella.');
+end
+logPath_valid = fullfile(pwd, 'registro_morti_validation.txt');
+fileID = fopen(logPath_valid, 'w');
+if fileID ~= -1
+    % Scriviamo un'intestazione pulita per l'inizio del training
+    fprintf(fileID, '========================================================\n');
+    fprintf(fileID, 'INIZIO NUOVO ADDESTRAMENTO: %s\n', char(datetime('now')));
+    fprintf(fileID, '========================================================\n');
+    fclose(fileID);
+    disp('File di validation log inizializzato con successo.');
+else
+    error('Impossibile creare il file di validation log. Controlla i permessi della cartella.');
 end
 
 %env.UseFastRestart = 'on';
