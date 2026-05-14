@@ -1,0 +1,11 @@
+
+================ REPORT FINALE ================
+Agente Valutato: Agent3300.mat
+Database Scenari: testing_scenarios.mat
+Scenari Selezionati: 10 su 10
+Successi:       4 (40.0%)
+Collisioni:     4 (40.0%)
+Schianti Terra: 0 (0.0%)
+Fuori Rotta:    1 (10.0%)
+Timeout:        1 (10.0%)
+===============================================

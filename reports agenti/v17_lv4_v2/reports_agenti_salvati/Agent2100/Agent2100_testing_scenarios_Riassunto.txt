@@ -1,0 +1,11 @@
+
+================ REPORT FINALE ================
+Agente Valutato: Agent2100
+Database Scenari: testing_scenarios.mat
+Scenari Selezionati: 10 su 10
+Successi:       1 (10.0%)
+Collisioni:     7 (70.0%)
+Schianti Terra: 0 (0.0%)
+Fuori Rotta:    1 (10.0%)
+Timeout:        1 (10.0%)
+===============================================

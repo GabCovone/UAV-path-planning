@@ -6,9 +6,9 @@ function [obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo()
     baseNumRays = 256;
     assignin('base', 'num_rays', baseNumRays);
     numRays = baseNumRays * numDelays; % 256 raggi x 3 step (frame stacking)
-    numState = 10; % 3 vel + 3 omega + 4 quat
+    numState = 11; % 3 vel + 3 omega + 4 quat + 1 distanza goal
     numErrors = 6; % 3 pos + 3 vel || + 1 yaw
-    numObs = numState + numRays + numErrors; % 10 stato, 728 raggi, 7 errori
+    numObs = numState + numRays + numErrors; % 13 stato, 768 raggi, 6 errori
     numAct = 6; % 3 per posizione, 3 per velocità
 
     % Spazio delle Osservazioni (Observation Space)
