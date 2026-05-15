@@ -1,9 +1,13 @@
 %% Configurazione Iniziale e Variabili
-Ts = 0.1;
-rng(1);
+Ts = 0.1; % Tempo di campionamento (10 Hz)
 plantModelFi = 1;            
 useHeading = 1;              
 initialGainsMultiplier = 15;
+
+rng(1);
+assignin('base', 'Ts', Ts);
+
+evalin('base', 'clear eval_scenario_idx');
 
 %% Preparazione Modello Simulink
 mdl = 'SAC_RL_env';
@@ -13,25 +17,25 @@ load_system(mdl);
 % % Disabilita la propagazione del variant subsystem
 % set_param(strcat(mdl, '/Inner Loop and Plant Model'), 'PropagateVariantConditions', 'off');
 % 
-% set_param(mdl, 'SimulationMode', 'accelerator'); 
+set_param(mdl, 'SimulationMode', 'accelerator'); 
 
-mdlWks = get_param(mdl, 'ModelWorkspace');
+% mdlWks = get_param(mdl, 'ModelWorkspace');
 % mdlWks.assignin('Ts', Ts);
 % mdlWks.assignin('plantModelFi', plantModelFi);
 % mdlWks.assignin('useHeading', useHeading);
 % mdlWks.assignin('initialGainsMultiplier', initialGainsMultiplier);
 
 % Caricamento della DEEN Network per i worker
-if isfile('deen_network.mat')
-    % Carica il file e lo assegna al workspace del modello
-    deen_data = load('deen_network.mat');
-    fields = fieldnames(deen_data);
-    for i = 1:numel(fields)
-        mdlWks.assignin(fields{i}, deen_data.(fields{i}));
-    end
-else
-    error('ATTENZIONE: Il file deen_network.mat non si trova nella cartella!');
-end
+% if isfile('deen_network.mat')
+%     % Carica il file e lo assegna al workspace del modello
+%     deen_data = load('deen_network.mat');
+%     fields = fieldnames(deen_data);
+%     for i = 1:numel(fields)
+%         mdlWks.assignin(fields{i}, deen_data.(fields{i}));
+%     end
+% else
+%     error('ATTENZIONE: Il file deen_network.mat non si trova nella cartella!');
+% end
 
 if get_param(strcat(path, "pos_agente To File"), 'Commented') == "off"
     set_param(strcat(path, "pos_agente To File"), 'Commented', 'on');
@@ -47,14 +51,16 @@ end
 
 save_system(mdl);
 
-%% Inizializzazione Pool Parallelo
-num_workers = 4;
-delete(gcp('nocreate'));
-cluster = parcluster('local');
-cluster.NumWorkers = num_workers;
-pool = parpool(cluster, num_workers);
+useParallel = true;
 
-clear cluster pool
+%% Inizializzazione Pool Parallelo
+if useParallel
+    num_workers = 4;
+    delete(gcp('nocreate'));
+    cluster = parcluster('local');
+    cluster.NumWorkers = num_workers;
+    pool = parpool(cluster, num_workers);
+end
 
 %% CONFIGURAZIONE DATA QUEUE E LOGGING SICURO
 logPath = fullfile(pwd, 'registro_morti.txt');
@@ -115,11 +121,13 @@ trainOpts = rlTrainingOptions(...
     'SaveFileVersion', "-v7", ... 
     'SaveAgentCriteria', 'EpisodeFrequency', ...
     'SaveAgentValue', saveAgentFrequency, ...
-    'SaveAgentDirectory', fullfile(pwd, 'agenti_salvati'), ...
-    'UseParallel', true ...
+    'SaveAgentDirectory', fullfile(pwd, 'agenti_salvati') ...
 );
 
-trainOpts.ParallelizationOptions.Mode = "async";
+if useParallel
+    trainOpts.UseParallel = true;
+    trainOpts.ParallelizationOptions.Mode = "async";
+end
 
 evalOpts = rlCustomEvaluator_fun(@evaluationFcn, "EvaluationFrequency", saveAgentFrequency);
 
