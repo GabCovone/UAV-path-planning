@@ -39,19 +39,26 @@ classdef Gemm_To_GemmLayer1000 < nnet.layer.Layer & nnet.layer.Formattable
     end
 
 
+    methods(Static, Hidden)
+        % Specify the path to the class that will be used for codegen
+        function name = matlabCodegenRedirect(~)
+            name = 'deen_standalone.coder.Gemm_To_GemmLayer1000';
+        end
+    end
 
 
     methods
         function this = Gemm_To_GemmLayer1000(name)
             this.Name = name;
+            this.NumInputs = 2;
             this.OutputNames = {'energy_score'};
         end
 
-        function [energy_score] = predict(this, input_transition)
+        function [energy_score] = predict(this, input_transition, input_transitionNumDims)
             if isdlarray(input_transition)
                 input_transition = stripdims(input_transition);
             end
-            input_transitionNumDims = 2;
+            input_transitionNumDims = numel(input_transitionNumDims);
             input_transition = deen_standalone.ops.permuteInputVar(input_transition, ['as-is'], 2);
 
             [energy_score, energy_scoreNumDims] = Gemm_To_GemmGraph1000(this, input_transition, input_transitionNumDims, false);
@@ -60,11 +67,11 @@ classdef Gemm_To_GemmLayer1000 < nnet.layer.Layer & nnet.layer.Formattable
             energy_score = dlarray(single(energy_score), repmat('U', 1, max(2, energy_scoreNumDims)));
         end
 
-        function [energy_score] = forward(this, input_transition)
+        function [energy_score] = forward(this, input_transition, input_transitionNumDims)
             if isdlarray(input_transition)
                 input_transition = stripdims(input_transition);
             end
-            input_transitionNumDims = 2;
+            input_transitionNumDims = numel(input_transitionNumDims);
             input_transition = deen_standalone.ops.permuteInputVar(input_transition, ['as-is'], 2);
 
             [energy_score, energy_scoreNumDims] = Gemm_To_GemmGraph1000(this, input_transition, input_transitionNumDims, true);

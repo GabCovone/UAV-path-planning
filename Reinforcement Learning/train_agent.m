@@ -10,16 +10,16 @@ mdl = 'SAC_RL_env';
 path = strcat(mdl, "/Inner Loop and Plant Model/High-FidelityModel/");
 load_system(mdl);
 
-% Disabilita la propagazione del variant subsystem
-set_param(strcat(mdl, '/Inner Loop and Plant Model'), 'PropagateVariantConditions', 'off');
-
-set_param(mdl, 'SimulationMode', 'accelerator'); 
+% % Disabilita la propagazione del variant subsystem
+% set_param(strcat(mdl, '/Inner Loop and Plant Model'), 'PropagateVariantConditions', 'off');
+% 
+% set_param(mdl, 'SimulationMode', 'accelerator'); 
 
 mdlWks = get_param(mdl, 'ModelWorkspace');
-mdlWks.assignin('Ts', Ts);
-mdlWks.assignin('plantModelFi', plantModelFi);
-mdlWks.assignin('useHeading', useHeading);
-mdlWks.assignin('initialGainsMultiplier', initialGainsMultiplier);
+% mdlWks.assignin('Ts', Ts);
+% mdlWks.assignin('plantModelFi', plantModelFi);
+% mdlWks.assignin('useHeading', useHeading);
+% mdlWks.assignin('initialGainsMultiplier', initialGainsMultiplier);
 
 % Caricamento della DEEN Network per i worker
 if isfile('deen_network.mat')
@@ -48,7 +48,7 @@ end
 save_system(mdl);
 
 %% Inizializzazione Pool Parallelo
-num_workers = 15;
+num_workers = 4;
 delete(gcp('nocreate'));
 cluster = parcluster('local');
 cluster.NumWorkers = num_workers;
