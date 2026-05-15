@@ -1,5 +1,3 @@
 ========================================================
-INIZIO NUOVO ADDESTRAMENTO (VALIDATION): 15-May-2026 19:24:03
+INIZIO NUOVO ADDESTRAMENTO: 15-May-2026 21:17:20
 ========================================================
-Ep (Worker) | Step | Reward Totale | Motivo Terminazione
---------------------------------------------------------

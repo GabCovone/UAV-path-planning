@@ -33,10 +33,16 @@ assignin('base', 'Ts', Ts);
 
 [obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
 
-agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
+resumeTraining = true;
 
-% agent = load('trained_agent_part1.mat'); 
-% agent = agent.agent;
+if ~resumeTraining
+    agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
+else
+    saved_agent = load('agente_v18_lv1_v1.1.mat'); 
+    agent = saved_agent.agent;
+    trainStats = saved_agent.trainStats;
+end
+
 % 
 % agent.AgentOptions.ActorOptimizerOptions.LearnRate = 5e-5;
 % [agent.AgentOptions.CriticOptimizerOptions.LearnRate] = deal(1e-4);
@@ -114,7 +120,11 @@ end
 
 %load('deen_network.mat', 'deen_net');
 
-trainStats = train(agent, env, trainOpts, "Evaluator", evalOpts);
+if ~resumeTraining
+    trainStats = train(agent, env, trainOpts, "Evaluator", evalOpts);
+else
+    trainStats = train(agent, env, trainStats);
+end
 
 %% Salva agente
 
