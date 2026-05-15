@@ -1,55 +1,47 @@
-function env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, path_DB_scenari_eval, logging, logPath, logPathValid)
+function env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, path_DB_scenari_eval, logging, dq_train, dq_valid)
     
     if nargin < 4, path_DB_scenari = 'training_scenarios.mat'; end
     if nargin < 5, path_DB_scenari_eval = 'validation_scenarios.mat'; end
     
-    % Assegnazione nel workspace dei path di scenari di training e
-    % validation
+    % Assegnazione nel workspace dei path di scenari di training e validation
     assignin('base', 'path_DB_scenari', path_DB_scenari);
     assignin('base', 'path_DB_scenari_eval', path_DB_scenari_eval);
     
     % Logging
     if nargin < 6, logging = false; end
     if nargin < 7
-        logPath = fullfile(pwd, 'registro_morti.txt');
+        dq_train = []; % Fallback in caso non esista
     end
     if nargin < 8
-        logPathValid = fullfile(pwd, 'registro_morti_validation.txt');
+        dq_valid = []; % Fallback in caso non esista
     end
+    
     assignin('base', 'logging', logging);
-    logPath_padded = sprintf('%-250s', logPath);
-    assignin('base', 'logPath_num', int8(logPath_padded));
-    logPathValid_padded = sprintf('%-250s', logPathValid);
-    assignin('base', 'logPathValid_num', int8(logPathValid_padded))
+    
+    % Salviamo gli oggetti coda direttamente nel workspace del worker
+    assignin('base', 'dq_train', dq_train);
+    assignin('base', 'dq_valid', dq_valid);
 
+    assignin('base', 'logPath_num', zeros(1, 250, 'int8'));
+    assignin('base', 'logPathValid_num', zeros(1, 250, 'int8'));
+    
     mdl = 'SAC_RL_env';
     agentBlk = [mdl, '/Inner Loop and Plant Model/High-FidelityModel/RL Agent'];
-
-    % Assegnazione nel workspace dei limiti per la normalizzazione
+    
+    % Assegnazione nel workspace dei limiti
     assignin('base', 'max_delta', actLimit);
-
-    max_deviazione_pos = 100; % Deviazione massima in metri consentita per l'agente
-    assignin('base', 'max_deviazione_pos', max_deviazione_pos);
-    
-    max_deviazione_vel = 20; % Deviazione massima in m/s per la velocità
-    assignin('base', 'max_deviazione_vel', max_deviazione_vel);
-
-    max_vel = 30; % Massima velocità lineare
-    max_angular_vel = double(pi); % Massima velocità angolare
-    assignin('base', 'max_vel', max_vel);
-    assignin('base', 'max_angular_vel', max_angular_vel);
-    
-    tolleranza_goal = 2; % di base 2
-    assignin('base', 'tolleranza_goal', tolleranza_goal);
+    assignin('base', 'max_deviazione_pos', 100); 
+    assignin('base', 'max_deviazione_vel', 20); 
+    assignin('base', 'max_vel', 30); 
+    assignin('base', 'max_angular_vel', double(pi)); 
+    assignin('base', 'tolleranza_goal', 2); 
     
     % Creazione dell'ambiente Simulink
     env = rlSimulinkEnv(mdl, agentBlk, obsInfo, actInfo);
-
-    assignin('base',"is_validation",false);
+    assignin('base', "is_validation", false);
     
     % Assegnazione all'ambiente della funzione di reset
     env.ResetFcn = @(in) localResetFcn(in);
-
     disp('✅ Ambiente RL Simulink creato con successo');
 end
 
@@ -57,22 +49,17 @@ function in = localResetFcn(in)
     % Dichiarazione variabili persistenti
     persistent DB_scenari DB_scenari_eval scenario_corrente episodi
     persistent path_DB_scenari_persistent path_DB_scenari_eval_persistent
-
     is_validation = evalin('base', 'is_validation');
-
     path_DB_scenari = evalin('base', 'path_DB_scenari');
     
     % --- 1. Inizializzazione ad inizio training o se cambia il file del DB ---
     if isempty(DB_scenari) || ~strcmp(path_DB_scenari, path_DB_scenari_persistent)
         disp("Inizializzazione DB scenari...")
-        % Carica il file .mat pre-calcolato una volta sola
         path_DB_scenari_persistent = path_DB_scenari;
         data = load(path_DB_scenari_persistent); 
         DB_scenari = data.scenari; 
-        
         episodi = 0;
         
-        % Inizializzazione del primo scenario
         try
             forced_idx = evalin('base', 'eval_scenario_idx');
             if ~isempty(forced_idx)
@@ -86,12 +73,9 @@ function in = localResetFcn(in)
     end
     
     % --- 2. Cambio di scenario ---
-
-    % Verifica se stiamo forzando l'indice (Testing)
     try
         forced_idx = evalin('base', 'eval_scenario_idx');
         is_testing = ~isempty(forced_idx);
-        % Se la variabile esiste ed è valida, la usiamo (modalità testing)
         scenario_corrente = forced_idx;
         disp(['Modalità Testing: Scenario forzato a ', num2str(scenario_corrente)]);
     catch
@@ -100,7 +84,6 @@ function in = localResetFcn(in)
     
     if isempty(DB_scenari_eval)
         disp("Inizializzazione DB scenari di validation...")
-        % Carica il file .mat pre-calcolato una volta sola
         path_DB_scenari_eval = evalin('base', 'path_DB_scenari_eval');
         path_DB_scenari_eval_persistent = path_DB_scenari_eval;
         data = load(path_DB_scenari_eval_persistent); 
@@ -108,39 +91,28 @@ function in = localResetFcn(in)
     end
     
     if is_testing
-        % Se siamo in modalità Test, aggiorniamo SEMPRE lo scenario 
-        % con quello imposto dal main script, ignorando il random
         scenario_corrente = evalin('base', 'eval_scenario_idx');
         scenario = DB_scenari(scenario_corrente);
-
     elseif is_validation
-        disp("Cambio casuale di scenario di validation.")
+        % disp("Cambio casuale di scenario di validation.")
         scenario_corrente = randi(length(DB_scenari_eval));
         scenario = DB_scenari_eval(scenario_corrente);
     else
-
-        % Se siamo in Training, procediamo con il cambio casuale
-        disp("Modalità training: Cambio casuale di scenario")
+        % disp("Modalità training: Cambio casuale di scenario")
         scenario_corrente = randi(length(DB_scenari));
-    
-        % Aggiornamento contatore degli episodi
         episodi = episodi + 1;
-        
-        % Si estraggono i dati dello scenario da usare in questo episodio
         scenario = DB_scenari(scenario_corrente);
     end
     
-    % Usa la posizione esatta
-    initial_pos = scenario.map.q_start; % è 1 x 3, a differenza di velocità e orientamento
-    init_vel = [0; 0; 0]; % Parti da fermo
-    init_euler = [0; 0; 0]; % Parti in hovering perfetto
-
-    % Calcolo ingombro della città
+    % Assegnazioni Posizioni
+    initial_pos = scenario.map.q_start; 
+    init_vel = [0; 0; 0]; 
+    init_euler = [0; 0; 0]; 
     bounds.x_min = squeeze(min(scenario.map.v(:,1,:))); bounds.x_max = squeeze(max(scenario.map.v(:,1,:)));
     bounds.y_min = squeeze(min(scenario.map.v(:,2,:))); bounds.y_max = squeeze(max(scenario.map.v(:,2,:)));
     bounds.z_min = squeeze(min(scenario.map.v(:,3,:))); bounds.z_max = squeeze(max(scenario.map.v(:,3,:)));
-
-    % Assegnazione variabili nel workspace
+    
+    % Workspace
     assignin('base', 'init_pos', initial_pos);
     assignin('base', 'init_vel', init_vel);
     assignin('base', 'init_euler', init_euler);
@@ -153,10 +125,5 @@ function in = localResetFcn(in)
     
     max_distanza_goal = double(norm(initial_pos - scenario.map.q_goal));
     assignin('base', 'max_distanza_goal', max_distanza_goal);
-
-    % Si utilizza questa variabile come contatore nel loop di test
     assignin('base', 'scenario_corrente', scenario_corrente);
-    
-    disp(['✅ Punto spawn drone: [', num2str(initial_pos(:)'), '], Goal a [', num2str(scenario.map.q_goal(:)'),']']);
-
 end
