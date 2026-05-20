@@ -1,0 +1,938 @@
+========================================================
+INIZIO NUOVO ADDESTRAMENTO: 17-May-2026 10:59:23
+========================================================
+Ep (Worker) | Step | Reward Totale | Motivo Terminazione
+--------------------------------------------------------
+Step: 319 | Rwd: 663.76 | Distanza goal: 100.15 | Motivo: Deviazione eccessiva
+azioni: -749.489504 | ostacoli: 0.000000 | posizione: -120.139504 | velocita: 318.000000 | progresso: 1796.921492
+
+Step: 324 | Rwd: 1838.60 | Distanza goal: 1.40 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -754.444758 | ostacoli: 0.000000 | posizione: -214.709437 | velocita: 323.000000 | progresso: 2079.505062
+
+Step: 350 | Rwd: 1973.89 | Distanza goal: 1.86 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -817.505659 | ostacoli: 0.000000 | posizione: -45.110527 | velocita: 349.000000 | progresso: 2090.866160
+
+Step: 368 | Rwd: 1810.04 | Distanza goal: 1.85 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -871.542524 | ostacoli: 0.000000 | posizione: -54.431071 | velocita: 367.000000 | progresso: 1961.267209
+
+Step: 393 | Rwd: 1775.43 | Distanza goal: 1.81 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -931.681251 | ostacoli: 0.000000 | posizione: -63.905161 | velocita: 392.000000 | progresso: 1968.866992
+
+Step: 441 | Rwd: 1765.01 | Distanza goal: 1.82 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1033.488260 | ostacoli: 0.000000 | posizione: -89.606033 | velocita: 440.000000 | progresso: 2037.303448
+
+Step: 139 | Rwd: -209.41 | Distanza goal: 219.57 | Motivo: Deviazione eccessiva
+azioni: -321.886583 | ostacoli: 0.000000 | posizione: -83.864460 | velocita: 138.000000 | progresso: 578.677368
+
+Step: 139 | Rwd: -180.66 | Distanza goal: 294.38 | Motivo: Deviazione eccessiva
+azioni: -326.957531 | ostacoli: 0.000000 | posizione: -83.728352 | velocita: 138.000000 | progresso: 614.382935
+
+Step: 104 | Rwd: -428.98 | Distanza goal: 352.18 | Motivo: Deviazione eccessiva
+azioni: -233.788981 | ostacoli: 0.000000 | posizione: -59.831667 | velocita: 103.000000 | progresso: 266.616821
+
+Step: 158 | Rwd: -112.98 | Distanza goal: 235.50 | Motivo: Deviazione eccessiva
+azioni: -335.335829 | ostacoli: 0.000000 | posizione: -103.025305 | velocita: 157.000000 | progresso: 695.474243
+
+Step: 351 | Rwd: 1777.45 | Distanza goal: 1.91 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -825.346836 | ostacoli: 0.000000 | posizione: -50.965562 | velocita: 350.000000 | progresso: 1893.586969
+
+Step: 375 | Rwd: 1781.98 | Distanza goal: 1.95 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -876.256108 | ostacoli: 0.000000 | posizione: -66.164172 | velocita: 374.000000 | progresso: 1940.094995
+
+Step: 292 | Rwd: 622.75 | Distanza goal: 100.45 | Motivo: Deviazione eccessiva
+azioni: -689.688425 | ostacoli: 0.000000 | posizione: -109.284273 | velocita: 291.000000 | progresso: 1709.318352
+
+Step: 473 | Rwd: 1548.48 | Distanza goal: 1.86 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1112.240868 | ostacoli: 0.000000 | posizione: -87.139347 | velocita: 472.000000 | progresso: 1840.138483
+
+Step: 248 | Rwd: 1847.34 | Distanza goal: 1.55 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -557.762538 | ostacoli: 0.000000 | posizione: -46.844103 | velocita: 247.000000 | progresso: 1800.262547
+
+Step: 237 | Rwd: 1781.03 | Distanza goal: 1.47 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -575.786979 | ostacoli: 0.000000 | posizione: -49.163138 | velocita: 236.000000 | progresso: 1760.658002
+
+Step: 317 | Rwd: 1755.35 | Distanza goal: 2.00 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -745.530067 | ostacoli: 0.000000 | posizione: -57.812094 | velocita: 316.000000 | progresso: 1829.993701
+
+Step: 391 | Rwd: 1911.68 | Distanza goal: 1.91 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -884.286876 | ostacoli: 0.000000 | posizione: -84.681282 | velocita: 390.000000 | progresso: 2088.748121
+
+Step: 470 | Rwd: 2042.71 | Distanza goal: 1.59 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1069.098860 | ostacoli: 0.000000 | posizione: -175.521920 | velocita: 469.000000 | progresso: 2427.237916
+
+Step: 397 | Rwd: 2048.89 | Distanza goal: 2.00 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1014.403602 | ostacoli: 0.000000 | posizione: -73.961253 | velocita: 396.000000 | progresso: 2347.121239
+
+Step: 321 | Rwd: 548.13 | Distanza goal: 100.05 | Motivo: Deviazione eccessiva
+azioni: -904.097677 | ostacoli: 0.000000 | posizione: -125.236813 | velocita: 320.000000 | progresso: 1830.834389
+
+Step: 492 | Rwd: 1474.61 | Distanza goal: 1.86 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1327.956897 | ostacoli: 0.000000 | posizione: -187.194478 | velocita: 491.000000 | progresso: 2067.658591
+
+Step: 446 | Rwd: 1618.56 | Distanza goal: 1.97 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1240.658717 | ostacoli: 0.000000 | posizione: -142.088669 | velocita: 445.000000 | progresso: 2135.220766
+
+Step: 363 | Rwd: 1732.15 | Distanza goal: 1.86 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -870.229438 | ostacoli: 0.000000 | posizione: -53.725650 | velocita: 362.000000 | progresso: 1880.998135
+
+Step: 461 | Rwd: 1552.60 | Distanza goal: 1.36 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1066.486298 | ostacoli: 0.000000 | posizione: -233.773523 | velocita: 460.000000 | progresso: 1967.951965
+
+Step: 305 | Rwd: 640.88 | Distanza goal: 100.53 | Motivo: Deviazione eccessiva
+azioni: -768.940285 | ostacoli: 0.000000 | posizione: -139.943623 | velocita: 304.000000 | progresso: 1825.620937
+
+Step: 513 | Rwd: 1283.35 | Distanza goal: 1.76 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1373.838107 | ostacoli: -89.568431 | posizione: -249.102911 | velocita: 414.000001 | progresso: 2047.805119
+
+Step: 397 | Rwd: 1827.43 | Distanza goal: 1.93 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -883.184029 | ostacoli: 0.000000 | posizione: -87.914398 | velocita: 396.000000 | progresso: 1996.135569
+
+Step: 453 | Rwd: 2239.37 | Distanza goal: 1.59 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -982.264023 | ostacoli: 0.000000 | posizione: -146.648252 | velocita: 452.000000 | progresso: 2538.426185
+
+Step: 356 | Rwd: 1916.61 | Distanza goal: 1.61 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -741.022480 | ostacoli: 0.000000 | posizione: -65.751678 | velocita: 355.000000 | progresso: 1968.448806
+
+Step: 248 | Rwd: 1932.15 | Distanza goal: 1.91 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -500.279644 | ostacoli: 0.000000 | posizione: -41.878348 | velocita: 247.000000 | progresso: 1828.492069
+
+Step: 152 | Rwd: -224.26 | Distanza goal: 218.91 | Motivo: Deviazione eccessiva
+azioni: -402.554944 | ostacoli: 0.000000 | posizione: -94.969071 | velocita: 151.000000 | progresso: 641.561890
+
+Step: 246 | Rwd: 1874.13 | Distanza goal: 1.85 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -486.789611 | ostacoli: 0.000000 | posizione: -53.267052 | velocita: 245.000000 | progresso: 1766.295409
+
+Step: 365 | Rwd: 1596.77 | Distanza goal: 2.00 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -846.106663 | ostacoli: 0.000000 | posizione: -72.542058 | velocita: 364.000000 | progresso: 1726.643443
+
+Step: 499 | Rwd: 2202.65 | Distanza goal: 1.81 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1340.347605 | ostacoli: 0.000000 | posizione: -161.648968 | velocita: 498.000000 | progresso: 2826.648474
+
+Step: 885 | Rwd: 707.10 | Distanza goal: 1.98 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2507.138464 | ostacoli: 0.000000 | posizione: -173.872094 | velocita: 884.000000 | progresso: 1973.235416
+
+Step: 158 | Rwd: -298.81 | Distanza goal: 235.77 | Motivo: Deviazione eccessiva
+azioni: -537.806239 | ostacoli: 0.000000 | posizione: -97.896442 | velocita: 157.000000 | progresso: 693.971252
+
+Step: 683 | Rwd: 747.67 | Distanza goal: 1.99 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2327.458034 | ostacoli: 0.000000 | posizione: -133.025174 | velocita: 682.000000 | progresso: 2029.204893
+
+Step: 742 | Rwd: 539.49 | Distanza goal: 1.95 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2516.184108 | ostacoli: 0.000000 | posizione: -158.491813 | velocita: 741.000000 | progresso: 1967.596102
+
+Step: 338 | Rwd: 523.57 | Distanza goal: 100.02 | Motivo: Deviazione eccessiva
+azioni: -1127.502675 | ostacoli: 0.000000 | posizione: -143.963945 | velocita: 337.000000 | progresso: 2029.689407
+
+Step: 2595 | Rwd: -2681.82 | Distanza goal: 1.93 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -8817.618214 | ostacoli: 0.000000 | posizione: -768.015692 | velocita: 2594.000000 | progresso: 3469.811153
+
+Step: 363 | Rwd: 1521.06 | Distanza goal: 1.89 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1160.999717 | ostacoli: 0.000000 | posizione: -89.053059 | velocita: 362.000000 | progresso: 1980.797005
+
+Step: 556 | Rwd: 868.23 | Distanza goal: 1.65 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2016.630025 | ostacoli: 0.000000 | posizione: -185.613979 | velocita: 555.000000 | progresso: 2040.594506
+
+Step: 485 | Rwd: 1120.96 | Distanza goal: 1.94 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1791.422636 | ostacoli: 0.000000 | posizione: -76.172329 | velocita: 484.000000 | progresso: 2034.680176
+
+Step: 622 | Rwd: 889.23 | Distanza goal: 1.95 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2236.229520 | ostacoli: 0.000000 | posizione: -113.916792 | velocita: 621.000000 | progresso: 2128.112316
+
+Step: 323 | Rwd: 287.62 | Distanza goal: 100.30 | Motivo: Deviazione eccessiva
+azioni: -1094.825907 | ostacoli: 0.000000 | posizione: -125.828269 | velocita: 322.000000 | progresso: 1741.411591
+
+Step: 420 | Rwd: 1387.67 | Distanza goal: 1.98 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1366.598377 | ostacoli: 0.000000 | posizione: -70.960956 | velocita: 419.000000 | progresso: 1963.296580
+
+Step: 569 | Rwd: 845.63 | Distanza goal: 1.90 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2057.551653 | ostacoli: 0.000000 | posizione: -114.397107 | velocita: 568.000000 | progresso: 1968.564081
+
+Step: 490 | Rwd: 1703.67 | Distanza goal: 1.97 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1643.407194 | ostacoli: 0.000000 | posizione: -69.477716 | velocita: 489.000000 | progresso: 2508.427477
+
+Step: 641 | Rwd: 1144.85 | Distanza goal: 1.94 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2186.486670 | ostacoli: 0.000000 | posizione: -139.812261 | velocita: 640.000000 | progresso: 2355.764008
+
+Step: 673 | Rwd: 793.98 | Distanza goal: 1.75 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2333.925642 | ostacoli: 0.000000 | posizione: -122.742938 | velocita: 672.000000 | progresso: 2088.756680
+
+Step: 1217 | Rwd: -406.10 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -4308.678041 | ostacoli: -7.430287 | posizione: -399.316801 | velocita: 1168.000164 | progresso: 2553.387094
+
+Step: 86 | Rwd: -636.70 | Distanza goal: 380.49 | Motivo: Deviazione eccessiva
+azioni: -310.238014 | ostacoli: 0.000000 | posizione: -46.574100 | velocita: 85.000000 | progresso: 125.546265
+
+Step: 358 | Rwd: 148.72 | Distanza goal: 100.05 | Motivo: Deviazione eccessiva
+azioni: -1286.089488 | ostacoli: 0.000000 | posizione: -165.166721 | velocita: 357.000000 | progresso: 1788.390732
+
+Step: 477 | Rwd: 1119.53 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1518.848514 | ostacoli: 0.000000 | posizione: -95.935504 | velocita: 476.000000 | progresso: 1795.401335
+
+Step: 854 | Rwd: 928.84 | Distanza goal: 1.82 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -3031.347261 | ostacoli: 0.000000 | posizione: -318.924358 | velocita: 853.000000 | progresso: 2954.164934
+
+Step: 364 | Rwd: 1920.98 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -885.266125 | ostacoli: 0.000000 | posizione: -55.254808 | velocita: 363.000000 | progresso: 2096.043062
+
+Step: 426 | Rwd: 1173.01 | Distanza goal: 1.98 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1445.775087 | ostacoli: 0.000000 | posizione: -94.157162 | velocita: 425.000000 | progresso: 1829.447150
+
+Step: 433 | Rwd: 1261.80 | Distanza goal: 1.98 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1401.131605 | ostacoli: 0.000000 | posizione: -96.111166 | velocita: 432.000000 | progresso: 1872.233677
+
+Step: 514 | Rwd: 1532.65 | Distanza goal: 1.97 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1481.449995 | ostacoli: 0.000000 | posizione: -110.611164 | velocita: 513.000000 | progresso: 2177.345109
+
+Step: 852 | Rwd: 844.21 | Distanza goal: 1.88 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2641.603527 | ostacoli: 0.000000 | posizione: -253.660769 | velocita: 851.000000 | progresso: 2406.085610
+
+Step: 535 | Rwd: 1612.62 | Distanza goal: 1.66 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1615.987547 | ostacoli: 0.000000 | posizione: -164.263482 | velocita: 534.000000 | progresso: 2434.005976
+
+Step: 563 | Rwd: 1001.30 | Distanza goal: 1.87 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1727.754400 | ostacoli: 0.000000 | posizione: -129.342390 | velocita: 562.000000 | progresso: 1816.926217
+
+Step: 380 | Rwd: 1366.33 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1117.012152 | ostacoli: 0.000000 | posizione: -102.547353 | velocita: 379.000000 | progresso: 1761.131144
+
+Step: 127 | Rwd: -428.97 | Distanza goal: 237.10 | Motivo: Deviazione eccessiva
+azioni: -467.379156 | ostacoli: 0.000000 | posizione: -75.306440 | velocita: 126.000000 | progresso: 492.691040
+
+Step: 356 | Rwd: 327.07 | Distanza goal: 100.27 | Motivo: Deviazione eccessiva
+azioni: -1152.147444 | ostacoli: 0.000000 | posizione: -134.366484 | velocita: 355.000000 | progresso: 1816.477585
+
+Step: 744 | Rwd: 1158.39 | Distanza goal: 1.90 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2489.468045 | ostacoli: -94.385061 | posizione: -313.450468 | velocita: 662.877071 | progresso: 2844.233322
+
+Step: 822 | Rwd: 1425.82 | Distanza goal: 1.69 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2347.873596 | ostacoli: 0.000000 | posizione: -188.890986 | velocita: 821.000000 | progresso: 2704.476833
+
+Step: 644 | Rwd: 974.31 | Distanza goal: 1.78 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2131.764403 | ostacoli: 0.000000 | posizione: -252.467926 | velocita: 643.000000 | progresso: 2247.518611
+
+Step: 105 | Rwd: -523.92 | Distanza goal: 287.20 | Motivo: Deviazione eccessiva
+azioni: -371.870470 | ostacoli: 0.000000 | posizione: -58.537452 | velocita: 104.000000 | progresso: 300.814819
+
+Step: 288 | Rwd: 173.45 | Distanza goal: 100.71 | Motivo: Deviazione eccessiva
+azioni: -1084.552296 | ostacoli: 0.000000 | posizione: -111.976173 | velocita: 287.000000 | progresso: 1630.121040
+
+Step: 671 | Rwd: 1078.71 | Distanza goal: 1.79 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2214.212574 | ostacoli: 0.000000 | posizione: -261.114768 | velocita: 670.000000 | progresso: 2424.140668
+
+Step: 693 | Rwd: 717.82 | Distanza goal: 1.93 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2234.192797 | ostacoli: 0.000000 | posizione: -150.182597 | velocita: 692.000000 | progresso: 1901.076102
+
+Step: 783 | Rwd: 1043.36 | Distanza goal: 1.72 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2254.782906 | ostacoli: 0.000000 | posizione: -149.180593 | velocita: 782.000000 | progresso: 2194.302893
+
+Step: 900 | Rwd: 873.83 | Distanza goal: 1.78 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2920.295773 | ostacoli: 0.000000 | posizione: -356.865971 | velocita: 899.000000 | progresso: 2776.693559
+
+Step: 620 | Rwd: 1133.95 | Distanza goal: 1.97 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1932.906537 | ostacoli: 0.000000 | posizione: -141.135535 | velocita: 619.000000 | progresso: 2126.648831
+
+Step: 1025 | Rwd: 274.16 | Distanza goal: 1.97 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -3235.504030 | ostacoli: 0.000000 | posizione: -210.673099 | velocita: 1024.000000 | progresso: 2088.322139
+
+Step: 486 | Rwd: 1820.11 | Distanza goal: 1.98 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1395.542515 | ostacoli: 0.000000 | posizione: -95.641179 | velocita: 485.000000 | progresso: 2405.645013
+
+Step: 336 | Rwd: 1818.69 | Distanza goal: 1.88 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -965.056581 | ostacoli: 0.000000 | posizione: -50.040107 | velocita: 335.000000 | progresso: 2090.503144
+
+Step: 681 | Rwd: 673.20 | Distanza goal: 1.97 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2304.711749 | ostacoli: 0.000000 | posizione: -151.641671 | velocita: 680.000000 | progresso: 1943.495750
+
+Step: 676 | Rwd: 640.74 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2275.535971 | ostacoli: 0.000000 | posizione: -315.518499 | velocita: 675.000000 | progresso: 2064.753294
+
+Step: 616 | Rwd: 1016.53 | Distanza goal: 1.86 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1945.638253 | ostacoli: 0.000000 | posizione: -197.432176 | velocita: 615.000000 | progresso: 2079.946494
+
+Step: 1183 | Rwd: 378.07 | Distanza goal: 1.87 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -3810.841036 | ostacoli: 0.000000 | posizione: -324.013825 | velocita: 1182.000000 | progresso: 2807.971621
+
+Step: 1109 | Rwd: 273.48 | Distanza goal: 1.95 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -3622.435233 | ostacoli: 0.000000 | posizione: -421.035652 | velocita: 1108.000000 | progresso: 2688.420343
+
+Step: 256 | Rwd: 1394.92 | Distanza goal: 1.48 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -840.168688 | ostacoli: 0.000000 | posizione: -118.398814 | velocita: 255.000000 | progresso: 1662.058830
+
+Step: 315 | Rwd: 220.73 | Distanza goal: 100.16 | Motivo: Deviazione eccessiva
+azioni: -1069.196167 | ostacoli: 0.000000 | posizione: -124.252767 | velocita: 314.000000 | progresso: 1650.630951
+
+Step: 289 | Rwd: 232.94 | Distanza goal: 100.16 | Motivo: Deviazione eccessiva
+azioni: -1051.969957 | ostacoli: 0.000000 | posizione: -106.166976 | velocita: 288.000000 | progresso: 1654.381180
+
+Step: 422 | Rwd: 1580.83 | Distanza goal: 1.84 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1181.251776 | ostacoli: 0.000000 | posizione: -79.741121 | velocita: 421.000000 | progresso: 1996.788597
+
+Step: 453 | Rwd: 1357.28 | Distanza goal: 1.98 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1418.300284 | ostacoli: 0.000000 | posizione: -102.790437 | velocita: 452.000000 | progresso: 1986.837387
+
+Step: 111 | Rwd: -494.85 | Distanza goal: 277.85 | Motivo: Deviazione eccessiva
+azioni: -389.650824 | ostacoli: 0.000000 | posizione: -62.418525 | velocita: 110.000000 | progresso: 347.583008
+
+Step: 1536 | Rwd: -879.19 | Distanza goal: 1.93 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -4829.825461 | ostacoli: 0.000000 | posizione: -342.204108 | velocita: 1535.000000 | progresso: 2013.184953
+
+Step: 312 | Rwd: 1994.42 | Distanza goal: 1.66 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -848.560338 | ostacoli: 0.000000 | posizione: -42.630476 | velocita: 311.000000 | progresso: 2179.810882
+
+Step: 324 | Rwd: 2128.61 | Distanza goal: 1.85 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -856.422436 | ostacoli: 0.000000 | posizione: -37.729573 | velocita: 323.000000 | progresso: 2314.696836
+
+Step: 412 | Rwd: 1567.43 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1294.567234 | ostacoli: 0.000000 | posizione: -74.269487 | velocita: 411.000000 | progresso: 2092.151189
+
+Step: 862 | Rwd: 320.02 | Distanza goal: 1.99 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2824.101778 | ostacoli: 0.000000 | posizione: -246.150950 | velocita: 861.000000 | progresso: 1990.540624
+
+Step: 270 | Rwd: 1791.53 | Distanza goal: 1.99 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -743.186204 | ostacoli: 0.000000 | posizione: -107.220571 | velocita: 269.000000 | progresso: 1964.143825
+
+Step: 678 | Rwd: 1101.44 | Distanza goal: 1.36 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2066.697395 | ostacoli: 0.000000 | posizione: -303.147353 | velocita: 677.000000 | progresso: 2335.914612
+
+Step: 265 | Rwd: 1770.96 | Distanza goal: 1.30 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -740.299049 | ostacoli: 0.000000 | posizione: -46.327907 | velocita: 264.000000 | progresso: 1883.365297
+
+Step: 578 | Rwd: 277.38 | Distanza goal: 100.53 | Motivo: Deviazione eccessiva
+azioni: -1904.257924 | ostacoli: -5.338485 | posizione: -341.007313 | velocita: 538.000010 | progresso: 2538.534284
+
+Step: 391 | Rwd: 1484.57 | Distanza goal: 1.71 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1223.898757 | ostacoli: 0.000000 | posizione: -73.316215 | velocita: 390.000000 | progresso: 1960.174155
+
+Step: 458 | Rwd: 1884.08 | Distanza goal: 1.94 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1364.312022 | ostacoli: 0.000000 | posizione: -151.667862 | velocita: 457.000000 | progresso: 2538.282967
+
+Step: 487 | Rwd: 1184.17 | Distanza goal: 1.91 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1591.077945 | ostacoli: 0.000000 | posizione: -87.402863 | velocita: 486.000000 | progresso: 1908.487248
+
+Step: 391 | Rwd: 1319.87 | Distanza goal: 1.88 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1249.211143 | ostacoli: 0.000000 | posizione: -91.025292 | velocita: 390.000000 | progresso: 1828.112316
+
+Step: 280 | Rwd: 290.29 | Distanza goal: 100.45 | Motivo: Deviazione eccessiva
+azioni: -996.857661 | ostacoli: 0.000000 | posizione: -105.810859 | velocita: 279.000000 | progresso: 1669.283676
+
+Step: 459 | Rwd: 1821.89 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1222.509625 | ostacoli: 0.000000 | posizione: -84.242295 | velocita: 458.000000 | progresso: 2263.073969
+
+Step: 403 | Rwd: 1792.09 | Distanza goal: 1.95 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1103.786500 | ostacoli: 0.000000 | posizione: -107.812342 | velocita: 402.000000 | progresso: 2189.783287
+
+Step: 530 | Rwd: 1574.55 | Distanza goal: 1.92 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1572.686743 | ostacoli: 0.000000 | posizione: -142.966078 | velocita: 529.000000 | progresso: 2315.496755
+
+Step: 464 | Rwd: 1475.19 | Distanza goal: 1.67 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1405.225516 | ostacoli: -166.684017 | posizione: -239.761385 | velocita: 370.000400 | progresso: 2319.103336
+
+Step: 259 | Rwd: 1626.44 | Distanza goal: 1.91 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -766.431667 | ostacoli: 0.000000 | posizione: -118.376374 | velocita: 258.000000 | progresso: 1832.787514
+
+Step: 355 | Rwd: 1577.76 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1101.461048 | ostacoli: 0.000000 | posizione: -55.360175 | velocita: 354.000000 | progresso: 1955.303717
+
+Step: 300 | Rwd: 1729.88 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -914.786429 | ostacoli: 0.000000 | posizione: -41.157365 | velocita: 299.000000 | progresso: 1970.540857
+
+Step: 342 | Rwd: 410.99 | Distanza goal: 100.46 | Motivo: Deviazione eccessiva
+azioni: -1212.764966 | ostacoli: 0.000000 | posizione: -125.109099 | velocita: 341.000000 | progresso: 1971.300697
+
+Step: 488 | Rwd: 1494.21 | Distanza goal: 1.94 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1558.440526 | ostacoli: 0.000000 | posizione: -74.836447 | velocita: 487.000000 | progresso: 2194.990349
+
+Step: 282 | Rwd: 381.73 | Distanza goal: 100.65 | Motivo: Deviazione eccessiva
+azioni: -961.484719 | ostacoli: 0.000000 | posizione: -136.065931 | velocita: 281.000000 | progresso: 1759.996414
+
+Step: 285 | Rwd: 1703.30 | Distanza goal: 1.97 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -879.671785 | ostacoli: 0.000000 | posizione: -119.543405 | velocita: 284.000000 | progresso: 2003.484845
+
+Step: 484 | Rwd: 1377.08 | Distanza goal: 1.99 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1436.022334 | ostacoli: 0.000000 | posizione: -96.783003 | velocita: 483.000000 | progresso: 1976.943493
+
+Step: 267 | Rwd: 354.90 | Distanza goal: 101.06 | Motivo: Deviazione eccessiva
+azioni: -914.508356 | ostacoli: 0.000000 | posizione: -134.307182 | velocita: 266.000000 | progresso: 1697.553825
+
+Step: 381 | Rwd: 1392.25 | Distanza goal: 2.00 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1142.784532 | ostacoli: 0.000000 | posizione: -69.061909 | velocita: 380.000000 | progresso: 1775.932097
+
+Step: 293 | Rwd: 1679.72 | Distanza goal: 2.00 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -897.372214 | ostacoli: 0.000000 | posizione: -62.458098 | velocita: 292.000000 | progresso: 1927.911496
+
+Step: 503 | Rwd: 1789.58 | Distanza goal: 1.40 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1519.178001 | ostacoli: 0.000000 | posizione: -117.270515 | velocita: 502.000000 | progresso: 2515.186954
+
+Step: 246 | Rwd: 1759.64 | Distanza goal: 1.69 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -624.773838 | ostacoli: 0.000000 | posizione: -50.108139 | velocita: 245.000000 | progresso: 1778.643513
+
+Step: 290 | Rwd: 1746.63 | Distanza goal: 1.97 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -832.445410 | ostacoli: 0.000000 | posizione: -125.519775 | velocita: 289.000000 | progresso: 2003.909254
+
+Step: 454 | Rwd: 1541.46 | Distanza goal: 1.91 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1346.890964 | ostacoli: 0.000000 | posizione: -105.195514 | velocita: 453.000000 | progresso: 2113.896179
+
+Step: 287 | Rwd: 1603.39 | Distanza goal: 1.90 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -744.734041 | ostacoli: 0.000000 | posizione: -157.119526 | velocita: 286.000000 | progresso: 1797.428155
+
+Step: 409 | Rwd: 1533.88 | Distanza goal: 1.98 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1212.571935 | ostacoli: 0.000000 | posizione: -83.676151 | velocita: 408.000000 | progresso: 1993.967938
+
+Step: 455 | Rwd: 1660.06 | Distanza goal: 1.89 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1259.736017 | ostacoli: 0.000000 | posizione: -93.429867 | velocita: 454.000000 | progresso: 2134.347177
+
+Step: 96 | Rwd: -545.26 | Distanza goal: 364.02 | Motivo: Deviazione eccessiva
+azioni: -297.639408 | ostacoli: 0.000000 | posizione: -53.159274 | velocita: 95.000000 | progresso: 207.373047
+
+Step: 422 | Rwd: 1961.57 | Distanza goal: 1.72 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1136.850798 | ostacoli: 0.000000 | posizione: -99.543886 | velocita: 421.000000 | progresso: 2377.655149
+
+Step: 373 | Rwd: 1762.10 | Distanza goal: 1.91 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1085.270853 | ostacoli: 0.000000 | posizione: -44.904286 | velocita: 372.000000 | progresso: 2106.696939
+
+Step: 243 | Rwd: 1811.91 | Distanza goal: 1.86 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -557.357205 | ostacoli: 0.000000 | posizione: -44.342887 | velocita: 242.000000 | progresso: 1764.348507
+
+Step: 372 | Rwd: 1686.04 | Distanza goal: 1.79 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -991.662532 | ostacoli: 0.000000 | posizione: -60.066553 | velocita: 371.000000 | progresso: 1949.346328
+
+Step: 385 | Rwd: 1493.64 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1033.450829 | ostacoli: 0.000000 | posizione: -71.157837 | velocita: 384.000000 | progresso: 1782.479239
+
+Step: 417 | Rwd: 1374.37 | Distanza goal: 1.84 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1296.703510 | ostacoli: 0.000000 | posizione: -86.949277 | velocita: 416.000000 | progresso: 1891.216779
+
+Step: 345 | Rwd: 1716.65 | Distanza goal: 1.87 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -901.313752 | ostacoli: 0.000000 | posizione: -83.071691 | velocita: 344.000000 | progresso: 1941.021991
+
+Step: 238 | Rwd: 1841.75 | Distanza goal: 1.98 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -522.368632 | ostacoli: 0.000000 | posizione: -56.973507 | velocita: 237.000000 | progresso: 1778.779364
+
+Step: 330 | Rwd: 1674.65 | Distanza goal: 1.98 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -744.620124 | ostacoli: 0.000000 | posizione: -94.625568 | velocita: 329.000000 | progresso: 1767.711473
+
+Step: 319 | Rwd: 1565.45 | Distanza goal: 1.98 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -915.984466 | ostacoli: 0.000000 | posizione: -53.657878 | velocita: 318.000000 | progresso: 1787.364078
+
+Step: 284 | Rwd: 1694.19 | Distanza goal: 1.69 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -655.242844 | ostacoli: 0.000000 | posizione: -144.550967 | velocita: 283.000000 | progresso: 1795.394206
+
+Step: 461 | Rwd: 1491.75 | Distanza goal: 1.40 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1142.815588 | ostacoli: -8.148607 | posizione: -210.179297 | velocita: 407.761585 | progresso: 2007.518768
+
+Step: 511 | Rwd: 1673.48 | Distanza goal: 1.95 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1247.139823 | ostacoli: 0.000000 | posizione: -81.286148 | velocita: 510.000000 | progresso: 2072.407436
+
+Step: 404 | Rwd: 2061.18 | Distanza goal: 1.98 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -896.686214 | ostacoli: 0.000000 | posizione: -92.501961 | velocita: 403.000000 | progresso: 2256.169224
+
+Step: 440 | Rwd: 1410.34 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1227.532228 | ostacoli: 0.000000 | posizione: -77.598339 | velocita: 439.000000 | progresso: 1829.395127
+
+Step: 232 | Rwd: 1625.92 | Distanza goal: 1.89 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -669.349014 | ostacoli: 0.000000 | posizione: -48.585112 | velocita: 231.000000 | progresso: 1692.449188
+
+Step: 301 | Rwd: 1993.77 | Distanza goal: 1.75 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -739.031190 | ostacoli: 0.000000 | posizione: -112.853730 | velocita: 300.000000 | progresso: 2151.122284
+
+Step: 404 | Rwd: 2201.87 | Distanza goal: 1.92 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -917.851992 | ostacoli: 0.000000 | posizione: -67.005129 | velocita: 403.000000 | progresso: 2397.770834
+
+Step: 335 | Rwd: 1914.94 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -734.568405 | ostacoli: 0.000000 | posizione: -48.464605 | velocita: 334.000000 | progresso: 1958.974576
+
+Step: 334 | Rwd: 1705.60 | Distanza goal: 1.86 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1047.672028 | ostacoli: 0.000000 | posizione: -48.755967 | velocita: 333.000000 | progresso: 2054.003096
+
+Step: 531 | Rwd: 1588.47 | Distanza goal: 1.41 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1484.491315 | ostacoli: 0.000000 | posizione: -268.584438 | velocita: 530.000000 | progresso: 2388.816166
+
+Step: 353 | Rwd: 1600.31 | Distanza goal: 1.82 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1073.205669 | ostacoli: 0.000000 | posizione: -80.796177 | velocita: 352.000000 | progresso: 1973.746514
+
+Step: 357 | Rwd: 1688.47 | Distanza goal: 1.75 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -808.318735 | ostacoli: 0.000000 | posizione: -99.096710 | velocita: 356.000000 | progresso: 1824.402308
+
+Step: 238 | Rwd: 1795.16 | Distanza goal: 1.67 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -580.647680 | ostacoli: 0.000000 | posizione: -48.684202 | velocita: 237.000000 | progresso: 1779.091740
+
+Step: 319 | Rwd: 1628.89 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -886.012922 | ostacoli: 0.000000 | posizione: -70.948265 | velocita: 318.000000 | progresso: 1843.411565
+
+Step: 454 | Rwd: 1565.97 | Distanza goal: 1.48 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1318.630276 | ostacoli: 0.000000 | posizione: -117.555136 | velocita: 453.000000 | progresso: 2124.598932
+
+Step: 383 | Rwd: 1796.68 | Distanza goal: 1.88 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1029.593162 | ostacoli: 0.000000 | posizione: -87.829114 | velocita: 382.000000 | progresso: 2120.484018
+
+Step: 243 | Rwd: 1827.48 | Distanza goal: 1.64 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -558.628703 | ostacoli: 0.000000 | posizione: -36.639519 | velocita: 242.000000 | progresso: 1774.696779
+
+Step: 334 | Rwd: 319.89 | Distanza goal: 100.30 | Motivo: Deviazione eccessiva
+azioni: -1007.295407 | ostacoli: 0.000000 | posizione: -138.799527 | velocita: 333.000000 | progresso: 1690.382195
+
+Step: 346 | Rwd: 1964.07 | Distanza goal: 1.85 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -726.944962 | ostacoli: 0.000000 | posizione: -49.758820 | velocita: 345.000000 | progresso: 1997.414160
+
+Step: 337 | Rwd: 1653.63 | Distanza goal: 1.95 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -791.855062 | ostacoli: 0.000000 | posizione: -62.777100 | velocita: 336.000000 | progresso: 1751.651931
+
+Step: 347 | Rwd: 1655.95 | Distanza goal: 1.93 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -908.537054 | ostacoli: 0.000000 | posizione: -63.796119 | velocita: 346.000000 | progresso: 1862.453127
+
+Step: 342 | Rwd: 2211.99 | Distanza goal: 1.81 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -842.190138 | ostacoli: 0.000000 | posizione: -155.223949 | velocita: 341.000000 | progresso: 2489.035296
+
+Step: 471 | Rwd: 1752.66 | Distanza goal: 1.76 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1214.035963 | ostacoli: 0.000000 | posizione: -157.808495 | velocita: 470.000000 | progresso: 2243.083239
+
+Step: 297 | Rwd: 1606.27 | Distanza goal: 1.79 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -878.914202 | ostacoli: 0.000000 | posizione: -152.551350 | velocita: 296.000000 | progresso: 1919.789743
+
+Step: 435 | Rwd: 1661.28 | Distanza goal: 1.98 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1239.047564 | ostacoli: 0.000000 | posizione: -67.313746 | velocita: 434.000000 | progresso: 2103.967047
+
+Step: 324 | Rwd: 1680.67 | Distanza goal: 1.53 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1043.881714 | ostacoli: 0.000000 | posizione: -53.472991 | velocita: 323.000000 | progresso: 2037.810326
+
+Step: 331 | Rwd: 1510.96 | Distanza goal: 1.89 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -961.233372 | ostacoli: 0.000000 | posizione: -75.006861 | velocita: 330.000000 | progresso: 1783.796000
+
+Step: 699 | Rwd: 1474.12 | Distanza goal: 1.50 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1771.091918 | ostacoli: 0.000000 | posizione: -279.054914 | velocita: 698.000000 | progresso: 2394.179654
+
+Step: 243 | Rwd: 1754.02 | Distanza goal: 1.56 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -566.965720 | ostacoli: 0.000000 | posizione: -32.351912 | velocita: 242.000000 | progresso: 1700.121236
+
+Step: 439 | Rwd: 1802.94 | Distanza goal: 1.94 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1105.983066 | ostacoli: 0.000000 | posizione: -113.253534 | velocita: 438.000000 | progresso: 2176.071239
+
+Step: 283 | Rwd: 1984.01 | Distanza goal: 1.56 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -679.607859 | ostacoli: 0.000000 | posizione: -51.104094 | velocita: 282.000000 | progresso: 2037.299752
+
+Step: 490 | Rwd: 1745.55 | Distanza goal: 0.79 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1407.719578 | ostacoli: -0.976418 | posizione: -258.291893 | velocita: 461.000118 | progresso: 2538.681078
+
+Step: 320 | Rwd: 1675.38 | Distanza goal: 1.88 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -820.332549 | ostacoli: 0.000000 | posizione: -58.611760 | velocita: 319.000000 | progresso: 1816.488266
+
+Step: 230 | Rwd: 1695.43 | Distanza goal: 1.61 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -591.566461 | ostacoli: 0.000000 | posizione: -39.541029 | velocita: 229.000000 | progresso: 1682.184029
+
+Step: 240 | Rwd: 1623.65 | Distanza goal: 1.84 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -690.662563 | ostacoli: 0.000000 | posizione: -36.972446 | velocita: 239.000000 | progresso: 1691.619349
+
+Step: 486 | Rwd: 1419.04 | Distanza goal: 1.99 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1266.158587 | ostacoli: 0.000000 | posizione: -97.338175 | velocita: 485.000000 | progresso: 1840.325713
+
+Step: 499 | Rwd: 890.05 | Distanza goal: 100.96 | Motivo: Deviazione eccessiva
+azioni: -1620.460233 | ostacoli: 0.000000 | posizione: -160.938131 | velocita: 498.000000 | progresso: 2770.337963
+
+Step: 357 | Rwd: 506.41 | Distanza goal: 41.10 | Motivo: Schianto a terra
+azioni: -1046.553466 | ostacoli: -27.774410 | posizione: -207.946683 | velocita: 335.000000 | progresso: 1996.212292
+
+Step: 404 | Rwd: 1588.75 | Distanza goal: 1.93 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1166.874641 | ostacoli: 0.000000 | posizione: -83.060387 | velocita: 403.000000 | progresso: 2012.364602
+
+Step: 378 | Rwd: 1618.30 | Distanza goal: 1.92 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1065.034919 | ostacoli: 0.000000 | posizione: -62.269737 | velocita: 377.000000 | progresso: 1947.240615
+
+Step: 129 | Rwd: -237.53 | Distanza goal: 309.42 | Motivo: Deviazione eccessiva
+azioni: -311.257257 | ostacoli: 0.000000 | posizione: -75.535581 | velocita: 128.000000 | progresso: 539.633179
+
+Step: 332 | Rwd: 1772.91 | Distanza goal: 1.99 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -960.372672 | ostacoli: 0.000000 | posizione: -61.097949 | velocita: 331.000000 | progresso: 2053.120136
+
+Step: 419 | Rwd: 1569.84 | Distanza goal: 1.99 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1164.709048 | ostacoli: 0.000000 | posizione: -82.418068 | velocita: 418.000000 | progresso: 1974.407744
+
+Step: 261 | Rwd: 1902.60 | Distanza goal: 1.80 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -606.893243 | ostacoli: 0.000000 | posizione: -34.714515 | velocita: 260.000000 | progresso: 1883.337355
+
+Step: 556 | Rwd: 1142.74 | Distanza goal: 2.00 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1609.128782 | ostacoli: 0.000000 | posizione: -109.669787 | velocita: 555.000000 | progresso: 1819.194365
+
+Step: 529 | Rwd: 1725.05 | Distanza goal: 1.64 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1449.171686 | ostacoli: 0.000000 | posizione: -220.774136 | velocita: 528.000000 | progresso: 2453.507900
+
+Step: 283 | Rwd: 2043.39 | Distanza goal: 1.47 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -623.459182 | ostacoli: 0.000000 | posizione: -42.751853 | velocita: 282.000000 | progresso: 2036.619782
+
+Step: 391 | Rwd: 1588.03 | Distanza goal: 1.83 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -931.464854 | ostacoli: 0.000000 | posizione: -122.584988 | velocita: 390.000000 | progresso: 1828.684592
+
+Step: 104 | Rwd: -497.05 | Distanza goal: 351.66 | Motivo: Deviazione eccessiva
+azioni: -309.436363 | ostacoli: 0.000000 | posizione: -59.160502 | velocita: 103.000000 | progresso: 268.753052
+
+Step: 308 | Rwd: 1689.08 | Distanza goal: 1.40 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -874.948417 | ostacoli: 0.000000 | posizione: -162.732889 | velocita: 307.000000 | progresso: 2003.775454
+
+Step: 388 | Rwd: 362.68 | Distanza goal: 41.33 | Motivo: Schianto a terra
+azioni: -1203.169935 | ostacoli: -33.313621 | posizione: -247.802294 | velocita: 363.199925 | progresso: 2010.670543
+
+Step: 455 | Rwd: 1800.89 | Distanza goal: 1.43 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1259.208647 | ostacoli: 0.000000 | posizione: -176.101064 | velocita: 454.000000 | progresso: 2374.295425
+
+Step: 433 | Rwd: 1501.44 | Distanza goal: 1.94 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1138.120066 | ostacoli: 0.000000 | posizione: -109.985953 | velocita: 432.000000 | progresso: 1886.414981
+
+Step: 389 | Rwd: 1565.33 | Distanza goal: 1.91 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -962.160412 | ostacoli: 0.000000 | posizione: -62.090601 | velocita: 388.000000 | progresso: 1768.551016
+
+Step: 305 | Rwd: 268.23 | Distanza goal: 100.26 | Motivo: Deviazione eccessiva
+azioni: -1113.864534 | ostacoli: 0.000000 | posizione: -119.840776 | velocita: 304.000000 | progresso: 1751.714134
+
+Step: 722 | Rwd: 1192.31 | Distanza goal: 1.90 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2056.144325 | ostacoli: 0.000000 | posizione: -343.685129 | velocita: 721.000000 | progresso: 2419.132876
+
+Step: 135 | Rwd: -310.90 | Distanza goal: 332.84 | Motivo: Deviazione eccessiva
+azioni: -399.209233 | ostacoli: 0.000000 | posizione: -83.774989 | velocita: 134.000000 | progresso: 551.321411
+
+Step: 396 | Rwd: 1842.98 | Distanza goal: 1.77 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1021.546336 | ostacoli: 0.000000 | posizione: -134.871869 | velocita: 395.000000 | progresso: 2198.866630
+
+Step: 317 | Rwd: 1584.43 | Distanza goal: 1.91 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -809.537264 | ostacoli: 0.000000 | posizione: -56.042586 | velocita: 316.000000 | progresso: 1706.127357
+
+Step: 398 | Rwd: 2053.60 | Distanza goal: 1.99 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1067.921079 | ostacoli: 0.000000 | posizione: -63.156206 | velocita: 397.000000 | progresso: 2392.401075
+
+Step: 228 | Rwd: 1672.12 | Distanza goal: 1.26 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -607.366673 | ostacoli: 0.000000 | posizione: -46.744248 | velocita: 227.000000 | progresso: 1682.277083
+
+Step: 135 | Rwd: -339.07 | Distanza goal: 332.12 | Motivo: Deviazione eccessiva
+azioni: -434.642330 | ostacoli: 0.000000 | posizione: -83.348697 | velocita: 134.000000 | progresso: 556.188965
+
+Step: 307 | Rwd: 301.65 | Distanza goal: 100.57 | Motivo: Deviazione eccessiva
+azioni: -1106.689597 | ostacoli: 0.000000 | posizione: -126.426148 | velocita: 306.000000 | progresso: 1784.878349
+
+Step: 522 | Rwd: 1448.52 | Distanza goal: 1.62 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1280.873399 | ostacoli: 0.000000 | posizione: -143.228970 | velocita: 521.000000 | progresso: 1917.891455
+
+Step: 427 | Rwd: 1631.47 | Distanza goal: 1.91 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1162.370317 | ostacoli: 0.000000 | posizione: -87.242803 | velocita: 426.000000 | progresso: 2032.585001
+
+Step: 408 | Rwd: 2022.54 | Distanza goal: 1.78 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1063.692924 | ostacoli: 0.000000 | posizione: -108.568396 | velocita: 407.000000 | progresso: 2393.676567
+
+Step: 335 | Rwd: 400.71 | Distanza goal: 100.46 | Motivo: Deviazione eccessiva
+azioni: -1072.215716 | ostacoli: 0.000000 | posizione: -141.237150 | velocita: 334.000000 | progresso: 1843.214130
+
+Step: 294 | Rwd: 1654.67 | Distanza goal: 1.81 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -728.723205 | ostacoli: 0.000000 | posizione: -53.381654 | velocita: 293.000000 | progresso: 1724.807739
+
+Step: 367 | Rwd: 1920.27 | Distanza goal: 1.88 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -911.512922 | ostacoli: 0.000000 | posizione: -49.387803 | velocita: 366.000000 | progresso: 2114.926791
+
+Step: 303 | Rwd: 2007.54 | Distanza goal: 1.70 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -757.028317 | ostacoli: 0.000000 | posizione: -122.482395 | velocita: 302.000000 | progresso: 2191.589284
+
+Step: 345 | Rwd: 1921.29 | Distanza goal: 1.95 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -870.360744 | ostacoli: 0.000000 | posizione: -49.491083 | velocita: 344.000000 | progresso: 2096.521831
+
+Step: 365 | Rwd: 1710.35 | Distanza goal: 1.87 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -826.768901 | ostacoli: 0.000000 | posizione: -98.033802 | velocita: 364.000000 | progresso: 1857.291913
+
+Step: 294 | Rwd: 356.19 | Distanza goal: 100.57 | Motivo: Deviazione eccessiva
+azioni: -1006.258739 | ostacoli: 0.000000 | posizione: -130.647307 | velocita: 293.000000 | progresso: 1760.027027
+
+Step: 303 | Rwd: 1860.62 | Distanza goal: 1.16 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -881.383542 | ostacoli: 0.000000 | posizione: -118.275355 | velocita: 302.000000 | progresso: 2154.581237
+
+Step: 326 | Rwd: 91.92 | Distanza goal: 100.02 | Motivo: Deviazione eccessiva
+azioni: -1142.218390 | ostacoli: 0.000000 | posizione: -138.819838 | velocita: 325.000000 | progresso: 1589.390564
+
+Step: 589 | Rwd: 1771.81 | Distanza goal: 1.78 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1441.385364 | ostacoli: 0.000000 | posizione: -195.304220 | velocita: 588.000000 | progresso: 2410.348463
+
+Step: 362 | Rwd: 1569.21 | Distanza goal: 1.74 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -941.656902 | ostacoli: 0.000000 | posizione: -98.717938 | velocita: 361.000000 | progresso: 1824.081039
+
+Step: 326 | Rwd: 2151.90 | Distanza goal: 1.92 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -848.918515 | ostacoli: 0.000000 | posizione: -54.995083 | velocita: 325.000000 | progresso: 2347.413111
+
+Step: 281 | Rwd: 1801.87 | Distanza goal: 1.74 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -789.412416 | ostacoli: 0.000000 | posizione: -99.641855 | velocita: 280.000000 | progresso: 2003.063703
+
+Step: 322 | Rwd: 1579.44 | Distanza goal: 1.89 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -851.461004 | ostacoli: 0.000000 | posizione: -62.432707 | velocita: 321.000000 | progresso: 1748.141170
+
+Step: 650 | Rwd: 1234.64 | Distanza goal: 1.62 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1911.490244 | ostacoli: 0.000000 | posizione: -249.552266 | velocita: 649.000000 | progresso: 2298.764157
+
+Step: 352 | Rwd: 1523.12 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1053.254794 | ostacoli: 0.000000 | posizione: -74.282457 | velocita: 351.000000 | progresso: 1870.600772
+
+Step: 305 | Rwd: 1715.79 | Distanza goal: 1.75 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -779.529878 | ostacoli: 0.000000 | posizione: -43.397560 | velocita: 304.000000 | progresso: 1820.661736
+
+Step: 263 | Rwd: 1682.28 | Distanza goal: 1.63 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -809.323755 | ostacoli: 0.000000 | posizione: -34.389014 | velocita: 262.000000 | progresso: 1847.604942
+
+Step: 369 | Rwd: 1691.29 | Distanza goal: 1.93 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -988.260694 | ostacoli: 0.000000 | posizione: -117.441675 | velocita: 368.000000 | progresso: 2012.875772
+
+Step: 406 | Rwd: 1808.77 | Distanza goal: 1.66 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1112.699412 | ostacoli: 0.000000 | posizione: -129.134268 | velocita: 405.000000 | progresso: 2237.800956
+
+Step: 377 | Rwd: 1673.35 | Distanza goal: 1.99 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1074.766235 | ostacoli: 0.000000 | posizione: -61.828250 | velocita: 376.000000 | progresso: 2016.413450
+
+Step: 338 | Rwd: 1850.11 | Distanza goal: 1.90 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -865.848348 | ostacoli: 0.000000 | posizione: -42.427666 | velocita: 337.000000 | progresso: 2016.224122
+
+Step: 436 | Rwd: 1528.38 | Distanza goal: 1.80 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1242.723186 | ostacoli: 0.000000 | posizione: -72.005087 | velocita: 435.000000 | progresso: 1976.378322
+
+Step: 242 | Rwd: 1799.86 | Distanza goal: 1.85 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -579.834944 | ostacoli: 0.000000 | posizione: -34.408163 | velocita: 241.000000 | progresso: 1765.026879
+
+Step: 468 | Rwd: 1188.12 | Distanza goal: 1.46 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1463.930322 | ostacoli: -87.387175 | posizione: -231.536656 | velocita: 377.261822 | progresso: 2055.717611
+
+Step: 504 | Rwd: 1658.98 | Distanza goal: 1.91 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1233.529188 | ostacoli: 0.000000 | posizione: -87.227735 | velocita: 503.000000 | progresso: 2057.621884
+
+Step: 281 | Rwd: 1877.26 | Distanza goal: 1.91 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -777.314104 | ostacoli: 0.000000 | posizione: -63.729713 | velocita: 280.000000 | progresso: 2035.669899
+
+Step: 303 | Rwd: 265.77 | Distanza goal: 100.05 | Motivo: Deviazione eccessiva
+azioni: -987.857599 | ostacoli: 0.000000 | posizione: -114.328850 | velocita: 302.000000 | progresso: 1619.559669
+
+Step: 392 | Rwd: 527.52 | Distanza goal: 58.14 | Motivo: Schianto a terra
+azioni: -1085.589878 | ostacoli: -56.846918 | posizione: -248.818002 | velocita: 358.000000 | progresso: 2076.000762
+
+Step: 378 | Rwd: 1583.24 | Distanza goal: 1.91 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -969.266159 | ostacoli: 0.000000 | posizione: -76.435107 | velocita: 377.000000 | progresso: 1826.596141
+
+Step: 306 | Rwd: 1745.61 | Distanza goal: 1.81 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -737.557875 | ostacoli: 0.000000 | posizione: -45.027695 | velocita: 305.000000 | progresso: 1811.039710
+
+Step: 305 | Rwd: 1995.44 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -706.254823 | ostacoli: 0.000000 | posizione: -59.985963 | velocita: 304.000000 | progresso: 2062.928081
+
+Step: 472 | Rwd: 1073.52 | Distanza goal: 1.00 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1546.712264 | ostacoli: -24.900279 | posizione: -281.724011 | velocita: 408.656880 | progresso: 2034.501481
+
+Step: 343 | Rwd: 1675.47 | Distanza goal: 1.84 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -800.688854 | ostacoli: 0.000000 | posizione: -66.236362 | velocita: 342.000000 | progresso: 1782.614851
+
+Step: 553 | Rwd: 1900.13 | Distanza goal: 1.82 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1314.511512 | ostacoli: 0.000000 | posizione: -132.885305 | velocita: 552.000000 | progresso: 2385.827875
+
+Step: 343 | Rwd: 1767.22 | Distanza goal: 1.95 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -873.272056 | ostacoli: 0.000000 | posizione: -63.094178 | velocita: 342.000000 | progresso: 1949.079227
+
+Step: 540 | Rwd: 1407.01 | Distanza goal: 1.72 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1452.944921 | ostacoli: 0.000000 | posizione: -110.926616 | velocita: 539.000000 | progresso: 1995.478654
+
+Step: 291 | Rwd: 1616.12 | Distanza goal: 1.46 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -876.500843 | ostacoli: 0.000000 | posizione: -139.366805 | velocita: 290.000000 | progresso: 1921.173978
+
+Step: 280 | Rwd: 1558.19 | Distanza goal: 1.46 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -969.282183 | ostacoli: 0.000000 | posizione: -172.781904 | velocita: 279.000000 | progresso: 1996.326232
+
+Step: 434 | Rwd: 1876.52 | Distanza goal: 1.88 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1222.342552 | ostacoli: 0.000000 | posizione: -149.474306 | velocita: 433.000000 | progresso: 2408.353662
+
+Step: 570 | Rwd: 1680.26 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1398.727403 | ostacoli: 0.000000 | posizione: -100.488000 | velocita: 569.000000 | progresso: 2187.623525
+
+Step: 348 | Rwd: 1712.06 | Distanza goal: 1.89 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -854.204922 | ostacoli: 0.000000 | posizione: -58.011044 | velocita: 347.000000 | progresso: 1861.418796
+
+Step: 332 | Rwd: 599.70 | Distanza goal: 41.57 | Motivo: Schianto a terra
+azioni: -938.041946 | ostacoli: -32.798565 | posizione: -163.512534 | velocita: 308.000853 | progresso: 1970.227814
+
+Step: 393 | Rwd: 1623.87 | Distanza goal: 1.87 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1113.707493 | ostacoli: 0.000000 | posizione: -129.625767 | velocita: 392.000000 | progresso: 2054.480577
+
+Step: 243 | Rwd: 1747.49 | Distanza goal: 1.84 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -560.849065 | ostacoli: 0.000000 | posizione: -46.535327 | velocita: 242.000000 | progresso: 1701.041460
+
+Step: 308 | Rwd: 1785.77 | Distanza goal: 1.24 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -927.595885 | ostacoli: 0.000000 | posizione: -154.186793 | velocita: 307.000000 | progresso: 2151.574206
+
+Step: 351 | Rwd: 286.99 | Distanza goal: 100.01 | Motivo: Deviazione eccessiva
+azioni: -1139.242976 | ostacoli: 0.000000 | posizione: -150.461260 | velocita: 350.000000 | progresso: 1781.786156
+
+Step: 382 | Rwd: 1594.27 | Distanza goal: 1.71 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1058.365223 | ostacoli: 0.000000 | posizione: -119.748805 | velocita: 381.000000 | progresso: 1968.692994
+
+Step: 596 | Rwd: 1834.96 | Distanza goal: 1.74 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1664.175916 | ostacoli: 0.000000 | posizione: -211.395648 | velocita: 595.000000 | progresso: 2709.867501
+
+Step: 684 | Rwd: 1471.48 | Distanza goal: 1.81 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2057.245628 | ostacoli: -0.890375 | posizione: -266.950639 | velocita: 655.215696 | progresso: 2708.322501
+
+Step: 466 | Rwd: 1491.88 | Distanza goal: 1.83 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1302.982357 | ostacoli: 0.000000 | posizione: -103.556239 | velocita: 465.000000 | progresso: 1998.022628
+
+Step: 387 | Rwd: 1553.61 | Distanza goal: 1.81 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -982.410594 | ostacoli: 0.000000 | posizione: -114.685855 | velocita: 386.000000 | progresso: 1838.853693
+
+Step: 362 | Rwd: 1925.05 | Distanza goal: 1.83 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -940.990655 | ostacoli: 0.000000 | posizione: -51.574901 | velocita: 361.000000 | progresso: 2157.011747
+
+Step: 399 | Rwd: 1862.76 | Distanza goal: 1.64 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1025.211189 | ostacoli: 0.000000 | posizione: -81.928122 | velocita: 398.000000 | progresso: 2166.575980
+
+Step: 527 | Rwd: 1290.15 | Distanza goal: 1.92 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1561.202860 | ostacoli: 0.000000 | posizione: -104.574781 | velocita: 526.000000 | progresso: 1984.842801
+
+Step: 597 | Rwd: 1207.43 | Distanza goal: 1.35 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1759.257574 | ostacoli: 0.000000 | posizione: -200.989635 | velocita: 596.000000 | progresso: 2121.783924
+
+Step: 424 | Rwd: 1959.19 | Distanza goal: 1.98 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1045.162232 | ostacoli: 0.000000 | posizione: -67.033629 | velocita: 423.000000 | progresso: 2245.773363
+
+Step: 713 | Rwd: 1892.18 | Distanza goal: 1.86 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -2205.434046 | ostacoli: 0.000000 | posizione: -163.756377 | velocita: 712.000000 | progresso: 3146.000600
+
+Step: 326 | Rwd: 2155.28 | Distanza goal: 1.98 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -836.662412 | ostacoli: 0.000000 | posizione: -61.011005 | velocita: 325.000000 | progresso: 2344.720197
+
+Step: 107 | Rwd: -508.79 | Distanza goal: 346.73 | Motivo: Deviazione eccessiva
+azioni: -347.959370 | ostacoli: 0.000000 | posizione: -61.306126 | velocita: 106.000000 | progresso: 293.859863
+
+Step: 349 | Rwd: 1681.46 | Distanza goal: 1.91 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -919.314884 | ostacoli: 0.000000 | posizione: -56.727888 | velocita: 348.000000 | progresso: 1892.755175
+
+Step: 327 | Rwd: 1776.27 | Distanza goal: 1.98 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -956.840719 | ostacoli: 0.000000 | posizione: -38.300546 | velocita: 326.000000 | progresso: 2035.244417
+
+Step: 326 | Rwd: 497.07 | Distanza goal: 100.42 | Motivo: Deviazione eccessiva
+azioni: -1100.060261 | ostacoli: 0.000000 | posizione: -147.358568 | velocita: 325.000000 | progresso: 1989.299941
+
+Step: 439 | Rwd: 1790.12 | Distanza goal: 1.94 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1116.317867 | ostacoli: 0.000000 | posizione: -80.053514 | velocita: 438.000000 | progresso: 2136.901236
+
+Step: 244 | Rwd: 1800.65 | Distanza goal: 1.84 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -512.517725 | ostacoli: 0.000000 | posizione: -39.777155 | velocita: 243.000000 | progresso: 1702.023959
+
+Step: 259 | Rwd: 1768.09 | Distanza goal: 1.61 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -678.721055 | ostacoli: 0.000000 | posizione: -70.871153 | velocita: 258.000000 | progresso: 1849.383450
+
+Step: 268 | Rwd: 1634.68 | Distanza goal: 1.33 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -804.870205 | ostacoli: 0.000000 | posizione: -98.564254 | velocita: 267.000000 | progresso: 1851.402664
+
+Step: 525 | Rwd: 1581.39 | Distanza goal: 1.87 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1537.725726 | ostacoli: 0.000000 | posizione: -143.202354 | velocita: 524.000000 | progresso: 2314.270878
+
+Step: 289 | Rwd: 1482.51 | Distanza goal: 1.56 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1001.341720 | ostacoli: 0.000000 | posizione: -153.929510 | velocita: 288.000000 | progresso: 1919.440460
+
+Step: 426 | Rwd: 1426.12 | Distanza goal: 1.90 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1253.402607 | ostacoli: 0.000000 | posizione: -98.004764 | velocita: 425.000000 | progresso: 1911.542678
+
+Step: 405 | Rwd: 1565.11 | Distanza goal: 1.65 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1200.319994 | ostacoli: -8.990207 | posizione: -124.481103 | velocita: 358.859736 | progresso: 2105.761600
+
+Step: 463 | Rwd: 1218.11 | Distanza goal: 1.63 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1443.736449 | ostacoli: -131.918144 | posizione: -213.178110 | velocita: 368.194971 | progresso: 2057.678676
+
+Step: 375 | Rwd: 1785.22 | Distanza goal: 1.94 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -932.450832 | ostacoli: 0.000000 | posizione: -78.091452 | velocita: 374.000000 | progresso: 2009.702921
+
+Step: 303 | Rwd: 365.58 | Distanza goal: 100.97 | Motivo: Deviazione eccessiva
+azioni: -1042.313863 | ostacoli: 0.000000 | posizione: -124.295794 | velocita: 302.000000 | progresso: 1790.782738
+
+Step: 308 | Rwd: 1635.61 | Distanza goal: 1.97 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -770.129499 | ostacoli: 0.000000 | posizione: -62.506394 | velocita: 307.000000 | progresso: 1738.666606
+
+Step: 308 | Rwd: 491.83 | Distanza goal: 100.20 | Motivo: Deviazione eccessiva
+azioni: -1064.835851 | ostacoli: 0.000000 | posizione: -137.064715 | velocita: 307.000000 | progresso: 1956.157780
+
+Step: 328 | Rwd: 2180.28 | Distanza goal: 1.80 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -827.952148 | ostacoli: 0.000000 | posizione: -47.089327 | velocita: 327.000000 | progresso: 2346.655965
+
+Step: 353 | Rwd: 1823.29 | Distanza goal: 2.00 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -850.393265 | ostacoli: 0.000000 | posizione: -60.734164 | velocita: 352.000000 | progresso: 1972.154450
+
+Step: 114 | Rwd: -499.96 | Distanza goal: 274.76 | Motivo: Deviazione eccessiva
+azioni: -410.654375 | ostacoli: 0.000000 | posizione: -65.267328 | velocita: 113.000000 | progresso: 362.966919
+
+Step: 595 | Rwd: 1364.40 | Distanza goal: 1.62 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1703.874117 | ostacoli: 0.000000 | posizione: -99.830544 | velocita: 594.000000 | progresso: 2134.287190
+
+Step: 306 | Rwd: 1640.71 | Distanza goal: 1.94 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -780.359217 | ostacoli: 0.000000 | posizione: -40.743173 | velocita: 305.000000 | progresso: 1735.481453
+
+Step: 318 | Rwd: 1709.02 | Distanza goal: 1.77 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -804.936174 | ostacoli: 0.000000 | posizione: -53.084263 | velocita: 317.000000 | progresso: 1834.580588
+
+Step: 303 | Rwd: 1753.67 | Distanza goal: 1.98 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -724.376960 | ostacoli: 0.000000 | posizione: -53.450519 | velocita: 302.000000 | progresso: 1817.304587
+
+Step: 417 | Rwd: 1876.90 | Distanza goal: 1.97 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1243.895799 | ostacoli: 0.000000 | posizione: -110.321945 | velocita: 416.000000 | progresso: 2408.694768
+
+Step: 404 | Rwd: 1485.39 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1188.812998 | ostacoli: 0.000000 | posizione: -89.448600 | velocita: 403.000000 | progresso: 1921.250510
+
+Step: 423 | Rwd: 1943.33 | Distanza goal: 1.73 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1060.684044 | ostacoli: 0.000000 | posizione: -74.493998 | velocita: 422.000000 | progresso: 2256.417871
+
+Step: 385 | Rwd: 1715.43 | Distanza goal: 1.94 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1074.803210 | ostacoli: 0.000000 | posizione: -53.740455 | velocita: 384.000000 | progresso: 2041.261053
+
+Step: 322 | Rwd: 1636.75 | Distanza goal: 1.99 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -970.295707 | ostacoli: 0.000000 | posizione: -50.806027 | velocita: 321.000000 | progresso: 1916.835213
+
+Step: 245 | Rwd: 1691.98 | Distanza goal: 1.02 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -634.678806 | ostacoli: 0.000000 | posizione: -36.076406 | velocita: 244.000000 | progresso: 1703.075933
+
+Step: 325 | Rwd: 1723.46 | Distanza goal: 1.74 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -804.160777 | ostacoli: 0.000000 | posizione: -51.102213 | velocita: 324.000000 | progresso: 1839.640379
+
+Step: 342 | Rwd: 1581.89 | Distanza goal: 1.76 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1008.549930 | ostacoli: 0.000000 | posizione: -51.155917 | velocita: 341.000000 | progresso: 1876.339245
+
+Step: 318 | Rwd: 1663.95 | Distanza goal: 1.94 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -892.605869 | ostacoli: 0.000000 | posizione: -52.211551 | velocita: 317.000000 | progresso: 1872.870827
+
+Step: 469 | Rwd: 1620.93 | Distanza goal: 1.24 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1443.280255 | ostacoli: 0.000000 | posizione: -221.491866 | velocita: 468.000000 | progresso: 2396.826839
+
+Step: 305 | Rwd: 1436.67 | Distanza goal: 1.99 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -957.242981 | ostacoli: 0.000000 | posizione: -72.348656 | velocita: 304.000000 | progresso: 1726.397061
+
+Step: 339 | Rwd: 1961.97 | Distanza goal: 1.44 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -886.558397 | ostacoli: 0.000000 | posizione: -76.423611 | velocita: 338.000000 | progresso: 2190.005350
+
+Step: 305 | Rwd: 454.02 | Distanza goal: 100.38 | Motivo: Deviazione eccessiva
+azioni: -1091.262705 | ostacoli: 0.000000 | posizione: -131.818476 | velocita: 304.000000 | progresso: 1939.880943
+
+Step: 113 | Rwd: -500.27 | Distanza goal: 275.93 | Motivo: Deviazione eccessiva
+azioni: -404.982183 | ostacoli: 0.000000 | posizione: -64.291354 | velocita: 112.000000 | progresso: 356.982422
+
+Step: 525 | Rwd: 1980.54 | Distanza goal: 1.90 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1394.234019 | ostacoli: 0.000000 | posizione: -195.232878 | velocita: 524.000000 | progresso: 2649.575567
+
+Step: 314 | Rwd: 1477.22 | Distanza goal: 1.96 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -939.889086 | ostacoli: 0.000000 | posizione: -95.016003 | velocita: 313.000000 | progresso: 1766.172957
+
+Step: 401 | Rwd: 1867.19 | Distanza goal: 1.93 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1214.464811 | ostacoli: 0.000000 | posizione: -128.600429 | velocita: 400.000000 | progresso: 2406.636453
+
+Step: 290 | Rwd: 1956.74 | Distanza goal: 1.46 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -719.657728 | ostacoli: 0.000000 | posizione: -101.793075 | velocita: 289.000000 | progresso: 2092.112160
+
+Step: 372 | Rwd: 2068.70 | Distanza goal: 1.67 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1049.044776 | ostacoli: 0.000000 | posizione: -61.776882 | velocita: 371.000000 | progresso: 2418.705487
+
+Step: 442 | Rwd: 1387.39 | Distanza goal: 1.94 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1277.095788 | ostacoli: 0.000000 | posizione: -68.841599 | velocita: 441.000000 | progresso: 1846.309137
+
+Step: 291 | Rwd: 483.71 | Distanza goal: 100.30 | Motivo: Deviazione eccessiva
+azioni: -1045.028513 | ostacoli: 0.000000 | posizione: -153.257270 | velocita: 290.000000 | progresso: 1960.805893
+
+Step: 485 | Rwd: 1237.23 | Distanza goal: 1.92 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -1455.210789 | ostacoli: 0.000000 | posizione: -109.297066 | velocita: 484.000000 | progresso: 1868.715620
+
+Step: 284 | Rwd: 500.69 | Distanza goal: 100.97 | Motivo: Deviazione eccessiva
+azioni: -1010.402121 | ostacoli: 0.000000 | posizione: -134.417177 | velocita: 283.000000 | progresso: 1932.561970
+
+Step: 302 | Rwd: 2067.25 | Distanza goal: 1.41 | Motivo: TRAGUARDO RAGGIUNTO!
+azioni: -767.800419 | ostacoli: 0.000000 | posizione: -35.680624 | velocita: 301.000000 | progresso: 2180.344415
+
