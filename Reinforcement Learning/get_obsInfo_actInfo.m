@@ -9,7 +9,7 @@ function [obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo()
     numState = 11; % 3 vel + 3 omega + 4 quat + 1 distanza goal
     numErrors = 6; % 3 pos + 3 vel || + 1 yaw
     numObs = numState + numRays + numErrors; % 13 stato, 768 raggi, 6 errori
-    numAct = 6; % 3 per posizione, 3 per velocità
+    numAct = 3; %6; % 3 per posizione, 3 per velocità
 
     % Spazio delle Osservazioni (Observation Space)
     obsInfo = rlNumericSpec([1 numObs]);
@@ -23,7 +23,9 @@ function [obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo()
     max_delta_vel = 3.0;  % +/- 3 m/s
     %max_delta_yaw = 0.5;  % +/- 0.5 rad
     
-    actLimit = [max_delta_pos*ones(3,1); max_delta_vel*ones(3,1)];%; max_delta_yaw];
+    %actLimit = [max_delta_pos*ones(3,1); max_delta_vel*ones(3,1)];%; max_delta_yaw];
+
+    actLimit = [max_delta_pos*ones(3,1)];%; max_delta_yaw];
 
     actInfo = rlNumericSpec([1 numAct], ...
         'LowerLimit', -actLimit', ...

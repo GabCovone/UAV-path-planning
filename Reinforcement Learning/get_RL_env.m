@@ -1,47 +1,55 @@
-function env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, path_DB_scenari_eval, logging, dq_train, dq_valid)
+function env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, path_DB_scenari_eval, logging, logPath, logPathValid)
     
     if nargin < 4, path_DB_scenari = 'training_scenarios.mat'; end
     if nargin < 5, path_DB_scenari_eval = 'validation_scenarios.mat'; end
     
-    % Assegnazione nel workspace dei path di scenari di training e validation
+    % Assegnazione nel workspace dei path di scenari di training e
+    % validation
     assignin('base', 'path_DB_scenari', path_DB_scenari);
     assignin('base', 'path_DB_scenari_eval', path_DB_scenari_eval);
     
     % Logging
     if nargin < 6, logging = false; end
     if nargin < 7
-        dq_train = []; % Fallback in caso non esista
+        logPath = fullfile(pwd, 'registro_morti.txt');
     end
     if nargin < 8
-        dq_valid = []; % Fallback in caso non esista
+        logPathValid = fullfile(pwd, 'registro_morti_validation.txt');
     end
-    
     assignin('base', 'logging', logging);
-    
-    % Salviamo gli oggetti coda direttamente nel workspace del worker
-    assignin('base', 'dq_train', dq_train);
-    assignin('base', 'dq_valid', dq_valid);
+    logPath_padded = sprintf('%-250s', logPath);
+    assignin('base', 'logPath_num', int8(logPath_padded));
+    logPathValid_padded = sprintf('%-250s', logPathValid);
+    assignin('base', 'logPathValid_num', int8(logPathValid_padded))
 
-    assignin('base', 'logPath_num', zeros(1, 250, 'int8'));
-    assignin('base', 'logPathValid_num', zeros(1, 250, 'int8'));
-    
     mdl = 'SAC_RL_env';
     agentBlk = [mdl, '/Inner Loop and Plant Model/High-FidelityModel/RL Agent'];
-    
-    % Assegnazione nel workspace dei limiti
+
+    % Assegnazione nel workspace dei limiti per la normalizzazione
     assignin('base', 'max_delta', actLimit);
-    assignin('base', 'max_deviazione_pos', 100); 
-    assignin('base', 'max_deviazione_vel', 20); 
-    assignin('base', 'max_vel', 30); 
-    assignin('base', 'max_angular_vel', double(pi)); 
-    assignin('base', 'tolleranza_goal', 2); 
+
+    max_deviazione_pos = 100; % Deviazione massima in metri consentita per l'agente
+    assignin('base', 'max_deviazione_pos', max_deviazione_pos);
+    
+    max_deviazione_vel = 20; % Deviazione massima in m/s per la velocità
+    assignin('base', 'max_deviazione_vel', max_deviazione_vel);
+
+    max_vel = 30; % Massima velocità lineare
+    max_angular_vel = double(pi); % Massima velocità angolare
+    assignin('base', 'max_vel', max_vel);
+    assignin('base', 'max_angular_vel', max_angular_vel);
+    
+    tolleranza_goal = 2; % di base 2
+    assignin('base', 'tolleranza_goal', tolleranza_goal);
     
     % Creazione dell'ambiente Simulink
     env = rlSimulinkEnv(mdl, agentBlk, obsInfo, actInfo);
-    assignin('base', "is_validation", false);
+
+    assignin('base',"is_validation",false);
     
     % Assegnazione all'ambiente della funzione di reset
     env.ResetFcn = @(in) localResetFcn(in);
+
     disp('✅ Ambiente RL Simulink creato con successo');
 end
 
@@ -49,6 +57,8 @@ function in = localResetFcn(in)
     % Dichiarazione variabili persistenti
     persistent DB_scenari DB_scenari_eval scenario_corrente episodi
     persistent path_DB_scenari_persistent path_DB_scenari_eval_persistent
+    persistent available_indices_train available_indices_eval
+    
     is_validation = evalin('base', 'is_validation');
     path_DB_scenari = evalin('base', 'path_DB_scenari');
     
@@ -60,15 +70,19 @@ function in = localResetFcn(in)
         DB_scenari = data.scenari; 
         episodi = 0;
         
+        available_indices_train = randperm(length(DB_scenari));
+        
         try
             forced_idx = evalin('base', 'eval_scenario_idx');
             if ~isempty(forced_idx)
                 scenario_corrente = forced_idx;
             else
-                scenario_corrente = randi(length(DB_scenari));
+                scenario_corrente = available_indices_train(1);
+                available_indices_train(1) = [];
             end
         catch
-            scenario_corrente = randi(length(DB_scenari));
+            scenario_corrente = available_indices_train(1);
+            available_indices_train(1) = [];
         end
     end
     
@@ -88,6 +102,8 @@ function in = localResetFcn(in)
         path_DB_scenari_eval_persistent = path_DB_scenari_eval;
         data = load(path_DB_scenari_eval_persistent); 
         DB_scenari_eval = data.scenari; 
+        
+        available_indices_eval = randperm(length(DB_scenari_eval));
     end
     
     if is_testing
@@ -95,11 +111,21 @@ function in = localResetFcn(in)
         scenario = DB_scenari(scenario_corrente);
     elseif is_validation
         % disp("Cambio casuale di scenario di validation.")
-        scenario_corrente = randi(length(DB_scenari_eval));
+        if isempty(available_indices_eval)
+            available_indices_eval = randperm(length(DB_scenari_eval));
+        end
+        scenario_corrente = available_indices_eval(1);
+        available_indices_eval(1) = [];
+        
         scenario = DB_scenari_eval(scenario_corrente);
     else
         % disp("Modalità training: Cambio casuale di scenario")
-        scenario_corrente = randi(length(DB_scenari));
+        if isempty(available_indices_train)
+            available_indices_train = randperm(length(DB_scenari));
+        end
+        scenario_corrente = available_indices_train(1);
+        available_indices_train(1) = [];
+        
         episodi = episodi + 1;
         scenario = DB_scenari(scenario_corrente);
     end
@@ -117,7 +143,9 @@ function in = localResetFcn(in)
     assignin('base', 'init_vel', init_vel);
     assignin('base', 'init_euler', init_euler);
     assignin('base', 'sim_pos_des', scenario.sim_pos_des);
+    assignin('base', 'sim_pos_des_matrix', scenario.sim_pos_des.Data);
     assignin('base', 'sim_vel_des', scenario.sim_vel_des);
+    assignin('base', 'sim_vel_des_matrix', scenario.sim_vel_des.Data);
     assignin('base', 'sim_yaw_des', scenario.sim_yaw_des);
     assignin('base', 'pos_goal', scenario.map.q_goal);
     assignin('base', 'bounds', bounds);

@@ -1,6 +1,6 @@
 %% Script di Test Batch Ottimizzato per Agente SAC (test_agent.m)
 
-lista_nomi = ["Agent3600"];
+lista_nomi = ["trained_agent_v21_no_deen"];
 
 for i=1:length(lista_nomi)
     report_agent_fun(lista_nomi{i});
@@ -33,7 +33,7 @@ function report_agent_fun(nome_agente_file)
     Ts = 0.1;
     assignin('base', 'Ts', Ts);
     
-    path_DB_scenari = 'validation_scenarios.mat';
+    path_DB_scenari = 'test_scenarios_L1.mat';
     file_registro = fullfile(pwd, 'registro_morti.txt'); 
     
     % --- Parametrizzazione Nomi e Directory ---
@@ -69,7 +69,7 @@ function report_agent_fun(nome_agente_file)
     env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, "validation_scenarios.mat", true, file_registro);
     
     % --- CARICAMENTO OTTIMIZZATO AGENTE ---
-    agent_name = 'saved_agent'; 
+    agent_name = 'agent'; 
     dati_salvati = load(strcat(nome_agente_file, ".mat"), agent_name);
     agente_valutazione = dati_salvati.(agent_name); 
     
