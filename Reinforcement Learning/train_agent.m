@@ -1,41 +1,14 @@
-%% Configurazione Iniziale e Variabili
-Ts = 0.1; % Tempo di campionamento (10 Hz)
 plantModelFi = 1;            
 useHeading = 1;              
 initialGainsMultiplier = 15;
 
-rng(1);
-assignin('base', 'Ts', Ts);
+%%
 
 evalin('base', 'clear eval_scenario_idx');
 
-%% Preparazione Modello Simulink
-mdl = 'SAC_RL_env';
-path = strcat(mdl, "/Inner Loop and Plant Model/High-FidelityModel/");
-load_system(mdl);
+path = "SAC_RL_env/Inner Loop and Plant Model/High-FidelityModel/";
 
-% % Disabilita la propagazione del variant subsystem
-% set_param(strcat(mdl, '/Inner Loop and Plant Model'), 'PropagateVariantConditions', 'off');
-% 
-set_param(mdl, 'SimulationMode', 'accelerator'); 
-
-% mdlWks = get_param(mdl, 'ModelWorkspace');
-% mdlWks.assignin('Ts', Ts);
-% mdlWks.assignin('plantModelFi', plantModelFi);
-% mdlWks.assignin('useHeading', useHeading);
-% mdlWks.assignin('initialGainsMultiplier', initialGainsMultiplier);
-
-% Caricamento della DEEN Network per i worker
-% if isfile('deen_network.mat')
-%     % Carica il file e lo assegna al workspace del modello
-%     deen_data = load('deen_network.mat');
-%     fields = fieldnames(deen_data);
-%     for i = 1:numel(fields)
-%         mdlWks.assignin(fields{i}, deen_data.(fields{i}));
-%     end
-% else
-%     error('ATTENZIONE: Il file deen_network.mat non si trova nella cartella!');
-% end
+load_system("SAC_RL_env");
 
 if get_param(strcat(path, "pos_agente To File"), 'Commented') == "off"
     set_param(strcat(path, "pos_agente To File"), 'Commented', 'on');
@@ -44,109 +17,116 @@ if get_param(strcat(path, "rays_curr To File"), 'Commented') == "off"
     set_param(strcat(path, "rays_curr To File"), 'Commented', 'on');
 end
 
-displayBlks = find_system(path, 'SearchDepth', 1, 'IncludeCommented', 'on', 'BlockType', 'Display');
+displayBlks = find_system(path,'SearchDepth',1,'IncludeCommented', 'on','BlockType','Display');
+
 for k = 1:length(displayBlks)
-   set_param(displayBlks{k}, 'Commented', 'on');
+   set_param(displayBlks{k}, 'Commented','on');
 end
 
-save_system(mdl);
+save_system('SAC_RL_env')
 
-useParallel = true;
+%%
 
-%% Inizializzazione Pool Parallelo
+Ts = 0.1; % Tempo di campionamento (10 Hz)
+rng(1);
+assignin('base', 'Ts', Ts);
+
+[obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
+
+resumeTraining = false;
+
+if ~resumeTraining
+    agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
+else
+    saved_agent = load('test_no_deen\agente_v21_pt1\trained_agent.mat'); 
+    agent = saved_agent.agent;
+    trainStats = saved_agent.trainStats;
+end
+
+% 
+% agent.AgentOptions.ActorOptimizerOptions.LearnRate = 5e-5;
+% [agent.AgentOptions.CriticOptimizerOptions.LearnRate] = deal(1e-4);
+
+num_workers = 8;
+
+env = get_RL_env(obsInfo, actInfo, actLimit, 'train_scenarios_L1.mat', "validation_scenarios_L1.mat", true, fullfile(pwd, 'registro_morti.txt'));
+
+useParallel = false;
+
 if useParallel
-    num_workers = 4;
-    delete(gcp('nocreate'));
+    delete(gcp('nocreate'))
     cluster = parcluster('local');
     cluster.NumWorkers = num_workers;
     pool = parpool(cluster, num_workers);
 end
 
-%% CONFIGURAZIONE DATA QUEUE E LOGGING SICURO
-logPath = fullfile(pwd, 'registro_morti.txt');
-logPath_valid = fullfile(pwd, 'registro_morti_validation.txt');
+%% Training
 
-% Inizializza il file di TRAINING (svuotalo e scrivi l'intestazione)
+saveAgentFrequency = 300;
+
+trainOpts = rlTrainingOptions(...
+    'MaxEpisodes', 5000, ...
+    'MaxStepsPerEpisode', 3000, ... % orig era 1000
+    'ScoreAveragingWindowLength', 50, ...
+    'StopTrainingCriteria', 'AverageReward', ...
+    'StopTrainingValue', 10000, ... % Determine this based on your reward scaling
+    'SimulationStorageType', "none", ...
+    'SaveFileVersion', "-v7.3", ...
+    'SaveAgentCriteria', 'EpisodeFrequency', ...
+    'SaveAgentValue', saveAgentFrequency, ...
+    'SaveAgentDirectory', fullfile(pwd, 'agenti_salvati') ...
+);
+if useParallel
+    trainOpts.UseParallel = true;
+    trainOpts.ParallelizationOptions.Mode = "async";
+end
+
+% 300
+evalOpts = rlCustomEvaluator_fun(@evaluationFcn, ...
+    "EvaluationFrequency", saveAgentFrequency);
+
+logging = true; 
+logPath = fullfile(pwd, 'registro_morti.txt');
+assignin('base', 'logging', logging);
+logPath_padded = sprintf('%-250s', logPath);
+assignin('base', 'logPath_num', double(logPath_padded));
 fileID = fopen(logPath, 'w');
 if fileID ~= -1
+    % Scriviamo un'intestazione pulita per l'inizio del training
     fprintf(fileID, '========================================================\n');
     fprintf(fileID, 'INIZIO NUOVO ADDESTRAMENTO: %s\n', char(datetime('now')));
     fprintf(fileID, '========================================================\n');
     fprintf(fileID, 'Ep (Worker) | Step | Reward Totale | Motivo Terminazione\n');
     fprintf(fileID, '--------------------------------------------------------\n');
     fclose(fileID);
+    disp('File di log inizializzato con successo.');
 else
-    error('Impossibile creare il file di log per il training.');
+    error('Impossibile creare il file di log. Controlla i permessi della cartella.');
 end
-
-% Inizializza il file di VALIDATION (svuotalo e scrivi l'intestazione)
-fileID_val = fopen(logPath_valid, 'w');
-if fileID_val ~= -1
-    fprintf(fileID_val, '========================================================\n');
-    fprintf(fileID_val, 'INIZIO NUOVO ADDESTRAMENTO (VALIDATION): %s\n', char(datetime('now')));
-    fprintf(fileID_val, '========================================================\n');
-    fprintf(fileID_val, 'Ep (Worker) | Step | Reward Totale | Motivo Terminazione\n');
-    fprintf(fileID_val, '--------------------------------------------------------\n');
-    fclose(fileID_val);
+logPath_valid = fullfile(pwd, 'registro_morti_validation.txt');
+fileID = fopen(logPath_valid, 'w');
+if fileID ~= -1
+    % Scriviamo un'intestazione pulita per l'inizio del training
+    fprintf(fileID, '========================================================\n');
+    fprintf(fileID, 'INIZIO NUOVO ADDESTRAMENTO: %s\n', char(datetime('now')));
+    fprintf(fileID, '========================================================\n');
+    fclose(fileID);
+    disp('File di validation log inizializzato con successo.');
 else
-    error('Impossibile creare il file di log per la validation.');
+    error('Impossibile creare il file di validation log. Controlla i permessi della cartella.');
 end
 
-% Crea le DataQueue e definisci le callback per la scrittura
-dq_train = parallel.pool.DataQueue;
-afterEach(dq_train, @(msg) appendToLog(logPath, msg));
+%env.UseFastRestart = 'on';
 
-dq_valid = parallel.pool.DataQueue;
-afterEach(dq_valid, @(msg) appendToLog(logPath_valid, msg));
+%load('deen_network.mat', 'deen_net');
 
-%% Configurazione RL e Ambiente
-[obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
-agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
-
-% NOTA: Passiamo ENTRAMBE le code (`dq_train` e `dq_valid`) all'ambiente
-env = get_RL_env(obsInfo, actInfo, actLimit, 'train_scenarios_L1.mat', "validation_scenarios_L1.mat", true, dq_train, dq_valid);
-
-env.UseFastRestart = 'on';
-
-%% Configurazione Opzioni di Addestramento
-saveAgentFrequency = 300;
-
-trainOpts = rlTrainingOptions(...
-    'MaxEpisodes', 5000, ...
-    'MaxStepsPerEpisode', 3000, ... 
-    'ScoreAveragingWindowLength', 50, ...
-    'StopTrainingCriteria', 'AverageReward', ...
-    'StopTrainingValue', 10000, ... 
-    'SimulationStorageType', "none", ...
-    'SaveFileVersion', "-v7", ... 
-    'SaveAgentCriteria', 'EpisodeFrequency', ...
-    'SaveAgentValue', saveAgentFrequency, ...
-    'SaveAgentDirectory', fullfile(pwd, 'agenti_salvati') ...
-);
-
-if useParallel
-    trainOpts.UseParallel = true;
-    trainOpts.ParallelizationOptions.Mode = "async";
+if ~resumeTraining
+    trainStats = train(agent, env, trainOpts, "Evaluator", evalOpts);
+else
+    trainStats = train(agent, env, trainStats);
 end
 
-evalOpts = rlCustomEvaluator_fun(@evaluationFcn, "EvaluationFrequency", saveAgentFrequency);
+%% Salva agente
 
-%% Esecuzione Addestramento
-disp('Avvio addestramento parallelo con DataQueue (Train e Validation)...');
-trainStats = train(agent, env, trainOpts, "Evaluator", evalOpts);
-
-%% Salvataggio Finale
 agent.UseExplorationPolicy = 0;
-save('trained_agent.mat', 'agent', 'trainStats', '-v7');
-disp('Addestramento completato!');
-
-%% --- FUNZIONI LOCALI ---
-function appendToLog(file, msg)
-    % Questa funzione viene eseguita ESCLUSIVAMENTE dal client principale.
-    % Apre il file in modalità 'append' ('a'), scrive il messaggio e chiude.
-    fid = fopen(file, 'a');
-    if fid ~= -1
-        fprintf(fid, '%s\n', msg);
-        fclose(fid);
-    end
-end
+save('trained_agent.mat', 'agent', 'trainStats');
