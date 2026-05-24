@@ -1,0 +1,5 @@
+errore posizione calcolato su pos più vicina, campionamento senza replacement, aumento target smooth factor, solo azione posizione, reward solo penalità errore posizione, alpha entropia fisso a 0.005 con lr 1e-12
+
+osservazioni: Nessuna convergenza, apprendimento lento.
+
+! apprendimento lento dovuto a simulation pacing

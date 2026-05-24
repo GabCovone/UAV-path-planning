@@ -1,6 +1,6 @@
 %% Script di Test Batch Ottimizzato per Agente SAC (test_agent.m)
 
-lista_nomi = ["trained_agent_v21_no_deen"];
+lista_nomi = ["trained_agent_v29_no_deen"];
 
 for i=1:length(lista_nomi)
     report_agent_fun(lista_nomi{i});
@@ -167,7 +167,7 @@ function report_agent_fun(nome_agente_file)
         testo_report = [testo_report, sprintf('Fuori Rotta:    %d (%.1f%%)\n', num_deviazioni, (num_deviazioni/num_scenari_selezionati)*100)];
         testo_report = [testo_report, sprintf('Timeout:        %d (%.1f%%)\n', num_timeout, (num_timeout/num_scenari_selezionati)*100)];
         testo_report = [testo_report, sprintf('===============================================\n')];
-        
+         
         fprintf('%s', testo_report);
         
         fid_txt = fopen(percorso_file_txt, 'w');

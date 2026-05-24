@@ -1,13 +1,13 @@
 function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts)
     %% 1. DEFINIZIONE DELLE RETI NEURALI
     % Dimensioni dei layer nascosti
-    hiddenLayerSize = 256; 
+    hiddenLayerSize = 128; %256
     
     % --- CRITIC NETWORKS (Q-Values: [Obs, Act] -> Q) ---
     criticNetwork = [
         featureInputLayer(numObs, 'Normalization', 'none', 'Name', 'observation')
-        fullyConnectedLayer(hiddenLayerSize * 2, 'Name', 'CriticStateFC1')
-        swishLayer('Name', 'CriticSwish1')
+        fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticStateFC1')
+        reluLayer('Name', 'CriticRelu1')
         fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticStateFC2')
         ];
     
@@ -17,10 +17,10 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts)
         ];
     
     criticCommonPath = [
-        additionLayer(2, 'Name', 'add')
-        swishLayer('Name', 'CriticCommonSwish1')
-        fullyConnectedLayer(hiddenLayerSize/2, 'Name', 'CriticCommonFC1')
-        swishLayer('Name', 'CriticCommonSwish2')
+        concatenationLayer(1, 2, 'Name', 'CriticCommonConcat')
+        reluLayer('Name', 'CriticCommonRelu1')
+        fullyConnectedLayer(hiddenLayerSize, 'Name', 'CriticCommonFC1')
+        reluLayer('Name', 'CriticCommonRelu2')
         fullyConnectedLayer(1, 'Name', 'QValue')
         ];
     
@@ -28,11 +28,11 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts)
     criticNetwork = addLayers(criticNetwork, actionPath);
     criticNetwork = addLayers(criticNetwork, criticCommonPath);
     
-    criticNetwork = connectLayers(criticNetwork, 'CriticActionFC1/out', 'add/in1'); % <-- Modificato collegamento
-    criticNetwork = connectLayers(criticNetwork, 'CriticStateFC2/out', 'add/in2'); % <-- Modificato collegamento
+    criticNetwork = connectLayers(criticNetwork, 'CriticStateFC2/out', 'CriticCommonConcat/in1');
+    criticNetwork = connectLayers(criticNetwork, 'CriticActionFC1/out', 'CriticCommonConcat/in2');
     
     % Inizializza due Critic identici
-    criticOptions = rlOptimizerOptions('LearnRate', 5e-4, 'GradientThreshold', 10, 'L2RegularizationFactor', 1e-4);
+    criticOptions = rlOptimizerOptions('LearnRate', 5e-3, 'GradientThreshold', 10, 'L2RegularizationFactor', 1e-4);
     critic1 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
         'ObservationInputNames', 'observation', 'ActionInputNames', 'action');
     critic2 = rlQValueFunction(dlnetwork(criticNetwork), obsInfo, actInfo, ...
@@ -42,23 +42,20 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts)
     % SAC utilizza una policy gaussiana, quindi l'attore deve fornire media e deviazione standard
     actorNetwork = [
         featureInputLayer(numObs, 'Normalization', 'none', 'Name', 'observation')
-        fullyConnectedLayer(hiddenLayerSize * 2, 'Name', 'ActorFC1')
-        swishLayer('Name', 'ActorSwish1')
+        fullyConnectedLayer(hiddenLayerSize, 'Name', 'ActorFC1')
+        reluLayer('Name', 'ActorRelu1')
         fullyConnectedLayer(hiddenLayerSize, 'Name', 'ActorFC2')
-        swishLayer('Name', 'ActorSwish2')
+        reluLayer('Name', 'ActorRelu2')
         ];
     
     % Ramo della Media (Mean)
     meanPath = [
-        fullyConnectedLayer(hiddenLayerSize/2, 'Name', 'MeanFC1')
-        swishLayer('Name', 'MeanSwish')
-        fullyConnectedLayer(numAct, 'Name', 'MeanFC2')
+        fullyConnectedLayer(numAct, 'Name', 'MeanFC')
         ];
     
     % Ramo della Deviazione Standard (StdDev) - Valori positivi (Softplus)
     stdPath = [
         fullyConnectedLayer(numAct, 'Name', 'StdFC')
-        swishLayer('Name', 'StdSwish')
         softplusLayer('Name', 'StdSoftplus') 
         ];
     
@@ -66,13 +63,31 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts)
     actorGraph = addLayers(actorGraph, meanPath);
     actorGraph = addLayers(actorGraph, stdPath);
     
-    actorGraph = connectLayers(actorGraph, 'ActorSwish2', 'MeanFC1/in');
-    actorGraph = connectLayers(actorGraph, 'ActorSwish2', 'StdFC/in');
+    actorGraph = connectLayers(actorGraph, 'ActorRelu2', 'MeanFC/in');
+    actorGraph = connectLayers(actorGraph, 'ActorRelu2', 'StdFC/in');
+
+    actorDLNet = dlnetwork(actorGraph);
+    
+    % Inizializza a zero pesi e bias dell'ultimo layer della media
+    % Ottenere i parametri della rete
+    pars = actorDLNet.Learnables;
+    
+    % Trovare gli indici dei parametri di MeanFC2
+    meanFC2WeightIdx = find(contains(pars.Layer, "MeanFC") & contains(pars.Parameter, "Weights"));
+    meanFC2BiasIdx = find(contains(pars.Layer, "MeanFC") & contains(pars.Parameter, "Bias"));
+    
+    % Inizializzare pesi e bias a zero
+    pars.Value(meanFC2WeightIdx) = {dlarray(zeros(size(pars.Value{meanFC2WeightIdx})))};
+    pars.Value(meanFC2BiasIdx) = {dlarray(zeros(size(pars.Value{meanFC2BiasIdx})))};
+    
+    % Aggiornare la rete con i nuovi parametri
+    actorDLNet.Learnables = pars;
+
     % prec 1e-4
-    actorOptions = rlOptimizerOptions('LearnRate', 1e-4, 'GradientThreshold', 10, 'L2RegularizationFactor', 1e-4);
-    actor = rlContinuousGaussianActor(dlnetwork(actorGraph), obsInfo, actInfo, ...
+    actorOptions = rlOptimizerOptions('LearnRate', 1e-3, 'GradientThreshold', 10, 'L2RegularizationFactor', 1e-4);
+    actor = rlContinuousGaussianActor(actorDLNet, obsInfo, actInfo, ...
         'ObservationInputNames', 'observation', ...
-        'ActionMeanOutputNames', 'MeanFC2', ...
+        'ActionMeanOutputNames', 'MeanFC', ...
         'ActionStandardDeviationOutputNames', 'StdSoftplus');
     
     disp('✅ Reti critics e actor create con successo');
@@ -80,10 +95,15 @@ function agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts)
     %% 2. CREAZIONE DELL'AGENTE SAC
     % Opzioni specifiche dell'agente
 
+    % entropyOptions = rl.option.EntropyWeightOptions(...
+    %     'EntropyWeight', 1, ...
+    %     'LearnRate', 3e-4, ...
+    %     'TargetEntropy', -numAct, ...
+    %     'Algorithm', 'adam');
+
     entropyOptions = rl.option.EntropyWeightOptions(...
-        'EntropyWeight', 1, ...
-        'LearnRate', 3e-4, ...
-        'TargetEntropy', -numAct, ...
+        'EntropyWeight', 0.005, ...
+        'LearnRate', 1e-12, ...
         'Algorithm', 'adam');
     
     agentOpts = rlSACAgentOptions(...

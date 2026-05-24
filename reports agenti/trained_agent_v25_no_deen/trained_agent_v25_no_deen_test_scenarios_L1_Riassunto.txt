@@ -1,0 +1,11 @@
+
+================ REPORT FINALE ================
+Agente Valutato: trained_agent_v25_no_deen
+Database Scenari: test_scenarios_L1.mat
+Scenari Selezionati: 20 su 20
+Successi:       19 (95.0%)
+Collisioni:     0 (0.0%)
+Schianti Terra: 1 (5.0%)
+Fuori Rotta:    0 (0.0%)
+Timeout:        0 (0.0%)
+===============================================

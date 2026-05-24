@@ -1,0 +1,6 @@
+errore posizione calcolato su pos più vicina, campionamento senza replacement, aumento target smooth factor, solo azione posizione, reward solo azioni, alpha entropia fisso a 0.005 con lr 1e-12
+- riduzione complessità reti actor e critic, rimozione stacking raggi lidar, pesi livello FC media actor impostati nulli di default
+
+osservazioni: probabile convergenza, apprendimento lento.
+
+! apprendimento lento dovuto a simulation pacing

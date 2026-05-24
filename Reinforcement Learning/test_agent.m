@@ -25,12 +25,13 @@ end
 save_system('SAC_RL_env')
 
 rng(1);
-assignin('base', 'eval_scenario_idx', 1);
+scenario_idx = 5;
+assignin('base', 'eval_scenario_idx', scenario_idx);
 
 Ts = 0.1;
 assignin('base', 'Ts', Ts);
 
-path_DB_scenari = 'test_scenarios_L1.mat';
+path_DB_scenari = 'test_scenarios_L1.mat'; %test_scenarios_L1
 % Usa il percorso assoluto per garantire che MATLAB e Simulink scrivano nello stesso posto
 file_registro = fullfile(pwd, 'registro_morti.txt'); 
 
@@ -42,11 +43,11 @@ file_registro = fullfile(pwd, 'registro_morti.txt');
 
 env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, "validation_scenarios.mat", true, fullfile(pwd, 'registro_morti.txt'));
 
-agent_name = 'saved_agent'; % in genere agent, certe volte è saved_agent
+agent_name = 'agent'; % in genere agent, certe volte è saved_agent
 
 % 2. Carica l'agente salvato
 %load('versioni_agenti/agente_v12_rewardexpscaling_816.mat', agent_name);
-load('test_no_deen/agente_v22/Agent1200.mat', agent_name);
+load('trained_agent_v28_no_deen', agent_name);
 
 % 3. Definisci le opzioni di simulazione
 % Vogliamo fargli fare 1 solo episodio, con un massimo di 5500 step (es. 50 secondi a 10Hz)

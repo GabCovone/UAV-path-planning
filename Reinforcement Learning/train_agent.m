@@ -38,7 +38,7 @@ resumeTraining = false;
 if ~resumeTraining
     agent = get_RL_agent(obsInfo, actInfo, numObs, numAct, actLimit, Ts);
 else
-    saved_agent = load('test_no_deen\agente_v21_pt1\trained_agent.mat'); 
+    saved_agent = load('trained_agent_part1.mat'); 
     agent = saved_agent.agent;
     trainStats = saved_agent.trainStats;
 end
@@ -51,7 +51,7 @@ num_workers = 8;
 
 env = get_RL_env(obsInfo, actInfo, actLimit, 'train_scenarios_L1.mat', "validation_scenarios_L1.mat", true, fullfile(pwd, 'registro_morti.txt'));
 
-useParallel = false;
+useParallel = true;
 
 if useParallel
     delete(gcp('nocreate'))
@@ -66,7 +66,7 @@ saveAgentFrequency = 300;
 
 trainOpts = rlTrainingOptions(...
     'MaxEpisodes', 5000, ...
-    'MaxStepsPerEpisode', 3000, ... % orig era 1000
+    'MaxStepsPerEpisode', 3000, ... % ori era 1000
     'ScoreAveragingWindowLength', 50, ...
     'StopTrainingCriteria', 'AverageReward', ...
     'StopTrainingValue', 10000, ... % Determine this based on your reward scaling

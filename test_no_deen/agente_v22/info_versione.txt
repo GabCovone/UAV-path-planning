@@ -1,1 +1,5 @@
-errore posizione calcolato su pos più vicina, errore velocità, tuning automatico alpha, campionamento senza replacement, aumento target smooth factor
+errore posizione calcolato su pos più vicina, tuning automatico alpha, campionamento senza replacement, aumento target smooth factor, solo azione posizione, reward solo penalità azione, entropia a 0.005 con lr 1e-20
+
+osservazioni: Convergenza nel reward, ma apprendimento lento, 500 episodi in 1 ora con parallelismo.
+
+! apprendimento lento dovuto a simulation pacing

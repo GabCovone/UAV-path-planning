@@ -1,7 +1,7 @@
 function [obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo()
     % Definizione costanti del problema
     
-    numDelays = 3;
+    numDelays = 1; % di based 3, 1 per debugging
     assignin('base', 'delays', numDelays);
     baseNumRays = 256;
     assignin('base', 'num_rays', baseNumRays);

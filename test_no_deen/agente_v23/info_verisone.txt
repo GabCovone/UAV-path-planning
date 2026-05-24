@@ -1,0 +1,1 @@
+errore posizione calcolato su pos più vicina, campionamento senza replacement, aumento target smooth factor, solo azione posizione, reward solo penalità azione, TD3 anziché SAC

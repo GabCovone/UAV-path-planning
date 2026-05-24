@@ -1,0 +1,1 @@
+errore posizione calcolato su pos più vicina, tuning automatico alpha, campionamento senza replacement, aumento target smooth factor, solo azione posizione, survival error

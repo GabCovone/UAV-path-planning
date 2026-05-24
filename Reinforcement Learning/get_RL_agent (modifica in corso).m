@@ -1,7 +1,7 @@
 function agent = get_RL_agent(obsInfo, actInfo, StructNumObs, numAct, actLimit, Ts)
     %% 1. DEFINIZIONE DELLE RETI NEURALI
     % Dimensioni dei layer nascosti
-    hiddenLayerSize = 256;
+    hiddenLayerSize = 128;
 
     numStateVars = StructNumObs.numState + StructNumObs.numErrors;
     
@@ -81,15 +81,12 @@ function agent = get_RL_agent(obsInfo, actInfo, StructNumObs, numAct, actLimit, 
     
     % Ramo della Media (Mean)
     meanPath = [
-        fullyConnectedLayer(hiddenLayerSize/2, 'Name', 'MeanFC1')
-        reluLayer('Name', 'MeanRelu')
         fullyConnectedLayer(numAct, 'Name', 'MeanFC2')
         ];
     
     % Ramo della Deviazione Standard (StdDev) - Valori positivi (Softplus)
     stdPath = [
         fullyConnectedLayer(numAct, 'Name', 'StdFC')
-        reluLayer('Name', 'StdRelu')
         softplusLayer('Name', 'StdSoftplus') 
         ];
     
