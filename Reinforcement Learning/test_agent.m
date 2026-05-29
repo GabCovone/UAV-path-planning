@@ -7,7 +7,8 @@ load_system("SAC_RL_env");
 
 plantModelFi = 1;            
 useHeading = 1;              
-initialGainsMultiplier = 15;
+initialGainsMultiplier = 0.5; %15 0.5
+%tunePositionController = 1;
 
 if get_param(strcat(path, "pos_agente To File"), 'Commented') == "on"
     set_param(strcat(path, "pos_agente To File"), 'Commented', 'off');
@@ -25,13 +26,13 @@ end
 save_system('SAC_RL_env')
 
 rng(1);
-scenario_idx = 5;
+scenario_idx = 3; %5 16
 assignin('base', 'eval_scenario_idx', scenario_idx);
 
 Ts = 0.1;
 assignin('base', 'Ts', Ts);
 
-path_DB_scenari = 'test_scenarios_L1.mat'; %test_scenarios_L1
+path_DB_scenari = 'test_scenarios_L1.mat'; %test_scenarios_L1  training_scenarios_lv2
 % Usa il percorso assoluto per garantire che MATLAB e Simulink scrivano nello stesso posto
 file_registro = fullfile(pwd, 'registro_morti.txt'); 
 
@@ -43,7 +44,7 @@ file_registro = fullfile(pwd, 'registro_morti.txt');
 
 env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, "validation_scenarios.mat", true, fullfile(pwd, 'registro_morti.txt'));
 
-agent_name = 'agent'; % in genere agent, certe volte è saved_agent
+agent_name = 'saved_agent'; % in genere agent, certe volte è saved_agent
 
 % 2. Carica l'agente salvato
 %load('versioni_agenti/agente_v12_rewardexpscaling_816.mat', agent_name);

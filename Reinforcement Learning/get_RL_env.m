@@ -132,8 +132,9 @@ function in = localResetFcn(in)
     
     % Assegnazioni Posizioni
     initial_pos = scenario.map.q_start; 
-    init_vel = [0; 0; 0]; 
-    init_euler = [0; 0; 0]; 
+    init_vel = [0; 0; 0];
+    initial_yaw = scenario.sim_yaw_des.Data(1);
+    init_euler = [0; 0; initial_yaw];
     bounds.x_min = squeeze(min(scenario.map.v(:,1,:))); bounds.x_max = squeeze(max(scenario.map.v(:,1,:)));
     bounds.y_min = squeeze(min(scenario.map.v(:,2,:))); bounds.y_max = squeeze(max(scenario.map.v(:,2,:)));
     bounds.z_min = squeeze(min(scenario.map.v(:,3,:))); bounds.z_max = squeeze(max(scenario.map.v(:,3,:)));
@@ -150,6 +151,7 @@ function in = localResetFcn(in)
     assignin('base', 'pos_goal', scenario.map.q_goal);
     assignin('base', 'bounds', bounds);
     assignin('base', 'dyn_obs', scenario.dynamic_obstacles);
+    
     
     max_distanza_goal = double(norm(initial_pos - scenario.map.q_goal));
     assignin('base', 'max_distanza_goal', max_distanza_goal);

@@ -1,4 +1,4 @@
-function [sim_pos_des, sim_vel_des, sim_yaw_des, t_sim] = estrai_timeseries(ground_truth_trajectory)
+function [sim_pos_des, sim_vel_des, sim_yaw_des, t_sim] = estrai_timeseries_t_sim(ground_truth_trajectory)
 
     % 3.1 Creiamo il vettore tempo a 10 Hz
     dt = 0.1; 

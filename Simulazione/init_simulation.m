@@ -54,7 +54,7 @@ disp('-------------------------------------------------------------------');
 % =========================================================================
 % 3. CREAZIONE DELLE TIMESERIES PER IL CONTROLLORE (MINIMUM SNAP)
 % =========================================================================
-[sim_pos_des, sim_vel_des, sim_yaw_des] = estrai_timeseries(ground_truth_trajectory);
+[sim_pos_des, sim_vel_des, sim_yaw_des, t_sim] = estrai_timeseries_t_sim(ground_truth_trajectory);
 
 disp('🚀 Dati formattati per Simulink!');
 disp(['-> ⚠️ TEMPO DA INSERIRE IN SIMULINK (In alto al posto di 10.0): ', num2str(t_sim(end))]);
