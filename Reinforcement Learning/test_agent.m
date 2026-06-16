@@ -8,7 +8,7 @@ load_system("SAC_RL_env");
 plantModelFi = 1;            
 useHeading = 1;              
 initialGainsMultiplier = 0.5; %15 0.5
-%tunePositionController = 1;
+tunePositionController = 0;
 
 if get_param(strcat(path, "pos_agente To File"), 'Commented') == "on"
     set_param(strcat(path, "pos_agente To File"), 'Commented', 'off');
@@ -26,7 +26,7 @@ end
 save_system('SAC_RL_env')
 
 rng(1);
-scenario_idx = 3; %5 16
+scenario_idx = 16; %3; %5 16
 assignin('base', 'eval_scenario_idx', scenario_idx);
 
 Ts = 0.1;
@@ -35,6 +35,18 @@ assignin('base', 'Ts', Ts);
 path_DB_scenari = 'test_scenarios_L1.mat'; %test_scenarios_L1  training_scenarios_lv2
 % Usa il percorso assoluto per garantire che MATLAB e Simulink scrivano nello stesso posto
 file_registro = fullfile(pwd, 'registro_morti.txt'); 
+
+
+%% temp per debugging PID
+
+% 1. Carica l'ambiente
+[obsInfo, actInfo, numObs, numAct, actLimit] = get_obsInfo_actInfo();
+
+env = get_RL_env(obsInfo, actInfo, actLimit, path_DB_scenari, "validation_scenarios.mat", true, fullfile(pwd, 'registro_morti.txt'));
+
+% 4. Reset
+disp('Avvio reset...');
+reset(env);
 
 
 %%
@@ -72,7 +84,7 @@ disp(['Reward totale ottenuto: ', num2str(reward_totale)]);
 
 %% --- 6. Recupero Telemetria Diretto (Ricerca Globale) ---
 
-load('sim_pos_agente_1.mat');
+load('sim_pos_agente.mat');
     
 if ~isempty(sim_pos_agente)
     
@@ -83,7 +95,8 @@ if ~isempty(sim_pos_agente)
 
     % Prende il primo risultato trovato
     dati_pos = sim_pos_agente.Data;
-    vettore_tempi = experience.Reward.Time;
+    vettore_tempi = sim_pos_agente.Time;
+    %vettore_tempi = experience.Reward.Time; % temp commentato per debugging
     
     % Gestione formato [1 x 3 x N] o [N x 3]
     if size(dati_pos, 2) ~= 3
