@@ -3,12 +3,12 @@ clear eval_scenario_idx; clc; close all;
 
 %% 1. Configurazione Iniziale e Percorsi
 path = "SAC_RL_env/Inner Loop and Plant Model/High-FidelityModel/";
-%load_system("SAC_RL_env");
-load_system("models\MultirotorModel_Debugging");
+load_system("SAC_RL_env");
+
 plantModelFi = 1;            
-useHeading = 1;              
-%initialGainsMultiplier = 0.5; %15 0.5
-tunePositionController = 0;
+useHeading = 0;              
+initialGainsMultiplier = 0.5; %15 0.5
+%tunePositionController = 0;
 
 if get_param(strcat(path, "pos_agente To File"), 'Commented') == "on"
     set_param(strcat(path, "pos_agente To File"), 'Commented', 'off');
